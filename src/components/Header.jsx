@@ -6,6 +6,7 @@ const Header = ({ type, buttontext, onPress, style }) => {
   const containerStyle = [
     styles.container,
     type === "Secondary" && { backgroundColor: "transparent" },
+    style,
   ];
   return (
     <View style={containerStyle}>
