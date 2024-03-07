@@ -7,6 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Header
+        type={"Primary"}
         buttontext={["About", "Academics", "Admission", "Life at MIU", "LEI"]}
       ></Header>
     </View>
@@ -16,7 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "gray",
     alignItems: "center",
     justifyContent: "center",
   },

@@ -23,8 +23,6 @@ export const Button = ({
   const ButtonStyles = [
     styles.common,
     border && { borderColor: "#3d2562", borderWidth: 1 },
-    type === "Primary" && { backgroundColor: "#fff" },
-    type === "Secondary" && { backgroundColor: "transparent" },
     isHovered && type === "Primary" && { backgroundColor: "#3d3562" },
     isHovered && type === "Secondary" && { backgroundColor: "#fff" },
     style,
@@ -65,7 +63,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignSelf: "flex-start",
-    borderWidth: 0,
+    backgroundColor: "transparent",
   },
   text: {
     color: "#3d3562",
