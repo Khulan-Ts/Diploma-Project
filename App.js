@@ -8,7 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <Header
         type={"Primary"}
-        buttontext={["About", "Academics", "Admission", "Life at MIU", "LEI"]}
+        buttontext={["about us", "academics", "admissions", "LEI"]}
       ></Header>
     </View>
   );

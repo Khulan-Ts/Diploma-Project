@@ -3,11 +3,11 @@ import * as React from "react";
 import {
   View,
   StyleSheet,
-  StyleProp,
-  ViewStyle,
   Text,
   Pressable,
 } from "react-native";
+
+import { useFonts } from 'expo-font'
 
 export const Button = ({
   type = "Primary",
@@ -19,23 +19,33 @@ export const Button = ({
   style,
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
+  const [isPressed, setIsPressed] = React.useState(false)
+  const [fontLoaded] = useFonts({
+    Outfit: require('../../assets/fonts/Outfit-Regular.ttf'),
+  });
+
+  const togglePress= () =>{
+    setIsPressed(!isPressed)
+  }
 
   const ButtonStyles = [
     styles.common,
     border && { borderColor: "#3d2562", borderWidth: 1 },
     isHovered && type === "Primary" && { backgroundColor: "#3d3562" },
-    isHovered && type === "Secondary" && { backgroundColor: "#fff" },
+    isHovered && type === "Secondary" && { borderBottomWidth: 1, borderColor: '#FCB900' },
     style,
   ];
   const TextStyle = [
     styles.text,
-    isHovered && type === "Primary" && { color: "#fff" },
     type === "Secondary" && { color: "#fff" },
-    isHovered && type === "Secondary" && { color: "#3d3562" },
+    isPressed && {color: '#FCB900'},
+    { fontFamily: fontLoaded ? 'Outfit' : 'Arial' }
   ];
   return (
     <Pressable
-      onPress={onPress}
+      onPress={() => {onPress?.();
+      togglePress()
+    }}
       onHoverIn={() => {
         onHoverIn?.();
         setIsHovered(true);

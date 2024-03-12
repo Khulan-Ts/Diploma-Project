@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, StyleSheet, Image, Pressable } from "react-native";
 import Button from "./Button";
 
+
 const Header = ({ type, buttontext, onPress, style }) => {
   const containerStyle = [
     styles.container,
@@ -52,19 +53,17 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#3d2562",
-    //paddingBottom: 8,
-    //paddingTop: 8,
     paddingRight: 16,
     alignItems: "center",
     flexDirection: "row",
     position: "absolute",
     top: 0,
     width: "100%",
-    height: 80,
+    height: 106,
     justifyContent: "space-between",
   },
   image: {
     width: 250,
-    height: 80,
+    height: 60,
   },
 });
