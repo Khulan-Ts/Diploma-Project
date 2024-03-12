@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, StyleSheet, Image, Pressable } from "react-native";
 import Button from "./Button";
 
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 0,
     width: "100%",
-    height: 106,
+    height: 80,
     justifyContent: "space-between",
   },
   image: {
