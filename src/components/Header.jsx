@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Image, Pressable } from "react-native";
+import { View, StyleSheet, Image, Pressable, Animated } from "react-native";
 import Button from "./Button";
 
 
@@ -10,11 +10,11 @@ const Header = ({ type, buttontext, onPress, style }) => {
     style,
   ];
   return (
-    <View style={containerStyle}>
+      <Animated.View style={containerStyle}>
       <Pressable onPress={onPress}>
         <Image
-          source={require("../../assets/logo-2-white.png")}
-          style={styles.image}
+          source={require("../../assets/logo-1.png")}
+          style={styles.logo}
         ></Image>
       </Pressable>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -43,8 +43,9 @@ const Header = ({ type, buttontext, onPress, style }) => {
           text={buttontext[4]}
           style={{ marginRight: 10, height: 48, borderRadius: 0 }}
         />
+       
       </View>
-    </View>
+    </Animated.View>
   );
 };
 
@@ -52,18 +53,21 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#3d2562",
-    paddingRight: 16,
+    backgroundColor: "transparent",
+    paddingRight: 191,
+    paddingLeft: 191,
     alignItems: "center",
     flexDirection: "row",
     position: "absolute",
     top: 0,
     width: "100%",
-    height: 80,
+    height: 109,
     justifyContent: "space-between",
+    zIndex: 99
   },
-  image: {
-    width: 250,
+  logo: {
+    width: 211,
     height: 60,
   },
+  
 });
