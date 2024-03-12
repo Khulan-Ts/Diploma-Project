@@ -14,7 +14,7 @@ export const CardButton = ({
   image,
   text,
   onPress,
-  style,
+  type = 'Primary',
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const [fontLoaded] = useFonts({
@@ -34,12 +34,13 @@ export const CardButton = ({
       onHoverOut={() => {
         setIsHovered(false);
       }}
+      style={{marginRight: 16}}
     >
       <Image
         source={image}
         style={[styles.image, isHovered && { backgroundColor: "rgba(0, 0, 0, 0.4)" }]}
       />
-      <View style={styles.label}>
+      <View style={[styles.label, type === 'Secondary' && {backgroundColor: '#B592EB'}]}>
       <Text style={TextStyle} numberOfLines={1}>{text}</Text>
       </View>
     </Pressable>
