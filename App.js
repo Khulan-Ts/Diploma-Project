@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, Image, Animated, View } from "react-native";
 import Header from "./src/components/Header";
 import CardButton from "./src/components/cardButtons";
-import Title from "./src/components/Titles";
+import FONT from "./src/components/Titles";
 
 export default function App() {
   const [scrollY] = useState(new Animated.Value(0));
@@ -31,19 +31,21 @@ export default function App() {
         source={require("./assets/homepage-1.png")}
         style={styles.image}
       />
-      <View style={{marginLeft: 150}}>
-        <View style={{marginTop: 40}}>
-          <Title type="Subtitle" text={'Undergraduate'} style={{color: '#62253E'}}></Title>
+      <View style={{marginTop: 40}}>
+          <FONT type="SubFONT" text={'Undergraduate'} style={{color: '#62253E'}}></FONT>
         </View>
+      <View style={{alignItems: 'center'}}>
         <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
           <CardButton image={require("./assets/cs.png")} text={'Computer Science'}/>
           <CardButton image={require("./assets/image.png")} text={'Software Engineering'}/>
           <CardButton image={require("./assets/cs.png")} text={'Fashion Design'}/>
           <CardButton image={require("./assets/image.png")} text={'International Relations'}/>
         </View>
-        <View style={{marginTop: 40}}>
-          <Title type="Subtitle" text={'Graduate'} style={{color: '#62253E'}}></Title>
         </View>
+        <View style={{marginTop: 40, marginLeft: 140}}>
+          <FONT type="Subtitle" text={'Graduate'} style={{color: '#62253E'}}></FONT>
+        </View>
+        <View style={{alignItems: 'center'}}>
         <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
           <CardButton type={'Secondary'} image={require("./assets/cs.png")} text={'Computer Science'}/>
           <CardButton type={'Secondary'} image={require("./assets/image.png")} text={'Software Engineering'}/>
@@ -52,7 +54,7 @@ export default function App() {
         </View>
       </View>
       <View style={{marginTop: 40, alignItems: 'center'}}>
-          <Title type="Title" text={'Our History'}></Title>
+          <FONT type="Title" text={'Our History'}></FONT>
         </View>
     </Animated.ScrollView>
   );
