@@ -32,7 +32,7 @@ export default function App() {
         style={styles.image}
       />
       <View style={{marginTop: 40}}>
-          <FONT type="SubFONT" text={'Undergraduate'} style={{color: '#62253E'}}></FONT>
+          <FONT type="Subtitle" text={'Undergraduate'} style={{color: '#62253E'}}></FONT>
         </View>
       <View style={{alignItems: 'center'}}>
         <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
