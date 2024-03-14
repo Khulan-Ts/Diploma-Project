@@ -32,7 +32,7 @@ export default function App() {
         style={styles.image}
       />
       <View style={{marginTop: 40}}>
-          <FONT type="Subtitle" text={'Undergraduate'} style={{color: '#62253E'}}></FONT>
+          <FONT type="Subtitle"style={{color: '#62253E'}}>Undergraduate</FONT>
         </View>
       <View style={{alignItems: 'center'}}>
         <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
@@ -43,7 +43,7 @@ export default function App() {
         </View>
         </View>
         <View style={{marginTop: 40, marginLeft: 140}}>
-          <FONT type="Subtitle" text={'Graduate'} style={{color: '#62253E'}}></FONT>
+          <FONT type="Subtitle" style={{color: '#62253E'}}>Graduate</FONT>
         </View>
         <View style={{alignItems: 'center'}}>
         <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
@@ -54,7 +54,7 @@ export default function App() {
         </View>
       </View>
       <View style={{marginTop: 40, alignItems: 'center'}}>
-          <FONT type="Title" text={'Our History'}></FONT>
+          <FONT type="Title" >Our History</FONT>
         </View>
     </Animated.ScrollView>
   );
