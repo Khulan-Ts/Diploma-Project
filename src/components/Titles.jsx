@@ -4,7 +4,7 @@ import { useFonts } from 'expo-font';
 
 export const FONT = ({
   type = "Regular",
-  text,
+  children,
   style,
 }) => {
   let fontName = 'Outfit-Regular'; 
@@ -39,7 +39,7 @@ export const FONT = ({
 
   return (
     <Text style={TextStyle}>
-      {text}
+      {children}
     </Text>
   );
 };
