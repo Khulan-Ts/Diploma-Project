@@ -37,7 +37,7 @@ export const Button = ({
   ];
   const TextStyle = [
     styles.text,
-    type === "Secondary" && { color: "#fff" },
+    type === "Secondary" && isPressed && {backgroundColor: "#EDF0FF"},
     isPressed && {color: '#FCB900'},
     { fontFamily: fontLoaded ? 'Outfit' : 'Arial' }
   ];
@@ -77,5 +77,6 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#3d3562",
+    fontSize: 18
   },
 });
