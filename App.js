@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, Image, Animated, View } from "react-native";
 import Header from "./src/components/Header";
 import CardButton from "./src/components/cardButtons";
-import FONT from "./src/components/Titles";
+import Title from "./src/components/Titles";
 
 export default function App() {
   const [scrollY] = useState(new Animated.Value(0));
@@ -27,41 +27,33 @@ export default function App() {
           buttontext={["about us", "academics", "admissions", "LEI"]}
           style ={{backgroundColor: headerBackgroundColor }}
         />
-      {/* <Image
+      <Image
         source={require("./assets/homepage-1.png")}
         style={styles.image}
-      /> */}
-      {/* <View style={{marginTop: 40}}>
-          <FONT type="Subtitle" text={'Undergraduate'} style={{color: '#62253E'}}></FONT>
-        </View> */}
-        <View style={{marginTop: 203, marginLeft: 159}}>
-          <FONT type="Regular" text={'Academics'} style={{color: ''}}></FONT>
+      />
+      <View style={{marginLeft: 150}}>
+        <View style={{marginTop: 40}}>
+          <Title type="Subtitle" text={'Undergraduate'} style={{color: '#62253E'}}></Title>
         </View>
-        <View style={{marginTop: 40, marginLeft: 140}}>
-          <FONT type="Subtitle" text={'Graduate'} style={{color: ''}}></FONT>
-        </View>
-      {/* <View style={{alignItems: 'center'}}>
         <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
           <CardButton image={require("./assets/cs.png")} text={'Computer Science'}/>
           <CardButton image={require("./assets/image.png")} text={'Software Engineering'}/>
           <CardButton image={require("./assets/cs.png")} text={'Fashion Design'}/>
           <CardButton image={require("./assets/image.png")} text={'International Relations'}/>
         </View>
+        <View style={{marginTop: 40}}>
+          <Title type="Subtitle" text={'Graduate'} style={{color: '#62253E'}}></Title>
         </View>
-        <View style={{marginTop: 40, marginLeft: 140}}>
-          <FONT type="Subtitle" text={'Graduate'} style={{color: '#62253E'}}></FONT>
-        </View>
-        <View style={{alignItems: 'center'}}>
         <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
           <CardButton type={'Secondary'} image={require("./assets/cs.png")} text={'Computer Science'}/>
           <CardButton type={'Secondary'} image={require("./assets/image.png")} text={'Software Engineering'}/>
           <CardButton type={'Secondary'} image={require("./assets/cs.png")} text={'Fashion Design'}/>
           <CardButton type={'Secondary'} image={require("./assets/image.png")} text={'International Relations'}/>
         </View>
-      </View> */}
-      {/* <View style={{marginTop: 40, alignItems: 'center'}}>
-          <FONT type="Title" text={'Our History'}></FONT>
-        </View> */}
+      </View>
+      <View style={{marginTop: 40, alignItems: 'center'}}>
+          <Title type="Title" text={'Our History'}></Title>
+        </View>
     </Animated.ScrollView>
   );
 }
