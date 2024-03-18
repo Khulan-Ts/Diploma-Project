@@ -20,6 +20,8 @@ export const FONT = ({
       fontName = 'Outfit-Light'
     case 'Subtitle2':
       fontName = 'Outfit-Regular'
+    case 'Title2':
+      fontName = 'Outfit-SemiBold'
     default:
       break;
   }
@@ -29,6 +31,7 @@ export const FONT = ({
     'Outfit-Medium': require('../../assets/fonts/Outfit-Medium.ttf'),
     'Outfit-ExtraBold': require('../../assets/fonts/Outfit-ExtraBold.ttf'),
     'Outfit-Light': require('../../assets/fonts/Outfit-Light.ttf'),
+    'Outfit-SemiBold': require('../../assets/fonts/Outfit-SemiBold.ttf'),
   });
 
   const TextStyle = [
@@ -56,6 +59,8 @@ const getFontSize = (type) => {
       return 18;
     case 'Subtitle2':
       return 23
+    case 'Title2':
+      return 30
     default:
       return 28; 
   }
