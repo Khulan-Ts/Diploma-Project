@@ -18,10 +18,13 @@ export const FONT = ({
       break;
     case 'Body':
       fontName = 'Outfit-Light'
+      break
     case 'Subtitle2':
       fontName = 'Outfit-Regular'
+      break
     case 'Title2':
       fontName = 'Outfit-SemiBold'
+      break
     default:
       break;
   }
