@@ -27,33 +27,63 @@ export default function App() {
           buttontext={["about us", "academics", "admissions", "LEI"]}
           style ={{backgroundColor: headerBackgroundColor }}
         />
-      <Image
-        source={require("./assets/homepage-1.png")}
-        style={styles.image}
-      />
-      <View style={{marginLeft: 150}}>
-        <View style={{marginTop: 40}}>
-          <Title type="Subtitle" text={'Undergraduate'} style={{color: '#62253E'}}></Title>
+        <View style={styles.imageContainer}>
+          <Image
+            source={require("./assets/2p2.png")}
+            style={styles.image}
+          />
+          <View style={{backgroundColor: '#EDF0FF', marginTop:40}}>
+            <Title type="Body" text={'INTRODUCTION'} style={{color: '#000000'}}></Title>
+          </View>
+
+          <View style={styles.tableContainer}>
+            <View style={styles.row}>
+              <Text style={[styles.cell, {fontWeight:'bold'}]}>Why 2+2?</Text>
+              <View style={styles.verticalLine} />
+              <Text style={styles.cell}>2 years (MIU) + 2 years (SUNY Albany) = 2 Diplomas</Text>
+            </View>
+            <View style={styles.horizontalLine} />
+            <View style={styles.row}>
+              <Text style={[styles.cell, {fontWeight:'bold'}]}>Goal</Text>
+              <View style={styles.verticalLine} />
+              <Text style={styles.cell}>To cultivate global individuals with academic literacy and international sense</Text>
+            </View>
+            <View style={styles.horizontalLine} />
+            <View style={styles.row}>
+              <Text style={[styles.cell, {fontWeight:'bold'}]}>Why choose 2 + 2? </Text>
+              <View style={styles.verticalLine} />
+              <Text style={styles.cell}>Low cost and affordable fee
+Acquiring English knowledge for 2 years at MIU
+Obtain two diplomas (MIU and SUNY Albany)
+Experience campus life in Mongolia, USA and other cultures</Text>
+            </View>
+          </View>
         </View>
-        <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
-          <CardButton image={require("./assets/cs.png")} text={'Computer Science'}/>
-          <CardButton image={require("./assets/image.png")} text={'Software Engineering'}/>
-          <CardButton image={require("./assets/cs.png")} text={'Fashion Design'}/>
-          <CardButton image={require("./assets/image.png")} text={'International Relations'}/>
+        <View style={styles.infoContainer}>
+          <View style={styles.infoSection}>
+            <View style={{backgroundColor: '#EDF0FF', marginTop:40}}>
+              <Title type="Body" text={'QUALIFICATIONS'} style={{color: '#000000'}}></Title>
+            </View>
+            <Text style={styles.text}>• Requirements: Undergraduate students, who completed 2 years at MIU</Text>
+            <Text style={styles.text}>• GPA: 3.4/4.0 or higher</Text>
+            <Text style={styles.text}>• English Test: TOEFL IBT 70 or IELTS 6.0 or above</Text>
+          </View>
+          <View style={styles.infoSection}>
+            <View style={{backgroundColor: '#EDF0FF', marginTop:40}}>
+              <Title type="Body" text={'EXPENSES'} style={{color: '#000000'}}></Title>
+            </View>
+            <Text style={styles.text}>• 1 year Tuition: USD 28,350</Text>
+            <Text style={styles.text}>• 1 year Dormitory: USD 13,882</Text>
+            <Text style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</Text>
+          </View>
         </View>
-        <View style={{marginTop: 40}}>
-          <Title type="Subtitle" text={'Graduate'} style={{color: '#62253E'}}></Title>
-        </View>
-        <View style={{alignItems: "center", flexDirection: "row", marginTop: 40}}>
-          <CardButton type={'Secondary'} image={require("./assets/cs.png")} text={'Computer Science'}/>
-          <CardButton type={'Secondary'} image={require("./assets/image.png")} text={'Software Engineering'}/>
-          <CardButton type={'Secondary'} image={require("./assets/cs.png")} text={'Fashion Design'}/>
-          <CardButton type={'Secondary'} image={require("./assets/image.png")} text={'International Relations'}/>
-        </View>
-      </View>
-      <View style={{marginTop: 40, alignItems: 'center'}}>
-          <Title type="Title" text={'Our History'}></Title>
-        </View>
+
+
+
+      {/* <View style={{marginLeft: 150}}> */}
+
+
+      {/* </View> */}
     </Animated.ScrollView>
   );
 }
@@ -71,8 +101,64 @@ const styles = StyleSheet.create({
     elevation: 3, // Required for Android
     // Other header styles such as height, padding, etc.
   },
-  image: {
-    width: "100%",
-    height: 1024,
+  imageContainer: {
+    flex: 1,
+    justifyContent: 'left',
+    alignItems: 'center',
   },
+  
+  image: {
+    width: 400,
+    height: 300,
+  },
+  title: {
+    textAlign: 'left',
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginTop: 10,
+    
+  },
+  text: {
+      fontSize: 14,
+      marginTop: 5,
+  },
+  tableContainer: {
+    width:"50%",
+    flexDirection: 'column',
+    marginTop: 40,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  cell: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 10,
+  },
+  verticalLine: {
+    height: '100%',
+    width: 1,
+    backgroundColor: '#000',
+  },
+  horizontalLine: {
+    width: '100%',
+    height: 1,
+    backgroundColor: '#000',
+  },
+  infoContainer: {
+    flexDirection: 'row',
+    marginTop: 50,
+   // justifyContent: 'center',
+    alignItems:'center',
+  },
+  infoSection: {
+    flexDirection: 'column',
+    width: '45%',
+    justifyContent: 'center',
+    alignContent:'center',
+    textAlign:'center',
+  },
+
 });
