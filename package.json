@@ -16,8 +16,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.4",
+<<<<<<< HEAD
     "react-native-web": "~0.19.6",
     "yarn": "^1.22.22"
+=======
+    "react-native-svg": "^15.1.0",
+    "react-native-web": "~0.19.6"
+>>>>>>> 0c863f5e563f1d0ba7338117f92a0d700aad1e53
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
