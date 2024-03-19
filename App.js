@@ -32,8 +32,8 @@ export default function App() {
             source={require("./assets/2p2.png")}
             style={styles.image}
           />
-          <View style={{backgroundColor: '#EDF0FF', marginTop:40}}>
-            <Title type="Body" text={'INTRODUCTION'} style={{color: '#000000'}}></Title>
+          <View style={{backgroundColor: '#EDF0FF', marginTop:40, width:'100%'}}>
+            <Title type="Body" text={'INTRODUCTION'} style={{color: '#000000', textAlign:'center'}}></Title>
           </View>
 
           <View style={styles.tableContainer}>
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   
@@ -157,8 +157,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     width: '45%',
     justifyContent: 'center',
-    alignContent:'center',
-    textAlign:'center',
+    alignItems:'center',
   },
 
 });
