@@ -61,7 +61,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "flex-start",
     borderRadius: 10,
-    padding: 4,
+    paddingTop: 5,
+    paddingBottom: 5, 
+    paddingLeft: 10,
+    paddingRight: 10,
     zIndex: 1,
     marginTop: -12
   },
