@@ -11,8 +11,8 @@ import FONT from "./Titles";
 
 export const HoverCard = ({
     image, //source link
-    image2,
     title,
+    type = 'Primary',
     children,
     button,
     button2,
@@ -21,14 +21,17 @@ export const HoverCard = ({
 }) => {
   const containerStyles=[
     styles.container,
-    image2 && {paddingTop: 55, paddingLeft: 80, paddingBottom:48}
+    type === 'Secondary' && {width: 882, height: 391, paddingTop: 41, paddingLeft: 36, paddingBottom: 41, paddingRight: 36, }
+  ]
+  const imageStyle=[
+    styles.img,
+    type=== 'Secondary' && {width: 356, height: 306,}
   ]
   return (
     <View style={containerStyles}>
         <View style={{flexDirection: "row",}}>
             {<View style={{flexDirection: 'column'}}>
-                <Image source={image} style={image2? styles.img2: styles.img}/>
-                {image2 && <Image source={image2} style={[styles.img2, {marginTop: 15}]}/>}
+                <Image source={image} style={imageStyle}/>
             </View>}
             <View style={{flexDirection: 'column', alignItems:'center', marginLeft: 20, flex: 1}}>
                 <FONT type='Title2'>{title}</FONT>
@@ -52,23 +55,15 @@ export default HoverCard;
 
 const styles = StyleSheet.create({
     container:{
-        width: 936,
-        height: 521,
-        paddingTop: 62,
-        paddingLeft: 60,
-        paddingBottom: 79,
-        paddingRight: 65,
+        width: 745,
+        height: 360,
+        padding: 30,
         borderRadius: 20,
         backgroundColor: '#EDF0FF'
     },
     img:{
-        width: 451,
-        height: 396,
+        width: 246,
+        height: 275,
         borderRadius: 10,
     },
-    img2:{
-        width: 312,
-        height: 205,
-        borderRadius: 10
-    }
 });
