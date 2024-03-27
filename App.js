@@ -1,27 +1,133 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import HoverCard from "./src/components/hoverCard";
+import React, { useState } from "react";
+import { StyleSheet, Text, Image, Animated, View, Pressable } from "react-native";
+import Header from "./src/components/Header";
+import CardButton from "./src/components/cardButtons";
+import Button from "./src/components/Button";
+import FONT from "./src/components/Titles";
+import MapComponent from "./src/components/Map";
 
 export default function App() {
+  const [scrollY] = useState(new Animated.Value(0));
+
+  const headerBackgroundColor = scrollY.interpolate({
+    inputRange: [0, 40],
+    outputRange: ["rgba(61, 37, 98, 1)", "rgba(61, 37, 98, 0.5)"],
+    extrapolate: "clamp",
+  });
+
   return (
-    <View style={styles.container}>
-      <HoverCard image={require("./assets/D-bld.png")} image2={require("./assets/cs.png")} title={"D building"} button={"For More Information"} button2={"Dormitory Fee"}>
-        The MIU Global Residence is a seven-floor building that houses both 
-        male and female students from all over the world. The first four 
-        floors are dedicated to students and the 5th to 7th floors are 
-        occupied by faculty and staff members. MIU Global Residence a unique 
-        residence hall that offers affordable, newly furnished, safe, and convenient 
-        living quarters for students.
-        </HoverCard>
-    </View>
+    <Animated.ScrollView
+      style={styles.container}
+      stickyHeaderIndices={[0]}
+      onScroll={Animated.event(
+        [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+        { useNativeDriver: false }
+      )}
+    >
+      <Header
+        type={"Primary"}
+        buttontext={["about us", "academics", "admissions", "LEI"]}
+        style ={{backgroundColor: headerBackgroundColor }}
+      />
+      <Image
+        source={require("./assets/homepage-1.png")}
+        style={styles.image}
+      />
+      
+      <View style={{alignItems: 'center'}}>
+        <View style={{ flexDirection: "row", marginTop: 75}}>
+          <View>
+            <FONT type="Subtitle"style={{color: '#62253E'}}>Undergraduate</FONT>
+            <CardButton image={require("./assets/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
+          </View>
+          <CardButton image={require("./assets/se.png")} text={'Software Engineering'} style={{marginTop: 52}}/>
+          <CardButton image={require("./assets/cs.png")} text={'Fashion Design'} style={{marginTop: 52}}/>
+          <CardButton image={require("./assets/se.png")} text={'International Relations'} style={{marginTop: 52}}/>
+        </View>
+      </View>
+
+      <View style={{alignItems: 'center'}}>
+        <View style={{ flexDirection: "row", marginTop: 27}}>
+          <View>
+            <FONT type="Subtitle"style={{color: '#62253E'}}>Graduate</FONT>
+            <CardButton image={require("./assets/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
+          </View>
+          <CardButton type={"Secondary"} image={require("./assets/se.png")} text={'Software Engineering'} style={{marginTop: 51}}/>
+          <CardButton type={"Secondary"} image={require("./assets/cs.png")} text={'Fashion Design'} style={{marginTop: 51}}/>
+          <CardButton type={"Secondary"} image={require("./assets/se.png")} text={'International Relations'} style={{marginTop: 51}}/>
+        </View>
+      </View>
+      <View style={{marginTop: 137, alignItems: 'center'}}>
+        <FONT type="Title" >Our History</FONT>
+      </View>
+      <View style={{ flexDirection: 'row' }}>
+        <Image
+          source={require("./assets/homepage-1.png")}
+          style={styles.historyImg}
+        />
+        <View style={styles.history}> 
+          <FONT type="Body">
+            MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia.
+            With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received free
+            land of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university
+            providing English-Speaking higher education in Central Asia. MIU currently offers 14 recognized bachelor’s
+            programs and is committed to providing a world-class education to tomorrow’s global servant leaders from Mongolia,
+            Russia, China, Republic of Korea, and other nations.
+          </FONT>
+          </View>
+        </View>
+        <View style={{marginTop: 288}}>
+          <MapComponent/>
+        </View>
+        <View style={styles.apply}>
+          <FONT type="Title" style={{color: "#fff", fontSize: 86}}>APPLY NOW</FONT>
+          <View style={{marginTop: 33, marginBottom: 38, width: 525}}>
+            <FONT type="Title2"style={{color: "#fff", textAlign: 'center', fontSize: 25}}>Are you ready to take the next step toward your future career?</FONT>
+          </View>
+          <Button type="Apply" text="Application Form"></Button>
+        </View>
+    </Animated.ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "gray",
-    alignItems: "center",
-    justifyContent: "center",
   },
+  header: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 100,
+  },
+  image: {
+    width: "100%",
+    height: 1024,
+  },
+  historyImg:{
+    width: 705,
+    height: 393,
+    borderRadius: 10,
+    marginTop: 31,
+    marginLeft: 63
+  },
+  history:{
+    backgroundColor: '#EDF0FF',
+    borderRadius: 10,
+    maxWidth: 680,
+    padding: 20,
+    flex: 1,
+    marginLeft: -120,
+    marginTop: 110, 
+    alignSelf: 'flex-start'
+  },
+  apply:{
+    width: '100%',
+    height: 523,
+    backgroundColor: '#FCB900',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 66
+  }
 });
