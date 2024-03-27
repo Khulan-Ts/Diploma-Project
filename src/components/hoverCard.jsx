@@ -10,7 +10,7 @@ import Button from "./Button";
 import FONT from "./Titles";
 
 export const HoverCard = ({
-    image, //source link
+    image, //source link always have require("")
     title,
     type = 'Primary',
     children,
@@ -25,27 +25,32 @@ export const HoverCard = ({
   ]
   const imageStyle=[
     styles.img,
-    type=== 'Secondary' && {width: 356, height: 306,}
+    type=== 'Secondary' && {width: 356, height: 306,},
+    type=== 'Sport' && {width: 261, height: 171}
   ]
   return (
     <View style={containerStyles}>
         <View style={{flexDirection: "row",}}>
             {<View style={{flexDirection: 'column'}}>
                 <Image source={image} style={imageStyle}/>
+                {type === 'Sport' &&
+                <View style={{alignItems: 'center'}}>
+                    <Button type="Fifth" text={button} onPress={onPress1} style={{marginTop: 54}}></Button>
+                </View>}
             </View>}
             <View style={{flexDirection: 'column', alignItems:'center', marginLeft: 20, flex: 1}}>
                 <FONT type='Title2'>{title}</FONT>
                 <View style={{maxWidth: 400, alignSelf:"center", marginTop: 21}}>
-                <FONT type='Regular' style={{fontSize: 17, texAlign: 'center'}}>
+                <FONT type='Regular' style={{fontSize: 17, textAlign: type === 'Secondary' ? 'center': undefined}}>
                     {children}
                 </FONT>
                 </View>
-                <View style={{marginTop: 'auto', marginLeft: button2? 'auto': undefined}}>
-                    {<View style={{flexDirection: 'row-reverse', alignItems:'center'}}>
+                {type !== 'Sport' && <View style={{marginTop: 'auto', marginLeft: button2? 'auto': undefined}}>
+                    <View style={{flexDirection: 'row-reverse', alignItems:'center'}}>
                         <Button type="Fifth" text={button} onPress={onPress1}></Button>
                         {button2 && <Button type="Sixth" text={button2} onPress={onPress2} style={{marginRight: 7}}></Button>}
-                    </View>}
-                </View>
+                    </View>
+                </View>}
             </View>
         </View>
     </View>
