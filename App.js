@@ -30,7 +30,7 @@ export default function App() {
         style ={{backgroundColor: headerBackgroundColor }}
       />
       <Image
-        source={require("./assets/homepage-1.png")}
+        source={require("./assets/images/homepage-1.png")}
         style={styles.image}
       />
       
@@ -38,11 +38,11 @@ export default function App() {
         <View style={{ flexDirection: "row", marginTop: 75}}>
           <View>
             <FONT type="Subtitle"style={{color: '#62253E'}}>Undergraduate</FONT>
-            <CardButton image={require("./assets/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
+            <CardButton image={require("./assets/images/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
           </View>
-          <CardButton image={require("./assets/se.png")} text={'Software Engineering'} style={{marginTop: 52}}/>
-          <CardButton image={require("./assets/cs.png")} text={'Fashion Design'} style={{marginTop: 52}}/>
-          <CardButton image={require("./assets/se.png")} text={'International Relations'} style={{marginTop: 52}}/>
+          <CardButton image={require("./assets/images/se.png")} text={'Software Engineering'} style={{marginTop: 52}}/>
+          <CardButton image={require("./assets/images/fd.png")} text={'Fashion Design'} style={{marginTop: 52}}/>
+          <CardButton image={require("./assets/images/ir.png")} text={'International Relations'} style={{marginTop: 52}}/>
         </View>
       </View>
 
@@ -50,11 +50,11 @@ export default function App() {
         <View style={{ flexDirection: "row", marginTop: 27}}>
           <View>
             <FONT type="Subtitle"style={{color: '#62253E'}}>Graduate</FONT>
-            <CardButton image={require("./assets/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
+            <CardButton type={"Secondary"} image={require("./assets/images/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
           </View>
-          <CardButton type={"Secondary"} image={require("./assets/se.png")} text={'Software Engineering'} style={{marginTop: 51}}/>
-          <CardButton type={"Secondary"} image={require("./assets/cs.png")} text={'Fashion Design'} style={{marginTop: 51}}/>
-          <CardButton type={"Secondary"} image={require("./assets/se.png")} text={'International Relations'} style={{marginTop: 51}}/>
+          <CardButton type={"Secondary"} image={require("./assets/images/se.png")} text={'Software Engineering'} style={{marginTop: 51}}/>
+          <CardButton type={"Secondary"} image={require("./assets/images/fd.png")} text={'Fashion Design'} style={{marginTop: 51}}/>
+          <CardButton type={"Secondary"} image={require("./assets/images/ir.png")} text={'International Relations'} style={{marginTop: 51}}/>
         </View>
       </View>
       <View style={{marginTop: 137, alignItems: 'center'}}>
@@ -62,7 +62,7 @@ export default function App() {
       </View>
       <View style={{ flexDirection: 'row' }}>
         <Image
-          source={require("./assets/homepage-1.png")}
+          source={require("./assets/images/homepage-1.png")}
           style={styles.historyImg}
         />
         <View style={styles.history}> 

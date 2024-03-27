@@ -17,7 +17,7 @@ export default function MapComponent() {
   return (
     <View >
       <Image
-        source={require("../../assets/map.png")}
+        source={require("../../assets/images/map.png")}
         style={styles.image}
       />
 
@@ -29,7 +29,7 @@ export default function MapComponent() {
         {activeCard === 1 && (
           <View style={styles.sport}>
             <HoverCard
-              image={require("../../assets/sports.png")}
+              image={require("../../assets/images/sports.png")}
               type={"Sport"}
               title={"Sport Complex"}
               button={"For More Information"}
@@ -59,7 +59,7 @@ export default function MapComponent() {
         {activeCard === 2 && (
           <View style={styles.dorm}>
             <HoverCard
-              image={require("../../assets/dorm.png")}
+              image={require("../../assets/images/dorm.png")}
               type={"Primary"}
               title={"Dorm"}
               button={"For More Information"}
@@ -84,7 +84,7 @@ export default function MapComponent() {
         {activeCard === 3 && (
           <View style={styles.mbld}>
             <HoverCard
-              image={require("../../assets/M-bld.png")}
+              image={require("../../assets/images/M-bld.png")}
               type={"Secondary"}
               title={"M Building"}
               button={"For More Information"}
@@ -105,7 +105,7 @@ export default function MapComponent() {
         {activeCard === 4 && (
           <View style={styles.dbld}>
             <HoverCard
-            image={require("../../assets/D-bld.png")}
+            image={require("../../assets/images/D-bld.png")}
             type={'Secondary'}
             title={"D building"}
             button={"For More Information"}>
