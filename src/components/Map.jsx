@@ -1,17 +1,18 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, Image, Pressable } from "react-native";
+import { StyleSheet, View, Image, Pressable } from "react-native";
 import HoverCard from "./hoverCard";
 
 export default function MapComponent() {
   const [activeCard, setActiveCard] = React.useState(null);
+  //const [isHoveringCard, setIsHoveringCard] = React.useState(false);
 
   const showCardHandler = (cardId) => {
     setActiveCard(cardId);
   };
 
   const hideCardHandler = () => {
-    setActiveCard(null);
+      setActiveCard(null);
+    
   };
 
   return (
@@ -22,9 +23,9 @@ export default function MapComponent() {
       />
 
       <Pressable
-        onHoverIn={() => showCardHandler(1)}
-        onHoverOut={hideCardHandler}
         style={styles.overlay1}
+        onMouseEnter={() => showCardHandler(1)}
+        onMouseLeave={hideCardHandler}
       >
         {activeCard === 1 && (
           <View style={styles.sport}>
@@ -36,25 +37,22 @@ export default function MapComponent() {
             >
               The sports complex is a three-floor building currently featuring
               a large indoor sports hall and cross-fit style gym.
-              <br />
-              <br />
-              <br />
-              <br />
+              {"\n \n \n \n"}
               Schedule: Monday 4:00 - 6:00 pm
-              <br />
+              {"\n                     "}
               Wednesday 4:00 - 6:00 pm
-              <br />
+              {"\n                     "}
               Friday 4:00 - 6:00 pm
-              <br />
+              {"\n                     "}
             </HoverCard>
           </View>
         )}
       </Pressable>
 
       <Pressable
-        onHoverIn={() => showCardHandler(2)}
-        onHoverOut={hideCardHandler}
         style={styles.overlay2}
+        onMouseEnter={() => showCardHandler(2)}
+        onMouseLeave={hideCardHandler}
       >
         {activeCard === 2 && (
           <View style={styles.dorm}>
@@ -77,9 +75,9 @@ export default function MapComponent() {
       </Pressable>
 
       <Pressable
-        onHoverIn={() => showCardHandler(3)}
-        onHoverOut={hideCardHandler}
         style={styles.overlay3}
+        onMouseEnter={() => showCardHandler(3)}
+        onMouseLeave={hideCardHandler}
       >
         {activeCard === 3 && (
           <View style={styles.mbld}>
@@ -90,7 +88,7 @@ export default function MapComponent() {
               button={"For More Information"}
             >
               Student affairs - Academic - Admission - Finance - President`s office
-              <br/><br/><br/><br/><br/>
+              {"\n\n\n\n\n"}
               M building texts, LEI, offices
             </HoverCard>
           </View>
@@ -98,9 +96,9 @@ export default function MapComponent() {
       </Pressable>
 
       <Pressable
-        onHoverIn={() => showCardHandler(4)}
-        onHoverOut={hideCardHandler}
         style={styles.overlay4}
+        onMouseEnter={() => showCardHandler(4)}
+        onMouseLeave={hideCardHandler}
       >
         {activeCard === 4 && (
           <View style={styles.dbld}>
@@ -164,7 +162,7 @@ const styles = StyleSheet.create({
   overlay4: {
     //borderWidth: 1,
     width: 183,
-    height: 389,
+    height: 256,
     borderRadius: 10,
     position: "absolute",
     marginLeft: 1029,
@@ -172,7 +170,6 @@ const styles = StyleSheet.create({
   },
   sport: {
     top: "100%",
-    marginTop: 5,
     marginLeft: -35,
   },
   dorm: {
@@ -181,12 +178,11 @@ const styles = StyleSheet.create({
   },
   mbld:{
     top: "100%",
-    marginTop: 5,
     marginLeft: -368
   },
   dbld:{
     right: "100%",
-    marginTop: 95,
-    marginLeft: -720
+    marginTop: 90,
+    marginLeft: -690
   }
 });

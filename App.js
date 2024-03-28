@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, Image, Animated, View, Pressable } from "react-native";
+import { StyleSheet, Text, Image, Animated, View } from "react-native";
 import Header from "./src/components/Header";
 import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
@@ -11,7 +11,7 @@ export default function App() {
 
   const headerBackgroundColor = scrollY.interpolate({
     inputRange: [0, 40],
-    outputRange: ["rgba(61, 37, 98, 1)", "rgba(61, 37, 98, 0.5)"],
+    outputRange: ["rgba(61, 37, 98, 1)", "rgba(61, 37, 98, 0.8)"],
     extrapolate: "clamp",
   });
 
@@ -85,7 +85,7 @@ export default function App() {
             <FONT type="Title2"style={{color: "#fff", textAlign: 'center', fontSize: 25}}>Are you ready to take the next step toward your future career?</FONT>
           </View>
           <Button type="Apply" text="Application Form"></Button>
-        </View>
+      </View>
     </Animated.ScrollView>
   );
 }

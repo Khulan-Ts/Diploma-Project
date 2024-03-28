@@ -1,10 +1,6 @@
 import * as React from "react";
 
-import {
-  View,
-  StyleSheet,
-  Image
-} from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 
 import Button from "./Button";
 import FONT from "./Titles";
