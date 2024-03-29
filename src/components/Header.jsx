@@ -14,7 +14,7 @@ const Header = ({ type, buttontext, logoOnPress, Button1Press, Button2Press, But
         <Image
           source={require("../../assets/images/logo-1.png")}
           style={styles.logo}
-        ></Image>
+        />
       </Pressable>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
         <Button
