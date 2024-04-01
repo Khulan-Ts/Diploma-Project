@@ -2,7 +2,6 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
-import { ScrollView, SafeAreaView } from 'react-native';
 import AnotherScreen from './AnotherScreen';
 import Header from './src/components/Header'; 
 
@@ -19,7 +18,7 @@ const App = () => {
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               style={{ backgroundColor: '#3d2562' }}
-              logoOnPress={() => navigation.navigate('Home')}
+              logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button1Press={() => navigation.navigate('Another')} 
               {...props} 
             />
@@ -27,7 +26,7 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Another" component={AnotherScreen} />
       </Stack.Navigator>
     </NavigationContainer>
