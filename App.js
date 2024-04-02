@@ -27,12 +27,17 @@ export default function App() {
           buttontext={["about us", "academics", "admissions", "LEI"]}
           style ={{backgroundColor: headerBackgroundColor }}
         />
-      <View style={{marginLeft: 203}}>
+      <View style={{marginLeft: 203, width:136, height:35}}>
        
         <View style={{marginTop: 159,borderBottomWidth: 1, width: 210, paddingBottom: 14,paddingLeft:14}}>
-          <Title type="Regular" text={'Academics'} style={{color: '#000000'}}></Title>
+        <Title type="Subtitle" text={'Undergraduate'} style={{color: '#62253E'}}></Title>
         </View>
         <Button type="Secondary" text={"Undergraduate"}></Button>
+        <Button type="Secondary" text={"Graduate"}></Button>
+        <Button type="Secondary" text={"2+2 program"}></Button>
+        <Button type="Secondary" text={"Exchange student Program"}></Button>
+        <Button type="Secondary" text={"Vision Trip"}></Button>
+        <Button type="Secondary" text={"Academic Calendar"}></Button>
       </View>
     </Animated.ScrollView>
   );
