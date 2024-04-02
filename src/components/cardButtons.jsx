@@ -1,20 +1,13 @@
 import * as React from "react";
-
-import {
-  View,
-  StyleSheet,
-  Text,
-  Pressable,
-  Image
-} from "react-native";
-
-import { useFonts } from 'expo-font'
+import { View, StyleSheet, Text, Pressable, Image } from "react-native";
+import { useFonts } from 'expo-font';
 
 export const CardButton = ({
   image,
   text,
   onPress,
   type = 'Primary',
+  style
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const [fontLoaded] = useFonts({
@@ -25,6 +18,7 @@ export const CardButton = ({
     styles.text,
     { fontFamily: fontLoaded ? 'Outfit' : 'Arial' }
   ];
+
   return (
     <Pressable
       onPress={onPress}
@@ -34,27 +28,40 @@ export const CardButton = ({
       onHoverOut={() => {
         setIsHovered(false);
       }}
-      style={{marginRight: 16}}
+      style={{ marginRight: 16 }}
     >
-      <Image
-        source={image}
-        style={[styles.image, isHovered && { backgroundColor: "rgba(0, 0, 0, 0.4)" }]}
-      />
-      <View style={[styles.label, type === 'Secondary' && {backgroundColor: '#B592EB'}]}>
-      <Text style={TextStyle} numberOfLines={1}>{text}</Text>
+      <View style={style}>
+        <Image
+          source={image}
+          style={styles.image}
+        />
+        {isHovered && (
+          <View style={styles.hoverBackground} />
+        )}
+        <View style={[styles.label, type === 'Secondary' && {backgroundColor: '#B592EB'}]}>
+          <Text style={TextStyle} numberOfLines={1}>{text}</Text>
+        </View>
       </View>
     </Pressable>
   );
 };
+
 export default CardButton;
 
 const styles = StyleSheet.create({
   image: {
-    borderRadius: 10,
     width: 255,
     height: 157,
+    borderRadius: 10
   },
-  label:{
+  hoverBackground: {
+    ...StyleSheet.absoluteFillObject,
+    height: 157,
+    borderRadius: 10,
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    zIndex: 1,
+  },
+  label: {
     backgroundColor: '#FFC116',
     alignItems: "center",
     flexDirection: "row",
