@@ -1,60 +1,39 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, Image, Animated, View } from "react-native";
-import Header from "./src/components/Header";
-import CardButton from "./src/components/cardButtons";
-import FONT from "./src/components/Titles";
-import Button from "./src/components/Button";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './Home';
+import AnotherScreen from './AnotherScreen';
+import Header from './src/components/Header'; 
+import Graduate from './Graduate';
 
-export default function App() {
-  const [scrollY] = useState(new Animated.Value(0));
+const Stack = createStackNavigator();
 
-  const headerBackgroundColor = scrollY.interpolate({
-    inputRange: [0, 40],
-    outputRange: ["rgba(61, 37, 98, 1)", "rgba(61, 37, 98, 0.5)"],
-    extrapolate: "clamp",
-  });
-
+const App = () => {
   return (
-    <Animated.ScrollView
-      style={styles.container}
-      stickyHeaderIndices={[0]}
-      onScroll={Animated.event(
-        [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-        { useNativeDriver: false }
-      )}
-    >
-        <Header
-          type={"Primary"}
-          buttontext={["about us", "academics", "admissions", "LEI"]}
-          style ={{backgroundColor: headerBackgroundColor }}
-        />
-        <View style={{marginTop: 203, marginLeft: 159, borderBottomWidth:1, width: 210, paddingBottom: 4, paddingLeft: 14}}>
-          <FONT type="Regular" text={'Academics'} style={{color: '000000'}}></FONT>
-        </View >
-        <Button style={{marginLeft: 203, color: '3D2562'}} type="Secondary" text={'Undergraduate'}>
-        </Button>
-        <Button style={{marginLeft: 203, color: '3D2562'}} type="Secondary" text={'Graduate'}>
-          <FONT ></FONT>
-        </Button>
-    </Animated.ScrollView>
+    <NavigationContainer>
+      <Stack.Navigator
+        mode="card"
+        screenOptions={({ navigation, route }) => ({
+          header: (props) => (
+            <Header
+              type={"Primary"}
+              buttontext={["about us", "academics", "admissions", "LEI"]}
+              style={{ backgroundColor: '#3d2562' }}
+              //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
+              //Button1Press={() => navigation.navigate('Another')}
+              Button2Press={() => navigation.navigate('Graduate')} 
+              {...props} 
+            />
+          ),
+          cardStyle: {flex: 1}
+        })}
+      >
+        {/*<Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
+        <Stack.Screen name="Another" component={AnotherScreen} />*/}
+        <Stack.Screen name="Graduate" component={Graduate} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  header: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 100,
-    elevation: 3, // Required for Android
-    // Other header styles such as height, padding, etc.
-  },
-  image: {
-    width: "100%",
-    height: 1024,
-  },
-});
+export default App;
