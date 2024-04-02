@@ -2,9 +2,9 @@ import * as React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { useFonts } from 'expo-font';
 
-export const Title = ({
+export const FONT = ({
   type = "Regular",
-  text,
+  children,
   style,
 }) => {
   let fontName = 'Outfit-Regular'; 
@@ -16,6 +16,18 @@ export const Title = ({
     case 'Title':
       fontName = 'Outfit-ExtraBold';
       break;
+    case 'Body':
+      fontName = 'Outfit-Light'
+      break
+    case 'Subtitle2':
+      fontName = 'Outfit-Regular'
+      break
+    case 'Title2':
+      fontName = 'Outfit-SemiBold'
+      break
+    case 'Title3':
+      fontName = 'Outfit-Bold'
+      break
     default:
       break;
   }
@@ -24,6 +36,9 @@ export const Title = ({
     'Outfit-Regular': require('../../assets/fonts/Outfit-Regular.ttf'),
     'Outfit-Medium': require('../../assets/fonts/Outfit-Medium.ttf'),
     'Outfit-ExtraBold': require('../../assets/fonts/Outfit-ExtraBold.ttf'),
+    'Outfit-Light': require('../../assets/fonts/Outfit-Light.ttf'),
+    'Outfit-SemiBold': require('../../assets/fonts/Outfit-SemiBold.ttf'),
+    'Outfit-Bold': require('../../assets/fonts/Outfit-Bold.ttf'),
   });
 
   const TextStyle = [
@@ -34,7 +49,7 @@ export const Title = ({
 
   return (
     <Text style={TextStyle}>
-      {text}
+      {children}
     </Text>
   );
 };
@@ -47,6 +62,14 @@ const getFontSize = (type) => {
       return 28;
     case 'Title':
       return 50;
+    case 'Body':
+      return 18;
+    case 'Subtitle2':
+      return 23
+    case 'Title2':
+      return 30
+    case 'Title3':
+      return 25
     default:
       return 28; 
   }
@@ -58,4 +81,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Title;
+export default FONT;
