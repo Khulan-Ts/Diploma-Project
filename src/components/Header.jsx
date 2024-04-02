@@ -12,9 +12,9 @@ const Header = ({ type, buttontext, logoOnPress, Button1Press, Button2Press, But
       <Animated.View style={containerStyle}>
       <Pressable onPress={logoOnPress}>
         <Image
-          source={require("../../assets/logo-1.png")}
+          source={require("../../assets/images/logo-1.png")}
           style={styles.logo}
-        ></Image>
+        />
       </Pressable>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
         <Button
