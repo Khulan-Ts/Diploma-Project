@@ -38,27 +38,27 @@ const HomeScreen= ({ navigation }) =>{
           <CardButton type={"Secondary"} image={require("./assets/images/fd.png")} text={'Fashion Design'} style={{marginTop: 51}}/>
           <CardButton type={"Secondary"} image={require("./assets/images/ir.png")} text={'International Relations'} style={{marginTop: 51}}/>
         </View>
-      </View>
-      <View style={{marginTop: 137, alignItems: 'center'}}>
-        <FONT type="Title" >Our History</FONT>
-      </View>
-      <View style={{ flexDirection: 'row' }}>
-        <Image
-          source={require("./assets/images/homepage-1.png")}
-          style={styles.historyImg}
-        />
-        <View style={styles.history}> 
-          <FONT type="Body">
-            MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia.
-            With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received free
-            land of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university
-            providing English-Speaking higher education in Central Asia. MIU currently offers 14 recognized bachelor’s
-            programs and is committed to providing a world-class education to tomorrow’s global servant leaders from Mongolia,
-            Russia, China, Republic of Korea, and other nations.
-          </FONT>
+        </View>
+        <View style={{marginTop: 137, alignItems: 'center'}}>
+          <FONT type="Title" >Our History</FONT>
+        </View>
+        <View style={{ flexDirection: 'row' }}>
+          <Image
+            source={require("./assets/images/homepage-1.png")}
+            style={styles.historyImg}
+          />
+          <View style={styles.history}> 
+            <FONT type="Body">
+              MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia.
+              With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received free
+              land of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university
+              providing English-Speaking higher education in Central Asia. MIU currently offers 14 recognized bachelor’s
+              programs and is committed to providing a world-class education to tomorrow’s global servant leaders from Mongolia,
+              Russia, China, Republic of Korea, and other nations.
+            </FONT>
           </View>
         </View>
-        <View style={{marginTop: 288}}>
+        <View style={{marginTop: 50}}>
           <MapComponent/>
         </View>
         <View style={styles.apply}>
@@ -67,7 +67,7 @@ const HomeScreen= ({ navigation }) =>{
             <FONT type="Title2"style={{color: "#fff", textAlign: 'center', fontSize: 25}}>Are you ready to take the next step toward your future career?</FONT>
           </View>
           <Button type="Apply" text="Application Form"></Button>
-      </View>
+        </View>
     </ScrollView>
   )
 }
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     height: 393,
     borderRadius: 10,
     marginTop: 31,
-    marginLeft: 63
+marginLeft: 63
   },
   history:{
     backgroundColor: '#EDF0FF',
@@ -112,6 +112,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FCB900',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 66
+marginTop: 66
   }
 });
