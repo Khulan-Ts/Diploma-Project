@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import AnotherScreen from './AnotherScreen';
 import Header from './src/components/Header'; 
+import Test from './Test';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ const App = () => {
               style={{ backgroundColor: '#3d2562' }}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button1Press={() => navigation.navigate('Another')} 
+              //Button4Press={() => navigation.navigate('Test')}
               {...props} 
             />
           ),
@@ -28,6 +30,7 @@ const App = () => {
       >
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Another" component={AnotherScreen} />
+        {/*<Stack.Screen name="Test" component={Test}/>*/}
       </Stack.Navigator>
     </NavigationContainer>
   );
