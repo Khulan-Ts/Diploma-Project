@@ -16,7 +16,7 @@ const Header = ({
 }) => {
   const {width, height} = useWindowDimensions()
   const paddingHorizontal = width * 0.12
-  const headerHeight = height * 0.15
+  const headerHeight = height * 0.18
   
   const containerStyle = [
     styles.container,
