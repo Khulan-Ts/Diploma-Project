@@ -1,15 +1,33 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Image, Pressable, Animated } from "react-native";
+import { View, StyleSheet, Image, Pressable, useWindowDimensions } from "react-native";
 import Button from "./Button";
 
 
-const Header = ({ type, buttontext, logoOnPress, Button1Press, Button2Press, Button3Press, Button4Press, Button5Press, style }) => {
-  const containerStyle=[
+const Header = ({ 
+  type, 
+  buttontext,
+  logoOnPress,
+  Button1Press,
+  Button2Press,
+  Button3Press,
+  Button4Press,
+  Button5Press,
+  style,
+}) => {
+  const {width, height} = useWindowDimensions()
+  const paddingHorizontal = width * 0.12
+  const headerHeight = height * 0.15
+  
+  const containerStyle = [
     styles.container,
+    {paddingLeft: paddingHorizontal,
+    paddingRight: paddingHorizontal,
+    height: headerHeight},
     style
   ]
+
   return (
-      <Animated.View style={containerStyle}>
+      <View style={containerStyle}>
       <Pressable onPress={logoOnPress}>
         <Image
           source={require("../../assets/images/logo-1.png")}
@@ -49,7 +67,7 @@ const Header = ({ type, buttontext, logoOnPress, Button1Press, Button2Press, But
         />
        
       </View>
-    </Animated.View>
+    </View>
   );
 };
 
@@ -58,14 +76,11 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "transparent",
-    paddingRight: 188,
-    paddingLeft: 194,
     alignItems: "center",
     flexDirection: "row",
     position: "absolute",
     top: 0,
     width: "100%",
-    height: 106,
     justifyContent: "space-between",
     zIndex: 99
   },

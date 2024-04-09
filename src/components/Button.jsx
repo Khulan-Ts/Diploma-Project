@@ -10,7 +10,7 @@ import {
 import { useFonts } from 'expo-font'
 import ArrowIcon from "../../assets/icons/arrow";
 
-export const Button = ({
+const Button = ({
   type = "Primary",
   text,
   numberOfLines = 1,
@@ -51,7 +51,7 @@ export const Button = ({
     type === "Sixth" && {color: '#FCB900', fontSize: 15},
     {fontFamily: (fontLoaded && type!== "Apply") ? 'Outfit-Regular':(fontLoaded && type=== "Apply")? 'Outfit-Bold' : 'Arial' },
     type === "Apply" && {fontSize: 25, color:"#3D2562"},
-    type === "Seven" && {color: '#000'}
+    type === "Seven" && {color: '#000', fontSize: 18}
   ]; 
   return (
     <View>

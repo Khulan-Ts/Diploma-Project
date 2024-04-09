@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   overlay: {
     position: "absolute",
     borderRadius: 10,
-    borderWidth: 1
+    //borderWidth: 1
   },
   overlay1: {
     width: '15%',
@@ -162,20 +162,20 @@ const styles = StyleSheet.create({
     right: '5%',
   },
   sport: {
-    top: "100%",
-    marginLeft: -35,
+    top: "105%",
+    transform: [{ translateX: '-25%' }],
   },
   dorm: {
-    top: "100%",
-    marginTop: -5,
+    top: "105%",
+    transform: [{ translateX: '-25%' }],
   },
   mbld:{
     top: "100%",
-    marginLeft: -368
+    transform: [{ translateX: '-250%' }],
   },
   dbld:{
     right: "100%",
-    marginTop: 90,
-    marginLeft: -690
+    top: '50%',
+    transform: [{ translateX: '-300%' }],
   }
 });
