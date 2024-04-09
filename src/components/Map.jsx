@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     height: 821,
   },
   overlay1: {
-    //borderWidth: 1,
+    borderWidth: 1,
     width: 241,
     height: 214,
     borderRadius: 10,
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     marginTop: 45,
   },
   overlay2: {
-    //borderWidth: 1,
+    borderWidth: 1,
     width: 248,
     height: 191,
     borderRadius: 10,
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   overlay3: {
-    //borderWidth: 1,
+    borderWidth: 1,
     width: 146,
     height: 181,
     borderRadius: 10,
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     marginTop: 124,
   },
   overlay4: {
-    //borderWidth: 1,
+    borderWidth: 1,
     width: 183,
     height: 256,
     borderRadius: 10,

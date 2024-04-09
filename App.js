@@ -3,7 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import AnotherScreen from './AnotherScreen';
-import Header from './src/components/Header'; 
+import Header from './src/components/Header';
+import Admissions from './Admissions'; 
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ const App = () => {
               style={{ backgroundColor: '#3d2562' }}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button1Press={() => navigation.navigate('Another')} 
+              Button3Press={() => navigation.navigate('Admissions')} 
               {...props} 
             />
           ),
@@ -28,6 +30,7 @@ const App = () => {
       >
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Another" component={AnotherScreen} />
+        <Stack.Screen name="Admissions" component={Admissions} />
       </Stack.Navigator>
     </NavigationContainer>
   );
