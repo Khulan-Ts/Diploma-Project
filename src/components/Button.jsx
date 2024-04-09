@@ -10,7 +10,7 @@ import {
 import { useFonts } from 'expo-font'
 import ArrowIcon from "../../assets/icons/arrow";
 
-export const Button = ({
+const Button = ({
   type = "Primary",
   text,
   numberOfLines = 1,
@@ -35,6 +35,7 @@ export const Button = ({
     type === "Fourth" && isPressed && {backgroundColor: '#FFDB78'},
     type === "Fifth" && {backgroundColor: '#FCB900', padding: 15, borderRadius: 20},
     type === "Sixth" && {backgroundColor: '#3D2562', padding: 10, borderRadius: 20},
+    type === "Seven" && isHovered && { backgroundColor: "#EDF0FF"},
     style,
   ];
   const TextStyle = [
@@ -49,38 +50,47 @@ export const Button = ({
     type === "Fifth" && {color: '#3D2562', fontSize: 15},
     type === "Sixth" && {color: '#FCB900', fontSize: 15},
     {fontFamily: (fontLoaded && type!== "Apply") ? 'Outfit-Regular':(fontLoaded && type=== "Apply")? 'Outfit-Bold' : 'Arial' },
-    type === "Apply" && {fontSize: 25, color:"#3D2562"}
-  ];
+    type === "Apply" && {fontSize: 25, color:"#3D2562"},
+    type === "Seven" && {color: '#000', fontSize: 18}
+  ]; 
   return (
-    <Pressable
-      onPress={onPress}
-      onHoverIn={() => {
-        onHoverIn?.();
-        setIsHovered(true);
-      }}
-      onHoverOut={() => {
-        onHoverOut?.();
-        setIsHovered(false);
-      }}
-      onFocus={()=> setIsPressed(true)}
-      onBlur={()=> setIsPressed(false)}
-    >
+    <View>
       {type !== "Apply" &&
       <View style={ButtonStyles}>
-        <Text numberOfLines={numberOfLines} style={TextStyle}>
-          {text}
-        </Text>
-      </View>}
-      {type === "Apply" &&
-      <View style={styles.apply}>
-        <Text numberOfLines={1} style={TextStyle}>
-          {text}
-        </Text>
-        <View style={styles.iconContainer}>
-          <ArrowIcon width={16} height={16}></ArrowIcon>
+        <Pressable
+        onPress={onPress}
+        onHoverIn={() => {
+          onHoverIn?.();
+          setIsHovered(true);
+        }}
+        onHoverOut={() => {
+          onHoverOut?.();
+          setIsHovered(false);
+        }}
+        onFocus={()=> setIsPressed(true)}
+        onBlur={()=> setIsPressed(false)}
+        >
+          <Text numberOfLines={numberOfLines} style={TextStyle}>
+            {text}
+          </Text>
+        </Pressable>
         </View>
-      </View>}
-    </Pressable>
+      }
+
+      {type === "Apply" &&  
+        <Pressable
+          onPress={onPress}
+          style={styles.apply}
+        >
+          <Text numberOfLines={1} style={TextStyle}>
+            {text}
+          </Text>
+          <View style={styles.iconContainer}>
+            <ArrowIcon width={16} height={16}></ArrowIcon>
+          </View>
+        </Pressable>
+      }
+    </View>
   );
 };
 export default Button;
