@@ -7,13 +7,14 @@ import Button from "./src/components/Button";
 import { useNavigation } from "@react-navigation/native";
 
 const Twoplus2=({navigation})=>{
+  const { ScreenWidth, ScreenHeight } = useWindowDimensions();
 
   return (
     <ScrollView
       style={styles.container}
     >
-        <View style={{marginLeft: 100, width:136, height:35}}>
-          <View style={{marginTop: 159,borderBottomWidth: 1, width: 210, paddingBottom: 14}}>
+        <View style={[styles.academicbut]}>
+          <View style={{marginTop: 159,borderBottomWidth: 1, width: width*0.15, paddingBottom: 14}}>
             <FONT style={{color: 'black', textAlign:'left', fontSize: 28}}>Academics</FONT>
           </View>
           <View style={{marginLeft: 25, marginTop: 25}}>
@@ -31,7 +32,7 @@ const Twoplus2=({navigation})=>{
             source={require("./assets/ualbany.png")}
             style={styles.image}
           />
-          <View style={[styles.backgroundContainer, { marginTop:40, width:'70%'}]}>
+          <View style={[styles.backgroundContainer, { marginTop:40, width: width*0.7}]}>
             <FONT style={{color: '#000000', textAlign:'left', fontSize: 23}}>INTRODUCTION</FONT>
           </View>
 
@@ -117,16 +118,21 @@ const styles = StyleSheet.create({
     elevation: 3, // Required for Android
     // Other header styles such as height, padding, etc.
   },
+  academicbut:{
+    marginLeft: 100, 
+    width:width*0.25, 
+    height: height*0.35,
+  },
   imageContainer: {
-    width:'75%',
+    width: width*0.75,
     marginTop: 140,
     marginLeft:'30%',
     flex: 1,
   },
   
   image: {
-    width: '60%',
-    height:'60%',
+    width: width*0.6,
+    height: height*0.6,
     // height: 400,
   },
   title: {
@@ -141,7 +147,7 @@ const styles = StyleSheet.create({
       marginTop: 5,
   },
   tableContainer: {
-    width:"100%",
+    width: width,
     flexDirection: 'column',
     marginTop: 40,
     alignItems:'left',
@@ -163,12 +169,12 @@ const styles = StyleSheet.create({
   },
   verticalLine: {
     height: '100%',
-    width:0.5,
+    width:width* 0.5,
     backgroundColor: '#000',
   },
   horizontalLine: {
-    width: '70%',
-    height: 0.5,
+    width: width*0.7,
+    height: height*0.5,
     backgroundColor: '#000',
   },
   infoContainer: {
@@ -207,13 +213,13 @@ const styles = StyleSheet.create({
     top: 0,
     right: 50,
     bottom: 0,
-    width: 100, // Adjust the width as needed
+    width: widht, // Adjust the width as needed
     justifyContent: 'center', // Align the image vertically
     alignItems: 'center', // Center the image horizontally
   },
   verticalImageImg: {
     // height: '100%',
-    width: '120%',
+    width: width*1.2,
     aspectRatio: 1, // Maintain aspect ratio
   },
 
