@@ -20,7 +20,7 @@ const App = () => {
               buttontext={["about us", "academics", "admissions", "LEI"]}
               style={{ backgroundColor: '#3d2562' }}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button1Press={() => navigation.navigate('AcademicCal')}
+              Button1Press={() => navigation.navigate('Academic Calendar')}
               Button2Press={() => navigation.navigate('Another')}
               {...props} 
             />
@@ -29,7 +29,7 @@ const App = () => {
         })}
       >
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
-        <Stack.Screen name="AcademicCal" component={AcademicCal} />
+        <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
       </Stack.Navigator>
     </NavigationContainer>
