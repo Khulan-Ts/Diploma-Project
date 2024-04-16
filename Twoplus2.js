@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, Image, ScrollView, View } from "react-native";
+import { StyleSheet, Text, Image, ScrollView, View, useWindowDimensions } from "react-native";
 import Header from "./src/components/Header";
 import CardButton from "./src/components/cardButtons";
 import FONT from "./src/components/Titles";
@@ -7,64 +7,73 @@ import Button from "./src/components/Button";
 import { useNavigation } from "@react-navigation/native";
 
 const Twoplus2=({navigation})=>{
-  const { ScreenWidth, ScreenHeight } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
 
   return (
-    <ScrollView
-      style={styles.container}
-    >
-        <View style={[styles.academicbut]}>
-          <View style={{marginTop: 159,borderBottomWidth: 1, width: width*0.15, paddingBottom: 14}}>
-            <FONT style={{color: 'black', textAlign:'left', fontSize: 28}}>Academics</FONT>
-          </View>
-          <View style={{marginLeft: 25, marginTop: 25}}>
-            <Button type="Secondary" text={"Undergraduate"}></Button>
-            <Button type="Secondary" text={"Graduate"}></Button>
-            <Button type="Secondary" text={"2+2 program"}></Button>
-            <Button type="Secondary" text={"Exchange student Program"}></Button>
-            <Button type="Secondary" text={"Vision Trip"}></Button>
-            <Button type="Secondary" text={"Academic Calendar"}></Button>
-          </View>
-
-      </View>
-        <View style={styles.imageContainer}>
-          <Image
-            source={require("./assets/ualbany.png")}
-            style={styles.image}
-          />
-          <View style={[styles.backgroundContainer, { marginTop:40, width: width*0.7}]}>
-            <FONT style={{color: '#000000', textAlign:'left', fontSize: 23}}>INTRODUCTION</FONT>
-          </View>
-
-          <View style={styles.tableContainer}>
-            <View style={styles.row}>
-              <FONT style={[styles.cell1, {fontSize:25}]}>Why 2+2?</FONT>
-              <View style={styles.verticalLine} />
-              <FONT style={[styles.cell2, {fontSize:25}]}>2 years (MIU) + 2 years (SUNY Albany) = 2 Diplomas</FONT>
+    <ScrollView style={styles.container}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+          <View style={{marginLeft:'5%', width: width*0.5}}>
+            <FONT style={{marginTop: '20%',borderBottomWidth: 1, paddingBottom: 15, width:width*0.15,color: 'black', textAlign:'left', fontSize: 28}}>Academics</FONT>
+            <View style={{marginLeft: '1%', marginTop:'1.5%'}}>
+              <Button type="Secondary" text={"Undergraduate"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
+              <Button type="Secondary" text={"Graduate"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
+              <Button type="Secondary" text={"2+2 program"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
+              <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
+              <Button type="Secondary" text={"Vision Trip"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
+              <Button type="Secondary" text={"Academic Calendar"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
             </View>
-            <View style={styles.horizontalLine} />
-            <View style={styles.row}>
-              <FONT style={[styles.cell1, {fontSize:18}]}>Goal</FONT>
-              <View style={styles.verticalLine} />
-              <FONT style={[styles.cell2, {fontSize:18}]}>To cultivate global individuals with academic literacy and international sense</FONT>
+
+          </View>
+          <View style={{marginTop:'10%', flex:1, right:'25%'}}>
+            <Image
+              source={require("./assets/ualbany.png")}
+              style={[styles.image, {width: width*0.6, height: height*0.6, }]}
+            />
+            <View style={[styles.backgroundContainer, { marginTop:40, width: width*0.5}]}>
+              <FONT style={{color: '#000000', textAlign:'left', fontSize: 23}}>INTRODUCTION</FONT>
             </View>
-            <View style={styles.horizontalLine} />
-            <View style={styles.row}>
-              <View style={styles.cell1}>
-                <FONT style={styles.text}>Why choose</FONT>
-                <FONT style={styles.text}>2 + 2?</FONT>
-              </View>
+
+            <View style={[styles.tableContainer, { width: width * 0.5, height: height*0.3}]}>
+              <View style={styles.row}>
+                <View style={styles.cell1}>
+                  <FONT style={[styles.text, { fontSize: 25 }]}>Why 2+2?</FONT>
+                </View>
                 <View style={styles.verticalLine} />
                 <View style={styles.cell2}>
-                  <FONT style={styles.text}>• Low cost and affordable fee</FONT>
-                  <FONT style={styles.text}>• Acquiring English knowledge for 2 years at MIU</FONT>
-                  <FONT style={styles.text}>• Obtain two diplomas (MIU and SUNY Albany)</FONT>
-                  <FONT style={styles.text}>• Experience campus life in Mongolia, USA and other cultures</FONT>
+                  <FONT style={[styles.text, { fontSize: 25 }]}>2 years (MIU) + 2 years (SUNY Albany) = 2 Diplomas</FONT>
                 </View>
+              </View>
+              <View style={styles.horizontalLine} />
+              <View style={styles.row}>
+                <View style={styles.cell1}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>Goal</FONT>
+                </View>
+                <View style={styles.verticalLine} />
+                <View style={styles.cell2}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>To cultivate global individuals with academic literacy and international sense</FONT>
+                </View>
+              </View>
+              <View style={styles.horizontalLine} />
+              <View style={styles.row}>
+                <View style={styles.cell1}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>Why choose {"\n"}      2 + 2?</FONT>
+                </View>
+                <View style={styles.verticalLine} />
+                <View style={styles.cell2}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>
+                    • Low cost and affordable fee{"\n"}
+                    • Acquiring English knowledge for 2 years at MIU{"\n"}
+                    • Obtain two diplomas (MIU and SUNY Albany){"\n"}
+                    • Experience campus life in Mongolia, USA and other cultures
+                  </FONT>
+                </View>
+              </View>
             </View>
+            
+        </View>
 
-          </View>
-          <View style={styles.infoContainer}>
+
+          <View style={[styles.infoContainer, {marginTop:'65%', right:'25%'}]}>
           <View style={styles.infoSection}>
             <View style={[styles.backgroundContainer2, {backgroundColor: '#EDF0FF', marginTop:40}]}>
               <FONT style={{color: '#000000',  fontSize: 23, textAlign:'center'}}>QUALIFICATIONS</FONT>
@@ -82,14 +91,16 @@ const Twoplus2=({navigation})=>{
             <FONT style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</FONT>
           </View>
         </View>
+        <View> {/* Adjust width */}
+          <Image
+            source={require('./assets/verticalimg.png')}
+            style={[styles.verticalImageImg, { width: width * 0.2, right:'60%', top:'25%'}]} // Adjust width
+            resizeMode="contain" // Adjust the resizeMode as needed
+          />
         </View>
-        <View style={styles.verticalImage}>
-        <Image
-          source={require('./assets/verticalimg.png')}
-          style={styles.verticalImageImg}
-          resizeMode="contain" // Adjust the resizeMode as needed
-        />
-      </View>
+        </View>
+
+
         
 
 
@@ -118,21 +129,12 @@ const styles = StyleSheet.create({
     elevation: 3, // Required for Android
     // Other header styles such as height, padding, etc.
   },
-  academicbut:{
-    marginLeft: 100, 
-    width:width*0.25, 
-    height: height*0.35,
-  },
   imageContainer: {
-    width: width*0.75,
-    marginTop: 140,
-    marginLeft:'30%',
     flex: 1,
   },
   
   image: {
-    width: width*0.6,
-    height: height*0.6,
+
     // height: 400,
   },
   title: {
@@ -147,7 +149,7 @@ const styles = StyleSheet.create({
       marginTop: 5,
   },
   tableContainer: {
-    width: width,
+
     flexDirection: 'column',
     marginTop: 40,
     alignItems:'left',
@@ -157,10 +159,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   cell1: {
-    flex: 0.25,
+    flex: 0.5,
     textAlign:'center',
     alignItems: 'center',
-    padding: 10,
+    padding: 7,
   },
   cell2: {
     flex: 2,
@@ -168,15 +170,16 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   verticalLine: {
-    height: '100%',
-    width:width* 0.5,
-    backgroundColor: '#000',
+    width: 1,
+    height: "116%",
+    backgroundColor: "#000",
   },
   horizontalLine: {
-    width: width*0.7,
-    height: height*0.5,
-    backgroundColor: '#000',
+    borderBottomWidth: 1,
+    borderColor: "#000",
+    marginBottom: 10, // Adjust as needed for spacing between rows
   },
+
   infoContainer: {
     flexDirection: 'row',
     marginTop: 70,
@@ -213,13 +216,13 @@ const styles = StyleSheet.create({
     top: 0,
     right: 50,
     bottom: 0,
-    width: widht, // Adjust the width as needed
+     // Adjust the width as needed
     justifyContent: 'center', // Align the image vertically
     alignItems: 'center', // Center the image horizontally
   },
   verticalImageImg: {
     // height: '100%',
-    width: width*1.2,
+
     aspectRatio: 1, // Maintain aspect ratio
   },
 
