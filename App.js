@@ -18,7 +18,6 @@ const App = () => {
             <Header
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
-              style={{ backgroundColor: '#3d2562' }}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button1Press={() => navigation.navigate('Academic Calendar')}
               Button2Press={() => navigation.navigate('Another')}

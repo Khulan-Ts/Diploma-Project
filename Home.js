@@ -13,7 +13,7 @@ const HomeScreen= ({ navigation }) =>{
     <ScrollView style={styles.container}>
       <Image
         source={require("./assets/images/homepage-1.png")}
-        style={[styles.image, { height: height }]} // Adjusting height dynamically
+        style={[styles.image, { height: "50%" }]} // Adjusting height dynamically
       />
       
       <View style={{alignItems: 'center'}}>
