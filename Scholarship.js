@@ -6,7 +6,7 @@ import FONT from "./src/components/Titles";
 import Button from "./src/components/Button";
 import { useNavigation } from "@react-navigation/native";
 
-const Twoplus2=({navigation})=>{
+const Scholarship=({navigation})=>{
   const { width, height } = useWindowDimensions();
 
   return (
@@ -46,7 +46,7 @@ const Twoplus2=({navigation})=>{
   );
 }
 
-export default Twoplus2
+export default Scholarship
 
 const styles = StyleSheet.create({
   container: {
