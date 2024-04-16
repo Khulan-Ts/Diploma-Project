@@ -1,38 +1,41 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, Image, ScrollView, View } from "react-native";
-import CardButton from "./src/components/cardButtons";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "./src/components/Titles";
 import Button from "./src/components/Button";
 
-const Graduate=({navigation})=>{
-  
+const Graduate= ({ navigation }) => {
+  const { width, height } = useWindowDimensions();
   return (
-    <ScrollView style={styles.container}> 
-      <View style={{ flexDirection: 'row', marginTop: 159}}>
-        <View>
-          <View style={{marginLeft: 160, borderBottomWidth:1, width: 210, paddingBottom: 4, paddingLeft: 14}}>
-            <FONT type="Regular" style={{color: ''}}>Academics</FONT>
-          </View >
-          <View style={{marginTop: 20, marginLeft: 160}}>
-            <View style={{borderBottomWidth: 1, width: 144}}>
-            <Button type="Secondary" text={"Undergraduate"} ></Button>
+    <ScrollView
+      style={styles.container}
+    >
+      <View style={{flexDirection: "row"}}>
+        <View style={{marginLeft: width * 0.1, width: width * 0.2}}>
+            <View style={{marginTop: height * 0.3, borderBottomWidth: 1, width: width * 0.15, paddingBottom: 14, paddingLeft:14}}>
+                <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
             </View>
-            <View style={{borderBottomWidth: 1, width: 144}}>
-            <Button type="Secondary" text={"Graduate"} ></Button>
-            </View>
-            <View style={{borderBottomWidth: 1, width: 144}}>
-            <Button type="Secondary" text={"2+2 program"} ></Button>
-            </View>
-            <Button type="Secondary" numberOfLines={2} text={"Exchange student Program"} ></Button>
-            <View style={{borderBottomWidth: 1, width: 144}}>
-            </View>
-            <View style={{borderBottomWidth: 1, width: 144}}>
-            <Button type="Secondary" text={"Vision Trip"} ></Button>
-            </View>
-            <Button type="Secondary" text={"Academic Calendar"}></Button>
+            <View style={{marginTop: height * 0.02}}>
+                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                    <Button type="Secondary" text={"Undergraduate"} ></Button>
+                </View>
+                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                    <Button type="Secondary" text={"Graduate"} ></Button>
+                </View>
+                    <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                <Button type="Secondary" text={"2+2 program"} ></Button>
+                </View>
+                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                
+                <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.12}}></Button>
+                
+                </View>
+                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                    <Button type="Secondary" text={"Vision Trip"} ></Button>
+                </View>
+                <Button type="Secondary" text={"Academic Calendar"}></Button>
             </View>
         </View>
-        <View style={{width: 1025, height: 151, marginLeft: 49, marginBottom: 132}}>
+        <View style={{width: width * 0.5, marginTop: height * 0.3, marginBottom: height * 0.15}}>
           <FONT type={"Subtitle2"} style={{marginTop: 48, color: ''}}>Master Program</FONT>
           <FONT type={"Body"}style={{marginTop: 30, color: ''}}>MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity. </FONT>
           <View style={{width: 1025, height: 29, marginTop: 30, backgroundColor: '#EDF0FF'}}>
@@ -66,6 +69,9 @@ const Graduate=({navigation})=>{
             </Button>
           </View>
         </View>
+        <View style={{width: width * 0.1, marginTop: height * 0.16, marginBottom: height * 0.3, marginLeft: 'auto'}}>
+          <Image source={require('./assets/images/cal-1.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+        </View>
       </View>
     </ScrollView>
   );
@@ -76,18 +82,6 @@ export default Graduate
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  header: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 100,
-    elevation: 3, // Required for Android
-    // Other header styles such as height, padding, etc.
-  },
-  image: {
-    width: "100%",
-    height: 1024,
+    backgroundColor: "white"
   },
 });
