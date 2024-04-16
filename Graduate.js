@@ -61,7 +61,7 @@ const Graduate=({navigation})=>{
           <View style={{width: 1025, height: 29, marginTop: 30, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: ''}}>Programs</FONT>
           </View>
-          <View style={{flexDirection: 'row', }}>
+          <View style={{flexDirection: 'row'}}>
             <Button style={{color: ''}} type="Secondary" text={'Master In Foreign Language Education (FLE)'}>
             </Button>
           </View>

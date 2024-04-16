@@ -30,3 +30,5 @@ const Dorm=({navigation})=>{
         </ScrollView>
     )
 }
+
+export default Dorm
