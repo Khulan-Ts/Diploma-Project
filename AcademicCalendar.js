@@ -9,9 +9,9 @@ const AcademicCal= ({ navigation }) => {
     <ScrollView
       style={styles.container}
     >
-      <View style={{flexDirection: "row"}}>
-        <View style={{marginLeft: width * 0.1, width: width * 0.2}}>
-            <View style={{marginTop: height * 0.3, borderBottomWidth: 1, width: width * 0.15, paddingBottom: 14, paddingLeft:14}}>
+      <View style={{flexDirection: "row", marginTop: '5%',}}>
+        <View style={{marginLeft: '10%', width: width * 0.2}}>
+            <View style={{ borderBottomWidth: 1, width: width * 0.15, paddingBottom: 14, paddingLeft:14}}>
                 <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
             </View>
             <View style={{marginTop: height * 0.02}}>
@@ -35,13 +35,13 @@ const AcademicCal= ({ navigation }) => {
                 <Button type="Secondary" text={"Academic Calendar"}></Button>
             </View>
         </View>
-        <View style={{width: width * 0.5, marginTop: height * 0.3, marginBottom: height * 0.15}}>
+        <View style={{width: width * 0.5, marginBottom: height * 0.15}}>
           <Image source={require('./assets/images/calendar-1.png')} style={{ height: width * 0.38, width: 'auto' }} resizeMode="contain"/>
           <Image source={require('./assets/images/calendar-2.png')} style={{ height: width * 0.33, width: 'auto', marginTop: height * -0.02 }} resizeMode="contain"/>
           <Image source={require('./assets/images/calendar-3.png')} style={{ height: width * 0.38, width: 'auto', marginTop: height * -0.02 }} resizeMode="contain"/>
           <Image source={require('./assets/images/calendar-4.png')} style={{ height: width * 0.28, width: 'auto', }} resizeMode="contain"/>
         </View>
-        <View style={{width: width * 0.1, marginTop: height * 0.16, marginBottom: height * 0.3, marginLeft: 'auto'}}>
+        <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto'}}>
           <Image source={require('./assets/images/cal-1.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
