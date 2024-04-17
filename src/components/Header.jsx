@@ -14,14 +14,14 @@ const Header = ({
   Button5Press,
   style,
 }) => {
-  const {width, height} = useWindowDimensions()
-  const paddingHorizontal = width * 0.12
-  const headerHeight = height * 0.18
+  //const {width, height} = useWindowDimensions()
+  //const paddingHorizontal = width * 0.12
+  //const headerHeight = height * 0.18
   
   const containerStyle = [
     styles.container,
-    {paddingLeft: paddingHorizontal,
-    paddingRight: paddingHorizontal,
+    {paddingLeft: '10%',
+    paddingRight: '10%',
     paddingTop: "1.5%",
     paddingBottom: "1.5%",
     height: "100%"
@@ -81,7 +81,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#3d2562',
     alignItems: "center",
     flexDirection: "row",
-    // position: "absolute",
     top: 0,
     width: "100%",
     justifyContent: "space-between",
