@@ -4,11 +4,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import Header from './src/components/Header'; 
 import AnotherScreen from './AnotherScreen';
-//Admissions
-import Undergraduate from './screens/Admissons/Undergraduate';
-import Graduate from './screens/Admissons/Graduate';
-import Twoplus2 from './screens/Admissons/Twoplus2';
-import AcademicCal from './screens/Admissons/AcademicCalendar';
+//Academic
+import Undergraduate from './screens/Academic/Undergraduate';
+import Graduate from './screens/Academic/Graduate';
+import Twoplus2 from './screens/Academic/Twoplus2';
+import AcademicCal from './screens/Academic/AcademicCalendar';
 
 const Stack = createStackNavigator();
 
