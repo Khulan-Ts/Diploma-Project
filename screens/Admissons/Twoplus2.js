@@ -227,3 +227,31 @@ const styles = StyleSheet.create({
   },
 
 });
+
+
+
+/*<View style={{marginLeft: '10%', width: '18%'}}>
+            <View style={{ borderBottomWidth: 1, width: '90%', paddingBottom: 14, paddingLeft:14}}>
+                <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
+            </View>
+            <View style={{marginTop: '5%'}}>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
+                    <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')}></Button>
+                </View>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
+                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')} isPressedState={true}></Button>
+                </View>
+                    <View style={{borderBottomWidth: 1, width: '70%'}}>
+                <Button type="Secondary" text={"2+2 program"}></Button> 
+                </View>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
+                
+                <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.15}}></Button>
+                
+                </View>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
+                    <Button type="Secondary" text={"Vision Trip"} ></Button>
+                </View>
+                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+            </View>
+        </View> */
