@@ -5,6 +5,7 @@ import HomeScreen from './Home';
 import Header from './src/components/Header'; 
 import AcademicCal from './AcademicCalendar';
 import AnotherScreen from './AnotherScreen';
+import Graduate from './Graduate';
 
 const Stack = createStackNavigator();
 
@@ -19,8 +20,7 @@ const App = () => {
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button1Press={() => navigation.navigate('Academic Calendar')}
-              Button2Press={() => navigation.navigate('Another')}
+              Button2Press={() => navigation.navigate('Graduate')}
               {...props} 
             />
           ),
@@ -30,6 +30,7 @@ const App = () => {
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
+        <Stack.Screen name="Graduate" component={Graduate} />
       </Stack.Navigator>
     </NavigationContainer>
   );

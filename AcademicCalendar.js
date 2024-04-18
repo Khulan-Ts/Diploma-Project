@@ -19,7 +19,7 @@ const AcademicCal= ({ navigation }) => {
                     <Button type="Secondary" text={"Undergraduate"} ></Button>
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Graduate"} ></Button>
+                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
                 </View>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
                 <Button type="Secondary" text={"2+2 program"} ></Button>
@@ -32,7 +32,7 @@ const AcademicCal= ({ navigation }) => {
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
                     <Button type="Secondary" text={"Vision Trip"} ></Button>
                 </View>
-                <Button type="Secondary" text={"Academic Calendar"}></Button>
+                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
             </View>
         </View>
         <View style={{width: '50%', marginBottom: '10%'}}>

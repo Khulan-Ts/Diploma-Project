@@ -9,34 +9,34 @@ const Graduate= ({ navigation }) => {
     <ScrollView
       style={styles.container}
     >
-      <View style={{flexDirection: "row"}}>
-        <View style={{marginLeft: width * 0.1, width: width * 0.2}}>
-            <View style={{marginTop: height * 0.3, borderBottomWidth: 1, width: width * 0.15, paddingBottom: 14, paddingLeft:14}}>
+      <View style={{flexDirection: "row", marginTop: '5%'}}>
+        <View style={{marginLeft: '10%', width: '18%'}}>
+            <View style={{ borderBottomWidth: 1, width: '90%', paddingBottom: 14, paddingLeft:14}}>
                 <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
             </View>
-            <View style={{marginTop: height * 0.02}}>
-                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+            <View style={{marginTop: '2%'}}>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
                     <Button type="Secondary" text={"Undergraduate"} ></Button>
                 </View>
-                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
-                    <Button type="Secondary" text={"Graduate"} ></Button>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
+                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
                 </View>
-                    <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                    <View style={{borderBottomWidth: 1, width: '70%'}}>
                 <Button type="Secondary" text={"2+2 program"} ></Button>
                 </View>
-                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
                 
-                <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.12}}></Button>
+                <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.15}}></Button>
                 
                 </View>
-                <View style={{borderBottomWidth: 1, width: width * 0.11}}>
+                <View style={{borderBottomWidth: 1, width: '70%'}}>
                     <Button type="Secondary" text={"Vision Trip"} ></Button>
                 </View>
-                <Button type="Secondary" text={"Academic Calendar"}></Button>
+                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
             </View>
         </View>
-        <View style={{width: width * 0.5, marginTop: height * 0.3, marginBottom: height * 0.15}}>
-          <FONT type={"Subtitle2"} style={{marginTop: 48, color: ''}}>Master Program</FONT>
+        <View style={{width: '50%', marginBottom: '10%'}}>
+          <FONT type={"Subtitle2"} style={{ color: ''}}>Master Program</FONT>
           <FONT type={"Body"}style={{marginTop: 30, color: ''}}>MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity. </FONT>
           <View style={{width: 1025, height: 29, marginTop: 30, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: ''}}>School of Management (SoM)</FONT>
@@ -69,7 +69,7 @@ const Graduate= ({ navigation }) => {
             </Button>
           </View>
         </View>
-        <View style={{width: width * 0.1, marginTop: height * 0.16, marginBottom: height * 0.3, marginLeft: 'auto'}}>
+        <View style={{width: width * 0.1, marginTop: '-5%', marginLeft: 'auto'}}>
           <Image source={require('./assets/images/cal-1.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
