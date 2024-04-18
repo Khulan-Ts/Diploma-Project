@@ -147,7 +147,6 @@ const styles = StyleSheet.create({
     height: '30%',
     top: '2%',
     right: '38%'
-    
   },
   overlay3: {
     width: '13%',
@@ -162,11 +161,11 @@ const styles = StyleSheet.create({
     right: '5%',
   },
   sport: {
-    top: "105%",
+    top: "100%",
     transform: [{ translateX: '-25%' }],
   },
   dorm: {
-    top: "105%",
+    top: "100%",
     transform: [{ translateX: '-25%' }],
   },
   mbld:{

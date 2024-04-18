@@ -14,13 +14,14 @@ const Header = ({
   Button5Press,
   style,
 }) => {
-  const {width, height} = useWindowDimensions()
-  const paddingHorizontal = width * 0.12
+  //const {width, height} = useWindowDimensions()
+  //const paddingHorizontal = width * 0.12
+  //const headerHeight = height * 0.18
   
   const containerStyle = [
     styles.container,
-    {paddingLeft: paddingHorizontal,
-    paddingRight: paddingHorizontal,
+    {paddingLeft: '10%',
+    paddingRight: '10%',
     paddingTop: "1.5%",
     paddingBottom: "1.5%",
     height: "100%"
