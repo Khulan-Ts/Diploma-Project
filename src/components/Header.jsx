@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Image, Pressable, useWindowDimensions } from "react-native";
+import { View, StyleSheet, Image, Pressable } from "react-native";
 import Button from "./Button";
 
 
@@ -14,10 +14,7 @@ const Header = ({
   Button5Press,
   style,
 }) => {
-  //const {width, height} = useWindowDimensions()
-  //const paddingHorizontal = width * 0.12
-  //const headerHeight = height * 0.18
-  
+
   const containerStyle = [
     styles.container,
     {paddingLeft: '10%',

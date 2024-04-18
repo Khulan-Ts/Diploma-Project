@@ -30,7 +30,7 @@ const AcademicCal= ({ navigation }) => {
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
                   <Button type="Secondary" text={"Vision Trip"} ></Button>
                 </View>
-                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')} isPressedState={true}></Button>
             </View>
         </View>
         <View style={{width: '50%', marginBottom: '10%'}}>

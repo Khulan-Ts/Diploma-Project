@@ -17,7 +17,7 @@ const Undergraduate= ({ navigation }) => {
             </View>
             <View style={{marginTop: '5%'}}>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')} ></Button>
+                    <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')} isPressedState={true} ></Button>
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
                     <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>

@@ -19,7 +19,7 @@ const Graduate= ({ navigation }) => {
                     <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')}></Button>
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
+                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')} isPressedState={true}></Button>
                 </View>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
                 <Button type="Secondary" text={"2+2 program"} ></Button>
