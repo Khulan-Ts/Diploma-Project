@@ -14,7 +14,7 @@ const Graduate= ({ navigation }) => {
             <View style={{ borderBottomWidth: 1, width: '90%', paddingBottom: 14, paddingLeft:14}}>
                 <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
             </View>
-            <View style={{marginTop: '2%'}}>
+            <View style={{marginTop: '5%'}}>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
                     <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')}></Button>
                 </View>
