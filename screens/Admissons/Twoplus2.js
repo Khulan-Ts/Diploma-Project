@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, Image, ScrollView, View, useWindowDimensions } from "react-native";
-import Header from "./src/components/Header";
-import CardButton from "./src/components/cardButtons";
-import FONT from "./src/components/Titles";
-import Button from "./src/components/Button";
+import FONT from "../../src/components/Titles";
+import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
 
 const Twoplus2=({navigation})=>{
@@ -26,7 +24,7 @@ const Twoplus2=({navigation})=>{
           </View>
           <View style={{marginTop:'10%', flex:1, right:'25%'}}>
             <Image
-              source={require("./assets/ualbany.png")}
+              source={require("../../assets/images/ualbany.png")}
               style={[styles.image, {width: width*0.6, height: height*0.6, }]}
             />
             <View style={[styles.backgroundContainer, { marginTop:40, width: width*0.5}]}>
@@ -93,7 +91,7 @@ const Twoplus2=({navigation})=>{
         </View>
         <View> {/* Adjust width */}
           <Image
-            source={require('./assets/verticalimg.png')}
+            source={require('../../assets/images/cal-1.png')}
             style={[styles.verticalImageImg, { width: width * 0.2, right:'60%', top:'25%'}]} // Adjust width
             resizeMode="contain" // Adjust the resizeMode as needed
           />
