@@ -28,7 +28,7 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
-        <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
+        {/* <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> */}
         <Stack.Screen name="Dorm" component={Dorm} />
         <Stack.Screen name="Graduate" component={Graduate} />
       </Stack.Navigator>
