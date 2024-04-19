@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
-import FONT from "./src/components/Titles";
-import Button from "./src/components/Button";
-import { LinearGradient } from "react-native-svg";
+import FONT from "../src/components/Titles";
+import Button from "../src/components/Button";
 
 const Dorm=({navigation})=>{
     const { width, height } = useWindowDimensions();

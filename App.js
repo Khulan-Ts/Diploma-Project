@@ -9,7 +9,7 @@ import Undergraduate from './screens/Academic/Undergraduate';
 import Graduate from './screens/Academic/Graduate';
 import Twoplus2 from './screens/Academic/Twoplus2';
 import AcademicCal from './screens/Academic/AcademicCalendar';
-import Dorm from './Dorm';
+import Dorm from './Dorm/Dorm_housing';
 
 const Stack = createStackNavigator();
 
