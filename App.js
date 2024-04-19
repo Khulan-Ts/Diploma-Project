@@ -8,6 +8,7 @@ import AnotherScreen from './AnotherScreen';
 import Undergraduate from './screens/Academic/Undergraduate';
 import Graduate from './screens/Academic/Graduate';
 import Twoplus2 from './screens/Academic/Twoplus2';
+import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
 
 const Stack = createStackNavigator();
@@ -34,9 +35,10 @@ const App = () => {
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
         <Stack.Screen name="Twoplus2" component={Twoplus2} />
+        <Stack.Screen name="Exchange student Program" component={Exchange} />
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
-        <Stack.Screen name="Dorm" component={Dorm} />
+        {/*<Stack.Screen name="Dorm" component={Dorm} />*/}
       </Stack.Navigator>
     </NavigationContainer>
   );
