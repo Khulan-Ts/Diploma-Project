@@ -24,7 +24,7 @@ const App = () => {
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button1Press={() => navigation.navigate('Another')} 
+              Button2Press={() => navigation.navigate('Undergraduate')} 
               {...props} 
             />
           ),
