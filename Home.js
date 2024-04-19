@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Image, View, ScrollView, useWindowDimensions } from "react-native";
+import { StyleSheet, Image, View, ScrollView, useWindowDimensions, ImageBackground } from "react-native";
 import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
 import FONT from "./src/components/Titles";
@@ -11,8 +11,13 @@ const HomeScreen= ({ navigation }) =>{
   return(
     <ScrollView style={styles.container}>
       <Image
-        source={require("./assets/images/homepage-1.png")}
-        style={[styles.image, { height: "30%" }]}
+          source={require("./assets/images/overly_elipse.png")}
+          style={[styles.image, { height: '37.4%', position: 'absolute', marginTop: '-12.4%', zIndex: 5 }]}
+          resizeMode="contain"
+        />
+      <Image
+          source={require("./assets/images/homepage-2.png")}
+          style={[styles.image, { height: "30%" }]}
       />
 
       <View style={{ flexDirection: 'row' }}>
