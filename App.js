@@ -9,6 +9,7 @@ import Undergraduate from './screens/Admissons/Undergraduate';
 import Graduate from './screens/Admissons/Graduate';
 import Twoplus2 from './screens/Admissons/Twoplus2';
 import AcademicCal from './screens/Admissons/AcademicCalendar';
+import Dorm from './Dorm';
 
 const Stack = createStackNavigator();
 
@@ -31,7 +32,12 @@ const App = () => {
         })}
       >
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
+        <Stack.Screen name="Undergraduate" component={Undergraduate} />
+        <Stack.Screen name="Graduate" component={Graduate} />
+        <Stack.Screen name="Twoplus2" component={Twoplus2} />
+        <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
+        <Stack.Screen name="Dorm" component={Dorm} />
       </Stack.Navigator>
     </NavigationContainer>
   );
