@@ -13,7 +13,7 @@ const Graduate= ({ navigation }) => {
       <View style={{width: width * 0.1, marginTop: '-5%', marginRight: 'auto'}}>
           <Image source={require('../../assets/images/cal-2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
       </View>
-      <View style={{ width: '18%', marginLeft: '-7%'}}>
+      <View style={{ width: '18%', marginLeft: '-4%'}}>
             <View style={{ borderBottomWidth: 1, width: '90%', paddingBottom: 14, paddingLeft:14}}>
                 <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
             </View>
@@ -28,12 +28,7 @@ const Graduate= ({ navigation }) => {
                 <Button type="Secondary" text={"2+2 program"}></Button> {/*onPress={() => navigation.navigate('Twoplus2')}*/}
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
-                
-                <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.15}}></Button>
-                
-                </View>
-                <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Vision Trip"} ></Button>
+                  <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.15}}></Button>
                 </View>
                 <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
             </View>
