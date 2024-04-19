@@ -4,7 +4,6 @@ import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
 import FONT from "./src/components/Titles";
 import MapComponent from "./src/components/Map";
-import { useNavigation } from "@react-navigation/native";
 
 const HomeScreen= ({ navigation }) =>{
   const { width, height } = useWindowDimensions();
@@ -13,42 +12,18 @@ const HomeScreen= ({ navigation }) =>{
     <ScrollView style={styles.container}>
       <Image
         source={require("./assets/images/homepage-1.png")}
-        style={[styles.image, { height: height }]} // Adjusting height dynamically
+        style={[styles.image, { height: "30%" }]}
       />
-      
-      <View style={{alignItems: 'center'}}>
-        <View style={{ flexDirection: "row", marginTop: height * 0.2}}>
-          <View>
-            <FONT type="Subtitle"style={{color: '#62253E'}}>Undergraduate</FONT>
-            <CardButton image={require("./assets/images/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
-          </View>
-          <CardButton image={require("./assets/images/se.png")} text={'Software Engineering'} style={{marginTop: 52}}/>
-          <CardButton image={require("./assets/images/fd.png")} text={'Fashion Design'} style={{marginTop: 52}}/>
-          <CardButton image={require("./assets/images/ir.png")} text={'International Relations'} style={{marginTop: 52}}/>
-        </View>
-      </View>
 
-      <View style={{alignItems: 'center'}}>
-        <View style={{ flexDirection: "row", marginTop: height * 0.1}}>
-          <View>
-            <FONT type="Subtitle"style={{color: '#62253E'}}>Graduate</FONT>
-            <CardButton type={"Secondary"} image={require("./assets/images/cs.png")} text={'Computer Science'} style={{marginTop: 17}}/>
+      <View style={{ flexDirection: 'row' }}>
+        <View style={{flexDirection: 'column'}}>
+          <View style={[styles.history, {marginLeft: '15%', marginTop: '15%', width: width * 0.5}]}> 
+            <FONT type="Title3" style={{textAlign: 'center', fontSize: 36, letterSpacing: '-2%'}}>
+              The Most Global and Dynamic University in Mongolia
+            </FONT>
           </View>
-          <CardButton type={"Secondary"} image={require("./assets/images/se.png")} text={'Software Engineering'} style={{marginTop: 51}}/>
-          <CardButton type={"Secondary"} image={require("./assets/images/fd.png")} text={'Fashion Design'} style={{marginTop: 51}}/>
-          <CardButton type={"Secondary"} image={require("./assets/images/ir.png")} text={'International Relations'} style={{marginTop: 51}}/>
-        </View>
-        </View>
-        <View style={{marginTop: height * 0.1, alignItems: 'center'}}>
-          <FONT type="Title" >Our History</FONT>
-        </View>
-        <View style={{ flexDirection: 'row' }}>
-          <Image
-            source={require("./assets/images/homepage-1.png")}
-            style={[styles.historyImg, { width: width * 0.5, height: height * 0.6, marginTop: height * 0.1, marginLeft: height * 0.15}]}
-          />
-          <View style={[styles.history, {marginLeft: width * -0.1, marginTop: height * 0.2, maxWidth: width * 0.45}]}> 
-            <FONT type="Body">
+          <View style={[styles.history, {marginLeft: '20%', marginTop: '-8%', maxWidth: width * 0.55}]}> 
+            <FONT type="Body" style={{textAlign: 'center', fontSize: 16, lineHeight: 24}}>
               MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia.
               With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received free
               land of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university
@@ -57,13 +32,44 @@ const HomeScreen= ({ navigation }) =>{
               Russia, China, Republic of Korea, and other nations.
             </FONT>
           </View>
+          </View>
+        <View style={[styles.overlay, { width: width * 0.25, height: height * 0.4}]}/> 
+          <Image
+            source={require("./assets/images/flags.png")}
+            style={[styles.historyImg, { width: width * 0.25, height: height * 0.4, marginTop:'10%', marginLeft: '7.4%', borderRadius: 50}]}
+          />
+      </View>
+      <View style={{backgroundColor: '#3d3562', width: '100%', height: '2%', marginTop: '5%'}}/>
+      <View style={{alignItems: 'center'}}>
+        <View style={{ flexDirection: "row", marginTop: '5%'}}>
+          <View>
+            <FONT type="Subtitle"style={{color: '#62253E'}}>Undergraduate</FONT>
+            <CardButton image={require("./assets/images/cs.png")} text={'Computer Science'} style={{marginTop: '10%'}} onPress={() => navigation.navigate('Academic Calendar')}/>
+          </View>
+          <CardButton image={require("./assets/images/se.png")} text={'Software Engineering'} style={{marginTop: '5.8%'}}/>
+          <CardButton image={require("./assets/images/fd.png")} text={'Fashion Design'} style={{marginTop: '5.8%'}}/>
+          <CardButton image={require("./assets/images/ir.png")} text={'International Relations'} style={{marginTop: '5.8%'}}/>
         </View>
+      </View>
+
+      <View style={{alignItems: 'center'}}>
+        <View style={{ flexDirection: "row", marginTop: height * 0.1}}>
+          <View>
+            <FONT type="Subtitle"style={{color: '#62253E'}}>Graduate</FONT>
+            <CardButton type={"Secondary"} image={require("./assets/images/cs.png")} text={'Computer Science'} style={{marginTop: '10%'}}/>
+          </View>
+          <CardButton type={"Secondary"} image={require("./assets/images/se.png")} text={'Software Engineering'} style={{marginTop: '5.8%'}}/>
+          <CardButton type={"Secondary"} image={require("./assets/images/fd.png")} text={'Fashion Design'} style={{marginTop: '5.8%'}}/>
+          <CardButton type={"Secondary"} image={require("./assets/images/ir.png")} text={'International Relations'} style={{marginTop: '5.8%'}}/>
+        </View>
+        </View>
+        
         <View style={{marginTop: height * 0.1}}>
           <MapComponent/>
         </View>
-        <View style={[styles.apply, { height: height * 0.82, marginTop: height * 0.2 }]}>
+        <View style={[styles.apply, { height: '20%', marginTop: '2%' }]}>
           <FONT type="Title" style={{color: "#fff", fontSize: 86}}>APPLY NOW</FONT>
-          <View style={{marginTop: height * 0.05, marginBottom: height * 0.08, width: 525}}>
+          <View style={{marginTop: '1%', marginBottom: '2%', width: '35%'}}>
             <FONT type="Title2"style={{color: "#fff", textAlign: 'center', fontSize: 25}}>
               Are you ready to take the next step toward your future career?
             </FONT>
@@ -79,17 +85,23 @@ export default HomeScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#fff"
   },
   image: {
     width: "100%",
+  },
+  overlay:{
+    backgroundColor: 'rgba(61, 37, 98, 0.6)',
+    zIndex: 9,
+    marginTop:'10%',
+    marginLeft: '63%',
+    position: 'absolute',
+    borderRadius: 50,
   },
   historyImg:{
     borderRadius: 10,
   },
   history:{
-    backgroundColor: '#EDF0FF',
-    borderRadius: 10,
-    padding: 20,
     flex: 1,
     alignSelf: 'flex-start'
   },
