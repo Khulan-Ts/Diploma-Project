@@ -45,30 +45,30 @@ const Graduate= ({ navigation }) => {
             <FONT type={"Subtitle2"} style={{color: '#3D2562'}}>School of Management (SoM)</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Secondary" text={'Master in Business Administration (MBA)'}>
+            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Seven" text={'Master in Business Administration (MBA)'}>
             </Button>
-            <Button style={{marginTop: height * 0.03, color: '#3D2562', marginLeft: height * 0.02}} type="Secondary" text={'Master’s Start-Up Business Administration'}>
+            <Button style={{marginTop: height * 0.03, color: '#3D2562', marginLeft: height * 0.02}} type="Seven" text={'Master’s Start-Up Business Administration'}>
             </Button>
           </View>
           <View style={{marginTop: height * 0.03, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562'}}>School of Computing Science (SoCS)</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Secondary" text={'Master of Sofware Engineering (MSE)'}>
+            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Seven" text={'Master of Sofware Engineering (MSE)'}>
             </Button>
           </View>
           <View style={{marginTop: height * 0.03, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562'}}>School of International Studies and Communication (SoISC)</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Secondary" text={'School of International Studies and Communication (SoISC)'}>
+            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Seven" text={'School of International Studies and Communication (SoISC)'}>
             </Button>
           </View>
           <View style={{marginTop: height * 0.03, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562'}}>Programs</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Secondary" text={'Master In Foreign Language Education (FLE)'}>
+            <Button style={{marginTop: height * 0.03, color: '#3D2562'}} type="Seven" text={'Master In Foreign Language Education (FLE)'}>
             </Button>
           </View>
         </View>
