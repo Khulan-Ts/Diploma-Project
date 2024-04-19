@@ -23,7 +23,7 @@ const App = () => {
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button2Press={() => navigation.navigate('Undergraduate')}
+              Button2Press={() => navigation.navigate('Undergraduate')} 
               {...props} 
             />
           ),
@@ -36,6 +36,7 @@ const App = () => {
         <Stack.Screen name="Twoplus2" component={Twoplus2} />
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
+        <Stack.Screen name="Dorm" component={Dorm} />
       </Stack.Navigator>
     </NavigationContainer>
   );
