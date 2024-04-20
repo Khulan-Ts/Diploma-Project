@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import Header from './src/components/Header'; 
-import Undergraduate from './Undergraduate';
 import AnotherScreen from './AnotherScreen';
 import Undergraduate from './screens/Academic/Undergraduate';
 import Graduate from './screens/Academic/Graduate';
