@@ -5,7 +5,6 @@ import HomeScreen from './Home';
 import Header from './src/components/Header'; 
 import Undergraduate from './Undergraduate';
 import AnotherScreen from './AnotherScreen';
-//Admissions
 import Undergraduate from './screens/Academic/Undergraduate';
 import Graduate from './screens/Academic/Graduate';
 import Twoplus2 from './screens/Academic/Twoplus2';
