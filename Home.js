@@ -11,14 +11,15 @@ const HomeScreen= ({ navigation }) =>{
   return(
     <ScrollView style={styles.container}>
       <Image
-          source={require("./assets/images/overly_elipse.png")}
-          style={[styles.image, { height: '37.4%', position: 'absolute', marginTop: '-12.4%', zIndex: 5 }]}
+          source={require("./assets/images/overlay_ellipse.png")}
+          style={[styles.image, { height: '37.5%', position: 'absolute', marginTop: '-0.1%', zIndex: 5 }]}
           resizeMode="contain"
         />
       <Image
-          source={require("./assets/images/homepage-2.png")}
-          style={[styles.image, { height: "30%" }]}
+        source={require("./assets/images/homepage-3.png")}
+        style={[styles.image, { height: '37.5%'}]}
       />
+      
 
       <View style={{ flexDirection: 'row' }}>
         <View style={{flexDirection: 'column'}}>
