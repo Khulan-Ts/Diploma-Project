@@ -4,22 +4,33 @@ import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
 import FONT from "./src/components/Titles";
 import MapComponent from "./src/components/Map";
+import HoverButton from "./src/components/hoverButtons";
 
 const HomeScreen= ({ navigation }) =>{
   const { width, height } = useWindowDimensions();
   
   return(
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} >
       <Image
           source={require("./assets/images/overlay_ellipse.png")}
-          style={[styles.image, { height: '37.5%', position: 'absolute', marginTop: '-0.1%', zIndex: 5 }]}
+          style={[styles.image, { height: height * 1.3, position: 'absolute', marginTop: '-0.1%', zIndex: 2 }]}
           resizeMode="contain"
         />
       <Image
         source={require("./assets/images/homepage-3.png")}
-        style={[styles.image, { height: '37.5%'}]}
+        style={[styles.image, { height: height *1.3}]}
       />
+      <FONT type="Title3" style={[styles.welcome, {height: height * 0.45, width: width *0.6}]} lines={3}>
+        Educating Global Servant Leaders of Tomorrow
+      </FONT>
       
+      <View style={{alignItems: 'center', marginTop: '-10%', zIndex: 3}}>
+        <View style={{flexDirection: 'row'}}>
+          <HoverButton icon={require("./assets/icons/teachers.png")} text={"99+ Teachers"} nummber={'99+'}></HoverButton>
+          <HoverButton icon={require("./assets/icons/research.png")} text={"12+ Research"} nummber={'12+'} style={{marginLeft: 50}}></HoverButton>
+          <HoverButton icon={require("./assets/icons/department.png")} text={"15+ Departments"} nummber={'15+'} style={{marginLeft: 50}}></HoverButton>
+        </View> 
+      </View>
 
       <View style={{ flexDirection: 'row' }}>
         <View style={{flexDirection: 'column'}}>
@@ -116,5 +127,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#FCB900',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  welcome:{
+    fontSize: 72, 
+    textAlign: 'center', 
+    letterSpacing: '-5%', 
+    color: '#fff', 
+    position: 'absolute',
+    zIndex: 6,
+    marginLeft: '20%',
+    marginTop: '20%'
   }
 });
