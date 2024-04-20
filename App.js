@@ -3,9 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import Header from './src/components/Header'; 
-<<<<<<< HEAD
 import Undergraduate from './Undergraduate';
-=======
 import AnotherScreen from './AnotherScreen';
 //Admissions
 import Undergraduate from './screens/Academic/Undergraduate';
@@ -14,7 +12,6 @@ import Twoplus2 from './screens/Academic/Twoplus2';
 import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
 import Dorm from './Dorm';
->>>>>>> ae23ab5f614dd1b1fc8350190e8e808f8f0928cf
 
 const Stack = createStackNavigator();
 
@@ -28,13 +25,10 @@ const App = () => {
             <Header
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
-<<<<<<< HEAD
               style={{ backgroundColor: '#3d2562' }}
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               //Button1Press={() => navigation.navigate('Another')} 
-=======
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
->>>>>>> ae23ab5f614dd1b1fc8350190e8e808f8f0928cf
               Button2Press={() => navigation.navigate('Undergraduate')} 
               {...props} 
             />
@@ -42,11 +36,9 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
-<<<<<<< HEAD
         {/*<Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Another" component={AnotherScreen} />*/}
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
-=======
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
@@ -55,7 +47,6 @@ const App = () => {
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
         {/*<Stack.Screen name="Dorm" component={Dorm} />*/}
->>>>>>> ae23ab5f614dd1b1fc8350190e8e808f8f0928cf
       </Stack.Navigator>
     </NavigationContainer>
   );
