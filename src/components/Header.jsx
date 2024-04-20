@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Image, Pressable, useWindowDimensions } from "react-native";
+import { View, StyleSheet, Image, Pressable } from "react-native";
 import Button from "./Button";
 
 
@@ -14,15 +14,15 @@ const Header = ({
   Button5Press,
   style,
 }) => {
-  const {width, height} = useWindowDimensions()
-  const paddingHorizontal = width * 0.12
-  const headerHeight = height * 0.18
-  
+
   const containerStyle = [
     styles.container,
-    {paddingLeft: paddingHorizontal,
-    paddingRight: paddingHorizontal,
-    height: headerHeight},
+    {paddingLeft: '10%',
+    paddingRight: '10%',
+    paddingTop: "1.5%",
+    paddingBottom: "1.5%",
+    height: "100%"
+    },
     style
   ]
 
@@ -75,10 +75,9 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "transparent",
+    backgroundColor: '#3d2562',
     alignItems: "center",
     flexDirection: "row",
-    position: "absolute",
     top: 0,
     width: "100%",
     justifyContent: "space-between",

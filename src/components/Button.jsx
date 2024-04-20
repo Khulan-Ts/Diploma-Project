@@ -17,6 +17,7 @@ const Button = ({
   onPress,
   onHoverIn,
   onHoverOut,
+  isPressedState,
   style,
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -25,6 +26,10 @@ const Button = ({
     "Outfit-Regular": require('../../assets/fonts/Outfit-Regular.ttf'),
     "Outfit-Bold": require('../../assets/fonts/Outfit-Bold.ttf'),
   });
+
+  React.useEffect(()=>{
+    setIsPressed(isPressedState)
+  },[isPressedState]);
 
   const ButtonStyles = [
     styles.common,
@@ -55,7 +60,7 @@ const Button = ({
   ]; 
   const TextWidth= [
     style?.width && {width: style.width, paddingLeft: 5, paddingRight: 5},
-  ]
+  ];
   return (
     <View>
       {type !== "Apply" &&
