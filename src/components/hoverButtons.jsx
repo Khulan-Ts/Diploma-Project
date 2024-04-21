@@ -51,7 +51,7 @@ export const HoverButton = ({
         styles.container,
         { width: width * 0.22, height: height * 0.38 },
         isHovered && {
-            shadowColor: '#000',
+            shadowColor: '#0096c7',
             shadowOffset: { width: 4, height: 4 },
             shadowOpacity: 0.25,
             shadowRadius: 10,},

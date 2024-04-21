@@ -78,7 +78,7 @@ const getFontSize = (type) => {
 
 const styles = StyleSheet.create({
   text: {
-    color: "#3d3562",
+    color: "#3d2562",
   },
 });
 
