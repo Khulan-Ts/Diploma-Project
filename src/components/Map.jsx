@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Image, Pressable, Dimensions } from "react-native";
 import HoverCard from "./hoverCard";
 
-export default function MapComponent() {
+const MapComponent = ({ navigation }) => {
   const [activeCard, setActiveCard] = React.useState(null);
 
   const showCardHandler = (cardId) => {
@@ -25,8 +25,8 @@ export default function MapComponent() {
 
         <Pressable
           style={[styles.overlay, styles.overlay1]}
-          onMouseEnter={() => showCardHandler(1)}
-          onMouseLeave={hideCardHandler}
+          onHoverIn={() => showCardHandler(1)}
+          onHoverOut={hideCardHandler}
         >
           {activeCard === 1 && (
             <View style={styles.sport}>
@@ -35,6 +35,7 @@ export default function MapComponent() {
                 type={"Sport"}
                 title={"Sport Complex"}
                 button={"For More Information"}
+                onPress1={()=> navigation.navigate('Dorm')}
               >
                 The sports complex is a three-floor building currently featuring
                 a large indoor sports hall and cross-fit style gym.
@@ -63,6 +64,7 @@ export default function MapComponent() {
                 title={"Dorm"}
                 button={"For More Information"}
                 button2={"Dormitory Fee"}
+                onPress1={() => navigation.navigate('Dorm')}
               >
                 The MIU Global Residence is a seven-floor building that houses
                 both male and female students from all over the world. The first
@@ -121,6 +123,8 @@ export default function MapComponent() {
       </View>
   );
 }
+
+export default MapComponent
 
 const styles = StyleSheet.create({
   imageContainer:{

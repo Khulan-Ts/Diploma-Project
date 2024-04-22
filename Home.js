@@ -17,7 +17,7 @@ const HomeScreen= ({ navigation }) =>{
   const { width, height } = useWindowDimensions();
   
   return(
-    <ScrollView style={styles.container} >
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       <Image
           source={require("./assets/images/overlay_ellipse.png")}
           style={[styles.image, { height: height * 1.3, position: 'absolute', marginTop: '-0.1%', zIndex: 2 }]}
@@ -63,7 +63,7 @@ const HomeScreen= ({ navigation }) =>{
         <View style={[styles.overlay, { width: width * 0.25, height: height * 0.4}]}/> 
           <Image
             source={require("./assets/images/flags.png")}
-            style={[styles.historyImg, { width: width * 0.25, height: height * 0.4, marginTop:'10%', marginLeft: '7.3%', borderRadius: 50}]}
+            style={[styles.historyImg, { width: width * 0.25, height: height * 0.4, marginTop:'10%', marginLeft: '8%', borderRadius: 50}]}
           />
       </View>
       <View style={{backgroundColor: '#3d2562', width: '100%', height: '2%', marginTop: '10%'}}/>
