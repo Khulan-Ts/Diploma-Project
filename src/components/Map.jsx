@@ -14,13 +14,12 @@ export default function MapComponent() {
     
   };
   const windowWidth = Dimensions.get("window").width;
-  const imageHeight = (600 / 1075) * windowWidth;
 
   return (
-      <View style={[styles.imageContainer, {width: windowWidth, height: imageHeight}]}>
+      <View style={[styles.imageContainer, {width: windowWidth, height: windowWidth* 0.56}]}>
         <Image
           source={require("../../assets/images/map.png")}
-          style={[styles.image, {height: imageHeight}]}
+          style={[styles.image, {height: windowWidth * 0.56}]}
           resizeMode="contain"
         />
 
