@@ -35,7 +35,7 @@ const Scholarship=({navigation})=>{
 
             </View>
         </View>
-        <FONT style={{marginLeft:'6%',marginTop:'5%', color:'black', textAlign:'left', fontSize:20, paddingLeft:'25%', paddingRight:'25%'}}>When you decide to apply to Mongolia
+        <FONT style={{marginLeft:'6%',marginTop:'5%', color:'black', textAlign:'left', fontSize:20, paddingLeft:'25%', paddingRight:'25%',marginBottomL:'15%'}}>When you decide to apply to Mongolia
          International University you will have the opportunity to explore courses across the programs and colleges that make up our university,
           crossing disciplines and charting your own unique academic path.
 

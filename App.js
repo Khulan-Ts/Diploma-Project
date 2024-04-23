@@ -6,6 +6,8 @@ import AnotherScreen from './AnotherScreen';
 import Header from './src/components/Header'; 
 import Twoplus2 from './Twoplus2';
 import Scholarship from './Scholarship';
+import AboutUs from './AboutUs';
+import OurPeople from './OurPeople';
 
 const Stack = createStackNavigator();
 

@@ -11,104 +11,67 @@ const Twoplus2=({navigation})=>{
 
   return (
     <ScrollView style={styles.container}>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <View style={{marginLeft:'5%', width: width*0.5}}>
-            <FONT style={{marginTop: '20%',borderBottomWidth: 1, paddingBottom: 15, width:width*0.15,color: 'black', textAlign:'left', fontSize: 28}}>Academics</FONT>
-            <View style={{marginLeft: '1%', marginTop:'1.5%'}}>
-              <Button type="Secondary" text={"Undergraduate"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
-              <Button type="Secondary" text={"Graduate"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
-              <Button type="Secondary" text={"2+2 program"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
-              <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
-              <Button type="Secondary" text={"Vision Trip"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
-              <Button type="Secondary" text={"Academic Calendar"} style={{borderBottomWidth: 1, borderRadius:0}}></Button>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start', marginTop:'10%' }}>
+          <View style={{marginLeft: '5%', width: '18%'}}>
+            <View  style={{borderBottomWidth: 1, width: '70%'}}>
+            <FONT style={{paddingBottom:10}}>Academics</FONT>
             </View>
+
+              <View style={{marginTop: '5%', marginLeft:'5%'}}>
+                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                      <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('')} isPressedState={true} ></Button>
+                  </View>
+                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                      <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('')}></Button>
+                  </View>
+                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                      <Button type="Secondary" text={"2 + 2 program"} onPress={() => navigation.navigate('')}></Button>
+                  </View>
+                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                    <Button type="Secondary" text={"Exchange student program"} onPress={() => navigation.navigate('')}></Button> 
+                  </View>
+                  <Button type="Secondary" text={"Academic calendar"} onPress={() => navigation.navigate('')}></Button>
+              </View>
+          </View>
+
+          <View style={{flexDirection:'column', alignItems:'flex-start',justifyContent:'left',flex:1, width:'75%', marginTop:'1%'}}>
+             <Image
+                source={require("./assets/images/albany.png")}
+                style={{width: width*0.6, height: height*0.6}}resizeMode="contain"
+              />
+              <View style={[styles.backgroundContainer, { marginTop:'5%', marginLeft:'6%', width:'65%'}]}>
+                    <FONT style={{color: '#000000', textAlign:'left', fontSize: 23,}}>INTRODUCTION</FONT>
+              </View> 
+              <Image
+                source={require("./assets/images/2p2introduction.png")}
+                style={{ marginLeft:'1%',marginTop:'5%',height: height*0.4}}resizeMode="contain"
+              />
+
 
           </View>
-          <View style={{marginTop:'10%', flex:1, right:'25%'}}>
-            <Image
-              source={require("./assets/ualbany.png")}
-              style={[styles.image, {width: width*0.6, height: height*0.6, }]}
-            />
-            <View style={[styles.backgroundContainer, { marginTop:40, width: width*0.5}]}>
-              <FONT style={{color: '#000000', textAlign:'left', fontSize: 23}}>INTRODUCTION</FONT>
-            </View>
 
-            <View style={[styles.tableContainer, { width: width * 0.5, height: height*0.3}]}>
-              <View style={styles.row}>
-                <View style={styles.cell1}>
-                  <FONT style={[styles.text, { fontSize: 25 }]}>Why 2+2?</FONT>
-                </View>
-                <View style={styles.verticalLine} />
-                <View style={styles.cell2}>
-                  <FONT style={[styles.text, { fontSize: 25 }]}>2 years (MIU) + 2 years (SUNY Albany) = 2 Diplomas</FONT>
-                </View>
+
+
+        </View>
+        <View style={[styles.infoContainer, {marginTop:'3%', marginLeft:'20%  '}]}>
+            <View style={styles.infoSection}>
+              <View style={[styles.backgroundContainer2, {backgroundColor: '#EDF0FF', marginTop:40}]}>
+                <FONT style={{color: '#000000',  fontSize: 23, textAlign:'center'}}>QUALIFICATIONS</FONT>
               </View>
-              <View style={styles.horizontalLine} />
-              <View style={styles.row}>
-                <View style={styles.cell1}>
-                  <FONT style={[styles.text, { fontSize: 18 }]}>Goal</FONT>
-                </View>
-                <View style={styles.verticalLine} />
-                <View style={styles.cell2}>
-                  <FONT style={[styles.text, { fontSize: 18 }]}>To cultivate global individuals with academic literacy and international sense</FONT>
-                </View>
+              <FONT style={styles.text}>• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU</FONT>
+              <FONT style={styles.text}>• GPA: 3.4/4.0 or higher</FONT>
+              <FONT style={styles.text}>• English Test: TOEFL IBT 70 or IELTS 6.0 or above</FONT>
+            </View>
+            <View style={styles.infoSection2}>
+              <View style={[styles.backgroundContainer2, {backgroundColor: '#EDF0FF', marginTop:40, marginBottom:20}]}>
+                <FONT style={{color: '#000000', fontSize: 23, textAlign:'center'}}>EXPENSES</FONT>
               </View>
-              <View style={styles.horizontalLine} />
-              <View style={styles.row}>
-                <View style={styles.cell1}>
-                  <FONT style={[styles.text, { fontSize: 18 }]}>Why choose {"\n"}      2 + 2?</FONT>
-                </View>
-                <View style={styles.verticalLine} />
-                <View style={styles.cell2}>
-                  <FONT style={[styles.text, { fontSize: 18 }]}>
-                    • Low cost and affordable fee{"\n"}
-                    • Acquiring English knowledge for 2 years at MIU{"\n"}
-                    • Obtain two diplomas (MIU and SUNY Albany){"\n"}
-                    • Experience campus life in Mongolia, USA and other cultures
-                  </FONT>
-                </View>
-              </View>
+              <FONT style={styles.text}>• 1 year Tuition: USD 28,350</FONT>
+              <FONT style={styles.text}>• 1 year Dormitory: USD 13,882</FONT>
+              <FONT style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</FONT>
             </View>
-            
-        </View>
+          </View> 
 
-
-          <View style={[styles.infoContainer, {marginTop:'65%', right:'25%'}]}>
-          <View style={styles.infoSection}>
-            <View style={[styles.backgroundContainer2, {backgroundColor: '#EDF0FF', marginTop:40}]}>
-              <FONT style={{color: '#000000',  fontSize: 23, textAlign:'center'}}>QUALIFICATIONS</FONT>
-            </View>
-            <FONT style={styles.text}>• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU</FONT>
-            <FONT style={styles.text}>• GPA: 3.4/4.0 or higher</FONT>
-            <FONT style={styles.text}>• English Test: TOEFL IBT 70 or IELTS 6.0 or above</FONT>
-          </View>
-          <View style={styles.infoSection2}>
-            <View style={[styles.backgroundContainer2, {backgroundColor: '#EDF0FF', marginTop:40, marginBottom:20}]}>
-              <FONT style={{color: '#000000', fontSize: 23, textAlign:'center'}}>EXPENSES</FONT>
-            </View>
-            <FONT style={styles.text}>• 1 year Tuition: USD 28,350</FONT>
-            <FONT style={styles.text}>• 1 year Dormitory: USD 13,882</FONT>
-            <FONT style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</FONT>
-          </View>
-        </View>
-        <View> {/* Adjust width */}
-          <Image
-            source={require('./assets/verticalimg.png')}
-            style={[styles.verticalImageImg, { width: width * 0.2, right:'60%', top:'25%'}]} // Adjust width
-            resizeMode="contain" // Adjust the resizeMode as needed
-          />
-        </View>
-        </View>
-
-
-        
-
-
-
-      {/* <View style={{marginLeft: 150}}> */}
-
-
-      {/* </View> */}
     </ScrollView>
   );
 }
@@ -118,7 +81,7 @@ export default Twoplus2
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'##f9f8f5',
+    backgroundColor:'#F5F5F5',
   },
   header: {
     position: "absolute",
@@ -227,3 +190,46 @@ const styles = StyleSheet.create({
   },
 
 });
+
+
+
+{/* <View style={[styles.backgroundContainer, { marginTop:40, width: width*0.5}]}>
+              <FONT style={{color: '#000000', textAlign:'left', fontSize: 23}}>INTRODUCTION</FONT>
+            </View> */}
+
+            {/* <View style={[styles.tableContainer, { width: width * 0.5, height: height*0.3}]}>
+              <View style={styles.row}>
+                <View style={styles.cell1}>
+                  <FONT style={[styles.text, { fontSize: 25 }]}>Why 2+2?</FONT>
+                </View>
+                <View style={styles.verticalLine} />
+                <View style={styles.cell2}>
+                  <FONT style={[styles.text, { fontSize: 25 }]}>2 years (MIU) + 2 years (SUNY Albany) = 2 Diplomas</FONT>
+                </View>
+              </View>
+              <View style={styles.horizontalLine} />
+              <View style={styles.row}>
+                <View style={styles.cell1}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>Goal</FONT>
+                </View>
+                <View style={styles.verticalLine} />
+                <View style={styles.cell2}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>To cultivate global individuals with academic literacy and international sense</FONT>
+                </View>
+              </View>
+              <View style={styles.horizontalLine} />
+              <View style={styles.row}>
+                <View style={styles.cell1}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>Why choose {"\n"}      2 + 2?</FONT>
+                </View>
+                <View style={styles.verticalLine} />
+                <View style={styles.cell2}>
+                  <FONT style={[styles.text, { fontSize: 18 }]}>
+                    • Low cost and affordable fee{"\n"}
+                    • Acquiring English knowledge for 2 years at MIU{"\n"}
+                    • Obtain two diplomas (MIU and SUNY Albany){"\n"}
+                    • Experience campus life in Mongolia, USA and other cultures
+                  </FONT>
+                </View>
+              </View>
+            </View> */}
