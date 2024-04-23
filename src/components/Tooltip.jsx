@@ -10,14 +10,19 @@ export const ToolTip = ({
   onBlur,
   onFocus,
   lines,
-  style
+  style,
+  preferredSide = 'bottom', // Default side for the tooltip to appear
 }) => {
   const [showTooltip, setShowTooltip] = React.useState(false);
   const { width, height } = useWindowDimensions();
   
   const CommonTooltipStyle = [
     styles.commonTooltip,
-    type === 'Undergraduate' && {backgroundColor: "rgba(237, 240, 255, 0.5)"} 
+    type === 'Undergraduate' && { backgroundColor: "rgba(237, 240, 255, 0.5)" },
+    preferredSide === 'top' && styles.tooltipTop,
+    preferredSide === 'bottom' && styles.tooltipBottom,
+    preferredSide === 'left' && styles.tooltipLeft,
+    preferredSide === 'right' && styles.tooltipRight,
   ];
 
   const handleHoverIn = () => {
@@ -38,7 +43,7 @@ export const ToolTip = ({
     >
       {children}
       {showTooltip && (
-        <View style={[CommonTooltipStyle]}>
+        <View style={CommonTooltipStyle}>
           <FONT type="Regular" style={[{ fontSize: 18 }, style]} lines={lines}>
             {text}
           </FONT>
@@ -50,9 +55,6 @@ export const ToolTip = ({
 
 const styles = StyleSheet.create({
   commonTooltip: {
-    position: 'absolute',
-    top: '100%',
-    marginTop: 5,
     borderRadius: 10,
     backgroundColor: 'rgba(255, 219, 120, 0.5)',
     padding: 10,
@@ -60,7 +62,30 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.25,
     shadowRadius: 4,
-    alignSelf: 'flex-start',
+  },
+  tooltipTop: {
+    position: 'absolute',
+    bottom: '100%',
+    marginBottom: 5,
+    alignSelf: 'center',
+  },
+  tooltipBottom: {
+    position: 'absolute',
+    top: '100%',
+    marginTop: 5,
+    alignSelf: 'center',
+  },
+  tooltipLeft: {
+    position: 'absolute',
+    right: '100%',
+    marginRight: 5,
+    alignSelf: 'center',
+  },
+  tooltipRight: {
+    position: 'absolute',
+    left: '100%',
+    marginLeft: 5,
+    alignSelf: 'center',
   },
 });
 

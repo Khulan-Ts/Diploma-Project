@@ -9,8 +9,9 @@ import Graduate from './screens/Academic/Graduate';
 import Twoplus2 from './screens/Academic/Twoplus2';
 import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
-import Howtoapply from './Admissions/Howtoapply';
+import Howtoapply_Under from './screens/Academic/howtoapply_undergrad';
 import Dorm from './Dorm';
+import Howtoapply_Graduate from './screens/Academic/howtoapply_graduate';
 
 const Stack = createStackNavigator();
 
@@ -28,14 +29,16 @@ const App = () => {
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               //Button1Press={() => navigation.navigate('Another')} 
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button3Press={() => navigation.navigate('How to Apply')} 
+              //Button3Press={() => navigation.navigate('How to Apply Undergraduate')} 
+              Button3Press={() => navigation.navigate('How to Apply Graduate')} 
               {...props} 
             />
           ),
           cardStyle: {flex: 1}
         })}
       >
-        <Stack.Screen name="How to Apply" component={Howtoapply}/>
+        <Stack.Screen name="How to Apply Graduate" component={Howtoapply_Graduate}/>
+        <Stack.Screen name="How to Apply Undergraduate" component={Howtoapply_Under}/>
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Graduate" component={Graduate} />
