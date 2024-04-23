@@ -28,7 +28,7 @@ const App = () => {
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               //Button1Press={() => navigation.navigate('Another')} 
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button2Press={() => navigation.navigate('How to Apply')} 
+              Button3Press={() => navigation.navigate('How to Apply')} 
               {...props} 
             />
           ),

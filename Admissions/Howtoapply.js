@@ -32,7 +32,7 @@ const Howtoapply= ({ navigation }) => {
             </View>
         </View>
         <View style={{flexDirection: "row", width: '60%'}}>
-            <View style={{borderRightWidth: 1, height: "20%"}}>
+            <View style={{borderRightWidth: 1, height: "20%", width: '50%', alignItems: 'center'}}>
                 <Button type="Secondary" text={"Undergraduate Programs"} style={{width: width * 0.20}}  onPress={() => navigation.navigate('Undergraduate Programs')}></Button>
             </View>
             <View>
