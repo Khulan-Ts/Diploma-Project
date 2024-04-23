@@ -41,6 +41,7 @@ const Button = ({
     type === "Fifth" && {backgroundColor: '#FCB900', padding: 15, borderRadius: 20},
     type === "Sixth" && {backgroundColor: '#3D2562', padding: 10, borderRadius: 20},
     type === "Seven" && isHovered && { backgroundColor: "#EDF0FF"},
+    type === "Eight" && isPressed && {backgroundColor: "#EDF0FF"},
     style,
   ];
   const TextStyle = [
@@ -57,6 +58,7 @@ const Button = ({
     {fontFamily: (fontLoaded && type!== "Apply") ? 'Outfit-Regular':(fontLoaded && type=== "Apply")? 'Outfit-Bold' : 'Arial' },
     type === "Apply" && {fontSize: 25, color:"#3D2562"},
     type === "Seven" && {color: '#000', fontSize: 18},
+    type === 'Eight' && {color: '#3D2562'}
   ]; 
   const TextWidth= [
     style?.width && {width: style.width, paddingLeft: 5, paddingRight: 5},
