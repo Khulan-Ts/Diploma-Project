@@ -28,25 +28,33 @@ const Lei_1= ({ navigation }) => {
         </View>
         <View style={{flexDirection: 'row', marginTop: '5%'}}>
             <View>
-                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.2}}>
-                    <Button type="Secondary" text={"English Foundation Course"}></Button>
+                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.175}}>
+                    <Button type="Eight" text={"English Foundation Course"}></Button>
                 </View>
-                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.2}}>
-                    <Button type="Secondary" text={"English Evening Course"}></Button>
+                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.175}}>
+                    <Button type="Eight" text={"English Evening Course"}></Button>
                 </View>
-                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.2}}>
-                    <Button type="Secondary" text={"Business English Course"}></Button>
+                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.175}}>
+                    <Button type="Eight" text={"Business English Course"}></Button>
                 </View>
-                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.2}}>
-                    <Button type="Secondary" text={"Mongolian Course"}></Button>
-                </View>
-                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.2}}>
-                    <Button type="Secondary" text={"Additional Language Course"}></Button>
+                <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.175}}>
+                    <Button type="Eight" text={"Mongolian Course"}></Button>
                 </View>
                 
+                <Button type="Eight" text={"Additional Language Course"}></Button>
+                
             </View>
-
+            <View style={{borderLeftWidth: 1, borderColor: "#3D2562", height: height * 0.29}}>
+                <FONT type="Body" style={{width: width * 0.45, marginLeft: "2%"}}>Our English Foundation Course is the heart of LEI. It is a immersive
+                 English program that brings together students from multiple countries and works through 
+                 activities, speaking structures, and other interactive coursework to help students improve 
+                 their English. This course is made for recent high school graduates who wish to improve their 
+                 English level in order to study at MIU. However, this program is available to anyone who wants 
+                 to improve their English level and is recommended for all beginners and intermediate level students 
+                 who plan to use English to study or work.</FONT>
+            </View>
         </View>
+        
         </View>
         <View style={{width: width * 0.1, marginTop: "-2%", marginLeft: 'auto'}}>
           <Image source={require('../../assets/images/Lei2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
