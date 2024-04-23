@@ -18,13 +18,13 @@ const Dorm=({navigation})=>{
                     </View >
                     <View style={{marginTop: height * 0.02}}>
                         <View style={{borderBottomWidth: 1, width: width * 0.11}}>
-                            <Button type="Third" text={"Housing"}></Button>
+                            <Button type="Fourth" text={"Housing"} isPressedState={true}></Button>
                         </View>
                         <View style={{borderBottomWidth: 1, width: width * 0.11}}>
-                            <Button type="Third" text={"Fee Information"} ></Button>
+                            <Button type="Fourth" text={"Fee Information"} ></Button>
                         </View>
                         <View>
-                            <Button type="Third" text={"Application Form"} ></Button>
+                            <Button type="Fourth" text={"Application Form"} ></Button>
                         </View>
                     </View>
                 </View>
