@@ -185,6 +185,6 @@ const styles = StyleSheet.create({
   dbld:{
     right: "100%",
     top: '50%',
-    transform: [{ translateX: '-300%' }],
+    transform: [{ translateX: '-280%' }],
   }
 });
