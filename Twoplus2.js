@@ -28,7 +28,7 @@ const Twoplus2=({navigation})=>{
                       <Button type="Secondary" text={"2 + 2 program"} onPress={() => navigation.navigate('')}></Button>
                   </View>
                   <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Exchange student program"} onPress={() => navigation.navigate('')}></Button> 
+                    <Button type="Secondary" text={"Exchange student program"} numberOfLines={2} style={{width:width*0.13}} onPress={() => navigation.navigate('')}></Button> 
                   </View>
                   <Button type="Secondary" text={"Academic calendar"} onPress={() => navigation.navigate('')}></Button>
               </View>
