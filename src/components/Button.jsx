@@ -17,6 +17,7 @@ const Button = ({
   onPress,
   onHoverIn,
   onHoverOut,
+  isPressedState,
   style,
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -25,6 +26,10 @@ const Button = ({
     "Outfit-Regular": require('../../assets/fonts/Outfit-Regular.ttf'),
     "Outfit-Bold": require('../../assets/fonts/Outfit-Bold.ttf'),
   });
+
+  React.useEffect(()=>{
+    setIsPressed(isPressedState)
+  },[isPressedState]);
 
   const ButtonStyles = [
     styles.common,
@@ -51,8 +56,11 @@ const Button = ({
     type === "Sixth" && {color: '#FCB900', fontSize: 15},
     {fontFamily: (fontLoaded && type!== "Apply") ? 'Outfit-Regular':(fontLoaded && type=== "Apply")? 'Outfit-Bold' : 'Arial' },
     type === "Apply" && {fontSize: 25, color:"#3D2562"},
-    type === "Seven" && {color: '#000', fontSize: 18}
+    type === "Seven" && {color: '#000', fontSize: 18},
   ]; 
+  const TextWidth= [
+    style?.width && {width: style.width, paddingLeft: 5, paddingRight: 5},
+  ];
   return (
     <View>
       {type !== "Apply" &&
@@ -70,9 +78,11 @@ const Button = ({
         onFocus={()=> setIsPressed(true)}
         onBlur={()=> setIsPressed(false)}
         >
-          <Text numberOfLines={numberOfLines} style={TextStyle}>
-            {text}
-          </Text>
+          <View style={TextWidth}>
+            <Text numberOfLines={numberOfLines} style={TextStyle}>
+              {text}
+            </Text>
+          </View>
         </Pressable>
         </View>
       }

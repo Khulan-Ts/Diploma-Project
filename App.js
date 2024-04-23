@@ -4,10 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Twoplus2';
 import AnotherScreen from './AnotherScreen';
 import Header from './src/components/Header'; 
-import Twoplus2 from './Twoplus2';
-import Scholarship from './Scholarship';
-import AboutUs from './AboutUs';
-import OurPeople from './OurPeople';
 
 const Stack = createStackNavigator();
 
@@ -21,10 +17,8 @@ const App = () => {
             <Header
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
-              style={{ backgroundColor: '#3d2562' }}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button1Press={() => navigation.navigate('Scholarship')} 
-              Button2Press={() => navigation.navigate('Twoplus2')}
+              Button1Press={() => navigation.navigate('Another')} 
               {...props} 
             />
           ),
@@ -32,8 +26,7 @@ const App = () => {
         })}
       >
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
-        <Stack.Screen name="Scholarship" component={Scholarship} />
-        <Stack.Screen name="Twoplus2" component={Twoplus2} />
+        <Stack.Screen name="Another" component={AnotherScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -5,6 +5,7 @@ import { useFonts } from 'expo-font';
 export const FONT = ({
   type = "Regular",
   children,
+  lines,
   style,
 }) => {
   let fontName = 'Outfit-Regular'; 
@@ -48,7 +49,7 @@ export const FONT = ({
   ];
 
   return (
-    <Text style={TextStyle}>
+    <Text style={TextStyle} numberOfLines={lines}>
       {children}
     </Text>
   );
@@ -77,7 +78,7 @@ const getFontSize = (type) => {
 
 const styles = StyleSheet.create({
   text: {
-    color: "#3d3562",
+    color: "#3d2562",
   },
 });
 

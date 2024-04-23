@@ -25,9 +25,9 @@ const Exchange= ({ navigation }) => {
                 <Button type="Secondary" text={"2+2 program"} ></Button> {/*onPress={() => navigation.navigate('Twoplus2')}*/}
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
-                  <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.15}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
+                  <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')} isPressedState={true}></Button>
                 </View>
-                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')} isPressedState={true}></Button>
+                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')} ></Button>
             </View>
         </View>
         <View style={{width: '50%', marginBottom: '10%', marginLeft: '5%'}}>
