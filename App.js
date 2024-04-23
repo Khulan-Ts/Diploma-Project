@@ -27,7 +27,7 @@ const App = () => {
               style={{ backgroundColor: '#3d2562' }}
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               //Button1Press={() => navigation.navigate('Another')} 
-              logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
+              //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button3Press={() => navigation.navigate('How to Apply')} 
               {...props} 
             />
@@ -35,6 +35,7 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
+        <Stack.Screen name="How to Apply" component={Howtoapply}/>
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Graduate" component={Graduate} />
@@ -42,7 +43,7 @@ const App = () => {
         <Stack.Screen name="Exchange student Program" component={Exchange} />
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
-        <Stack.Screen name="How to Apply" component={Howtoapply}/>
+        
         {/*<Stack.Screen name="Dorm" component={Dorm} />*/}
       </Stack.Navigator>
     </NavigationContainer>
