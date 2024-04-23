@@ -2,7 +2,9 @@ import React from "react";
 import { StyleSheet, View, Image, Pressable, Dimensions } from "react-native";
 import HoverCard from "./hoverCard";
 
-const MapComponent = ({ navigation }) => {
+const MapComponent = ({
+    navigate
+}) => {
   const [activeCard, setActiveCard] = React.useState(null);
 
   const showCardHandler = (cardId) => {
@@ -25,8 +27,8 @@ const MapComponent = ({ navigation }) => {
 
         <Pressable
           style={[styles.overlay, styles.overlay1]}
-          onHoverIn={() => showCardHandler(1)}
-          onHoverOut={hideCardHandler}
+          onMouseEnter={() => showCardHandler(1)}
+          onMouseLeave={hideCardHandler}
         >
           {activeCard === 1 && (
             <View style={styles.sport}>
@@ -35,7 +37,7 @@ const MapComponent = ({ navigation }) => {
                 type={"Sport"}
                 title={"Sport Complex"}
                 button={"For More Information"}
-                onPress1={()=> navigation.navigate('Dorm')}
+                onPress1={navigate[0]}
               >
                 The sports complex is a three-floor building currently featuring
                 a large indoor sports hall and cross-fit style gym.
@@ -59,12 +61,14 @@ const MapComponent = ({ navigation }) => {
           {activeCard === 2 && (
             <View style={styles.dorm}>
               <HoverCard
+                navigation={navigation}
                 image={require("../../assets/images/dorm.png")}
                 type={"Primary"}
                 title={"Dorm"}
                 button={"For More Information"}
                 button2={"Dormitory Fee"}
-                onPress1={() => navigation.navigate('Dorm')}
+                onPress1={navigate[1]}
+                onPress2={navigate[2]}
               >
                 The MIU Global Residence is a seven-floor building that houses
                 both male and female students from all over the world. The first
@@ -89,6 +93,7 @@ const MapComponent = ({ navigation }) => {
                 type={"Secondary"}
                 title={"M Building"}
                 button={"For More Information"}
+                onPress1={navigate[3]}
               >
                 Student affairs - Academic - Admission - Finance - President`s office
                 {"\n\n\n\n\n"}
@@ -109,7 +114,9 @@ const MapComponent = ({ navigation }) => {
               image={require("../../assets/images/D-bld.png")}
               type={'Secondary'}
               title={"D building"}
-              button={"For More Information"}>
+              button={"For More Information"}
+              onPress1={navigate[4]}
+              >
               The MIU Global Residence is a seven-floor building that houses both 
               male and female students from all over the world. The first four 
               floors are dedicated to students and the 5th to 7th floors are 
