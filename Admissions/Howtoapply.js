@@ -46,7 +46,7 @@ const Howtoapply= ({ navigation }) => {
             </View>
             
             <View style={{flexDirection: "row", width: width*0.6, marginLeft:'-8.8%', marginTop: '3%', justifyContent:'center'}}>
-              <ToolTip text={'Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn'} lines={3} style={{width: width*0.3}}>
+              <ToolTip text={'Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn'} lines={3} style={{width: width*0.3}} type={'Undergraduate'}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>1</FONT>
@@ -54,7 +54,7 @@ const Howtoapply= ({ navigation }) => {
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Application {"\n"}Form</FONT>
               </View>
               </ToolTip>
-              
+              <ToolTip text={'70%:  (Grammar, Vocabulary, Reading, Essay & Speaking) – Applicants will be notified with MIU Entrance Exam schedule, and join MIU Entrance Exam ( and Skill Test for EE, MC, ME Departments) through Zoom (For the students who are residing outside Mongolia).'} lines={3} style={{width: width*0.5}} type={'Undergraduate'}>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -2, marginRight: -15 }}></View>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
@@ -62,6 +62,7 @@ const Howtoapply= ({ navigation }) => {
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>MIU {"\n"}Entrance Exam</FONT>
               </View>
+              </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -15 }}></View>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
