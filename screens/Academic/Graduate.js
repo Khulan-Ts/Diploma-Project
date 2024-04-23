@@ -28,7 +28,7 @@ const Graduate= ({ navigation }) => {
                 <Button type="Secondary" text={"2+2 program"}></Button> {/*onPress={() => navigation.navigate('Twoplus2')}*/}
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
-                  <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.15}}></Button>
+                  <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
                 </View>
                 <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
             </View>
@@ -80,6 +80,6 @@ export default Graduate
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white"
+    backgroundColor: "#f8fcfc"
   },
 });
