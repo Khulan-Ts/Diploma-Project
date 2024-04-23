@@ -1,21 +1,21 @@
 import React from 'react';
-import { View, StyleSheet, Pressable } from 'react-native';
+import { View, StyleSheet, Pressable, useWindowDimensions } from 'react-native';
 import FONT from './Titles';
 
 export const ToolTip = ({
   text,
-  lines,
   children,
   onPress,
   onBlur,
   onFocus,
+  lines,
   style
 }) => {
   const [showTooltip, setShowTooltip] = React.useState(false);
-
-  const CommonTooltipSyle = [
+  const { width, height } = useWindowDimensions();
+  
+  const CommonTooltipStyle = [
     styles.commonTooltip,
-    style
   ];
 
   const handleHoverIn = () => {
@@ -26,21 +26,18 @@ export const ToolTip = ({
     setShowTooltip(false);
   };
 
-  const clonedChild = React.cloneElement(children, {
-    onHoverIn: handleHoverIn,
-    onHoverOut: handleHoverOut,
-  });
-
   return (
     <Pressable
       onPress={onPress}
       onFocus={onFocus}
       onBlur={onBlur}
+      onHoverIn={handleHoverIn}
+      onHoverOut={handleHoverOut}
     >
-      {clonedChild}
+      {children}
       {showTooltip && (
-        <View style={CommonTooltipSyle}>
-          <FONT type="Regular" style={{ fontSize: 18 }} lines={lines}>
+        <View style={[CommonTooltipStyle]}>
+          <FONT type="Regular" style={[{ fontSize: 18 }, style]} lines={lines}>
             {text}
           </FONT>
         </View>
@@ -61,6 +58,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.25,
     shadowRadius: 4,
+    alignSelf: 'flex-start',
   },
 });
 

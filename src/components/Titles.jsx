@@ -49,7 +49,7 @@ export const FONT = ({
   ];
 
   return (
-    <Text style={TextStyle} numberOfLines={lines}>
+    <Text style={TextStyle} numberOfLines={lines} >
       {children}
     </Text>
   );
