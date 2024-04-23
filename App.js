@@ -11,6 +11,7 @@ import Twoplus2 from './screens/Academic/Twoplus2';
 import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
 import Dorm from './Dorm'
+import Lei_1 from './screens/LEI/Lei_1';
 
 const Stack = createStackNavigator();
 
@@ -26,7 +27,7 @@ const App = () => {
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button2Press={() => navigation.navigate('Undergraduate')} 
-              Button1Press={() => navigation.navigate('Another')} 
+              Button1Press={() => navigation.navigate('LEI')} 
               {...props} 
             />
           ),
@@ -41,6 +42,7 @@ const App = () => {
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
         <Stack.Screen name="Dorm" component={Dorm} />
+        <Stack.Screen name="LEI" component={Lei_1} />
       </Stack.Navigator>
     </NavigationContainer>
   );
