@@ -4,6 +4,7 @@ import FONT from './Titles';
 
 export const ToolTip = ({
   text,
+  type,
   children,
   onPress,
   onBlur,
@@ -16,6 +17,7 @@ export const ToolTip = ({
   
   const CommonTooltipStyle = [
     styles.commonTooltip,
+    type === 'Undergraduate' && {backgroundColor: "rgba(237, 240, 255, 0.5)"} 
   ];
 
   const handleHoverIn = () => {
