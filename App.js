@@ -9,9 +9,9 @@ import Graduate from './screens/Academic/Graduate';
 import Twoplus2 from './screens/Academic/Twoplus2';
 import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
-import Howtoapply_Under from './screens/Academic/howtoapply_undergrad';
+import Howtoapply_Under from './screens/Admissions/howtoapply_undergrad';
 import Dorm from './Dorm';
-import Howtoapply_Graduate from './screens/Academic/howtoapply_graduate';
+import Howtoapply_Graduate from './screens/Admissions/howtoapply_graduate';
 
 const Stack = createStackNavigator();
 

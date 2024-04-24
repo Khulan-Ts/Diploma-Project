@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import { StyleSheet,useWindowDimensions, Image, ScrollView, View  } from "react-native-web";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import ToolTip from "../../src/components/Tooltip";
 
-const Howtoapply_Under= ({ navigation }) => {
+const Howtoapply_Graduate= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
 
     return (
@@ -13,7 +13,7 @@ const Howtoapply_Under= ({ navigation }) => {
     >
       <View style={{flexDirection: "row", marginTop: '5%'}}>
         <View style={{width: width * 0.1, marginTop: '-1%' }}>
-          <Image source={require('..assets/images/howtoapply1.png')} style={{width: 'auto', height: width * 0.25}} resizeMode="contain"/>
+            <Image source={require('../../assets/images/howtoapply1.png')} style={{width: 'auto', height: width * 0.25}} resizeMode="contain"/>
         </View>
           <View style={{ marginLeft:'0.5%', width: '18%', marginTop: '-1%'}}>
               <View style={{ borderBottomWidth: 1, width: '80%', paddingBottom: 14, paddingLeft:14}}>
@@ -45,7 +45,7 @@ const Howtoapply_Under= ({ navigation }) => {
                 </View>
             </View>
             <View style={{flexDirection: "row", width: width*0.6, marginLeft:'-8.8%', marginTop: '3%', justifyContent:'center'}}>
-              <ToolTip text={'Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn'} lines={3} style={{width: width*0.3}} type={'Undergraduate'}>
+              <ToolTip text={'Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn'} lines={3} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>1</FONT>
@@ -54,7 +54,7 @@ const Howtoapply_Under= ({ navigation }) => {
               </View>
               </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -2, marginRight: -15 }}></View>
-              <ToolTip text={'70%:  (Grammar, Vocabulary, Reading, Essay & Speaking) – Applicants will be notified with MIU Entrance Exam schedule, and join MIU Entrance Exam ( and Skill Test for EE, MC, ME Departments) through Zoom (For the students who are residing outside Mongolia).'} lines={3} style={{width: width*0.5}} type={'Undergraduate'}>
+              <ToolTip text={'70%:  (Grammar, Vocabulary, Reading, Essay & Speaking) – Applicants will be notified with MIU Entrance Exam schedule, and join MIU Entrance Exam ( and Skill Test for EE, MC, ME Departments) through Zoom (For the students who are residing outside Mongolia).'} lines={3} style={{width: width*0.5}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>2</FONT>
@@ -63,7 +63,7 @@ const Howtoapply_Under= ({ navigation }) => {
               </View>
               </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -15 }}></View>
-              <ToolTip text={'30%: The application documents will be evaluated by the Admission Committee.'} lines={2} style={{width: width*0.3}} type={'Undergraduate'}>
+              <ToolTip text={'30%: The application documents will be evaluated by the Admission Committee.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>3</FONT>
@@ -72,7 +72,7 @@ const Howtoapply_Under= ({ navigation }) => {
               </View>
               </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginRight: -15}}></View>
-              <ToolTip text={' Applicants will receive individual admission result email from the Admission Affairs Office.'} lines={2} style={{width: width*0.3}} type={'Undergraduate'}>
+              <ToolTip text={' Applicants will receive individual admission result email from the Admission Affairs Office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>4</FONT>
@@ -81,7 +81,7 @@ const Howtoapply_Under= ({ navigation }) => {
               </View>
               </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -10, marginRight: -10 }}></View>
-              <ToolTip text={' The Admission Affairs will announce the MIU Scholarship Application beside Admission Scholarships.'} lines={2} style={{width: width*0.3}} type={'Undergraduate'}>
+              <ToolTip text={' The Admission Affairs will announce the MIU Scholarship Application beside Admission Scholarships.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>5</FONT>
@@ -90,7 +90,7 @@ const Howtoapply_Under= ({ navigation }) => {
               </View>
               </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -15, marginRight: -5 }}></View>
-              <ToolTip text={' Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.'} lines={2} style={{width: width*0.3}} type={'Undergraduate'}>
+              <ToolTip text={' Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>6</FONT>
@@ -99,7 +99,7 @@ const Howtoapply_Under= ({ navigation }) => {
               </View>
               </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -5, marginRight: -3 }}></View>
-              <ToolTip text={' Applicants need to send the receipts of their payments to the Admission Affairs office.'} lines={2} style={{width: width*0.3}} type={'Undergraduate'}>
+              <ToolTip text={' Applicants need to send the receipts of their payments to the Admission Affairs office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>7</FONT>
@@ -110,7 +110,7 @@ const Howtoapply_Under= ({ navigation }) => {
             </View>
           </View>
           <View style={{width: width * 0.1, marginLeft:'auto', marginTop: '-1%' }}>
-            <Image source={require('../assets/images/howtoapply2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+            <Image source={require('../../assets/images/howtoapply2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
     <View style={{marginLeft: '11%', marginTop: '-28%', flexDirection: 'row'}}>
@@ -136,7 +136,7 @@ const Howtoapply_Under= ({ navigation }) => {
   );
 }
 
-export default Howtoapply_Under
+export default Howtoapply_Graduate
 
 const styles = StyleSheet.create({
   container: {
