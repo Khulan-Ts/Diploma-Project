@@ -87,7 +87,7 @@ const AboutUs=({navigation})=>{
         </View>
         </View>
         <Image
-            source={require("../../assets/images/aboutusCal2.png")}
+            source={require("../../assets/images/miucal.png")}
             style={{height: height*1.2, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
           />
       </View>

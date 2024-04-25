@@ -10,7 +10,7 @@ const Dorm=({navigation})=>{
         <ScrollView style={styles.container}>
             <View style={{ flexDirection: 'row', marginTop: '5%'}}>
                 <View style={{width: width * 0.1, marginTop: '-5%', marginRight: 'auto'}}>
-                    <Image source={require('./assets/images/cal-2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                    <Image source={require('./assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>
                 <View style={{marginLeft: '-4%', width: width * 0.2}}>
                     <View style={{ borderBottomWidth: 1, width: width * 0.15, paddingBottom: 14, paddingLeft:14}}>
@@ -39,7 +39,7 @@ const Dorm=({navigation})=>{
                     <FONT type={"Title3"}style={{marginTop: height * 0.03, color: '#3D2562'}}>The current MIU dormitory complex is located off-campus and houses over 100 students. Typical dormitory rooms accommodate two to three students depending on the size of the room. The A & B Site Dormitory is equipped with kitchens with basic cooking utensils, common rooms for studying and exercising, wireless internet, and washing machines. When dormitory capacity is limited, freshmen are given first priority. Several faculty and staff may also live in the dormitory and serve as Dormitory Supervisors. Transportation from the dorm to campus is provided via school bus that leaves at 7:20 and 8:50 a.m. from Monday to Friday. </FONT>
                 </View>
                 <View style={{width: width * 0.1, marginTop: '-7%', marginBottom: height * 0.3, marginLeft: 'auto'}}>
-                    <Image source={require('./assets/images/cal-1.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                    <Image source={require('./assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>
             </View>
         </ScrollView>
