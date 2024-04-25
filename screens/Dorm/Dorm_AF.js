@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
+import Clock from "../../assets/icons/clock";
+import Calendar from "../../assets/icons/calendar";
+import Button from "../../src/components/Button";
 
 const Dorm=({navigation})=>{
     const { width, height } = useWindowDimensions();
@@ -20,50 +23,69 @@ const Dorm=({navigation})=>{
                         </View>
                     </View>    
                     <View style={{flexDirection: 'row'}}>
-                        <View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginTop: "5%", marginLeft: '1%', padding:5, backgroundColor: '#EDF0FF' }}>
+                        <View style={{ width: width * 0.26, marginLeft: '2%'}}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: "5%", padding:15, backgroundColor: '#EDF0FF' }}>
                                 <FONT type={"Title3"} style={{fontSize: 18}}>
                                     Room Type
                                 </FONT>
                             </View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -1, padding:5 }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: -2, padding:15}}>
                                 <FONT type={"Body"}>
                                     Room Type A: Big Room with 4 students
                                 </FONT>
                             </View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: -2, padding:15}}>
                                 <FONT type={"Body"}>
                                 Room Type B: Medium Room with 4 students
                                 </FONT>
                             </View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: -2, padding:15}}>
                                 <FONT type={"Body"}>
                                 Room Type C: Small Room with 2 students
                                 </FONT>
                             </View>
                         </View>
-                        <View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginTop: "5%", marginLeft: '1%', padding:5, backgroundColor: '#EDF0FF' }}>
+                        <View style={{width: width * 0.26, marginLeft: '-0.6%', padding:5}}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: '3.9%', padding:15, backgroundColor: '#EDF0FF' }}>
                                 <FONT type={"Title3"} style={{fontSize: 18}}>
                                     Housing Fee (₮)
                                 </FONT>
                             </View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: -2.5, padding:15 }}>
                                 <FONT type={"Body"}>
                                 ₮750,000
                                 </FONT>
                             </View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: -2, padding:15 }}>
                                 <FONT type={"Body"}>
                                 ₮750,000
                                 </FONT>
                             </View>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: -2, padding:15 }}>
                                 <FONT type={"Body"}>
                                 ₮750,000
                                 </FONT>
                             </View>
                         </View> 
+                        <View style={{marginLeft: '1%', marginTop: '1.8%'}}>
+                            <View style={[styles.infoContainer, {width: width * 0.17, height: height * 0.17}]}>
+                                <View style={{flexDirection: 'row',marginTop: '1%'}}>
+                                    <Clock width={24} height={28}/>
+                                    <View style={{marginLeft: '5%'}}>
+                                        <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
+                                        <FONT style={{fontSize: 18}}>A full semester (3 months)</FONT>
+                                    </View>
+                                </View>
+                                <View style={{flexDirection: 'row', marginTop: '1%', }}>
+                                    <Calendar width={25} height={25}/>
+                                    <View style={{marginLeft: '5%'}}>
+                                        <FONT type="Title2" style={{fontSize: 18}}>Contatc Us</FONT>
+                                        <FONT style={{fontSize: 18}}>dir_student@miu.edu.mn</FONT>
+                                    </View>
+                                </View>
+                            </View>
+                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: '8%', marginLeft: '2%'}} ></Button>
+                        </View>
                     </View>
                 </View>
                 <View style={{width: width * 0.1, marginTop: '-6%', marginLeft: 'auto'}}>
@@ -81,5 +103,10 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: "#f8fcfc"
     },
-  });
+      infoContainer:{
+        padding: 10,
+        backgroundColor: "#EDF0FF",
+        borderRadius: 30,
+    }
+});
   

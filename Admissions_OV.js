@@ -3,7 +3,7 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../src/components/Titles";
 import Button from "../src/components/Button";
 
-const Dorm=({navigation})=>{
+const Overview=({navigation})=>{
     const { width, height } = useWindowDimensions();
     return(
         <ScrollView style={styles.container}>
@@ -45,7 +45,7 @@ const Dorm=({navigation})=>{
     )
 }
 
-export default Dorm
+export default Overview
 
 const styles = StyleSheet.create({
     container: {
