@@ -37,7 +37,7 @@ const OurPeople=({navigation})=>{
             </View>
   
             <View style={{ flexDirection: 'row', alignItems: 'flex-start',flex:1, width:width*0.70, marginTop:'3%'}}>
-                <View style={{flexDirection:'column', width:'20%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'20%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/president2.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -64,7 +64,7 @@ const OurPeople=({navigation})=>{
                 /> 
             </View>
             <View style={{ flexDirection: 'row',alignContent:'space-between',flex:1, width:'100%', marginTop:'3%'}}>
-                <View style={{flexDirection:'column', width:'15%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'3%'}}>
                     <Image
                     source={require("../../assets/images/bilguun.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -72,7 +72,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>BILGUUN ENKHAMGALAN</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Director of Finance Office</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'15%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:50}}>
+                <View style={{flexDirection:'column', width:'15%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:'3%'}}>
                     <Image
                     source={require("../../assets/images/sumiya.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -98,7 +98,7 @@ const OurPeople=({navigation})=>{
                     /> 
             </View>
             <View style={{ flexDirection: 'row',alignContent:'space-between',flex:1, width:'100%', marginTop:'3%'}}>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -106,7 +106,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>DEAN</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Dean of Planning Affairs</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -114,7 +114,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>SELENGE JAMIYANDORJ</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Human Recource Manager</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/lawyer.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -122,7 +122,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>ICHINKHORLOO LOSOL</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Lawyer</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/abigail.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -143,7 +143,7 @@ const OurPeople=({navigation})=>{
           </View>
           <View style={{flexDirection:'column',marginLeft:'5%'}}>
             <View style={{ flexDirection: 'row',alignContent:'space-between',flex:1, width:'100%', marginTop:'2%'}}>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/ruvim.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -152,7 +152,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Director of Information</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Communication Center</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/purvee.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -161,7 +161,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Software Engineer of</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}> Information Communication Center</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/daniel.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -180,7 +180,7 @@ const OurPeople=({navigation})=>{
                 /> 
             </View>
             <View style={{ flexDirection: 'row',alignContent:'space-between',flex:1, width:'100%', marginTop:'3%'}}>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -188,7 +188,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -196,7 +196,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -204,7 +204,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -224,7 +224,7 @@ const OurPeople=({navigation})=>{
           </View>
           <View style={{flexDirection:'column',marginLeft:'5%'}}>
             <View style={{ flexDirection: 'row',alignContent:'space-between',flex:1, width:'100%', marginTop:'2%'}}>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -232,7 +232,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -240,7 +240,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -248,7 +248,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -274,7 +274,7 @@ const OurPeople=({navigation})=>{
                 /> 
             </View>
             <View style={{ flexDirection: 'row',alignContent:'space-between',flex:1, width:'100%', marginTop:'3%'}}>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -282,7 +282,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15,  marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -290,7 +290,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
@@ -298,7 +298,7 @@ const OurPeople=({navigation})=>{
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center', paddingTop:15}}>Name</FONT>
                     <FONT style={{fontSize:15, fontWeight:'bold', textAlign:'center'}}>Occupation</FONT>
                 </View>
-                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:50}}>
+                <View style={{flexDirection:'column', width:'16%', height:'40%', alignItems:'center', paddingBottom:15, marginRight:'2.5%'}}>
                     <Image
                     source={require("../../assets/images/blank.png")}
                     style={{width: width*0.35, height: height*0.35, borderRadius:50}}resizeMode="contain"
