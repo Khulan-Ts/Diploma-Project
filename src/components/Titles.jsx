@@ -29,6 +29,9 @@ export const FONT = ({
     case 'Title3':
       fontName = 'Outfit-Bold'
       break
+      case 'Title4':
+        fontName = 'Outfit-SemiBold'
+        break
     default:
       break;
   }
@@ -67,10 +70,14 @@ const getFontSize = (type) => {
       return 18;
     case 'Subtitle2':
       return 23
+    case 'Subtitle3':
+      return 16
     case 'Title2':
       return 30
     case 'Title3':
       return 25
+    case 'Title4':
+      return 20
     default:
       return 28; 
   }
