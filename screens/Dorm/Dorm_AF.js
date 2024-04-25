@@ -19,48 +19,52 @@ const Dorm=({navigation})=>{
                                 All freshmen are required to live in the dormitory on campus for their first year. Established in 2017, the dormitory is equipped with a kitchen, laundry facilities, internet access, and more. This building can house more than 200 students. While upperclassmen students are allowed to live in the Global Residence, freshmen students are given first priority. The Global Residence is led by the Dormitory Manager and upperclassmen students to ensure that freshmen are safe and healthy. </FONT>
                         </View>
                     </View>    
-                    
-                    <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginTop: "5%", marginLeft: '1%', padding:5, backgroundColor: '#EDF0FF' }}>
-                        <FONT type={"Title3"} style={{fontSize: 18}}>
-                            Room Type
-                        </FONT>
-                    </View>
-                    <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -1, padding:5 }}>
-                        <FONT type={"Body"}>
-                            Room Type A: Big Room with 4 students
-                        </FONT>
-                    </View>
-                    <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
-                        <FONT type={"Body"}>
-                        Room Type B: Medium Room with 4 students
-                        </FONT>
-                    </View>
-                    <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
-                        <FONT type={"Body"}>
-                        Room Type C: Small Room with 2 students
-                        </FONT>
-                    </View>
-                        
-                        <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginTop: "5%", marginLeft: '1%', padding:5, backgroundColor: '#EDF0FF' }}>
-                            <FONT type={"Title3"} style={{fontSize: 18}}>
-                                Housing Fee (₮)
-                            </FONT>
+                    <View style={{flexDirection: 'row'}}>
+                        <View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginTop: "5%", marginLeft: '1%', padding:5, backgroundColor: '#EDF0FF' }}>
+                                <FONT type={"Title3"} style={{fontSize: 18}}>
+                                    Room Type
+                                </FONT>
+                            </View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -1, padding:5 }}>
+                                <FONT type={"Body"}>
+                                    Room Type A: Big Room with 4 students
+                                </FONT>
+                            </View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                                <FONT type={"Body"}>
+                                Room Type B: Medium Room with 4 students
+                                </FONT>
+                            </View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                                <FONT type={"Body"}>
+                                Room Type C: Small Room with 2 students
+                                </FONT>
+                            </View>
                         </View>
-                        <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
-                            <FONT type={"Body"}>
-                            ₮750,000
-                            </FONT>
-                        </View>
-                        <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
-                            <FONT type={"Body"}>
-                            ₮750,000
-                            </FONT>
-                        </View>
-                        <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
-                            <FONT type={"Body"}>
-                            ₮750,000
-                            </FONT>
+                        <View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginTop: "5%", marginLeft: '1%', padding:5, backgroundColor: '#EDF0FF' }}>
+                                <FONT type={"Title3"} style={{fontSize: 18}}>
+                                    Housing Fee (₮)
+                                </FONT>
+                            </View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                                <FONT type={"Body"}>
+                                ₮750,000
+                                </FONT>
+                            </View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                                <FONT type={"Body"}>
+                                ₮750,000
+                                </FONT>
+                            </View>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', width: width * 0.25, marginLeft: '1%', marginTop: -2, padding:5 }}>
+                                <FONT type={"Body"}>
+                                ₮750,000
+                                </FONT>
+                            </View>
                         </View> 
+                    </View>
                 </View>
                 <View style={{width: width * 0.1, marginTop: '-6%', marginLeft: 'auto'}}>
                     <Image source={require('../../assets/images/cal-1.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
