@@ -29,7 +29,7 @@ const App = () => {
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               //Button1Press={() => navigation.navigate('Another')} 
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              //Button3Press={() => navigation.navigate('How to Apply Undergraduate')} 
+              // Button3Press={() => navigation.navigate('How to Apply Undergraduate')} 
               Button3Press={() => navigation.navigate('How to Apply Graduate')} 
               {...props} 
             />
@@ -37,8 +37,8 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
-        <Stack.Screen name="How to Apply Graduate" component={Howtoapply_Graduate}/>
         <Stack.Screen name="How to Apply Undergraduate" component={Howtoapply_Under}/>
+        <Stack.Screen name="How to Apply Graduate" component={Howtoapply_Graduate}/>
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Graduate" component={Graduate} />

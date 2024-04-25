@@ -41,70 +41,61 @@ const Howtoapply_Graduate= ({ navigation }) => {
                 </View>
                 <View style={{borderRightWidth: 1, height: height*0.06}}></View>
                 <View style={{ width: '50%', alignItems: 'center', marginTop: '-1%', marginLeft: '1%'}}>
-                    <Button type="Fourth" text={"Graduate Programs"} style={{width: width * 0.20}} onPress={() => navigation.navigate('Graduate Programs')}></Button>
+                    <Button type="Fourth" text={"Graduate Programs"} onPress={() => navigation.navigate('Graduate Programs')}></Button>
                 </View>
             </View>
-            <View style={{flexDirection: "row", width: width*0.6, marginLeft:'-8.8%', marginTop: '3%', justifyContent:'center'}}>
+            <View style={{flexDirection: "row", width: width*0.6, marginLeft:'-5%', marginTop: '6%', justifyContent:'center'}}>
               <ToolTip text={'Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn'} lines={3} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
-                <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
+                <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>1</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Application {"\n"}Form</FONT>
               </View>
               </ToolTip>
-              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -2, marginRight: -15 }}></View>
-              <ToolTip text={'70%:  (Grammar, Vocabulary, Reading, Essay & Speaking) – Applicants will be notified with MIU Entrance Exam schedule, and join MIU Entrance Exam ( and Skill Test for EE, MC, ME Departments) through Zoom (For the students who are residing outside Mongolia).'} lines={3} style={{width: width*0.5}}>
+              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%'}}></View>
+              <ToolTip text={'The application documents will be evaluated by the Admission Committee.'} lines={2} style={{width: width*0.25}}>
               <View style={{ alignItems:'center'}}>
-                <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
+                <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>2</FONT>
-                </View>
-                <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>MIU {"\n"}Entrance Exam</FONT>
-              </View>
-              </ToolTip>
-              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -15 }}></View>
-              <ToolTip text={'30%: The application documents will be evaluated by the Admission Committee.'} lines={2} style={{width: width*0.3}}>
-              <View style={{ alignItems:'center'}}>
-                <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>3</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Document {"\n"}Screening</FONT>
               </View>
               </ToolTip>
-              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginRight: -15}}></View>
+              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%'}}></View>
+              <ToolTip text={'Applicants will be notified individually with their interview schedule.'} lines={2} style={{width: width*0.3}}>
+              <View style={{ alignItems:'center'}}>
+                <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
+                  <FONT>3</FONT>
+                </View>
+                <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Application {"\n"}Interview</FONT>
+              </View>
+              </ToolTip>
+              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginRight: '-1.5%'}}></View>
               <ToolTip text={' Applicants will receive individual admission result email from the Admission Affairs Office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
-                <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
+                <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT>4</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Admission {"\n"}Result {"\n"} Announcement</FONT>
               </View>
               </ToolTip>
-              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -10, marginRight: -10 }}></View>
-              <ToolTip text={' The Admission Affairs will announce the MIU Scholarship Application beside Admission Scholarships.'} lines={2} style={{width: width*0.3}}>
-              <View style={{ alignItems:'center'}}>
-                <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>5</FONT>
-                </View>
-                <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color:'#3D2562'}}>Scholarship {"\n"}Application {"\n"} Announcement</FONT>
-              </View>
-              </ToolTip>
-              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -15, marginRight: -5 }}></View>
+              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: '-1.5%', marginRight: '-0.5%'}}></View>
               <ToolTip text={' Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
-                <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>6</FONT>
+                <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
+                  <FONT>5</FONT>
                 </View>
-                <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color:'#3D2562'}}>Official {"\n"}Acceptance {"\n"}Letter</FONT>
+                <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color:'#3D2562'}}>Official {"\n"}Acceptance {"\n"} Letter</FONT>
               </View>
               </ToolTip>
-              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: -5, marginRight: -3 }}></View>
+              <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: '-0.5%', marginRight: "0.5%"}}></View>
               <ToolTip text={' Applicants need to send the receipts of their payments to the Admission Affairs office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
-                <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>7</FONT>
+                <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
+                  <FONT>6</FONT>
                 </View>
-                <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color:'#3D2562'  }}>Payment of{"\n"}Fees</FONT>
+                <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color:'#3D2562'}}>Payment {"\n"}of {"\n"}Fees</FONT>
               </View>
               </ToolTip>
             </View>
@@ -118,17 +109,16 @@ const Howtoapply_Graduate= ({ navigation }) => {
     <View style={{marginLeft: '1%'}}>
       <FONT type="Regular" style={{fontSize: 22, color: '#3D2562'}}>•  Completed Admission Application Form 
       {'\n'}•  Statement of Purpose (SOP) in English 
-      {'\n'}•  One Recommendation Letter in English 
-      {'\n'}•  English Certificate of High School Graduation /copy/ 
-      {'\n'}•  Official High School Records in English /copy/ 
-      {'\n'}•  Notarized English translation of National Exam score 
-      {'\n'}•  Completed Resume Form 
-      {'\n'}•  Copy of Valid Passport /copy/ 
-      {'\n'}•  Two Passport-size Photos (3x4)
-      {'\n'}•  HIV/AIDS Test Results /copy/ 
-      {'\n'}•  Chest X-Ray Test Result in English 
-      {'\n'}•  Application Fee /25 USD/ 
-      {'\n'}•  Document Translation Fee 20,000₮ or 40,000₮ </FONT>
+      {'\n'}•  Two Recommendation Letter in English 
+      {'\n'}•  Notarized English Certificate of Bachelor’s Degree 
+      {'\n'}•  Notarized Official Bachelor’s Degree Transcript in English
+      {'\n'}•  English Resume with Photo Attached【Optional】
+      {'\n'}•  English Proficiency Test Score【Optional】
+      {'\n'}•  Valid Passport (Copy)
+      {'\n'}•  HIV/ AIDS Test Result
+      {'\n'}•  Passport Photos
+      {'\n'}•  Application Fee /25 USD/
+      </FONT>
     </View>
     </View>
       
