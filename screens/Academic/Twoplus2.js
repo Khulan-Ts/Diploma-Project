@@ -16,7 +16,7 @@ const Twoplus2=({navigation})=>{
           source={require("../../assets/images/2p2cal1.png")}
           style={{height: height*0.6, width:width*0.1, marginLeft:'-1%'}}resizeMode="contain"
         />
-        <View style={{width: '18%'}}>
+        <View style={{marginLeft: '2%', width: '18%'}}>
             <View style={{ borderBottomWidth: 1, width: '90%', paddingBottom: 14, paddingLeft:14}}>
                 <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
             </View>
@@ -28,7 +28,7 @@ const Twoplus2=({navigation})=>{
                     <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
                 </View>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
-                <Button type="Secondary" text={"2+2 program"} isPressedState={true}></Button> 
+                <Button type="Secondary" text={"2+2 program"} isPressedState={true} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
                     <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
@@ -49,7 +49,7 @@ const Twoplus2=({navigation})=>{
               />
           </View>
           <Image
-            source={require("../../assets/images/2p2cal2.png")}
+            source={require("../../assets/images/miucal.png")}
             style={{height: height*1.2, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
           />
 
