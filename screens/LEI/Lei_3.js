@@ -5,7 +5,7 @@ import Button from "../../src/components/Button";
 import Calendar from "../../assets/icons/calendar";
 import Clock from "../../assets/icons/clock";
 
-const Lei_1= ({ navigation }) => {
+const Lei_3= ({ navigation }) => {
   const { width, height } = useWindowDimensions();
   return (
     <ScrollView
@@ -31,13 +31,13 @@ const Lei_1= ({ navigation }) => {
           <View style={{flexDirection: 'row', marginTop: '5%'}}>
               <View>
                   <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
-                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')} isPressedState={true}></Button>
+                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')}></Button>
                   </View>
                   <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"English Evening Course"} onPress={() => navigation.navigate('English Evening Course')}></Button>
                   </View>
                   <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
-                      <Button type="Nine" text={"Business English Course"} onPress={() => navigation.navigate('Business English Course')}></Button>
+                      <Button type="Nine" text={"Business English Course"} onPress={() => navigation.navigate('Business English Course')} isPressedState={true}></Button>
                   </View>
                   <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"Mongolian Course"} onPress={() => navigation.navigate('Mongolian Course')}></Button>
@@ -45,16 +45,15 @@ const Lei_1= ({ navigation }) => {
                   <Button type="Nine" text={"Additional Language Course"} onPress={() => navigation.navigate('Additional Language Course')}></Button>
               </View>
               <View style={{borderLeftWidth: 1, borderColor: "#3D2562", width: width * 0.41, height: height * 0.31}}>
-                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-1%'}}>Our English Foundation Course is the heart of LEI. It is a immersive
-                  English program that brings together students from multiple countries and works through 
-                  activities, speaking structures, and other interactive coursework to help students improve 
-                  their English. This course is made for recent high school graduates who wish to improve their 
-                  English level in order to study at MIU. However, this program is available to anyone who wants 
-                  to improve their English level and is recommended for all beginners and intermediate level students 
-                  who plan to use English to study or work.</FONT>
+                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-1%'}}>This course is perfect for businesses 
+                  that want to improve their employee’s English level for international business and customer service. 
+                  The program is customizable to the individual company’s needs with options for days, times, and levels. 
+                  Companies can pay a testing fee to have their employee’s leveled, and then work with LEI office staff 
+                  to organize a program with 1-2 qualified teachers who will come to the office during business hours or 
+                  at a convenient time throughout the week to teach a 10 week business English course.</FONT>
               </View>
               <View style={{marginLeft: '2.5%', marginTop: '-1%'}}>
-                <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
+              <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
                   <View style={{flexDirection: 'row'}}>
                     <Clock width={24} height={28}/>
                     <View style={{marginLeft: '5%', marginTop: '-1%'}}>
@@ -125,7 +124,7 @@ const Lei_1= ({ navigation }) => {
   );
 }
 
-export default Lei_1
+export default Lei_3
 
 const styles = StyleSheet.create({
   container: {

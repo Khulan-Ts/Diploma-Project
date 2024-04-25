@@ -5,7 +5,7 @@ import Button from "../../src/components/Button";
 import Calendar from "../../assets/icons/calendar";
 import Clock from "../../assets/icons/clock";
 
-const Lei_1= ({ navigation }) => {
+const Lei_4= ({ navigation }) => {
   const { width, height } = useWindowDimensions();
   return (
     <ScrollView
@@ -31,7 +31,7 @@ const Lei_1= ({ navigation }) => {
           <View style={{flexDirection: 'row', marginTop: '5%'}}>
               <View>
                   <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
-                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')} isPressedState={true}></Button>
+                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')}></Button>
                   </View>
                   <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"English Evening Course"} onPress={() => navigation.navigate('English Evening Course')}></Button>
@@ -40,20 +40,20 @@ const Lei_1= ({ navigation }) => {
                       <Button type="Nine" text={"Business English Course"} onPress={() => navigation.navigate('Business English Course')}></Button>
                   </View>
                   <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
-                      <Button type="Nine" text={"Mongolian Course"} onPress={() => navigation.navigate('Mongolian Course')}></Button>
+                      <Button type="Nine" text={"Mongolian Course"} onPress={() => navigation.navigate('Mongolian Course')} isPressedState={true}></Button>
                   </View>
                   <Button type="Nine" text={"Additional Language Course"} onPress={() => navigation.navigate('Additional Language Course')}></Button>
               </View>
-              <View style={{borderLeftWidth: 1, borderColor: "#3D2562", width: width * 0.41, height: height * 0.31}}>
-                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-1%'}}>Our English Foundation Course is the heart of LEI. It is a immersive
-                  English program that brings together students from multiple countries and works through 
-                  activities, speaking structures, and other interactive coursework to help students improve 
-                  their English. This course is made for recent high school graduates who wish to improve their 
-                  English level in order to study at MIU. However, this program is available to anyone who wants 
-                  to improve their English level and is recommended for all beginners and intermediate level students 
-                  who plan to use English to study or work.</FONT>
+              <View style={{borderLeftWidth: 1, borderColor: "#3D2562", width: width * 0.42, height: height * 0.31}}>
+                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-2%'}}>This program is a very flexible 
+                  tutoring program to help students learn or improve their Mongolian language. For true beginners, 
+                  we recommend a survival course program of 12 weeks, that covers basic elements of Mongolian such 
+                  as alphabet (reading and pronunciation) and daily phrases. For students who wish to study more, we 
+                  have level 1 (beginner) and level 2 (intermediate) programs to improve communication and help with 
+                  day-to-day tasks. All classes are taught by native Mongolian speakers and use interactive classroom 
+                  methods to get the student involved and help with memory. Most classes have between 1-5 students.</FONT>
               </View>
-              <View style={{marginLeft: '2.5%', marginTop: '-1%'}}>
+              <View style={{marginLeft: '1.5%', marginTop: '-1%'}}>
                 <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
                   <View style={{flexDirection: 'row'}}>
                     <Clock width={24} height={28}/>
@@ -125,7 +125,7 @@ const Lei_1= ({ navigation }) => {
   );
 }
 
-export default Lei_1
+export default Lei_4
 
 const styles = StyleSheet.create({
   container: {

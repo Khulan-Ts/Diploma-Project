@@ -12,6 +12,10 @@ import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
 import Dorm from './Dorm'
 import Lei_1 from './screens/LEI/Lei_1';
+import Lei_2 from './screens/LEI/Lei_2';
+import Lei_3 from './screens/LEI/Lei_3';
+import Lei_4 from './screens/LEI/Lei_4';
+import Lei_5 from './screens/LEI/Lei_5';
 
 const Stack = createStackNavigator();
 
@@ -27,7 +31,7 @@ const App = () => {
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button2Press={() => navigation.navigate('Undergraduate')} 
-              Button1Press={() => navigation.navigate('LEI')} 
+              Button4Press={() => navigation.navigate('English Foundation Course')} 
               {...props} 
             />
           ),
@@ -42,7 +46,11 @@ const App = () => {
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
         <Stack.Screen name="Another" component={AnotherScreen} />
         <Stack.Screen name="Dorm" component={Dorm} />
-        <Stack.Screen name="LEI" component={Lei_1} />
+        <Stack.Screen name="English Foundation Course" component={Lei_1} />
+        <Stack.Screen name="English Evening Course" component={Lei_2} />
+        <Stack.Screen name="Business English Course" component={Lei_3} />
+        <Stack.Screen name="Mongolian Course" component={Lei_4} />
+        <Stack.Screen name="Additional Language Course" component={Lei_5} />
       </Stack.Navigator>
     </NavigationContainer>
   );
