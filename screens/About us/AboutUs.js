@@ -19,7 +19,7 @@ const AboutUs=({navigation})=>{
             source={require("../../assets/images/aboutusCal1.png")}
             style={{height: height*0.6, width:width*0.1}}resizeMode="contain"
           />
-          <View style={{width: '18%'}}>
+          <View style={{width: '18%', marginLeft: '1%'}}>
               <View style={{marginTop: '5%'}}>
                   <View style={{borderBottomWidth: 1, width: '70%'}}>
                       <Button type="Secondary" text={"About us"} isPressedState={true} ></Button>
