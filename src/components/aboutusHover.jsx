@@ -15,6 +15,7 @@
         const descrOpacity = React.useRef(new Animated.Value(0)).current;
         const iconOpacity = React.useRef(new Animated.Value(1)).current;
         const textTranslateY = React.useRef(new Animated.Value(0)).current;
+        const textmove = height*0.22;
 
         const handleHoverIn = () => {
             setIsHovered(true);
@@ -25,7 +26,7 @@
                     useNativeDriver: true
                 }),
                 Animated.timing(textTranslateY, {
-                    toValue: -135, // Adjust this value to control the upward movement
+                    toValue: -textmove, // Adjust this value to control the upward movement
                     duration: 200,
                     useNativeDriver: true
                 }),
@@ -84,7 +85,7 @@
                     <Image source={icon} style={styles.icon} resizeMode='contain' />
                 </Animated.View>
                 <Animated.View style={[styles.content, { opacity: 1 - iconOpacity, transform: [{ translateY: textTranslateY }] }]}>
-                    <FONT type={'Title4'} style={{ marginTop: '70%' }}>{text}</FONT>
+                    <FONT type={'Title4'} style={{ marginTop: '60%', width:'50%', textAlign:'center'}}>{text}</FONT>
                 </Animated.View>
                 <Animated.View style={[styles.description, {opacity:descrOpacity,}]}>
                     <FONT style={[styles.descrtext, {width: width * 0.18, height:height * 0.19}]} type={'Subtitle3'}>{descr}</FONT>
@@ -140,7 +141,8 @@
             paddingLeft:10,
         },
         icon: {
-            height: '60%'
+            height: '55%',
+            marginBottom:'20%'
         }
     });
 
