@@ -67,7 +67,7 @@ const Graduate= ({ navigation }) => {
             </Button>
           </View>
         </View>
-        <View style={{width: width * 0.1, marginTop: '-7%', marginLeft: 'auto'}}>
+        <View style={{width: width * 0.1, marginTop: '-6%', marginLeft: 'auto'}}>
           <Image source={require('../../assets/images/cal-1.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
