@@ -21,15 +21,15 @@ const AboutUs=({navigation})=>{
             source={require("../../assets/images/aboutusCal1.png")}
             style={{height: height*0.6, width:width*0.1}}resizeMode="contain"
           />
-          <View style={{width: '18%'}}>
+          <View style={{width: '18%', marginLeft:'1%'}}>
               <View style={{marginTop: '5%'}}>
-                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                  <View style={{borderBottomWidth: 1, width: '95%'}}>
                       <Button type="Secondary" text={"About us"} isPressedState={true} ></Button>
                   </View>
-                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                  <View style={{borderBottomWidth: 1, width: '95%'}}>
                       <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
                   </View>
-                      <View style={{borderBottomWidth: 1, width: '70%'}}>
+                      <View style={{borderBottomWidth: 1, width: '95%'}}>
                   <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
                   </View>
                   <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
@@ -37,7 +37,7 @@ const AboutUs=({navigation})=>{
           </View>
 
           <View style={{ flexDirection: 'row', alignItems: 'flex-start', flex:1}}>
-            <View style={{flexDirection:'column', width:'45%', alignItems:'center', justifyContent:'center'}}>
+            <View style={{flexDirection:'column', width:'40%', alignItems:'center', justifyContent:'center'}}>
                 <Image
                 source={require("../../assets/images/president.png")}
                 style={{width: width*0.4, height: height*0.4, borderRadius:50}}resizeMode="contain"

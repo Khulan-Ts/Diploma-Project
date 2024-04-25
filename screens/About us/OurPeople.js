@@ -15,13 +15,13 @@ const OurPeople=({navigation})=>{
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start', marginTop:'5%' }}>
             <View style={{marginLeft: '11%', width: '18%'}}>
               <View style={{marginTop: '5%'}}>
-                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                  <View style={{borderBottomWidth: 1, width: '95%'}}>
                       <Button type="Secondary" text={"About us"}  onPress={() => navigation.navigate('About us')} ></Button>
                   </View>
-                  <View style={{borderBottomWidth: 1, width: '70%'}}>
+                  <View style={{borderBottomWidth: 1, width: '95%'}}>
                       <Button type="Secondary" text={"Our people"} isPressedState={true}></Button>
                   </View>
-                      <View style={{borderBottomWidth: 1, width: '70%'}}>
+                      <View style={{borderBottomWidth: 1, width: '95%'}}>
                   <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
                   </View>
                   <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
