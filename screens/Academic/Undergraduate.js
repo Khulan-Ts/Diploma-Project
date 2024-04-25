@@ -23,7 +23,7 @@ const Undergraduate= ({ navigation }) => {
                     <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
                 </View>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
-                <Button type="Secondary" text={"2+2 program"} onPress={() => navigation.navigate('Twoplus2')}></Button> 
+                <Button type="Secondary" text={"2+2 program"} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
                 </View>
                 <View style={{borderBottomWidth: 1, width: '70%'}}>
                     <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
@@ -77,6 +77,6 @@ export default Undergraduate
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8fcfc"
+    backgroundColor: "#F6FAFF"
   },
 });

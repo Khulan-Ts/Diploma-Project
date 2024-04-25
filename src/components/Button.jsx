@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Text,
   Pressable,
+  useWindowDimensions
 } from "react-native";
 
 import { useFonts } from 'expo-font'
@@ -21,11 +22,15 @@ const Button = ({
   style,
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
-  const [isPressed, setIsPressed] = React.useState(false)
+  const [isPressed, setIsPressed] = React.useState(false);
   const [fontLoaded] = useFonts({
     "Outfit-Regular": require('../../assets/fonts/Outfit-Regular.ttf'),
     "Outfit-Bold": require('../../assets/fonts/Outfit-Bold.ttf'),
+    "Outfit-SemiBold": require('../../assets/fonts/Outfit-SemiBold.ttf'),
+    "Outfit-Medium": require('../../assets/fonts/Outfit-Medium.ttf')
   });
+
+  const { width, height } = useWindowDimensions();
 
   React.useEffect(()=>{
     setIsPressed(isPressedState)
@@ -41,6 +46,15 @@ const Button = ({
     type === "Fifth" && {backgroundColor: '#FCB900', padding: 15, borderRadius: 20},
     type === "Sixth" && {backgroundColor: '#3D2562', padding: 10, borderRadius: 20},
     type === "Seven" && isHovered && { backgroundColor: "#EDF0FF"},
+    type === "Eight" && isPressed && {backgroundColor: "#EDF0FF"},
+    type === "Nine" && isPressed && {backgroundColor: "#EDF0FF"},
+    type === "Apply2" && {
+      backgroundColor: '#FFDB78', 
+      paddingBottom: 20, 
+      paddingTop: 20,
+      borderRadius: 30,
+      width: width * 0.16,
+      },
     style,
   ];
   const TextStyle = [
@@ -51,12 +65,19 @@ const Button = ({
     type === "Secondary" && isHovered && {color: '#B592EB'},
     type === "Secondary" && {fontSize: 20},
     type === "Third" && isHovered && {color: '#FCB900'},
+    type === "Fourth" && {color: '#3D2562'},
     type === "Fourth" && isHovered && {color: '#FFDB78'},
+    type === "Fourth" && isPressed && isHovered && {color: '#3D2562'},
     type === "Fifth" && {color: '#3D2562', fontSize: 15},
     type === "Sixth" && {color: '#FCB900', fontSize: 15},
-    {fontFamily: (fontLoaded && type!== "Apply") ? 'Outfit-Regular':(fontLoaded && type=== "Apply")? 'Outfit-Bold' : 'Arial' },
+    {fontFamily: (fontLoaded && type !== "Apply" && type !== "Apply2" && type !== "Nine") ? 
+    'Outfit-Regular' : (fontLoaded && type === "Apply") ? 'Outfit-Bold' : 
+    (fontLoaded && type === "Apply2") ? 'Outfit-SemiBold': (fontLoaded && type === "Nine") ? 'Outfit-Medium' : 'Arial' },
     type === "Apply" && {fontSize: 25, color:"#3D2562"},
     type === "Seven" && {color: '#000', fontSize: 18},
+    type === "Eight" && {color: '#3D2562'},
+    type === "Apply2" && {color: '#3D2562', fontSize: 25},
+    type === "Nine" && {color: '#3D2562', fontSize: 20},
   ]; 
   const TextWidth= [
     style?.width && {width: style.width, paddingLeft: 5, paddingRight: 5},
@@ -90,7 +111,7 @@ const Button = ({
       {type === "Apply" &&  
         <Pressable
           onPress={onPress}
-          style={styles.apply}
+          style={[styles.apply,{width: width * 0.25, height: height * 0.15}]}
         >
           <Text numberOfLines={1} style={TextStyle}>
             {text}
@@ -120,16 +141,14 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#000",
-    fontSize: 18
+    fontSize: 18,
   },
   apply:{
-    width: 345,
-    height: 95,
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
     borderRadius: 15,
-    backgroundColor: '#FFF'
+    backgroundColor: '#FFF',
   },
   iconContainer:{
     width: 31,
@@ -138,6 +157,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#3D2562",
     justifyContent:'center',
     alignItems: 'center',
-    marginLeft: 51
+    marginLeft: 51,
   }
 });

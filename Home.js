@@ -155,7 +155,7 @@ export default HomeScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8fcfc"
+    backgroundColor: "#F6FAFF"
   },
   image: {
     width: "100%",

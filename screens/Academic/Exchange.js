@@ -61,6 +61,6 @@ export default Exchange
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8fcfc"
+    backgroundColor: "#F6FAFF"
   },
 });

@@ -68,7 +68,6 @@ const MapComponent = ({
                 button={"For More Information"}
                 button2={"Dormitory Fee"}
                 onPress1={navigate[1]}
-                onPress2={navigate[2]}
               >
                 The MIU Global Residence is a seven-floor building that houses
                 both male and female students from all over the world. The first
@@ -93,7 +92,7 @@ const MapComponent = ({
                 type={"Secondary"}
                 title={"M Building"}
                 button={"For More Information"}
-                onPress1={navigate[3]}
+                onPress1={navigate[2]}
               >
                 Student affairs - Academic - Admission - Finance - President`s office
                 {"\n\n\n\n\n"}
@@ -115,7 +114,7 @@ const MapComponent = ({
               type={'Secondary'}
               title={"D building"}
               button={"For More Information"}
-              onPress1={navigate[4]}
+              onPress1={navigate[3]}
               >
               The MIU Global Residence is a seven-floor building that houses both 
               male and female students from all over the world. The first four 
@@ -185,6 +184,6 @@ const styles = StyleSheet.create({
   dbld:{
     right: "100%",
     top: '50%',
-    transform: [{ translateX: '-300%' }],
+    transform: [{ translateX: '-280%' }],
   }
 });

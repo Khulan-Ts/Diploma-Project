@@ -36,12 +36,12 @@ export const HoverButton = ({
         Animated.parallel([
             Animated.timing(iconOpacity, {
                 toValue: 1,
-                duration: 200,
+                duration: 500,
                 useNativeDriver: true
             }),
             Animated.timing(textScale, {
                 toValue: 1,
-                duration: 200,
+                duration: 500,
                 useNativeDriver: true
             })
         ]).start();
