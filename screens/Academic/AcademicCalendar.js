@@ -30,11 +30,11 @@ const AcademicCal= ({ navigation }) => {
                 <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')} isPressedState={true}></Button>
             </View>
         </View>
-        <View style={{width: '50%', marginLeft: '5%', marginBottom: '10%'}}>
-          <Image source={require('../../assets/images/calendar-1.png')} style={{ height: '78%', width: 'auto' }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-2.png')} style={{ height: '65%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-3.png')} style={{ height: '75%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-4.png')} style={{ height: '60%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
+        <View style={{width: width * 0.5, marginLeft: '5%', marginBottom: '10%'}}>
+            <Image source={require('../../assets/images/calendar-1.png')} style={{ height: '78%', width: 'auto' }} resizeMode="contain"/>
+            <Image source={require('../../assets/images/calendar-2.png')} style={{ height: '65%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
+            <Image source={require('../../assets/images/calendar-3.png')} style={{ height: '75%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
+            <Image source={require('../../assets/images/calendar-4.png')} style={{ height: '60%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
         </View>
         <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-5%'}}>
           <Image source={require('../../assets/images/cal-1.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
