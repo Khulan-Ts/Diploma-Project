@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
+import Footer from "../../src/components/footer";
 
 const Graduate= ({ navigation }) => {
   const { width, height } = useWindowDimensions();
@@ -71,6 +72,7 @@ const Graduate= ({ navigation }) => {
           <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
+      <Footer/>
     </ScrollView>
   );
 }

@@ -59,8 +59,9 @@ export default Footer;
 
 const styles = StyleSheet.create({
     footer:{
-        backgroundColor: "#3d2562",
-        justifyContent: 'center',
-        alignItems: 'center'
-      },
+      width: '100%',
+      backgroundColor: "#3d2562",
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
 });

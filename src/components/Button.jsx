@@ -27,7 +27,8 @@ const Button = ({
     "Outfit-Regular": require('../../assets/fonts/Outfit-Regular.ttf'),
     "Outfit-Bold": require('../../assets/fonts/Outfit-Bold.ttf'),
     "Outfit-SemiBold": require('../../assets/fonts/Outfit-SemiBold.ttf'),
-    "Outfit-Medium": require('../../assets/fonts/Outfit-Medium.ttf')
+    "Outfit-Medium": require('../../assets/fonts/Outfit-Medium.ttf'),
+    "Outfit-ExtraBold": require('../../assets/fonts/Outfit-ExtraBold.ttf')
   });
 
   const { width, height } = useWindowDimensions();
@@ -55,6 +56,7 @@ const Button = ({
       borderRadius: 30,
       width: width * 0.16,
       },
+    type === "Ten" && {backgroundColor: '#3d2562', width: width * 0.3, paddingTop: 10, paddingBottom: 10},
     style,
   ];
   const TextStyle = [
@@ -70,14 +72,16 @@ const Button = ({
     type === "Fourth" && isPressed && isHovered && {color: '#3D2562'},
     type === "Fifth" && {color: '#3D2562', fontSize: 15},
     type === "Sixth" && {color: '#FCB900', fontSize: 15},
-    {fontFamily: (fontLoaded && type !== "Apply" && type !== "Apply2" && type !== "Nine") ? 
+    {fontFamily: (fontLoaded && type !== "Apply" && type !== "Apply2" && type !== "Nine" && type !== "Ten") ? 
     'Outfit-Regular' : (fontLoaded && type === "Apply") ? 'Outfit-Bold' : 
-    (fontLoaded && type === "Apply2") ? 'Outfit-SemiBold': (fontLoaded && type === "Nine") ? 'Outfit-Medium' : 'Arial' },
+    (fontLoaded && type === "Apply2") ? 'Outfit-SemiBold': (fontLoaded && type === "Nine") ? 'Outfit-Medium' 
+    : (fontLoaded && type === "Ten") ? 'Outfit-ExtraBold': 'Arial' },
     type === "Apply" && {fontSize: 25, color:"#3D2562"},
     type === "Seven" && {color: '#000', fontSize: 18},
     type === "Eight" && {color: '#3D2562'},
     type === "Apply2" && {color: '#3D2562', fontSize: 25},
     type === "Nine" && {color: '#3D2562', fontSize: 20},
+    type === 'Ten' && {color: '#fff', fontSize: 17, letterSpacing: 2},
   ]; 
   const TextWidth= [
     style?.width && {width: style.width, paddingLeft: 5, paddingRight: 5},

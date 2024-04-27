@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, Image, ScrollView, View, useWindowDimensions } from "react-native";
-import Header from "../../src/components/Header";
-import CardButton from "../../src/components/cardButtons";
+import React from "react";
+import { StyleSheet, Image, ScrollView, View, useWindowDimensions } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useNavigation } from "@react-navigation/native";
+import Footer from "../../src/components/footer";
 
 const Twoplus2=({navigation})=>{
   const { width, height } = useWindowDimensions();
@@ -39,38 +37,36 @@ const Twoplus2=({navigation})=>{
 
           <View style={{flexDirection:'column', alignItems:'flex-start',justifyContent:'left',flex:1, width:'75%', marginTop:'1%'}}>
              <Image
-                source={require("../../assets/images/albany.png")}
-                style={{width: width*0.6, height: height*0.6}}resizeMode="contain"
-              />
-              <FONT style={{backgroundColor:'#EDF0FF',marginTop:'5%', marginLeft:'6%', width:'65%',color: '#000000', textAlign:'left', fontSize: 23,}}>INTRODUCTION</FONT>
-              <Image
-                source={require("../../assets/images/2p2introduction.png")}
-                style={{ marginLeft:'-30%',marginTop:'5%',height: height*0.4}}resizeMode="contain"
-              />
+              source={require("../../assets/images/albany.png")}
+              style={{width: width*0.6, height: height*0.6}}resizeMode="contain"
+            />
+            <FONT style={{backgroundColor:'#EDF0FF',marginTop:'5%', marginLeft:'6%', width:'65%',color: '#000000', textAlign:'left', fontSize: 23,}}>INTRODUCTION</FONT>
+            <Image
+              source={require("../../assets/images/2p2introduction.png")}
+              style={{ marginLeft:'-30%',marginTop:'5%',height: height*0.4}}resizeMode="contain"
+            />
           </View>
           <Image
             source={require("../../assets/images/miucal.png")}
             style={{height: height*1.2, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
           />
-
-
-
         </View>
         <View style={[styles.infoContainer, {marginLeft:'12%'}]}>
-            <View style={styles.infoSection}>
-              <FONT style={{backgroundColor:'#EDF0FF',color: '#000000',  fontSize: 23, textAlign:'center',  width:'100%'}}>QUALIFICATIONS</FONT>
+          <View style={styles.infoSection}>
+            <FONT style={{backgroundColor:'#EDF0FF',color: '#000000',  fontSize: 23, textAlign:'center',  width:'100%'}}>QUALIFICATIONS</FONT>
 
-              <FONT style={styles.text}>• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU</FONT>
-              <FONT style={styles.text}>• GPA: 3.4/4.0 or higher</FONT>
-              <FONT style={styles.text}>• English Test: TOEFL IBT 70 or IELTS 6.0 or above</FONT>
-            </View>
-            <View style={styles.infoSection2}>
-              <FONT style={{marginBottom:'5%', backgroundColor: '#EDF0FF',color: '#000000', fontSize: 23, textAlign:'center', width:'150%'}}>EXPENSES</FONT>
-              <FONT style={styles.text}>• 1 year Tuition: USD 28,350</FONT>
-              <FONT style={styles.text}>• 1 year Dormitory: USD 13,882</FONT>
-              <FONT style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</FONT>
-            </View>
-          </View> 
+            <FONT style={styles.text}>• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU</FONT>
+            <FONT style={styles.text}>• GPA: 3.4/4.0 or higher</FONT>
+            <FONT style={styles.text}>• English Test: TOEFL IBT 70 or IELTS 6.0 or above</FONT>
+          </View>
+          <View style={styles.infoSection2}>
+            <FONT style={{marginBottom:'5%', backgroundColor: '#EDF0FF',color: '#000000', fontSize: 23, textAlign:'center', width:'150%'}}>EXPENSES</FONT>
+            <FONT style={styles.text}>• 1 year Tuition: USD 28,350</FONT>
+            <FONT style={styles.text}>• 1 year Dormitory: USD 13,882</FONT>
+            <FONT style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</FONT>
+          </View>
+        </View> 
+        <Footer/>
 
     </ScrollView>
   );

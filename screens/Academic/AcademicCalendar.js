@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
+import Footer from "../../src/components/footer";
 
 const AcademicCal= ({ navigation }) => {
   const { width, height } = useWindowDimensions();
@@ -33,16 +34,17 @@ const AcademicCal= ({ navigation }) => {
                 <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')} isPressedState={true}></Button>
             </View>
         </View>
-        <View style={{width: '50%', marginLeft: '5%', marginTop: '-2%', marginBottom: '10%'}}>
-          <Image source={require('../../assets/images/calendar-1.png')} style={{ height: '78%', width: 'auto' }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-2.png')} style={{ height: '65%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-3.png')} style={{ height: '75%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-4.png')} style={{ height: '60%', width: 'auto', marginTop: '-2%' }} resizeMode="contain"/>
+        <View style={{ width: width * 0.5, marginLeft: width * 0.05, marginTop: '-2%', marginBottom: height * 0.1}}>
+          <Image source={require('../../assets/images/calendar-1.png')} style={{ height: height * 0.8 , width: 'auto' }} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calendar-2.png')} style={{ height: height * 0.7, width: 'auto', marginTop: -height * 0.04 }} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calendar-3.png')} style={{ height: height * 0.8, width: 'auto', marginTop: -height * 0.04 }} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calendar-4.png')} style={{ height: height * 0.62, width: 'auto', marginTop: -height * 0.03 }} resizeMode="contain"/>
         </View>
-        <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
+        <View style={{width: width * 0.1, marginBottom: height * 0.5, marginLeft: 'auto', marginTop: '-2%'}}>
           <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
+      <Footer/> 
     </ScrollView>
   );
 }
