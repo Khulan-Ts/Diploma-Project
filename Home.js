@@ -4,17 +4,13 @@ import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
 import FONT from "./src/components/Titles";
 import MapComponent from "./src/components/Map";
-import Location from "./assets/icons/location";
-import Email from "./assets/icons/email";
-import Phone from "./assets/icons/phone";
-import Youtube from "./assets/icons/youtube";
-import Facebook from "./assets/icons/facebook";
-import Linkedin from "./assets/icons/linkedin";
-import Instagram from "./assets/icons/instagram";
+import OverlayImage from "./src/components/OverlayImage";
 import HoverButton from "./src/components/hoverButtons";
+import Footer from "./src/components/footer";
 
 const HomeScreen= ({ navigation }) =>{
   const { width, height } = useWindowDimensions();
+
   
   return(
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
@@ -37,20 +33,19 @@ const HomeScreen= ({ navigation }) =>{
       <View style={{alignItems: 'center', marginTop: '-10%', zIndex: 3}}>
         <View style={{flexDirection: 'row'}}>
           <HoverButton icon={require("./assets/icons/teachers.png")} text={"99+ Teachers"} nummber={'99+'}></HoverButton>
-          <HoverButton icon={require("./assets/icons/research.png")} text={"12+ Research"} nummber={'12+'} style={{marginLeft: 50}}></HoverButton>
-          <HoverButton icon={require("./assets/icons/department.png")} text={"15+ Departments"} nummber={'15+'} style={{marginLeft: 50}}></HoverButton>
+          <HoverButton icon={require("./assets/icons/research.png")} text={"12+ Research"} nummber={'12+'} style={{marginLeft: width * 0.03}}></HoverButton>
+          <HoverButton icon={require("./assets/icons/department.png")} text={"15+ Departments"} nummber={'15+'} style={{marginLeft: width * 0.03}}></HoverButton>
         </View> 
       </View>
-
-      <View style={{ flexDirection: 'row' }}>
-        <View style={{flexDirection: 'column'}}>
-          <View style={[styles.history, {marginLeft: '15%', marginTop: '16%', width: width * 0.5}]}> 
-            <FONT type="Title3" style={{textAlign: 'center', fontSize: 36, letterSpacing: '-2%'}}>
+      <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: height * 0.1}}>
+        <View style={{ flexDirection: 'column', alignItems: 'center' }}>
+          <View style={[styles.history, { width: width * 0.49, marginBottom: height * 0.02}]}> 
+            <FONT type="Title3" style={{ textAlign: 'center', fontSize: 36, letterSpacing: '-2%' }}>
               The Most Global and Dynamic University in Mongolia
             </FONT>
           </View>
-          <View style={[styles.history, {marginLeft: '20%', marginTop: '-10%', maxWidth: width * 0.55}]}> 
-            <FONT type="Body" style={{textAlign: 'center', fontSize: 16, lineHeight: 24}}>
+          <View style={[styles.history, { width: width * 0.49,}]}> 
+            <FONT type="Body" style={{ textAlign: 'center', fontSize: 16, lineHeight: 24 }}>
               MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia.
               With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received free
               land of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university
@@ -59,13 +54,13 @@ const HomeScreen= ({ navigation }) =>{
               Russia, China, Republic of Korea, and other nations.
             </FONT>
           </View>
-          </View>
-        <View style={[styles.overlay, { width: width * 0.25, height: height * 0.4}]}/> 
-          <Image
-            source={require("./assets/images/flags.png")}
-            style={[styles.historyImg, { width: width * 0.25, height: height * 0.4, marginTop:'10%', marginLeft: '8%', borderRadius: 50}]}
-          />
+        </View>
+        <OverlayImage 
+          image={require('./assets/images/flags.png')} 
+          style={{width: width * 0.25, height: height * 0.43, borderRadius: 50, marginLeft: width * 0.03}}
+        />
       </View>
+
       <View style={{backgroundColor: '#3d2562', width: '100%', height: '2%', marginTop: '10%'}}/>
       <View style={{alignItems: 'center'}}>
         <View style={{ flexDirection: "row", marginTop: '5%'}}>
@@ -103,49 +98,8 @@ const HomeScreen= ({ navigation }) =>{
           </View>
           <Button type="Apply" text="Application Form"></Button>
         </View>
-        <View style={[styles.footer, {height: height * 0.7}]}>
-          <View style={{flexDirection: 'row'}}>
-            <View style={{flexDirection: 'column', marginLeft: '-3%'}}>
-              <Image source={require('./assets/images/logo-1.png')} style={{height: height * 0.1, width: width * 0.16}} resizeMode="contain"/>
-              <View style={{width: width *0.18, marginTop: '5%', marginLeft: '3%'}}>
-                <FONT type="Body" style={{color: '#fff', lineHeight: 25}}>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
-                  congue massa. Fusce posuere, magna.
-                </FONT>
-              </View>
-            </View>
-            <View style={{flexDirection: 'column', marginLeft: '5%'}}>
-              <FONT type="Title2" style={{fontSize: 25, color: '#fff'}}>Contact us</FONT>
-              <View style={{flexDirection: 'row', marginTop: '3%', alignItems: 'center'}}>
-                <Location width={25} height={25}/>
-                <FONT type="Body" style={{color: '#fff', fontSize: 16, width: width * 0.25, marginLeft: '2%'}}>13th Khoroo, Bayanzurkh District Ulan Bator, Mongolia 13330 Ulaanbaatar, Mongolia</FONT>
-              </View>
-              <View style={{flexDirection: 'row', marginTop: '3%', alignItems: 'center'}}>
-                <Email width={25} height={19}/>
-                <FONT type="Body" style={{color: '#fff', fontSize: 16, width: width * 0.25, marginLeft: '2%'}}>admisson.miu.edu</FONT>
-              </View>
-              <View style={{flexDirection: 'row', marginTop: '5%', alignItems: 'center'}}>
-                <Phone width={25} height={25}/>
-                <FONT type="Body" style={{color: '#fff', fontSize: 16, width: width * 0.25, marginLeft: '2%'}}>7000 7447</FONT>
-              </View>
-            </View>
-            <View style={{flexDirection:'column', marginLeft: '5%'}}>
-              <FONT type="Title2" style={{fontSize: 25, color: '#fff'}}>Find Us On Google Maps</FONT>
-              <Image source={require('./assets/images/location.png')} resizeMode="contain" style={{height: height * 0.25, width: width * 0.22, marginTop: '3%'}}/>
-            </View>
-          </View>
-          <View style={[styles.footer2, {height: height * 0.09, justifyContent: 'center'}]}>
-            <View style={{flexDirection: 'row', marginLeft: '12%'}}>
-              <Facebook width={35} height={32}></Facebook>
-              <Youtube width={60} height={38}></Youtube>
-              <Linkedin width={45} height={32}></Linkedin>
-              <Instagram width={50} height={38}></Instagram>
-              <View style={{justifyContent: 'center', marginLeft: '10%'}}>
-                <FONT type="Body" style={{color: "#fff"}}>Copyright © 2024 Mongolia International University</FONT>
-              </View>
-            </View>
-          </View>
-        </View>
+        <Footer/>
+        
     </ScrollView>
   )
 }
@@ -160,19 +114,7 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
   },
-  overlay:{
-    backgroundColor: 'rgba(61, 37, 98, 0.6)',
-    zIndex: 9,
-    marginTop:'10%',
-    marginLeft: '63%',
-    position: 'absolute',
-    borderRadius: 50,
-  },
-  historyImg:{
-    borderRadius: 10,
-  },
   history:{
-    flex: 1,
     alignSelf: 'flex-start'
   },
   apply:{
@@ -189,16 +131,4 @@ const styles = StyleSheet.create({
     zIndex: 6,
     lineHeight: 80
   },
-  footer:{
-    backgroundColor: "#3d2562",
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  footer2:{
-    width: '100%',
-    borderTopWidth: 1,
-    borderColor: '#f8fcfc',
-    position: 'absolute',
-    bottom: 0,
-  }
 });
