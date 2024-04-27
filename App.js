@@ -11,6 +11,7 @@ import Twoplus2 from './screens/Academic/Twoplus2';
 import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
 import Dorm from './screens/Dorm/Dorm_AF'
+import Overview from './screens/Admissions/Overview';
 
 const Stack = createStackNavigator();
 
@@ -39,16 +40,16 @@ const App = () => {
         <Stack.Screen name="2 + 2 program" component={Twoplus2} />
         <Stack.Screen name="Exchange student Program" component={Exchange} />
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
-        <Stack.Screen name="Another" component={AnotherScreen} /> */}
+        <Stack.Screen name="Another" component={AnotherScreen} />
         <Stack.Screen name="Dorm" component={Dorm} />
-        {/* <Stack.Screen name="English Foundation Course" component={Lei_1} />
+        <Stack.Screen name="English Foundation Course" component={Lei_1} />
         <Stack.Screen name="English Evening Course" component={Lei_2} />
         <Stack.Screen name="Business English Course" component={Lei_3} />
         <Stack.Screen name="Mongolian Course" component={Lei_4} />
         <Stack.Screen name="Additional Language Course" component={Lei_5} />
         <Stack.Screen name="About us" component={AboutUs} />
         <Stack.Screen name="Our people" component={OurPeople} /> */}
-
+        <Stack.Screen name="Over View" component={Overview} />
 
       </Stack.Navigator>
     </NavigationContainer>
