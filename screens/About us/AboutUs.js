@@ -28,7 +28,7 @@ const AboutUs=({navigation})=>{
                       <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
                   </View>
                       <View style={{borderBottomWidth: 1, width: '70%'}}>
-                  <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
+                  <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')}></Button> 
                   </View>
                   <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
               </View>

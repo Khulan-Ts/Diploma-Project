@@ -20,6 +20,7 @@ import Lei_5 from './screens/LEI/Lei_5';
 //About Us
 import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
+import PlanReport from './screens/About us/PlanReport';
 
 const Stack = createStackNavigator();
 
@@ -43,7 +44,7 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
-        <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
+        {/* <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} />
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
         <Stack.Screen name="2 + 2 program" component={Twoplus2} />
@@ -57,7 +58,8 @@ const App = () => {
         <Stack.Screen name="Mongolian Course" component={Lei_4} />
         <Stack.Screen name="Additional Language Course" component={Lei_5} />
         <Stack.Screen name="About us" component={AboutUs} />
-        <Stack.Screen name="Our people" component={OurPeople} />
+        <Stack.Screen name="Our people" component={OurPeople} /> */}
+        <Stack.Screen name="Plan and Report" component={PlanReport} />
 
 
       </Stack.Navigator>
