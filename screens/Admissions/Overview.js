@@ -17,7 +17,7 @@ const Overview= ({ navigation }) => {
                 </View>
                 <View style={{marginTop: '5%'}}>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
-                        <Button type="Secondary" text={"Overview"}></Button>
+                        <Button type="Secondary" text={"Overview"} onPress={() => navigation.navigate('Overview')} isPressedState={true}></Button>
                     </View>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
                         <Button type="Secondary" text={"How to Apply"}></Button>
@@ -26,7 +26,7 @@ const Overview= ({ navigation }) => {
                             <Button type="Secondary" text={"Tuition & Aids"}></Button> 
                     </View>
                     <View>
-                        <Button type="Secondary" text={"Scholarship"}></Button>
+                        <Button type="Secondary" text={"Scholarship"} onPress={() => navigation.navigate('Scholarship')}></Button>
                     </View>
                     <View style={{flexDirection: 'row'}}>
                         <View style={{marginTop: '25%'}}>
