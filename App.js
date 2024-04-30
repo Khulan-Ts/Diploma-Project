@@ -21,7 +21,6 @@ import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
 import Scholarship from './screens/Admissions/Scholarship';
 
-
 const Stack = createStackNavigator();
 
 const App = () => {
