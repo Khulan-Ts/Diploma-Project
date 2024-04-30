@@ -36,18 +36,20 @@ const MapComponent = ({
                 image={require("../../assets/images/sports.png")}
                 type={"Sport"}
                 title={"Sport Complex"}
-                button={"For More Information"}
-                onPress1={navigate[0]}
+                bottomText={'Schedule: Monday 4:00 - 6:00 pm \n            Wednesday 4:00 - 6:00 pm\n            Friday 4:00 - 6:00 pm'}
               >
-                The sports complex is a three-floor building currently featuring
-                a large indoor sports hall and cross-fit style gym.
-                {"\n \n \n \n"}
-                Schedule: Monday 4:00 - 6:00 pm
-                {"\n                     "}
-                Wednesday 4:00 - 6:00 pm
-                {"\n                     "}
-                Friday 4:00 - 6:00 pm
-                {"\n                     "}
+                The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.
+                {"\n"}
+                {"\n"}
+                The cross-fit style gym has full equipment and tools for people who want to spend their time useful.
+                {"\n"}
+                {"\n"}
+                To make a reservation at sport hall:
+                {"\n"}+976 99223366
+                {"\n"}
+                To get price information on cross gym:
+                {"\n"}
+                +976 99223366
               </HoverCard>
             </View>
           )}
@@ -61,13 +63,11 @@ const MapComponent = ({
           {activeCard === 2 && (
             <View style={styles.dorm}>
               <HoverCard
-                navigation={navigation}
                 image={require("../../assets/images/dorm.png")}
                 type={"Primary"}
                 title={"Dorm"}
                 button={"For More Information"}
-                button2={"Dormitory Fee"}
-                onPress1={navigate[1]}
+                onPress1={navigate}
               >
                 The MIU Global Residence is a seven-floor building that houses
                 both male and female students from all over the world. The first
@@ -91,8 +91,6 @@ const MapComponent = ({
                 image={require("../../assets/images/M-bld.png")}
                 type={"Secondary"}
                 title={"M Building"}
-                button={"For More Information"}
-                onPress1={navigate[2]}
               >
                 Student affairs - Academic - Admission - Finance - President`s office
                 {"\n\n\n\n\n"}
@@ -113,8 +111,6 @@ const MapComponent = ({
               image={require("../../assets/images/D-bld.png")}
               type={'Secondary'}
               title={"D building"}
-              button={"For More Information"}
-              onPress1={navigate[3]}
               >
               The MIU Global Residence is a seven-floor building that houses both 
               male and female students from all over the world. The first four 

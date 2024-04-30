@@ -45,22 +45,22 @@ const Lei_5= ({ navigation }) => {
                 <Button type="Nine" text={"Additional Language Course"} onPress={() => navigation.navigate('Additional Language Course')} isPressedState={true}></Button>
             </View>
               <View style={{borderLeftWidth: 1, borderColor: "#3D2562", width: width * 0.41, height: height * 0.31}}>
-                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-1%'}}>LEI also offers classes in Russian and Korean languages 
+                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-1%', fontSize: 18}}>LEI also offers classes in Russian and Korean languages 
                   upon request. Because of smaller classes and limited need, these classes must be requested and 
                   scheduled in advance. Classes require a minimum of 5 students to open, and the time must be arranged 
                   with the teacher.</FONT>
               </View>
-              <View style={{marginLeft: '2.5%', marginTop: '-1%'}}>
+              <View style={{marginLeft: '1.5%', marginTop: '-1%'}}>
                 <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
                   <View style={{flexDirection: 'row'}}>
-                    <Clock width={24} height={28}/>
+                    <Clock width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%', marginTop: '-1%'}}>
                       <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                       <FONT style={{fontSize: 18}}>1 year / Full-time</FONT>
                     </View>
                   </View>
                   <View style={{flexDirection: 'row', marginTop: '5%'}}>
-                    <Calendar width={28} height={28}/>
+                    <Calendar width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%'}}>
                       <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                       <FONT style={{fontSize: 18}}>August -  September</FONT>

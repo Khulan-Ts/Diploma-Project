@@ -12,24 +12,25 @@ const Twoplus2=({navigation})=>{
        <View style={{flexDirection: "row", marginTop: '5%'}}>
         <Image
           source={require("../../assets/images/2p2cal1.png")}
-          style={{height: height*0.6, width:width*0.1, marginLeft:'-1%'}}resizeMode="contain"
+          style={{height: width * 0.3, width: width * 0.1, marginTop: '-2%'}}
+          resizeMode="contain"
         />
-        <View style={{marginLeft: '2%', width: '18%'}}>
-            <View style={{ borderBottomWidth: 1, width: '90%', paddingBottom: 14, paddingLeft:14}}>
-                <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
+        <View style={{ width: width * 0.18, marginLeft: '1%'}}>
+            <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>
+                <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>Academics</FONT>
             </View>
             <View style={{marginTop: '5%'}}>
-                <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')} ></Button>
+                <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                    <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')}></Button>
                 </View>
-                <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
+                <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')} ></Button>
                 </View>
-                    <View style={{borderBottomWidth: 1, width: '70%'}}>
-                <Button type="Secondary" text={"2+2 program"} isPressedState={true} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
+                    <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                <Button type="Secondary" text={"2+2 program"} onPress={() => navigation.navigate('2 + 2 program')} isPressedState={true}></Button> 
                 </View>
-                <View style={{borderBottomWidth: 1, width: '70%'}}>
-                    <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
+                <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                  <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
                 </View>
                 <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
             </View>
@@ -38,17 +39,18 @@ const Twoplus2=({navigation})=>{
           <View style={{flexDirection:'column', alignItems:'flex-start',justifyContent:'left',flex:1, width:'75%', marginTop:'1%'}}>
              <Image
               source={require("../../assets/images/albany.png")}
-              style={{width: width*0.6, height: height*0.6}}resizeMode="contain"
+              style={{width: width*0.6, height: width*0.25}}
+              resizeMode="contain"
             />
             <FONT style={{backgroundColor:'#EDF0FF',marginTop:'5%', marginLeft:'6%', width:'65%',color: '#000000', textAlign:'left', fontSize: 23,}}>INTRODUCTION</FONT>
             <Image
               source={require("../../assets/images/2p2introduction.png")}
-              style={{ marginLeft:'-30%',marginTop:'5%',height: height*0.4}}resizeMode="contain"
+              style={{marginTop:'5%',height: width*0.2, width: width * 0.4}}resizeMode="contain"
             />
           </View>
           <Image
             source={require("../../assets/images/miucal.png")}
-            style={{height: height*1.2, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
+            style={{height: width*0.5, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
           />
         </View>
         <View style={[styles.infoContainer, {marginLeft:'12%'}]}>
@@ -63,7 +65,7 @@ const Twoplus2=({navigation})=>{
             <FONT style={{marginBottom:'5%', backgroundColor: '#EDF0FF',color: '#000000', fontSize: 23, textAlign:'center', width:'150%'}}>EXPENSES</FONT>
             <FONT style={styles.text}>• 1 year Tuition: USD 28,350</FONT>
             <FONT style={styles.text}>• 1 year Dormitory: USD 13,882</FONT>
-            <FONT style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</FONT>
+            <FONT style={{fontWeight:'bold', fontSize: 18, marginTop: 5} }>• Total: USD 42,132</FONT>
           </View>
         </View> 
         <Footer/>
