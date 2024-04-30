@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Pressable, useWindowDimensions, useWindowDimensions } from 'react-native';
+import { View, StyleSheet, Pressable, useWindowDimensions } from 'react-native';
 import FONT from './Titles';
 
 export const ToolTip = ({
