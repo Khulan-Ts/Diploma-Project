@@ -2,7 +2,9 @@ import React from "react";
 import { StyleSheet, View, Image, Pressable, Dimensions } from "react-native";
 import HoverCard from "./hoverCard";
 
-export default function MapComponent() {
+const MapComponent = ({
+    navigate
+}) => {
   const [activeCard, setActiveCard] = React.useState(null);
 
   const showCardHandler = (cardId) => {
@@ -14,13 +16,12 @@ export default function MapComponent() {
     
   };
   const windowWidth = Dimensions.get("window").width;
-  const imageHeight = (600 / 1075) * windowWidth;
 
   return (
-      <View style={[styles.imageContainer, {width: windowWidth, height: imageHeight}]}>
+      <View style={[styles.imageContainer, {width: windowWidth, height: windowWidth* 0.56}]}>
         <Image
           source={require("../../assets/images/map.png")}
-          style={[styles.image, {height: imageHeight}]}
+          style={[styles.image, {height: windowWidth * 0.56}]}
           resizeMode="contain"
         />
 
@@ -35,17 +36,20 @@ export default function MapComponent() {
                 image={require("../../assets/images/sports.png")}
                 type={"Sport"}
                 title={"Sport Complex"}
-                button={"For More Information"}
+                bottomText={'Schedule: Monday 4:00 - 6:00 pm \n            Wednesday 4:00 - 6:00 pm\n            Friday 4:00 - 6:00 pm'}
               >
-                The sports complex is a three-floor building currently featuring
-                a large indoor sports hall and cross-fit style gym.
-                {"\n \n \n \n"}
-                Schedule: Monday 4:00 - 6:00 pm
-                {"\n                     "}
-                Wednesday 4:00 - 6:00 pm
-                {"\n                     "}
-                Friday 4:00 - 6:00 pm
-                {"\n                     "}
+                The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.
+                {"\n"}
+                {"\n"}
+                The cross-fit style gym has full equipment and tools for people who want to spend their time useful.
+                {"\n"}
+                {"\n"}
+                To make a reservation at sport hall:
+                {"\n"}+976 99223366
+                {"\n"}
+                To get price information on cross gym:
+                {"\n"}
+                +976 99223366
               </HoverCard>
             </View>
           )}
@@ -63,7 +67,7 @@ export default function MapComponent() {
                 type={"Primary"}
                 title={"Dorm"}
                 button={"For More Information"}
-                button2={"Dormitory Fee"}
+                onPress1={navigate}
               >
                 The MIU Global Residence is a seven-floor building that houses
                 both male and female students from all over the world. The first
@@ -87,7 +91,6 @@ export default function MapComponent() {
                 image={require("../../assets/images/M-bld.png")}
                 type={"Secondary"}
                 title={"M Building"}
-                button={"For More Information"}
               >
                 Student affairs - Academic - Admission - Finance - President`s office
                 {"\n\n\n\n\n"}
@@ -108,7 +111,7 @@ export default function MapComponent() {
               image={require("../../assets/images/D-bld.png")}
               type={'Secondary'}
               title={"D building"}
-              button={"For More Information"}>
+              >
               The MIU Global Residence is a seven-floor building that houses both 
               male and female students from all over the world. The first four 
               floors are dedicated to students and the 5th to 7th floors are 
@@ -122,6 +125,8 @@ export default function MapComponent() {
       </View>
   );
 }
+
+export default MapComponent
 
 const styles = StyleSheet.create({
   imageContainer:{
@@ -175,6 +180,6 @@ const styles = StyleSheet.create({
   dbld:{
     right: "100%",
     top: '50%',
-    transform: [{ translateX: '-300%' }],
+    transform: [{ translateX: '-280%' }],
   }
 });
