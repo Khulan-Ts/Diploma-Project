@@ -21,6 +21,8 @@ import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
 import Scholarship from './screens/Admissions/Scholarship';
 import PlanReport from './screens/About us/PlanReport';
+import GivingInformation from './screens/About us/GivingInformation';
+import Givinginfo1 from './screens/About us/Givinginfo1';
 
 const Stack = createStackNavigator();
 
@@ -36,7 +38,7 @@ const App = () => {
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button2Press={() => navigation.navigate('Undergraduate')} 
-              Button1Press={() => navigation.navigate('Another')}
+              Button1Press={() => navigation.navigate('About us')}
               Button3Press={() => navigation.navigate('Over View')}
               {...props} 
             />
@@ -60,8 +62,9 @@ const App = () => {
         <Stack.Screen name="About us" component={AboutUs} />
         <Stack.Screen name="Our people" component={OurPeople} />
         <Stack.Screen name="Plan and Report" component={PlanReport} />
-        <Stack.Screen name="Over View" component={Overview} /> */}
-        <Stack.Screen name="Scholarship" component={Scholarship} />
+        <Stack.Screen name="Over View" component={Overview} />
+        <Stack.Screen name="Scholarship" component={Scholarship} /> */}
+        <Stack.Screen name="Givinginfo1" component={Givinginfo1} />
       </Stack.Navigator>
     </NavigationContainer>
   );
