@@ -2,7 +2,7 @@
     import { View, StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
     import FONT from './Titles';
 
-    export const aboutusHover = ({
+    export const HoverButton2 = ({
         type,
         text,
         icon,
@@ -146,4 +146,4 @@
         }
     });
 
-    export default aboutusHover;
+    export default HoverButton2;

@@ -5,7 +5,7 @@ import CardButton from "../../src/components/cardButtons";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
-import HoverButton from "../../src/components/aboutusHover";
+import HoverButton2 from "../../src/components/aboutusHover";
 
 
 const AboutUs=({navigation})=>{
@@ -70,10 +70,10 @@ const AboutUs=({navigation})=>{
           <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', width:'100%', marginTop:'3%', marginBottom:'5%', marginLeft:'5%'}}>
 
             <View style={{flexDirection: 'row'}}>
-              <HoverButton icon={require("../../assets/images/vision1.png")} text={"Fostering Excellence"} descr={'Our vision is to be an icon of academic excellence, inspring students to react new heights in their learning journey'}></HoverButton>
-              <HoverButton icon={require("../../assets/images/vision2.png")} text={"Sustainable Future"} descr={'championing sustainability practices, ensuring a gree-ner, more environmentally responsible future for gene-rations to come.'} style={{marginLeft: 50}}></HoverButton>
-              <HoverButton icon={require("../../assets/images/vision3.png")} text={"Innovative Research"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: 50}}></HoverButton>
-              <HoverButton icon={require("../../assets/images/vision4.png")} text={"Global Impact"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: 50}}></HoverButton>
+              <HoverButton2 icon={require("../../assets/images/vision1.png")} text={"Fostering Excellence"} descr={'Our vision is to be an icon of academic excellence, inspring students to react new heights in their learning journey'}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision2.png")} text={"Sustainable Future"} descr={'championing sustainability practices, ensuring a gree-ner, more environmentally responsible future for gene-rations to come.'} style={{marginLeft: 50}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision3.png")} text={"Innovative Research"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: 50}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision4.png")} text={"Global Impact"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: 50}}></HoverButton2>
             </View> 
           </View>
         </View>

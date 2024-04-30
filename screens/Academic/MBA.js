@@ -1,65 +1,40 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Animated, StyleSheet } from 'react-native';
+import React, { useState } from "react";
+import { StyleSheet, Text, Image, ScrollView, View, useWindowDimensions } from "react-native";
+import Header from "../../src/components/Header";
+import CardButton from "../../src/components/cardButtons";
+import FONT from "../../src/components/Titles";
+import Button from "../../src/components/Button";
+import { useNavigation } from "@react-navigation/native";
+import expandableList from "../../src/components/dptExpandable";
 
-const ExpandableListItem = ({ title, content }) => {
-  const [expanded, setExpanded] = useState(false);
-  const [animation] = useState(new Animated.Value(0));
 
-  const toggleExpansion = () => {
-    const toValue = expanded ? 0 : 1;
-    Animated.timing(animation, {
-      toValue,
-      duration: 300,
-      useNativeDriver: false,
-    }).start();
-    setExpanded(!expanded);
-  };
-
-  const contentHeight = animation.interpolate({
-    inputRange: [0, 1],
-    outputRange: [0, 100], // Change 100 to whatever height you want to expand to
-  });
+const MBA=({navigation})=>{
+  const { width, height } = useWindowDimensions();
 
   return (
-    <View style={styles.itemContainer}>
-      <TouchableOpacity onPress={toggleExpansion}>
-        <Text>{title}</Text>
-      </TouchableOpacity>
-      <Animated.View style={{ height: contentHeight, overflow: 'hidden' }}>
-        <Text>{content}</Text>
-      </Animated.View>
-    </View>
+    <ScrollView style={styles.container}>
+        <View >
+            <expandableList title="Admission Requirements" content="text"></expandableList>
+            <expandableList title="Curriculum" content="text"></expandableList>
+       </View>
+    </ScrollView>
   );
-};
+}
 
-const AboutUs = () => {
-  return (
-    <View style={styles.container}>
-      <ExpandableListItem title="Item 1" content="Content for item 1" />
-      <ExpandableListItem title="Item 2" content="Content for item 2" />
-      {/* Add more ExpandableListItem components as needed */}
-    </View>
-  );
-};
-
+export default MBA
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 35,
-    backgroundColor: '#EDF0FF',
-    paddingLeft: 24,
-    paddingRight: 24,
-    paddingBottom: 32,
-    paddingTop: 32,
-    position:'relative'
-},
-  itemContainer: {
-    marginBottom: 10,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 10,
-    padding: 10,
-    backgroundColor: '#EDF0FF',
+    flex: 1,
+    backgroundColor:'#F6FAFF',
   },
-});
+  header: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 100,
+    elevation: 3, // Required for Android
+    // Other header styles such as height, padding, etc.
+  }
 
-export default AboutUs;
+});

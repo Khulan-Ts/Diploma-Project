@@ -1,126 +1,84 @@
-import React, { useState } from "react"; 
-import {TouchableOpacity, FlatList,  View, StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
-import FONT from './Titles';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, Animated, StyleSheet } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
+import FONT from '../../src/components/Titles';
 
+export const expandableList = ({ title, content }) => {
+  const [expanded, setExpanded] = useState(false);
+  const [animation] = useState(new Animated.Value(0));
+  const [arrowRotation] = useState(new Animated.Value(0));
 
-export const aboutusHover = ({
-    type,
-    text,
-    icon,
-    descr,
-    style
-}) => {
-    const { width, height } = useWindowDimensions();
+  const toggleExpansion = () => {
+    const toValue = expanded ? 0 : 1;
+    Animated.parallel([ 
+      Animated.timing(animation, {
+        toValue,
+        duration: 200,
+        useNativeDriver: false,
+      }),
+      Animated.timing(arrowRotation, {
+        toValue: toValue ? 1 : 0,
+        duration: 200,
+        useNativeDriver: true,
+      }),
+    ]).start();
+    setExpanded(!expanded);
+  };
 
-    const [isHovered, setIsHovered] = React.useState(false);
-    const descrOpacity = React.useRef(new Animated.Value(0)).current;
-    const iconOpacity = React.useRef(new Animated.Value(1)).current;
-    const textTranslateY = React.useRef(new Animated.Value(0)).current;
-    const ExpandableListItem = ({ item }) => { 
-        const [expanded, setExpanded] = useState(false); 
-    
-        const toggleExpand = () => { 
-            setExpanded(!expanded); 
-        }; 
-    
-        return ( 
-            <View style={styles.itemContainer}> 
-                <TouchableOpacity 
-                    onPress={toggleExpand} 
-                    style={styles.itemTouchable} 
-                > 
-                    <Text style={styles.itemTitle}> 
-                        {item.title} 
-                    </Text> 
-                </TouchableOpacity> 
-                {expanded && ( 
-                    <Text style={styles.itemContent}> 
-                        {item.content} 
-                    </Text> 
-                )} 
-            </View> 
-        ); 
-    }; 
-  
-    const ExpandableList = ({ data }) => { 
-        const renderItem = ({ item }) => ( 
-            <ExpandableListItem item={item} /> 
-        ); 
-    
-        return ( 
-            <FlatList 
-                data={data} 
-                renderItem={renderItem} 
-                keyExtractor={(item) => item.id.toString()} 
-            /> 
-        ); 
-    }; 
-  
-    const dptExpandable = () => { 
-        const data = [ 
-            { 
-                id: 1, 
-                title: "Admission Requirements", 
-                content: 
-                    `All applicatints must have completed or be expected to complete high school, secondary educateion, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process.\nThe Entrance Exam consists of three sections: Essay, Grammar & Vocabulary.\n70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%\n30% Statement of Purpose & Recommendation Letter`, 
-            }, 
-            { 
-                id: 2, 
-                title: "Curriculum", 
-                content: 
-                    `Download checklist`, 
-            }, 
+  const contentHeight = animation.interpolate({
+    inputRange: [0, 1],
+    outputRange: [0, 100],
+  });
 
-        ]; 
-    
-        return ( 
-            <View style={styles.container}> 
-                <ExpandableList data={data} /> 
-            </View> 
-        ); 
-    }; 
+  const arrowRotate = arrowRotation.interpolate({
+    inputRange: [0, 1],
+    outputRange: ['0deg', '180deg'],
+  });
+
+  return (
+    <View style={styles.itemContainer}>
+      <TouchableOpacity onPress={toggleExpansion} style={styles.titleContainer}>
+        <FONT type='Subtitle2' style={{ fontWeight: 'bold', flex: 1 }}>{title}</FONT>
+        <Animated.View style={{ transform: [{ rotate: arrowRotate }] }}>
+          <FontAwesome name="angle-down" size={35} color="#3d2562" />
+        </Animated.View>
+      </TouchableOpacity>
+      <Animated.View style={{ height: contentHeight, overflow: 'hidden' }}>
+        <FONT type='Body'>{content}</FONT>
+      </Animated.View>
+    </View>
+  );
 };
-  
-const styles = StyleSheet.create({ 
-    container: { 
-        flex: 1, 
-        backgroundColor: "#f5f5f5", 
-        padding: 20, 
-    }, 
-    header: { 
-        fontSize: 30, 
-        fontWeight: "bold", 
-        marginBottom: 20, 
-        color: "green", 
-        textAlign: "center", 
-    }, 
-    subheader: { 
-        fontSize: 20, 
-        fontWeight: "bold", 
-        marginBottom: 20, 
-        textAlign: "center", 
-    }, 
-    itemContainer: { 
-        marginBottom: 15, 
-        padding: 10, 
-        backgroundColor: "#EDF0FF", 
-        borderRadius: 10, 
-        // elevation: 3, 
-    }, 
-    itemTouchable: { 
-        borderRadius: 10, 
-        overflow: "hidden", 
-    }, 
-    itemTitle: { 
-        fontSize: 18, 
-        fontWeight: "bold", 
-        color: "#333", 
-    }, 
-    itemContent: { 
-        marginTop: 10, 
-        fontSize: 14, 
-        color: "#666", 
-    }, 
-}); 
-  
-export default dptExpandable;
+
+// const MBA = () => {
+//   return (
+//     <View style={styles.expandable}>
+//       <ExpandableListItem title="Admission Requirements" content="text" />
+//       <ExpandableListItem title="Curriculum" content="Content for item 2" />
+//     </View>
+//   );
+// };
+
+const styles = StyleSheet.create({
+
+  expandable: {
+    backgroundColor: '#F6FAFF',
+    paddingLeft: 24,
+    paddingRight: 24,
+    paddingBottom: 32,
+    paddingTop: 32,
+    position: 'relative'
+  },
+  itemContainer: {
+    marginBottom: 10,
+    borderRadius: 35,
+    padding: 25,
+    backgroundColor: '#EDF0FF',
+  },
+  titleContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+});
+
+export default expandableList;

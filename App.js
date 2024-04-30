@@ -30,6 +30,7 @@ const App = () => {
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button2Press={() => navigation.navigate('Undergraduate')} 
               Button1Press={() => navigation.navigate('About us')} 
+              Button3Press={() => navigation.navigate('MBA')} 
               {...props} 
             />
           ),
