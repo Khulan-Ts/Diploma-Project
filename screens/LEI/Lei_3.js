@@ -45,24 +45,24 @@ const Lei_3= ({ navigation }) => {
                   <Button type="Nine" text={"Additional Language Course"} onPress={() => navigation.navigate('Additional Language Course')}></Button>
               </View>
               <View style={{borderLeftWidth: 1, borderColor: "#3D2562", width: width * 0.41, height: height * 0.31}}>
-                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-1%'}}>This course is perfect for businesses 
+                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-1%', fontSize: 18}}>This course is perfect for businesses 
                   that want to improve their employee’s English level for international business and customer service. 
                   The program is customizable to the individual company’s needs with options for days, times, and levels. 
                   Companies can pay a testing fee to have their employee’s leveled, and then work with LEI office staff 
                   to organize a program with 1-2 qualified teachers who will come to the office during business hours or 
                   at a convenient time throughout the week to teach a 10 week business English course.</FONT>
               </View>
-              <View style={{marginLeft: '2.5%', marginTop: '-1%'}}>
-              <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
+              <View style={{marginLeft: '1.5%', marginTop: '-1%'}}>
+                <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
                   <View style={{flexDirection: 'row'}}>
-                    <Clock width={24} height={28}/>
+                    <Clock width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%', marginTop: '-1%'}}>
                       <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                       <FONT style={{fontSize: 18}}>1 year / Full-time</FONT>
                     </View>
                   </View>
                   <View style={{flexDirection: 'row', marginTop: '5%'}}>
-                    <Calendar width={28} height={28}/>
+                    <Calendar width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%'}}>
                       <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                       <FONT style={{fontSize: 18}}>August -  September</FONT>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Image, Pressable } from "react-native";
+import { View, StyleSheet, Image, Pressable, useWindowDimensions } from "react-native";
 import Button from "./Button";
 
 
@@ -11,17 +11,17 @@ const Header = ({
   Button2Press,
   Button3Press,
   Button4Press,
-  Button5Press,
   style,
 }) => {
+  const { width, height } = useWindowDimensions();
 
   const containerStyle = [
     styles.container,
-    {paddingLeft: '10%',
-    paddingRight: '10%',
-    paddingTop: "1.5%",
-    paddingBottom: "1.5%",
-    height: "100%"
+    {paddingLeft: width * 0.1,
+    paddingRight: width * 0.1,
+    paddingTop: width * 0.02,
+    paddingBottom: width * 0.02,
+    height: width * 0.08
     },
     style
   ]
@@ -31,39 +31,34 @@ const Header = ({
       <Pressable onPress={logoOnPress}>
         <Image
           source={require("../../assets/images/logo-1.png")}
-          style={styles.logo}
+          style={{ width: width * 0.16, height: height * 0.1 }}
+          resizeMode="contain"
         />
       </Pressable>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
         <Button
           type={type}
           text={buttontext[0]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={Button1Press}
         />
         <Button
           type={type}
           text={buttontext[1]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={Button2Press}
         />
         <Button
           type={type}
           text={buttontext[2]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={Button3Press}
         />
         <Button
           type={type}
           text={buttontext[3]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ height: width * 0.036, borderRadius: 0 }}
           onPress={Button4Press}
-        />
-        <Button
-          type={type}
-          text={buttontext[4]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
-          onPress={Button5Press}
         />
        
       </View>
@@ -83,9 +78,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     zIndex: 99
   },
-  logo: {
-    width: 211,
-    height: 60,
-  },
+  
   
 });

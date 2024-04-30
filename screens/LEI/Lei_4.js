@@ -45,7 +45,7 @@ const Lei_4= ({ navigation }) => {
                   <Button type="Nine" text={"Additional Language Course"} onPress={() => navigation.navigate('Additional Language Course')}></Button>
               </View>
               <View style={{borderLeftWidth: 1, borderColor: "#3D2562", width: width * 0.42, height: height * 0.31}}>
-                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-2%'}}>This program is a very flexible 
+                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-2%', fontSize: 18}}>This program is a very flexible 
                   tutoring program to help students learn or improve their Mongolian language. For true beginners, 
                   we recommend a survival course program of 12 weeks, that covers basic elements of Mongolian such 
                   as alphabet (reading and pronunciation) and daily phrases. For students who wish to study more, we 
@@ -56,14 +56,14 @@ const Lei_4= ({ navigation }) => {
               <View style={{marginLeft: '1.5%', marginTop: '-1%'}}>
                 <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
                   <View style={{flexDirection: 'row'}}>
-                    <Clock width={24} height={28}/>
+                    <Clock width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%', marginTop: '-1%'}}>
                       <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                       <FONT style={{fontSize: 18}}>1 year / Full-time</FONT>
                     </View>
                   </View>
                   <View style={{flexDirection: 'row', marginTop: '5%'}}>
-                    <Calendar width={28} height={28}/>
+                    <Calendar width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%'}}>
                       <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                       <FONT style={{fontSize: 18}}>August -  September</FONT>

@@ -1,17 +1,37 @@
 
 import React from 'react';
-import { View, Text } from 'react-native';
-import HoverButton from './src/components/hoverButtons';
-import Tooltip from './src/components/Tooltip'
+import { View, Text, useWindowDimensions } from 'react-native';
+import { OverlayImage } from './src/components/OverlayImage';
+import FONT from './src/components/Titles';
 import Button from './src/components/Button';
+import HoverCard from './src/components/hoverCard';
 
 const AnotherScreen = () => {
+  const { width, height } = useWindowDimensions();
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Tooltip text={"70%:  (Grammar, Vocabulary, Reading, Essay & Speaking) – Applicants will be notified with MIU Entrance Exam schedule, and join MIU Entrance Exam ( and Skill Test for EE, MC, ME Departments) through Zoom (For the students who are residing outside Mongolia)."} lines={3}
-      style={{width: 800}}>
-        <View style={{width: 50, height: 50, backgroundColor: '#000'}}></View>
-      </Tooltip>
+    
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'gray'}}>
+      
+
+      <HoverCard
+                image={require("./assets/images/sports.png")}
+                type={"Sport"}
+                title={"Sport Complex"}
+                bottomText={'Schedule: Monday 4:00 - 6:00 pm \n            Wednesday 4:00 - 6:00 pm\n            Friday 4:00 - 6:00 pm'}
+              >
+                The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.
+                {"\n"}
+                {"\n"}
+                The cross-fit style gym has full equipment and tools for people who want to spend their time useful.
+                {"\n"}
+                {"\n"}
+                To make a reservation at sport hall:
+                {"\n"}+976 99223366
+                {"\n"}
+                To get price information on cross gym:
+                {"\n"}
+                +976 99223366
+              </HoverCard>
     </View>
   );
 };
