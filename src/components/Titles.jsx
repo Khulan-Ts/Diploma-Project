@@ -1,13 +1,16 @@
 import * as React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, useWindowDimensions } from "react-native";
 import { useFonts } from 'expo-font';
 
 export const FONT = ({
   type = "Regular",
   children,
-  style,
+  lines,
+  style: externalStyle,
 }) => {
   let fontName = 'Outfit-Regular'; 
+  const windowWidth = useWindowDimensions().width;
+  const scaleFactor = windowWidth / 1360;
 
   switch (type) {
     case 'Subtitle':
@@ -17,17 +20,17 @@ export const FONT = ({
       fontName = 'Outfit-ExtraBold';
       break;
     case 'Body':
-      fontName = 'Outfit-Light'
-      break
+      fontName = 'Outfit-Light';
+      break;
     case 'Subtitle2':
-      fontName = 'Outfit-Regular'
-      break
+      fontName = 'Outfit-Regular';
+      break;
     case 'Title2':
-      fontName = 'Outfit-SemiBold'
-      break
+      fontName = 'Outfit-SemiBold';
+      break;
     case 'Title3':
-      fontName = 'Outfit-Bold'
-      break
+      fontName = 'Outfit-Bold';
+      break;
     default:
       break;
   }
@@ -41,43 +44,38 @@ export const FONT = ({
     'Outfit-Bold': require('../../assets/fonts/Outfit-Bold.ttf'),
   });
 
+  const calculateFontSize = (originalFontSize) => {
+    return originalFontSize * scaleFactor;
+  };
+
+  const modifyStyle = () => {
+    if (externalStyle && externalStyle.fontSize) {
+      return {
+        ...externalStyle,
+        fontSize: calculateFontSize(externalStyle.fontSize)
+      };
+    }
+    return externalStyle;
+  };
+
+  const modifiedStyle = modifyStyle();
+
   const TextStyle = [
     styles.text,
-    { fontFamily: fontLoaded ? fontName : 'Arial', fontSize: getFontSize(type) },
-    style,
+    { fontFamily: fontLoaded ? fontName : 'Arial' },
+    modifiedStyle,
   ];
 
   return (
-    <Text style={TextStyle}>
+    <Text style={TextStyle} numberOfLines={lines} >
       {children}
     </Text>
   );
 };
 
-const getFontSize = (type) => {
-  switch (type) {
-    case 'Regular':
-      return 28;
-    case 'Subtitle':
-      return 28;
-    case 'Title':
-      return 50;
-    case 'Body':
-      return 18;
-    case 'Subtitle2':
-      return 23
-    case 'Title2':
-      return 30
-    case 'Title3':
-      return 25
-    default:
-      return 28; 
-  }
-};
-
 const styles = StyleSheet.create({
   text: {
-    color: "#3d3562",
+    color: "#3d2562",
   },
 });
 

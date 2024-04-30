@@ -28,9 +28,9 @@ export const CardButton = ({
       onHoverOut={() => {
         setIsHovered(false);
       }}
-      style={{ marginRight: 16 }}
+      style={[{ marginRight: 16 }, style]}
     >
-      <View style={style}>
+      
         <Image
           source={image}
           style={styles.image}
@@ -41,7 +41,7 @@ export const CardButton = ({
         <View style={[styles.label, type === 'Secondary' && {backgroundColor: '#B592EB'}]}>
           <Text style={TextStyle} numberOfLines={1}>{text}</Text>
         </View>
-      </View>
+      
     </Pressable>
   );
 };

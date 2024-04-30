@@ -1,55 +1,68 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Image, Pressable, Animated } from "react-native";
+import { View, StyleSheet, Image, Pressable, useWindowDimensions } from "react-native";
 import Button from "./Button";
 
 
-const Header = ({ type, buttontext, logoOnPress, Button1Press, Button2Press, Button3Press, Button4Press, Button5Press, style }) => {
-  const containerStyle=[
+const Header = ({ 
+  type, 
+  buttontext,
+  logoOnPress,
+  Button1Press,
+  Button2Press,
+  Button3Press,
+  Button4Press,
+  style,
+}) => {
+  const { width, height } = useWindowDimensions();
+
+  const containerStyle = [
     styles.container,
+    {paddingLeft: width * 0.1,
+    paddingRight: width * 0.1,
+    paddingTop: width * 0.02,
+    paddingBottom: width * 0.02,
+    height: width * 0.08
+    },
     style
   ]
+
   return (
-      <Animated.View style={containerStyle}>
+      <View style={containerStyle}>
       <Pressable onPress={logoOnPress}>
         <Image
           source={require("../../assets/images/logo-1.png")}
-          style={styles.logo}
+          style={{ width: width * 0.16, height: height * 0.1 }}
+          resizeMode="contain"
         />
       </Pressable>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
         <Button
           type={type}
           text={buttontext[0]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={Button1Press}
         />
         <Button
           type={type}
           text={buttontext[1]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={Button2Press}
         />
         <Button
           type={type}
           text={buttontext[2]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={Button3Press}
         />
         <Button
           type={type}
           text={buttontext[3]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
+          style={{ height: width * 0.036, borderRadius: 0 }}
           onPress={Button4Press}
-        />
-        <Button
-          type={type}
-          text={buttontext[4]}
-          style={{ marginRight: 10, height: 48, borderRadius: 0 }}
-          onPress={Button5Press}
         />
        
       </View>
-    </Animated.View>
+    </View>
   );
 };
 
@@ -57,21 +70,14 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "transparent",
-    paddingRight: 188,
-    paddingLeft: 194,
+    backgroundColor: '#3d2562',
     alignItems: "center",
     flexDirection: "row",
-    position: "absolute",
     top: 0,
     width: "100%",
-    height: 106,
     justifyContent: "space-between",
     zIndex: 99
   },
-  logo: {
-    width: 211,
-    height: 60,
-  },
+  
   
 });
