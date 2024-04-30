@@ -31,13 +31,13 @@ const Lei_1= ({ navigation }) => {
           <View style={{flexDirection: 'row', marginTop: width * 0.05}}>
               <View>
                   <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
-                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')} isPressedState={true}></Button>
+                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')} ></Button>
                   </View>
                   <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"English Evening Course"} onPress={() => navigation.navigate('English Evening Course')}></Button>
                   </View>
                   <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
-                      <Button type="Nine" text={"Business English Course"} onPress={() => navigation.navigate('Business English Course')}></Button>
+                      <Button type="Nine" text={"Business English Course"} onPress={() => navigation.navigate('Business English Course')} isPressedState={true}></Button>
                   </View>
                   <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"Mongolian Course"} onPress={() => navigation.navigate('Mongolian Course')}></Button>
