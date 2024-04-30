@@ -68,26 +68,7 @@ const AboutUs=({navigation})=>{
         <View style={{alignItems:'center', marginLeft:'20%', marginTop:'2%'}}>
           <FONT style={{textAlign:'center', marginTop:'3%',marginBottom:'2%', fontWeight:'bold', fontSize:36}} >Vision Statement</FONT> 
           <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', width:'100%', marginTop:'3%', marginBottom:'5%', marginLeft:'5%'}}>
-              {/* <Image
-                  source={require("../../assets/images/vision1.png")}
-                  resizeMode="contain"
-                  style={{height: imageSize, width: imageSize, marginRight:50}}
-              />
-              <Image
-                  source={require("../../assets/images/vision2.png")}
-                  resizeMode="contain"
-                  style={{height: imageSize, width: imageSize,  marginRight:50}}
-              />
-              <Image
-                  source={require("../../assets/images/vision3.png")}
-                  resizeMode="contain"
-                  style={{height: imageSize, width: imageSize, marginRight:50}}
-              />
-              <Image
-                  source={require("../../assets/images/vision4.png")}
-                  resizeMode="contain"
-                  style={{height: imageSize, width: imageSize}}
-              /> */}
+
             <View style={{flexDirection: 'row'}}>
               <HoverButton icon={require("../../assets/images/vision1.png")} text={"Fostering Excellence"} descr={'Our vision is to be an icon of academic excellence, inspring students to react new heights in their learning journey'}></HoverButton>
               <HoverButton icon={require("../../assets/images/vision2.png")} text={"Sustainable Future"} descr={'championing sustainability practices, ensuring a gree-ner, more environmentally responsible future for gene-rations to come.'} style={{marginLeft: 50}}></HoverButton>
@@ -133,4 +114,3 @@ const styles = StyleSheet.create({
 
 
 });
-

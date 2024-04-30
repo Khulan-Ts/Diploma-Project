@@ -13,6 +13,7 @@ import AcademicCal from './screens/Academic/AcademicCalendar';
 import Dorm from './Dorm'
 import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
+import MBA from './screens/Academic/MBA';
 
 const Stack = createStackNavigator();
 
@@ -45,6 +46,8 @@ const App = () => {
         <Stack.Screen name="Dorm" component={Dorm} />
         <Stack.Screen name="About us" component={AboutUs} />
         <Stack.Screen name="Our people" component={OurPeople} />
+        <Stack.Screen name="MBA" component={MBA} />
+
 
 
       </Stack.Navigator>
