@@ -9,7 +9,7 @@ const Twoplus2=({navigation})=>{
 
   return (
     <ScrollView style={styles.container}>
-       <View style={{flexDirection: "row", marginTop: '5%'}}>
+       <View style={{flexDirection: "row", marginTop: width * 0.05}}>
         <Image
           source={require("../../assets/images/2p2cal1.png")}
           style={{height: width * 0.3, width: width * 0.1, marginTop: '-2%'}}
