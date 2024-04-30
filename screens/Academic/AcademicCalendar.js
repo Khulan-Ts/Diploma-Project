@@ -10,7 +10,7 @@ const AcademicCal= ({ navigation }) => {
     <ScrollView
       style={styles.container}
     >
-      <View style={{flexDirection: "row", marginTop: '5%',}}>
+      <View style={{flexDirection: "row", marginTop: width * 0.05}}>
         <View style={{width: width * 0.1, marginBottom: height * 0.3, marginTop: '-2%'}}>
           <Image source={require('../../assets/images/acacal-1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
         </View>
@@ -35,10 +35,10 @@ const AcademicCal= ({ navigation }) => {
             </View>
         </View>
         <View style={{ width: width * 0.5, marginLeft: width * 0.02, marginTop: '-2%', marginBottom: height * 0.1}}>
-          <Image source={require('../../assets/images/calendar-1.png')} style={{ height: width * 0.4 , width: 'auto' }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-2.png')} style={{ height: width * 0.7, width: 'auto', marginTop: -height * 0.04 }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-3.png')} style={{ height: width * 0.8, width: 'auto', marginTop: -height * 0.04 }} resizeMode="contain"/>
-          <Image source={require('../../assets/images/calendar-4.png')} style={{ height: width * 0.62, width: 'auto', marginTop: -height * 0.03 }} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calendar-1.png')} style={{ height: width * 0.38 , width: 'auto' }} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calendar-2.png')} style={{ height: width * 0.33, width: 'auto', marginTop: -height * 0.04 }} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calendar-3.png')} style={{ height: width * 0.37, width: 'auto', marginTop: -height * 0.04 }} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calendar-4.png')} style={{ height: width * 0.31, width: 'auto', marginTop: -height * 0.03 }} resizeMode="contain"/>
         </View>
         <View style={{width: width * 0.1, marginBottom: width * 0.5, marginLeft: 'auto', marginTop: '-2%'}}>
           <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>

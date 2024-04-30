@@ -46,7 +46,7 @@ const Exchange= ({ navigation }) => {
             Junior year, or the Fall semester of their Senior year.”
           </FONT>
           <FONT style={{fontSize: 23, marginTop: '2%'}}>Exchange Program Contact Emails:</FONT>
-          <FONT type={'Body'} style={{marginTop: '2%'}}>
+          <FONT type={'Body'} style={{marginTop: '2%', fontSize: 18}}>
             student2@miu.edu.mn
             {"\n"}
             dir_student@miu.edu.mn
