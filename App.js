@@ -12,6 +12,7 @@ import AcademicCal from './screens/Academic/AcademicCalendar';
 import Howtoapply_Under from './screens/Admissions/howtoapply_undergrad';
 import Dorm from './Dorm';
 import Howtoapply_Graduate from './screens/Admissions/howtoapply_graduate';
+import Bachelor_BA from './screens/Academic/Bachelor_BA';
 
 const Stack = createStackNavigator();
 
@@ -30,13 +31,14 @@ const App = () => {
               //Button1Press={() => navigation.navigate('Another')} 
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               // Button3Press={() => navigation.navigate('How to Apply Undergraduate')} 
-              Button3Press={() => navigation.navigate('How to Apply Graduate')} 
+              Button3Press={() => navigation.navigate('Bachelor')} 
               {...props} 
             />
           ),
           cardStyle: {flex: 1}
         })}
       >
+        <Stack.Screen name="Bachelor" component={Bachelor_BA}/>
         <Stack.Screen name="How to Apply Graduate" component={Howtoapply_Graduate}/>
         <Stack.Screen name="How to Apply Undergraduate" component={Howtoapply_Under}/>
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
