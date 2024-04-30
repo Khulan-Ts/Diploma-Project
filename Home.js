@@ -92,7 +92,7 @@ const HomeScreen= ({ navigation }) =>{
       </View>
         
       <View style={{marginTop: '10%'}}>
-        <MapComponent navigate={[() => navigation.navigate('Dorm'), () => navigation.navigate('Dorm')]}/>
+        <MapComponent navigate={() => navigation.navigate('Dorm')}/>
       </View>
       <View style={[styles.apply, { height: width * 0.4, marginTop: '2%' }]}>
         <FONT type="Title" style={{color: "#fff", fontSize: 86}}>APPLY NOW</FONT>
