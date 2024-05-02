@@ -35,8 +35,8 @@ const App = () => {
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
+              Button1Press={() => navigation.navigate('About us')}
               Button2Press={() => navigation.navigate('Undergraduate')} 
-              Button1Press={() => navigation.navigate('Another')}
               Button3Press={() => navigation.navigate('Over View')}
               Button4Press={() => navigation.navigate("English Foundation Course")}
               {...props} 
@@ -45,7 +45,7 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
-         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
+        <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
         <Stack.Screen name="2 + 2 program" component={Twoplus2} />
@@ -62,6 +62,7 @@ const App = () => {
         <Stack.Screen name="Plan and Report" component={PlanReport} />
         <Stack.Screen name="Over View" component={Overview} /> 
         <Stack.Screen name="Scholarship" component={Scholarship} />
+        <Stack.Screen name="Another" component={AnotherScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
