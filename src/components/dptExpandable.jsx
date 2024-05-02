@@ -1,39 +1,44 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Animated, StyleSheet } from 'react-native';
+import React, { useState, useRef, useEffect } from 'react';
+import { View, Text, TouchableOpacity, Animated, StyleSheet, Dimensions } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import FONT from '../../src/components/Titles';
 
-export const expandableList = ({ title, content }) => {
+const { height: screenHeight } = Dimensions.get('window');
+
+export const ExpandableList = ({ title, content, maxHeightPercentage }) => {
   const [expanded, setExpanded] = useState(false);
   const [animation] = useState(new Animated.Value(0));
   const [arrowRotation] = useState(new Animated.Value(0));
+  const contentContainerHeight = useRef(0);
 
-  const toggleExpansion = () => {
-    const toValue = expanded ? 0 : 1;
-    Animated.parallel([ 
+  useEffect(() => {
+    if (expanded) {
       Animated.timing(animation, {
-        toValue,
+        toValue: contentContainerHeight.current,
         duration: 200,
         useNativeDriver: false,
-      }),
-      Animated.timing(arrowRotation, {
-        toValue: toValue ? 1 : 0,
+      }).start();
+    } else {
+      Animated.timing(animation, {
+        toValue: 0,
         duration: 200,
-        useNativeDriver: true,
-      }),
-    ]).start();
+        useNativeDriver: false,
+      }).start();
+    }
+  }, [expanded]);
+
+  const toggleExpansion = () => {
     setExpanded(!expanded);
   };
-
-  const contentHeight = animation.interpolate({
-    inputRange: [0, 1],
-    outputRange: [0, 100],
-  });
 
   const arrowRotate = arrowRotation.interpolate({
     inputRange: [0, 1],
     outputRange: ['0deg', '180deg'],
   });
+
+  const handleOnLayout = (event) => {
+    contentContainerHeight.current = event.nativeEvent.layout.height * maxHeightPercentage / 100;
+  };
 
   return (
     <View style={styles.itemContainer}>
@@ -43,42 +48,41 @@ export const expandableList = ({ title, content }) => {
           <FontAwesome name="angle-down" size={35} color="#3d2562" />
         </Animated.View>
       </TouchableOpacity>
-      <Animated.View style={{ height: contentHeight, overflow: 'hidden' }}>
-        <FONT type='Body'>{content}</FONT>
+      <Animated.View style={{ height: animation, overflow: 'hidden' }}>
+        <View style={styles.contentContainer} onLayout={handleOnLayout}>
+          <FONT type='Body'>{content}</FONT>
+        </View>
       </Animated.View>
     </View>
   );
 };
 
-// const MBA = () => {
-//   return (
-//     <View style={styles.expandable}>
-//       <ExpandableListItem title="Admission Requirements" content="text" />
-//       <ExpandableListItem title="Curriculum" content="Content for item 2" />
-//     </View>
-//   );
-// };
-
 const styles = StyleSheet.create({
-
-  expandable: {
-    backgroundColor: '#F6FAFF',
-    paddingLeft: 24,
-    paddingRight: 24,
-    paddingBottom: 32,
-    paddingTop: 32,
-    position: 'relative'
-  },
   itemContainer: {
+    width:'75%',
     marginBottom: 10,
     borderRadius: 35,
-    padding: 25,
     backgroundColor: '#EDF0FF',
   },
   titleContainer: {
+    padding: 20,
     flexDirection: 'row',
     alignItems: 'center',
   },
+  contentContainer: {
+    paddingLeft: 20,
+    paddingRight: 20,
+    position: 'relative',
+  },
+  orangeLine: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: 2,
+    backgroundColor: 'orange',
+    width: '75%'
+  },
 });
 
-export default expandableList;
+export default ExpandableList;

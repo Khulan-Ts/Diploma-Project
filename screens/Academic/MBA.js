@@ -5,7 +5,7 @@ import CardButton from "../../src/components/cardButtons";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
-import expandableList from "../../src/components/dptExpandable";
+import ExpandableList from "../../src/components/dptExpandable";
 
 
 const MBA=({navigation})=>{
@@ -13,11 +13,18 @@ const MBA=({navigation})=>{
 
   return (
     <ScrollView style={styles.container}>
-        <View >
-            <expandableList title="Admission Requirements" content="text"></expandableList>
-            <expandableList title="Curriculum" content="text"></expandableList>
-       </View>
+       <ExpandableList 
+          title="Admission Requirements" 
+          content="All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process."
+          maxHeightPercentage={130}
+       />
+       <ExpandableList
+          title="Curriculum"
+          content="Content for item 2"
+          maxHeightPercentage={180}
+        />
     </ScrollView>
+
   );
 }
 
