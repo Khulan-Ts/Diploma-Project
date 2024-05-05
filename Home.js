@@ -69,7 +69,7 @@ const HomeScreen= ({ navigation }) =>{
           <Image source={require('./assets/images/homepage/h1.png')} style={{width: width * 0.38, height: width * 0.25}} resizeMode="contain"/>
           <View style={{marginLeft: width * 0.02}}>
             <FONT style={{fontSize: 20}}>UNDERGRADUATE MAJORS</FONT>
-            <FONT style={{fontSize: 18, width: width * 0.3, marginTop: width * 0.008, letterSpacing: 2}}>
+            <FONT style={{fontSize: 18, width: width * 0.3, marginTop: width * 0.008, letterSpacing: width * 0.0016}}>
             MIU challenges students to explore 
             innovative intellectual interests through scholarly and personal 
             competency programs. Emphasizing on professionalism, MIU students 
@@ -81,7 +81,7 @@ const HomeScreen= ({ navigation }) =>{
         <View style={{ flexDirection: "row", marginTop: '5%'}}>
           <View style={{marginRight: width * 0.03}}>
             <FONT style={{fontSize: 20}}>GRADUATE MAJORS</FONT>
-            <FONT style={{fontSize: 18, width: width * 0.3, marginTop: width * 0.008, letterSpacing: 2}}>
+            <FONT style={{fontSize: 18, width: width * 0.3, marginTop: width * 0.008, letterSpacing: width * 0.0016}}>
             MIU challenges students to explore innovative intellectual interests through 
             scholarly and personal competency programs. Emphasizing on professionalism, MIU 
             students learn to make new connections in a synergistic environment that multiplies 
