@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Calendar from "../../assets/icons/calendar";
 import Clock from "../../assets/icons/clock";
+import data from "../../static.json"
 
 const Lei_2= ({ navigation }) => {
   const { width, height } = useWindowDimensions();
+  const { apply } = data.links;
+  
   return (
     <ScrollView
       style={styles.container}
@@ -70,7 +73,7 @@ const Lei_2= ({ navigation }) => {
                     </View>
                   </View>
                 </View>
-                <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.015}} ></Button>
+                <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.015}} onPress={()=> Linking.openURL(apply)} ></Button>
               </View>
           </View>
           <View style={{flexDirection: 'row',alignItems: 'center', marginTop: '7%'}}>

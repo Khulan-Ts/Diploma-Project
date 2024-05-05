@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Image, View, ScrollView, useWindowDimensions } from "react-native";
+import { StyleSheet, Image, View, ScrollView, useWindowDimensions, Linking } from "react-native";
 import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
 import FONT from "./src/components/Titles";
@@ -7,10 +7,11 @@ import MapComponent from "./src/components/Map";
 import OverlayImage from "./src/components/OverlayImage";
 import HoverButton from "./src/components/hoverButtons";
 import Footer from "./src/components/footer";
+import data from "./static.json"
 
 const HomeScreen= ({ navigation }) =>{
   const { width, height } = useWindowDimensions();
-
+  const { apply } = data.links;
   
   return(
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
@@ -101,7 +102,7 @@ const HomeScreen= ({ navigation }) =>{
           Are you ready to take the next step toward your future career?
           </FONT>
         </View>
-        <Button type="Apply" text="Application Form"></Button>
+        <Button type="Apply" text="Application Form" onPress={() => Linking.openURL(apply)}></Button>
       </View>
       <Footer/>   
     </ScrollView>
