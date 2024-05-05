@@ -21,7 +21,6 @@ import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
 import Scholarship from './screens/Admissions/Scholarship';
 import PlanReport from './screens/About us/PlanReport';
-import GivingInformation from './screens/About us/GivingInformation';
 import Givinginfo1 from './screens/About us/Givinginfo1';
 
 const Stack = createStackNavigator();
