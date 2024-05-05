@@ -55,7 +55,7 @@ const PlanReport = ({ navigation }) => {
             </View>
           </View>
         <View style={{width: width * 0.1, marginLeft: 'auto', marginTop: '-2%', marginBottom: width * 0.3}}>
-          <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
       <Footer/>

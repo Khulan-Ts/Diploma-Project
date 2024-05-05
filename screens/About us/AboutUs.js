@@ -15,10 +15,10 @@ const AboutUs=({navigation})=>{
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start',  marginTop:'5%'}}>
         <View style={{flexDirection:'column', justifyContent: 'space-between', alignItems:'flex-start', width: width*0.8}}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start'}}>
-          <Image
+          {/* <Image
             source={require("../../assets/images/aboutusCal1.png")}
             style={{height: height*0.6, width:width*0.1}}resizeMode="contain"
-          />
+          /> */}
           <View style={{width: '18%', marginLeft: '1%'}}>
               <View style={{marginTop: '5%'}}>
                   <View style={{borderBottomWidth: 1, width: '70%'}}>
@@ -86,10 +86,10 @@ const AboutUs=({navigation})=>{
             />
         </View>
         </View>
-        <Image
+        {/* <Image
             source={require("../../assets/images/miucal.png")}
             style={{height: height*1.2, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
-          />
+          /> */}
       </View>
 
 

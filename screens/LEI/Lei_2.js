@@ -16,7 +16,7 @@ const Lei_2= ({ navigation }) => {
     >
       <View style={{flexDirection: "row", marginTop: width * 0.05, marginBottom: '5%'}}>
         <View style={{width: width * 0.1,}}>
-          <Image source={require('../../assets/images/Lei1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/Lei1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
         </View>
         <View>
           <View style={[styles.textContainer, {width: width * 0.78, height: width * 0.155, padding: width * 0.011, borderRadius: 10,}]}>
@@ -121,7 +121,7 @@ const Lei_2= ({ navigation }) => {
           </View>
         </View>
         <View style={{width: width * 0.1, marginTop: "-2%", marginLeft: 'auto'}}>
-          <Image source={require('../../assets/images/Lei2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
     </ScrollView>

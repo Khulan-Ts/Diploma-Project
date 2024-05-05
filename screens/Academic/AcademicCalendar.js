@@ -12,7 +12,7 @@ const AcademicCal= ({ navigation }) => {
     >
       <View style={{flexDirection: "row", marginTop: width * 0.05}}>
         <View style={{width: width * 0.1, marginBottom: height * 0.3, marginTop: '-2%'}}>
-          <Image source={require('../../assets/images/acacal-1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/acacal-1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
         </View>
         <View style={{ width: width * 0.18, marginLeft: '1%'}}>
             <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>
@@ -41,7 +41,7 @@ const AcademicCal= ({ navigation }) => {
           <Image source={require('../../assets/images/calendar-4.png')} style={{ height: width * 0.31, width: 'auto', marginTop: -height * 0.03 }} resizeMode="contain"/>
         </View>
         <View style={{width: width * 0.1, marginBottom: width * 0.5, marginLeft: 'auto', marginTop: '-2%'}}>
-          <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
       <Footer/> 
