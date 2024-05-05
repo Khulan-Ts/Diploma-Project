@@ -31,13 +31,13 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        mode="card"
         screenOptions={({ navigation, route }) => ({
           header: (props) => (
             <Header
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               style={{ backgroundColor: '#3d2562' }}
+              presentation='card'
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               //Button1Press={() => navigation.navigate('Another')} 
               //logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
