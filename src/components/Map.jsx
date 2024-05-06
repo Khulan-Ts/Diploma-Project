@@ -93,8 +93,13 @@ const MapComponent = ({
                 title={"M Building"}
               >
                 Student affairs - Academic - Admission - Finance - President`s office
-                {"\n\n\n\n\n"}
-                M building texts, LEI, offices
+                {"\n\n\n"}
+                This building is office building where students and applicants can get information 
+                about school or their studies.
+                {"\n\n\n"}
+                One fact: MIU has Counseling Center 
+                {"\n"}
+                which is mental health service. 
               </HoverCard>
             </View>
           )}
@@ -112,12 +117,14 @@ const MapComponent = ({
               type={'Secondary'}
               title={"D building"}
               >
-              The MIU Global Residence is a seven-floor building that houses both 
-              male and female students from all over the world. The first four 
-              floors are dedicated to students and the 5th to 7th floors are 
-              occupied by faculty and staff members. MIU Global Residence a unique 
-              residence hall that offers affordable, newly furnished, safe, and convenient 
-              living quarters for students.
+              Main Hall - Cafeteria - Library - Coffee Shop - GilGal
+              {"\n\n\n"}
+              This is where students spend most of their time and make their 
+              university life with memories and friends
+              {"\n\n\n"}
+              One fact: MIU Cafeteria has international dishes 
+              {"\n"}
+              that you can have for your lunch time. 
             </HoverCard>
             </View>
           )}
