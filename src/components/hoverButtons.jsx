@@ -72,11 +72,11 @@ export const HoverButton = ({
         >
             <Animated.View style={[styles.content, { opacity: iconOpacity }]}>
                 <Image source={icon} style={{height: width * 0.1}} resizeMode='contain' />
-                <FONT type={'Title2'} style={{ marginTop: width * 0.002, fontSize: 30, width: width * 0.15, textAlign: 'center'}}>{text}</FONT>
+                <FONT type={'Title2'} style={{ marginTop: width * 0.002, fontSize: 34, width: width * 0.15, textAlign: 'center'}}>{text}</FONT>
             </Animated.View>
             <Animated.View style={[styles.content, { transform: [{ scale: textScale }] }]}>
                 {isHovered && <FONT type='Title2' style={{fontSize: 100}}>{nummber}</FONT>}
-                {isHovered && <FONT type={'Title2'} style={{fontSize: 30, textAlign: 'center', width: width * 0.15}} >{text}</FONT>}
+                {isHovered && <FONT type={'Title2'} style={{fontSize: 34, textAlign: 'center', width: width * 0.15}} >{text}</FONT>}
             </Animated.View>
         </Pressable>
     );
