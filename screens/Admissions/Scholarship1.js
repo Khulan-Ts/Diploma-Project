@@ -39,38 +39,38 @@ const Scholarship1= ({ navigation }) => {
                 </View>
             </View>
         
-        <View style={{marginTop: width * 0.18, width: width * 0.3, position: 'absolute', marginLeft: width * 0.1}}>
+        <View style={{marginTop: width * 0.2, width: width * 0.3, position: 'absolute', marginLeft: width * 0.1}}>
             <ExpandableList 
                 title="Admission Scholarship" 
                 content="All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process."
                 maxHeightPercentage={180}
             />
             <ExpandableList
-                title="Curriculum"
+                title="MIU Academic Scholarship"
                 content="Content for item 2"
                 maxHeightPercentage={180}
             />
         </View>
-        <View style={{marginTop: width * 0.18, width: width * 0.3, position: 'absolute', marginLeft: width * 0.34}}>
+        <View style={{marginTop: width * 0.2, width: width * 0.3, position: 'absolute', marginLeft: width * 0.34}}>
             <ExpandableList 
-                title="Admission Scholarship" 
+                title="Student Union Scholarship" 
                 content="All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process."
                 maxHeightPercentage={180}
             />
             <ExpandableList
-                title="Curriculum"
+                title="Financial Aid Scholarship"
                 content="Content for item 2"
                 maxHeightPercentage={180}
             />
         </View>
-        <View style={{marginTop: width * 0.18, width: width * 0.3, position: 'absolute', marginLeft: width * 0.58}}>
+        <View style={{marginTop: width * 0.2, width: width * 0.3, position: 'absolute', marginLeft: width * 0.58}}>
             <ExpandableList 
-                title="Admission Scholarship" 
+                title="Korean Diaspora Scholarship" 
                 content="All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process."
                 maxHeightPercentage={180}
             />
             <ExpandableList
-                title="Curriculum"
+                title="Disability Support Scholarship"
                 content="Content for item 2"
                 maxHeightPercentage={180}
             />
