@@ -8,8 +8,6 @@ const Button = ({
   text,
   numberOfLines = 1,
   onPress,
-  onHoverIn,
-  onHoverOut,
   isPressedState,
   style,
 }) => {
@@ -96,11 +94,9 @@ const Button = ({
         <Pressable
         onPress={onPress}
         onHoverIn={() => {
-          onHoverIn?.();
           setIsHovered(true);
         }}
         onHoverOut={() => {
-          onHoverOut?.();
           setIsHovered(false);
         }}
         onFocus={()=> setIsPressed(true)}
