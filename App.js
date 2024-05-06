@@ -19,8 +19,9 @@ import Lei_4 from './screens/LEI/Lei_4';
 import Lei_5 from './screens/LEI/Lei_5';
 import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
-import Scholarship from './screens/Admissions/Scholarship';
+import Scholarship from './screens/Admissions/Scholarship1';
 import PlanReport from './screens/About us/PlanReport';
+import Scholarship1 from './screens/Admissions/Scholarship1';
 
 const Stack = createStackNavigator();
 
@@ -61,7 +62,7 @@ const App = () => {
         <Stack.Screen name="Our people" component={OurPeople} />
         <Stack.Screen name="Plan and Report" component={PlanReport} />
         <Stack.Screen name="Over View" component={Overview} /> */}
-        <Stack.Screen name="Scholarship" component={Scholarship} />
+        <Stack.Screen name="Scholarship" component={Scholarship1} />
       </Stack.Navigator>
     </NavigationContainer>
   );
