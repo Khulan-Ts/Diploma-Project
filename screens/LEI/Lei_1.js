@@ -5,16 +5,19 @@ import Button from "../../src/components/Button";
 import Calendar from "../../assets/icons/calendar";
 import Clock from "../../assets/icons/clock";
 import data from "../../static.json"
+import Footer from "../../src/components/footer";
+import TeacherRow from "../../src/components/teacherRow";
 
 const Lei_1= ({ navigation }) => {
-  const { width, height } = useWindowDimensions();
-  const { apply } = data.links;
+  const { width } = useWindowDimensions();
+  const { lei_apply } = data.links;
+  const { lei_teachers }= data;
   
   return (
     <ScrollView
       style={styles.container}
     >
-      <View style={{flexDirection: "row", marginTop: width * 0.05, marginBottom: '5%'}}>
+      <View style={{flexDirection: "row", marginTop: width * 0.05}}>
         <View style={{width: width * 0.1,}}>
           <Image source={require('../../assets/images/calligraphy/Lei1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
         </View>
@@ -73,7 +76,7 @@ const Lei_1= ({ navigation }) => {
                     </View>
                   </View>
                 </View>
-                <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.015}} onPress={()=> Linking.openURL(apply)} ></Button>
+                <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.015}} onPress={()=> Linking.openURL(lei_apply)} ></Button>
               </View>
           </View>
           <View style={{flexDirection: 'row',alignItems: 'center', marginTop: '7%'}}>
@@ -81,49 +84,15 @@ const Lei_1= ({ navigation }) => {
             <FONT type={"Title2"} style={{fontSize: 25, marginRight: '2%'}}>meet our teachers</FONT>
             <View style={{borderBottomWidth: width * 0.0002, borderColor: '#3D2562', width: width * 0.297}}/>
           </View>
-          <View style={{marginTop: '7%'}}>
-            <View style={{flexDirection: 'row'}}>
-              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
-                <Image source={require('../../assets/images/lei_teachers/1.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003 }}>teacher #1</FONT>
-              </View>
-              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
-                <Image source={require('../../assets/images/lei_teachers/2.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #2</FONT>
-              </View>
-              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
-                <Image source={require('../../assets/images/lei_teachers/3.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #3</FONT>
-              </View>
-              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
-                <Image source={require('../../assets/images/lei_teachers/4.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #4</FONT>
-              </View>
-              <View style={{alignItems: 'center'}}>
-                <Image source={require('../../assets/images/lei_teachers/5.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #5</FONT>
-              </View>
-            </View>
-            <View style={{flexDirection: 'row', marginTop: width * 0.05}}>
-              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
-                <Image source={require('../../assets/images/lei_teachers/6.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #6</FONT>
-              </View>
-              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
-                <Image source={require('../../assets/images/lei_teachers/7.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #7</FONT>
-              </View>
-              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
-                <Image source={require('../../assets/images/lei_teachers/8.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #8</FONT>
-              </View>
-            </View>
+          <View style={{ flexDirection: 'column', marginTop: '7%' }}>
+            <TeacherRow teachers={lei_teachers}/>
           </View>
         </View>
         <View style={{width: width * 0.1, marginTop: "-2%", marginLeft: 'auto'}}>
           <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
+      <Footer/>
     </ScrollView>
   );
 }
@@ -134,6 +103,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F6FAFF"
+  },
+  teachersContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: '7%',
   },
   textContainer:{
     backgroundColor: '#fff',
