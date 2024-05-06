@@ -9,7 +9,7 @@ const Overview= ({ navigation }) => {
     <ScrollView style={styles.container}>
         <View style={{flexDirection: "row", marginTop: width * 0.03}}>
             <View style={{width: width * 0.1, marginTop: '-1.5%'}}>
-                <Image source={require('../../assets/images/a_overview.png')} style={{width: 'auto', height: width * 0.12}} resizeMode="contain"/>
+                <Image source={require('../../assets/images/overviewcal.png')} style={{width: 'auto', height: width * 0.12}} resizeMode="contain"/>
             </View>
             <View style={{ width: width * 0.18}}>
                 <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>
@@ -40,13 +40,13 @@ const Overview= ({ navigation }) => {
                         </View>
                         <View style={{flexDirection: 'row'}}>
                             <View style={{marginBottom: '20%'}}>
-                                <Image source={require('../../assets/images/overview-4.png')} style={{width: width * 0.2, height: width * 0.13}}/>
+                                <Image source={require('../../assets/images/overview-4.png')} style={{width: width * 0.2, height: width * 0.13}} resizeMode="contain"/>
                             </View>
                             <View style={{ marginTop: width * 0.0015, marginLeft: width * 0.01}}>
                                 <Image source={require('../../assets/images/overview-5.png')} style={{width: width * 0.38, height: width * 0.1}} resizeMode="contain"/>
                             </View>
                             <View style={{marginLeft: width * 0.01  }}>
-                                <Image source={require('../../assets/images/overview-6.png')} style={{width: width * 0.2, height: width * 0.13}}/>
+                                <Image source={require('../../assets/images/overview-6.png')} style={{width: width * 0.2, height: width * 0.13}} resizeMode="contain"/>
                             </View>
                             
                         </View>
@@ -61,7 +61,7 @@ const Overview= ({ navigation }) => {
                 <FONT type={"Regular"} style={{ color: '#3D2562', fontSize: 25}}>We want to get to know you through your application process, to hear your voice and explore your potential. We will be happy to assist you along the way! Are you ready to take the next step?</FONT>
             </View>
             <View style={{marginRight: '-30%', marginLeft: '1%'}}>
-                <Image source={require('../../assets/images/overview-1.png')} style={{width: 315, height: 219}}/>
+                <Image source={require('../../assets/images/overview-7.png')} style={{width: 315, height: 219}}/>
             </View>
             
         <View style={{width: width * 0.1, marginTop: '-2%', marginLeft: 'auto'}}>
