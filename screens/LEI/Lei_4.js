@@ -5,18 +5,18 @@ import Button from "../../src/components/Button";
 import Calendar from "../../assets/icons/calendar";
 import Clock from "../../assets/icons/clock";
 
-const Lei_4= ({ navigation }) => {
+const Lei_1= ({ navigation }) => {
   const { width, height } = useWindowDimensions();
   return (
     <ScrollView
       style={styles.container}
     >
-      <View style={{flexDirection: "row", marginTop: '5%', marginBottom: '5%'}}>
-        <View style={{width: width * 0.1, marginRight: 'auto'}}>
-          <Image source={require('../../assets/images/Lei1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+      <View style={{flexDirection: "row", marginTop: width * 0.05, marginBottom: '5%'}}>
+        <View style={{width: width * 0.1,}}>
+          <Image source={require('../../assets/images/calligraphy/Lei1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
         </View>
         <View>
-          <View style={[styles.textContainer, {width: width * 0.78, height: height * 0.33}]}>
+          <View style={[styles.textContainer, {width: width * 0.78, height: width * 0.155, padding: width * 0.011, borderRadius: 10,}]}>
               <FONT type="Title3" style={{fontSize: 25}}>LANGUAGE EDUCATION INSTITUTE</FONT>
               <FONT style={{fontSize: 18, marginTop: '1%'}}>LEI is a language school that focuses on English for 
               daily life, education, and business communication. Students of all ages and nationalities 
@@ -26,35 +26,35 @@ const Lei_4= ({ navigation }) => {
               in active classrooms where students have the opportunity to engage in the language they are learning, 
               and in combining all language skills together to increase learning and retention. We always seek to 
               use the new methods and research in teaching foreign languages, and we keep our teachers up to date 
-              with regular training and observations.</FONT>
+              with regular training and observations.</FONT> 
           </View>
-          <View style={{flexDirection: 'row', marginTop: '5%'}}>
+          <View style={{flexDirection: 'row', marginTop: width * 0.05}}>
               <View>
-                  <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
-                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')}></Button>
+                  <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
+                      <Button type="Nine" text={"English Foundation Course"} onPress={() => navigation.navigate('English Foundation Course')} ></Button>
                   </View>
-                  <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
+                  <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"English Evening Course"} onPress={() => navigation.navigate('English Evening Course')}></Button>
                   </View>
-                  <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
+                  <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"Business English Course"} onPress={() => navigation.navigate('Business English Course')}></Button>
                   </View>
-                  <View style={{borderBottomWidth: 1, borderColor: "#3D2562", width: width * 0.192}}>
+                  <View style={{borderBottomWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.192}}>
                       <Button type="Nine" text={"Mongolian Course"} onPress={() => navigation.navigate('Mongolian Course')} isPressedState={true}></Button>
                   </View>
                   <Button type="Nine" text={"Additional Language Course"} onPress={() => navigation.navigate('Additional Language Course')}></Button>
               </View>
-              <View style={{borderLeftWidth: 1, borderColor: "#3D2562", width: width * 0.42, height: height * 0.31}}>
-                  <FONT type="Body" style={{ marginLeft: "2%", marginTop: '-2%', fontSize: 18}}>This program is a very flexible 
-                  tutoring program to help students learn or improve their Mongolian language. For true beginners, 
-                  we recommend a survival course program of 12 weeks, that covers basic elements of Mongolian such 
-                  as alphabet (reading and pronunciation) and daily phrases. For students who wish to study more, we 
-                  have level 1 (beginner) and level 2 (intermediate) programs to improve communication and help with 
-                  day-to-day tasks. All classes are taught by native Mongolian speakers and use interactive classroom 
-                  methods to get the student involved and help with memory. Most classes have between 1-5 students.</FONT>
+              <View style={{borderLeftWidth: width * 0.0002, borderColor: "#3D2562", width: width * 0.41, height: width * 0.15}}>
+                  <FONT type="Body" style={{ marginLeft: "2%", fontSize: 18, marginTop: '-2%'}}>This program is a very flexible tutoring program 
+                  to help students learn or improve their Mongolian language. For true beginners, we recommend a survival course 
+                  program of 12 weeks, that covers basic elements of Mongolian such as alphabet (reading and pronunciation) and 
+                  daily phrases. For students who wish to study more, we have level 1 (beginner) and level 2 (intermediate) programs 
+                  to improve communication and help with day-to-day tasks. All classes are taught by native Mongolian speakers and 
+                  use interactive classroom methods to get the student involved and help with memory. Most classes have between 1-5 
+                  students.</FONT>
               </View>
-              <View style={{marginLeft: '1.5%', marginTop: '-1%'}}>
-                <View style={[styles.infoContainer, {width: width * 0.16, height: height * 0.19}]}>
+              <View style={{marginLeft: '1.5%'}}>
+                <View style={[styles.infoContainer, {width: width * 0.16, height: width * 0.08, padding: width * 0.0075, borderRadius: width * 0.022}]}>
                   <View style={{flexDirection: 'row'}}>
                     <Clock width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%', marginTop: '-1%'}}>
@@ -62,7 +62,7 @@ const Lei_4= ({ navigation }) => {
                       <FONT style={{fontSize: 18}}>1 year / Full-time</FONT>
                     </View>
                   </View>
-                  <View style={{flexDirection: 'row', marginTop: '5%'}}>
+                  <View style={{flexDirection: 'row', marginTop: width * 0.001}}>
                     <Calendar width={width * 0.02} height={width * 0.02}/>
                     <View style={{marginLeft: '5%'}}>
                       <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
@@ -70,62 +70,62 @@ const Lei_4= ({ navigation }) => {
                     </View>
                   </View>
                 </View>
-                <Button type="Apply2" text={"APPLY"} style={{ marginTop: '5%'}} ></Button>
+                <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.015}} ></Button>
               </View>
           </View>
           <View style={{flexDirection: 'row',alignItems: 'center', marginTop: '7%'}}>
-            <View style={{borderBottomWidth: 0.7, borderColor: '#3D2562', width: width * 0.297, marginRight: '2%'}}/>
+            <View style={{borderBottomWidth: width * 0.0002, borderColor: '#3D2562', width: width * 0.297, marginRight: '2%'}}/>
             <FONT type={"Title2"} style={{fontSize: 25, marginRight: '2%'}}>meet our teachers</FONT>
-            <View style={{borderBottomWidth: 0.7, borderColor: '#3D2562', width: width * 0.297}}/>
+            <View style={{borderBottomWidth: width * 0.0002, borderColor: '#3D2562', width: width * 0.297}}/>
           </View>
           <View style={{marginTop: '7%'}}>
             <View style={{flexDirection: 'row'}}>
-              <View style={{alignItems: 'center', marginRight: '3%'}}>
-                <Image source={require('../../assets/images/lei_teachers/1.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #1</FONT>
+              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
+                <Image source={require('../../assets/images/lei_teachers/1.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003 }}>teacher #1</FONT>
               </View>
-              <View style={{alignItems: 'center', marginRight: '3%'}}>
-                <Image source={require('../../assets/images/lei_teachers/2.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #2</FONT>
+              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
+                <Image source={require('../../assets/images/lei_teachers/2.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #2</FONT>
               </View>
-              <View style={{alignItems: 'center', marginRight: '3%'}}>
-                <Image source={require('../../assets/images/lei_teachers/3.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #3</FONT>
+              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
+                <Image source={require('../../assets/images/lei_teachers/3.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #3</FONT>
               </View>
-              <View style={{alignItems: 'center', marginRight: '3%'}}>
-                <Image source={require('../../assets/images/lei_teachers/4.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #4</FONT>
+              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
+                <Image source={require('../../assets/images/lei_teachers/4.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #4</FONT>
               </View>
               <View style={{alignItems: 'center'}}>
-                <Image source={require('../../assets/images/lei_teachers/5.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #5</FONT>
+                <Image source={require('../../assets/images/lei_teachers/5.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #5</FONT>
               </View>
             </View>
-            <View style={{flexDirection: 'row', marginTop: '5%'}}>
-              <View style={{alignItems: 'center', marginRight: '3%'}}>
-                <Image source={require('../../assets/images/lei_teachers/6.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #6</FONT>
+            <View style={{flexDirection: 'row', marginTop: width * 0.05}}>
+              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
+                <Image source={require('../../assets/images/lei_teachers/6.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #6</FONT>
               </View>
-              <View style={{alignItems: 'center', marginRight: '3%'}}>
-                <Image source={require('../../assets/images/lei_teachers/7.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #7</FONT>
+              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
+                <Image source={require('../../assets/images/lei_teachers/7.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #7</FONT>
               </View>
-              <View style={{alignItems: 'center', marginRight: '3%'}}>
-                <Image source={require('../../assets/images/lei_teachers/8.png')} style={{width: width * 0.135, height: height * 0.31}} resizeMode="contain"/>
-                <FONT type="Subtitle" style={{fontSize: 15, marginTop: '3%'}}>teacher #8</FONT>
+              <View style={{alignItems: 'center', marginRight: width * 0.02}}>
+                <Image source={require('../../assets/images/lei_teachers/8.png')} style={{width: width * 0.135, height: width * 0.145}} resizeMode="contain"/>
+                <FONT type="Subtitle" style={{fontSize: 15, marginTop: width * 0.003}}>teacher #8</FONT>
               </View>
             </View>
           </View>
         </View>
         <View style={{width: width * 0.1, marginTop: "-2%", marginLeft: 'auto'}}>
-          <Image source={require('../../assets/images/Lei2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
     </ScrollView>
   );
 }
 
-export default Lei_4
+export default Lei_1
 
 const styles = StyleSheet.create({
   container: {
@@ -134,16 +134,12 @@ const styles = StyleSheet.create({
   },
   textContainer:{
     backgroundColor: '#fff',
-    padding: 15,
-    borderRadius: 10,
     shadowColor: '#DFE4FF',
     shadowOffset: { width: 5, height: 4 },
     shadowOpacity: 0.25,
     shadowRadius: 20,
   },
   infoContainer:{
-    padding: 10,
     backgroundColor: "#EDF0FF",
-    borderRadius: 30,
   }
 });

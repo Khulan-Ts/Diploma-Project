@@ -48,11 +48,14 @@ export const HoverButton = ({
     };
 
     const ContainerStyles = [
-        styles.container,
-        { width: width * 0.22, height: width * 0.2,
-        paddingLeft: width * 0.018, paddingRight: width * 0.018,
-        paddingBottom: width * 0.025, paddingTop: width * 0.025,
-        borderRadius: width * 0.025, },
+        styles.container,{ 
+            width: width * 0.22,
+            height: width * 0.2,
+            paddingLeft: width * 0.018, 
+            paddingRight: width * 0.018,
+            paddingBottom: width * 0.025, 
+            paddingTop: width * 0.025,
+            borderRadius: width * 0.025},
         isHovered && {
             shadowColor: '#0096c7',
             shadowOffset: { width: 4, height: 4 },
@@ -69,11 +72,11 @@ export const HoverButton = ({
         >
             <Animated.View style={[styles.content, { opacity: iconOpacity }]}>
                 <Image source={icon} style={{height: width * 0.1}} resizeMode='contain' />
-                <FONT type={'Title2'} style={{ marginTop: 15, fontSize: 30}}>{text}</FONT>
+                <FONT type={'Title2'} style={{ marginTop: width * 0.002, fontSize: 34, width: width * 0.15, textAlign: 'center'}}>{text}</FONT>
             </Animated.View>
             <Animated.View style={[styles.content, { transform: [{ scale: textScale }] }]}>
                 {isHovered && <FONT type='Title2' style={{fontSize: 100}}>{nummber}</FONT>}
-                {isHovered && <FONT type={'Title2'} style={{fontSize: 30}} >{text}</FONT>}
+                {isHovered && <FONT type={'Title2'} style={{fontSize: 34, textAlign: 'center', width: width * 0.15}} >{text}</FONT>}
             </Animated.View>
         </Pressable>
     );

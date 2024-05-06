@@ -11,7 +11,7 @@ const Twoplus2=({navigation})=>{
     <ScrollView style={styles.container}>
        <View style={{flexDirection: "row", marginTop: width * 0.05}}>
         <Image
-          source={require("../../assets/images/2p2cal1.png")}
+          source={require("../../assets/images/calligraphy/2p2cal1.png")}
           style={{height: width * 0.3, width: width * 0.1, marginTop: '-2%'}}
           resizeMode="contain"
         />
@@ -49,7 +49,7 @@ const Twoplus2=({navigation})=>{
             />
           </View>
           <Image
-            source={require("../../assets/images/miucal.png")}
+            source={require("../../assets/images/calligraphy/miucal.png")}
             style={{height: width*0.5, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
           />
         </View>

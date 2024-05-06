@@ -65,7 +65,7 @@ const Overview= ({ navigation }) => {
             </View>
             
         <View style={{width: width * 0.1, marginTop: '-2%', marginLeft: 'auto'}}>
-            <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+            <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
         </View>
     </ScrollView>
