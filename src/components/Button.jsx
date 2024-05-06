@@ -1,13 +1,5 @@
 import * as React from "react";
-
-import {
-  View,
-  StyleSheet,
-  Text,
-  Pressable,
-  useWindowDimensions
-} from "react-native";
-
+import { View, StyleSheet, Text, Pressable, useWindowDimensions } from "react-native";
 import { useFonts } from 'expo-font'
 import ArrowIcon from "../../assets/icons/arrow";
 
