@@ -10,7 +10,7 @@ import Footer from "./src/components/footer";
 import data from "./static.json"
 
 const HomeScreen= ({ navigation }) =>{
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const { apply } = data.links;
   
   return(
@@ -93,6 +93,7 @@ const HomeScreen= ({ navigation }) =>{
           <Image source={require('./assets/images/homepage/h2.png')} style={{width: width * 0.38, height: width * 0.25}} resizeMode="contain"/>
         </View>
       </View>
+      
       <View style={[styles.reasons, { height: width * 0.18, borderTopLeftRadius: width * 0.037, borderTopRightRadius: width *0.037}]}>
         <View style={{width: width * 0.16,}}>
           <FONT style={{fontSize: 40, borderBottomWidth: width * 0.0008, textAlign: 'center', borderColor: "#3d2562"}}>4 REASONS</FONT>
@@ -111,7 +112,7 @@ const HomeScreen= ({ navigation }) =>{
       
       <View style={[styles.apply, { height: width * 0.4, marginTop: '2%' }]}>
         <FONT type="Title" style={{color: "#fff", fontSize: 86}}>APPLY NOW</FONT>
-        <View style={{marginTop: '1%', marginBottom: '2%', width: '35%'}}>
+        <View style={{marginTop: '1%', marginBottom: '2%', width: width * 0.38}}>
           <FONT type="Title2"style={{color: "#fff", textAlign: 'center', fontSize: 25}}>
           Are you ready to take the next step toward your future career?
           </FONT>
