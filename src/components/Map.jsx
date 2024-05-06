@@ -22,7 +22,6 @@ const MapComponent = ({
         <Image
           source={require("../../assets/images/map.png")}
           style={[styles.image, {height: windowWidth * 0.56}]}
-          resizeMode="contain"
         />
 
         <Pressable

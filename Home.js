@@ -75,7 +75,8 @@ const HomeScreen= ({ navigation }) =>{
             competency programs. Emphasizing on professionalism, MIU students 
             learn to make new connections in a synergistic environment that 
             multiplies the use of resources such as time, energy, and creativity.</FONT>
-            <Button type="Ten" text={"Explore Undergraduate Programs"} style={{marginTop: width * 0.033}} onPress={()=> navigation.navigate('Graduate')}/>
+            <FONT type="Title3" style={{fontSize: 18, marginTop: width * 0.012}}>85% employed within months of graduation</FONT>
+            <Button type="Ten" text={"Explore Undergraduate Programs"} style={{marginTop: width * 0.012}} onPress={()=> navigation.navigate('Graduate')}/>
           </View>
         </View>
         <View style={{ flexDirection: "row", marginTop: '5%'}}>
@@ -86,15 +87,28 @@ const HomeScreen= ({ navigation }) =>{
             scholarly and personal competency programs. Emphasizing on professionalism, MIU 
             students learn to make new connections in a synergistic environment that multiplies 
             the use of resources such as time, energy, and creativity.</FONT>
-            <Button type="Ten" text={"Explore Graduate Programs"} style={{marginTop: width * 0.033}} onPress={()=> navigation.navigate('Graduate')}/>
+            <FONT type="Title3" style={{fontSize: 18, marginTop: width * 0.012}}>345+ MIU student studies abroad</FONT>
+            <Button type="Ten" text={"Explore Graduate Programs"} style={{marginTop: width * 0.012}} onPress={()=> navigation.navigate('Graduate')}/>
           </View>
           <Image source={require('./assets/images/homepage/h2.png')} style={{width: width * 0.38, height: width * 0.25}} resizeMode="contain"/>
         </View>
       </View>
-        
-      <View style={{marginTop: '10%'}}>
-        <MapComponent navigate={() => navigation.navigate('Dorm')}/>
+      <View style={[styles.reasons, { height: width * 0.18, borderTopLeftRadius: width * 0.037, borderTopRightRadius: width *0.037}]}>
+        <View style={{width: width * 0.16,}}>
+          <FONT style={{fontSize: 40, borderBottomWidth: width * 0.0008, textAlign: 'center', borderColor: "#3d2562"}}>4 REASONS</FONT>
+          <FONT style={{fontSize: 40, textAlign: 'center'}}>to study at MIU</FONT>
+        </View>
+        <View style={{ borderRightWidth: width * 0.0008, borderColor: "#3d2562", marginLeft: width * 0.02, height: width * 0.11, marginRight: width * 0.05}}/>
+        <View>
+          <FONT style={{fontSize: 25}}>1. All courses are taught in 100% English</FONT>
+          <FONT style={{fontSize: 25, marginTop: width * 0.005}}>2. Opportunity to learn international cultures</FONT>
+          <FONT style={{fontSize: 25, marginTop: width * 0.005}}>3. A globally recognized expert</FONT>
+          <FONT style={{fontSize: 25, marginTop: width * 0.005}}>4. Accessible education</FONT>
+        </View>
       </View>
+      
+      <MapComponent navigate={() => navigation.navigate('Dorm')}/>
+      
       <View style={[styles.apply, { height: width * 0.4, marginTop: '2%' }]}>
         <FONT type="Title" style={{color: "#fff", fontSize: 86}}>APPLY NOW</FONT>
         <View style={{marginTop: '1%', marginBottom: '2%', width: '35%'}}>
@@ -128,6 +142,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  welcome:{
+  reasons:{
+    backgroundColor: "#EDF0FF",
+    width: '100%',
+    shadowColor: '#DFE4FF',
+    shadowOffset: { width: 0, height: -5 },
+    shadowOpacity: 1,
+    shadowRadius: 4,
+    marginTop: '10%',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
 });

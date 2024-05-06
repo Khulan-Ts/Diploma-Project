@@ -51,7 +51,7 @@ const Footer = ({}) => {
                 <FONT type="Body" style={{color: rgbaColor, fontSize: 16, width: width * 0.25, marginLeft: width * 0.009}}>7000 7447</FONT>
                 </View>
             </View>
-            <Image source={require('../../assets/images/location.png')} resizeMode="contain" style={{height: width * 0.11, width: width * 0.21, borderRadius: width * 0.008}}/>
+            <Image source={require('../../assets/images/location.png')} style={{height: width * 0.11, width: width * 0.21, borderRadius: width * 0.008}}/>
           </View>
         </View>
     );

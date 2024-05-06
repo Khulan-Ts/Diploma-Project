@@ -32,7 +32,6 @@ const Header = ({
         <Image
           source={require("../../assets/images/logo-1.png")}
           style={{ width: width * 0.16, height: height * 0.1 }}
-          resizeMode="contain"
         />
       </Pressable>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
