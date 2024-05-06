@@ -39,11 +39,11 @@ const Overview= ({ navigation }) => {
                             
                         </View>
                         <View style={{flexDirection: 'row'}}>
-                            <View style={{marginBottom: '20%'}}>
+                            <View style={{marginBottom: width * 0.01}}>
                                 <Image source={require('../../assets/images/overview-4.png')} style={{width: width * 0.2, height: width * 0.13}} resizeMode="contain"/>
                             </View>
-                            <View style={{ marginTop: width * 0.0015, marginLeft: width * 0.01}}>
-                                <Image source={require('../../assets/images/overview-5.png')} style={{width: width * 0.38, height: width * 0.1}} resizeMode="contain"/>
+                            <View style={{ marginTop: width * 0.001, marginLeft: width * 0.01}}>
+                                <Image source={require('../../assets/images/overview-5.png')} style={{width: width * 0.38, height: width * 0.16}} resizeMode="contain"/>
                             </View>
                             <View style={{marginLeft: width * 0.01  }}>
                                 <Image source={require('../../assets/images/overview-6.png')} style={{width: width * 0.2, height: width * 0.13}} resizeMode="contain"/>
@@ -51,7 +51,7 @@ const Overview= ({ navigation }) => {
                             
                         </View>
                         <View>
-                            <View style={{width: width * 0.35, marginLeft: width * 0.001, backgroundColor: 'rgba(000, 240, 255, 0.3)', height: 115, padding: 10}}>
+                            <View style={{width: width * 0.35, marginLeft: width * 0.001, backgroundColor: 'rgba(000, 240, 255, 0.3)', height: 115, padding: width * 0.01}}>
                                 <FONT type="Body" style={{ color: 'white'}}> When you decide to apply to Mongolia International University you will have the opportunity to explore courses across the programs and colleges that make up our university, crossing disciplines and charting your own unique academic path. </FONT>
                             </View>
                         </View>
