@@ -22,7 +22,6 @@ import Lei_5 from './screens/LEI/Lei_5';
 //About us
 import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
-import Scholarship from './screens/Admissions/Scholarship';
 import PlanReport from './screens/About us/PlanReport';
 import GivingInfo from './screens/About us/Givinginfo1';
 
@@ -49,14 +48,14 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       >
-        <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
+        {/* <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
         <Stack.Screen name="2 + 2 program" component={Twoplus2} />
         <Stack.Screen name="Exchange student Program" component={Exchange} /> 
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
-        <Stack.Screen name="Dorm" component={Dorm} /> 
-        <Stack.Screen name="English Foundation Course" component={Lei_1} />
+        <Stack.Screen name="Dorm" component={Dorm} />  */}
+        {/* <Stack.Screen name="English Foundation Course" component={Lei_1} />
         <Stack.Screen name="English Evening Course" component={Lei_2} />
         <Stack.Screen name="Business English Course" component={Lei_3} />
         <Stack.Screen name="Mongolian Course" component={Lei_4} />
