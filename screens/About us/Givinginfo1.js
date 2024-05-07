@@ -15,18 +15,21 @@ const GivingInfo = ({ navigation }) => {
           <Image source={require('../../assets/images/calligraphy/givingcal.png')} style={{ width: 'auto', height: width * 0.3 }} resizeMode="contain" />
         </View>
         <View style={{ width: '18%', marginLeft: '1%' }}>
-          <View style={{ marginTop: '5%' }}>
-            <View style={{ borderBottomWidth: 1, width: '70%' }}>
-              <Button type="Secondary" text={"About us"}  ></Button>
-            </View>
-            <View style={{ borderBottomWidth: 1, width: '70%' }}>
-              <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
-            </View>
-            <View style={{ borderBottomWidth: 1, width: '70%' }}>
-              <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')}></Button>
-            </View>
-            <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')} isPressedState={true}></Button>
-          </View>
+              <View style={{ borderBottomWidth: width * 0.0008, width: '80%', paddingBottom: width * 0.01, paddingLeft: width * 0.007}}>
+                <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>About us</FONT>
+              </View>
+              <View style={{marginTop: '5%'}}>
+                  <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                      <Button type="Secondary" text={"Greetings"} onPress={() => navigation.navigate('About us')}></Button>
+                  </View>
+                  <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                      <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
+                  </View>
+                      <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                  <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')}></Button> 
+                  </View>
+                  <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Giving Information')} isPressedState={true}></Button>
+              </View>
         </View>
         <View style={{ flexDirection: 'column' }}>
           <View style={{ width: width * 0.6, height: width * 0.12, marginTop: 20, backgroundColor: '#EDF0FF', padding: width * 0.01 }}>
@@ -36,7 +39,7 @@ const GivingInfo = ({ navigation }) => {
             <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}>Your support now, with a donation of any amount, is vital to ensure we have the resources to continue to honor our vision to be the preeminent intellectual and creative center for effective engagement in a world that increasingly demands better-designed objects, communication, systems, and organizations to meet social needs.</FONT>
           </View>
         </View>
-        <View style={{ width: width * 0.78, height: width * 0.16, marginTop: width * 0.15, marginLeft: width * 0.11, position: 'absolute' }}>
+        <View style={{ width: width * 0.78, height: width * 0.16, marginTop: width * 0.17, marginLeft: width * 0.11, position: 'absolute' }}>
           <FONT type='Title2' style={{ color: '#3D2562', fontSize: 20 }}>
             Support Our School
           </FONT>
@@ -148,7 +151,7 @@ const GivingInfo = ({ navigation }) => {
           </View>
         </View>
         <View style={{ width: width * 0.1, marginTop: '-2%', marginLeft: 'auto' }}>
-          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{ width: 'auto', height: width * 0.5, marginBottom: width * 0.19 }} resizeMode="contain" />
+          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{ width: 'auto', height: width * 0.5, marginBottom: width * 0.2 }} resizeMode="contain" />
         </View>
       </View>
       <Footer/>
