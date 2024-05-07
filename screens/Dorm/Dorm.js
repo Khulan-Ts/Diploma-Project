@@ -66,22 +66,22 @@ const Dorm=({navigation})=>{
                             </View>
                         </View> 
                         <View style={{marginLeft: width * 0.01, marginTop: width * 0.018}}>
-                            <View style={[styles.infoContainer, {width: width * 0.17, height: width * 0.08}]}>
-                                <View style={{flexDirection: 'row',marginTop: width * -0.001}}>
-                                    <Clock width={24} height={28}/>
-                                    <View style={{marginLeft: width * 0.01}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
-                                        <FONT style={{fontSize: 18}}>A full semester (3 months)</FONT>
+                            <View style={[styles.infoContainer, {width: width * 0.2, height: width * 0.08, padding: width * 0.0075, borderRadius: width * 0.022}]}>
+                                <View style={{flexDirection: 'row'}}>
+                                    <Clock width={width * 0.02} height={width * 0.02}/>
+                                    <View style={{marginLeft: '5%', marginTop: '-1%'}}>
+                                    <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
+                                    <FONT style={{fontSize: 18}}>A full semester (3 months)</FONT>
                                     </View>
                                 </View>
-                                <View style={{flexDirection: 'row', marginTop: width * -0.001}}>
-                                    <Calendar width={25} height={25}/>
-                                    <View style={{marginLeft: width * 0.01}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Contatc Us</FONT>
-                                        <FONT style={{fontSize: 18}}>dir_student@miu.edu.mn</FONT>
+                                <View style={{flexDirection: 'row', marginTop: width * 0.001}}>
+                                    <Calendar width={width * 0.02} height={width * 0.02}/>
+                                    <View style={{marginLeft: '5%'}}>
+                                    <FONT type="Title2" style={{fontSize: 18}}>Contact us</FONT>
+                                    <FONT style={{fontSize: 18}}>dir_student@miu.edu.mn.</FONT>
                                     </View>
                                 </View>
-                            </View>
+                                </View>
                             <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.013, marginLeft: width * 0.001}} ></Button>
                         </View>
                     </View>
