@@ -12,7 +12,7 @@ const Givinginfo1 = ({ navigation }) => {
     >
       <View style={{ flexDirection: "row", marginTop: width * 0.05 }}>
         <View style={{ width: width * 0.1, marginTop: '-2%', marginRight: 'auto' }}>
-          <Image source={require('../../assets/images/givingcal.png')} style={{ width: 'auto', height: width * 0.3 }} resizeMode="contain" />
+          <Image source={require('../../assets/images/calligraphy/givingcal.png')} style={{ width: 'auto', height: width * 0.3 }} resizeMode="contain" />
         </View>
         <View style={{ width: '18%', marginLeft: '1%' }}>
           <View style={{ marginTop: '5%' }}>
@@ -148,7 +148,7 @@ const Givinginfo1 = ({ navigation }) => {
           </View>
         </View>
         <View style={{ width: width * 0.1, marginTop: '-2%', marginLeft: 'auto' }}>
-          <Image source={require('../../assets/images/miucal.png')} style={{ width: 'auto', height: width * 0.5, marginBottom: width * 0.19 }} resizeMode="contain" />
+          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{ width: 'auto', height: width * 0.5, marginBottom: width * 0.19 }} resizeMode="contain" />
         </View>
       </View>
       <Footer/>
