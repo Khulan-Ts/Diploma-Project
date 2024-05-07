@@ -14,7 +14,7 @@ const Twoplus2=({navigation})=>{
        <View style={{flexDirection: "row", marginTop: width*0.05}}>
         <Image
           source={require("../../assets/images/calligraphy/2p2cal1.png")}
-          style={{height: width*0.3, width:width*0.1, marginLeft:-width*0.01}}resizeMode="contain"
+          style={{height: width*0.3, width:width*0.12, marginLeft:-width*0.01}}resizeMode="contain"
         />
         <View style={{width: width*0.15}}>
             <View style={{ borderBottomWidth: 1, width: width*0.17,  paddingBottom: width*0.007, paddingLeft:width*0.007}}>
@@ -31,7 +31,7 @@ const Twoplus2=({navigation})=>{
                 <Button type="Secondary" text={"2+2 program"} isPressedState={true}></Button> 
                 </View>
                 <View style={{borderBottomWidth: 1, width: width*0.137}}>
-                    <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
+                    <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13, textAlign:'left'}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
                 </View>
                 <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
             </View>

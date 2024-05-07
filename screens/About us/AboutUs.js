@@ -18,7 +18,7 @@ const AboutUs=({navigation})=>{
     <ScrollView style={styles.container}>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start',  marginTop:width*0.05, marginLeft:width*0.05}}>
         <View style={{flexDirection:'column', justifyContent: 'space-between', alignItems:'center', width: width*0.81}}>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start', height:width*0.265}}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start', height:width*0.255}}>
           <Image
             source={require("../../assets/images/calligraphy/aboutusCal1.png")}
             style={{height: width*0.3, width:width*0.1}}resizeMode="contain"
@@ -58,14 +58,14 @@ const AboutUs=({navigation})=>{
                     have the opportunity to complete studies in a variety of academic fields. Through the investment of our 
                     international faculty and staff and our close-knit environment of instructors, mentors, and advisors, 
                     students will feel they are part of a family. They will be equipped with the skills and knowledge necessary 
-                    to achieve great scholarly work.</FONT>
+                    to achieve great scholarly work. MIU challenges students to explore innovative intellectual interests 
+        through scholarly and personal competency programs.</FONT>
             </View>
 
           </View>
 
         </View>
-        <FONT style={{fontSize:18, width: width*0.6, marginLeft:width*0.25}}>MIU challenges students to explore innovative intellectual interests 
-        through scholarly and personal competency programs. Emphasizing professionalism, MIU students learn to make new connections
+        <FONT style={{fontSize:18, width: width*0.6, marginLeft:width*0.25}}> Emphasizing professionalism, MIU students learn to make new connections
          in a synergistic environment that multiplies the use of resources such as time, energy, and creativity. Most importantly, MIU is
           preparing a generation of distinctive leaders with the qualities of heart and character to serve their own people, nation, and
            the world. MIU will accompany you and take you one step closer to the portal of your future. ”</FONT>
