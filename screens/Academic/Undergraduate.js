@@ -72,7 +72,7 @@ const Undergraduate= ({ navigation }) => {
             </View>
             
         </View>
-        <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
+        <View style={{width: width * 0.1, marginBottom: width * 0.1, marginLeft: 'auto', marginTop: '-2%'}}>
             <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
