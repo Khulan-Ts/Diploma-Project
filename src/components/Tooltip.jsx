@@ -50,9 +50,6 @@ export const ToolTip = ({
 
 const styles = StyleSheet.create({
   commonTooltip: {
-    position: 'absolute',
-    top: '100%',
-    marginTop: 5,
     borderRadius: 10,
     backgroundColor: 'rgba(255, 219, 120, 0.5)',
     padding: 10,
@@ -61,6 +58,30 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
     alignSelf: 'flex-start',
+  },
+  tooltipTop: {
+    position: 'absolute',
+    bottom: '100%',
+    marginBottom: 5,
+    alignSelf: 'center',
+  },
+  tooltipBottom: {
+    position: 'absolute',
+    top: '100%',
+    marginTop: 5,
+    alignSelf: 'center',
+  },
+  tooltipLeft: {
+    position: 'absolute',
+    right: '100%',
+    marginRight: 5,
+    alignSelf: 'center',
+  },
+  tooltipRight: {
+    position: 'absolute',
+    left: '100%',
+    marginLeft: 5,
+    alignSelf: 'center',
   },
 });
 
