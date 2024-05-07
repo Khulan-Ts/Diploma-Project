@@ -10,12 +10,13 @@ import Graduate from './screens/Academic/Graduate';
 import Twoplus2 from './screens/Academic/Twoplus2';
 import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
-import Howtoapply_Under from './screens/Admissions/howtoapply_undergrad';
-import Howtoapply_Graduate from './screens/Admissions/howtoapply_graduate';
+//Dorm
 import Dorm from './screens/Dorm/Dorm';
 //Admission
 import Overview from './screens/Admissions/Overview';
 import Scholarship from './screens/Admissions/Scholarship1';
+import Howtoapply_Under from './screens/Admissions/howtoapply_undergrad';
+import Howtoapply_Graduate from './screens/Admissions/howtoapply_graduate';
 //Lei
 import Lei_1 from './screens/LEI/Lei_1';
 import Lei_2 from './screens/LEI/Lei_2';
@@ -26,9 +27,10 @@ import Lei_5 from './screens/LEI/Lei_5';
 import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
 import PlanReport from './screens/About us/PlanReport';
-
-import Bachelor_BA from './screens/Academic/Bachelor_BA';
 import GivingInfo from './screens/About us/Givinginfo1';
+//Bachelor
+import Bachelor_BA from './screens/Bachelor/Bachelor_BA';
+
 
 const Stack = createStackNavigator();
 
