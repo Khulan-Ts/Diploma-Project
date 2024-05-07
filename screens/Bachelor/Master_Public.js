@@ -8,7 +8,7 @@ import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
 
-const Bachelor_HTM= ({ navigation }) => {
+const Master_Public= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
     useEffect( () => {
         
@@ -27,7 +27,7 @@ const Bachelor_HTM= ({ navigation }) => {
         >
             <View style={{flexDirection: "row", marginTop: width * 0.05, height: width * 0.58}}>
                 <View style={{width: width * 0.1, marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/masterpublic.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016}}>
@@ -137,7 +137,7 @@ const Bachelor_HTM= ({ navigation }) => {
     );
 }
 
-export default Bachelor_HTM;
+export default Master_Public;
 
 const styles = StyleSheet.create({
     container: {
