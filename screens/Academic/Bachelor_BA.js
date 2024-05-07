@@ -5,6 +5,7 @@ import Button from "../../src/components/Button";
 import { useRef, useEffect } from "react";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
+import Footer from "../../src/components/footer";
 
 const Bachelor_BA= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
@@ -86,6 +87,7 @@ const Bachelor_BA= ({ navigation }) => {
                             <Button type="Apply2" text={"APPLY"} style={{ marginTop: '8%', marginLeft: '2%'}} ></Button>
                         </View>
             </View>
+            <Footer/>
         </ScrollView>
         
     );

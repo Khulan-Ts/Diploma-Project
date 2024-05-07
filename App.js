@@ -36,17 +36,18 @@ const App = () => {
             <Header
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
-              logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button1Press={() => navigation.navigate('About us')}
-              Button2Press={() => navigation.navigate('Undergraduate')} 
-              Button3Press={() => navigation.navigate('Over View')}
-              Button4Press={() => navigation.navigate("English Foundation Course")}
+              // logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
+              // Button1Press={() => navigation.navigate('About us')}
+              // Button2Press={() => navigation.navigate('Undergraduate')} 
+              // Button3Press={() => navigation.navigate('Over View')}
+              Button4Press={() => navigation.navigate("Bachelor BA")}
               {...props} 
             />
           ),
           cardStyle: {flex: 1}
         })}
-      >
+      > 
+        <Stack.Screen name="Bachelor BA" component={Bachelor_BA} />
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />

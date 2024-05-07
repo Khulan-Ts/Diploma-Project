@@ -44,7 +44,7 @@ const AcademicCal= ({ navigation }) => {
           <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
-      <Footer/> 
+      <Footer/>
     </ScrollView>
   );
 }

@@ -3,6 +3,7 @@ import { StyleSheet,useWindowDimensions, Image, ScrollView, View  } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import ToolTip from "../../src/components/Tooltip";
+import Footer from "../../src/components/footer";
 
 const Howtoapply_Under= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
@@ -131,7 +132,7 @@ const Howtoapply_Under= ({ navigation }) => {
       {'\n'}•  Document Translation Fee 20,000₮ or 40,000₮ </FONT>
     </View>
     </View>
-      
+      <Footer/>
     </ScrollView>
   );
 }

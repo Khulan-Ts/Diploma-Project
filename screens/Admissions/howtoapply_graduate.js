@@ -3,6 +3,7 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import ToolTip from "../../src/components/Tooltip";
+import Footer from "../../src/components/footer";
 
 const Howtoapply_Graduate= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
@@ -121,7 +122,7 @@ const Howtoapply_Graduate= ({ navigation }) => {
       </FONT>
     </View>
     </View>
-      
+      <Footer/>
     </ScrollView>
   );
 }
