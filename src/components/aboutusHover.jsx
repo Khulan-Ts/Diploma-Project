@@ -15,7 +15,7 @@
         const descrOpacity = React.useRef(new Animated.Value(0)).current;
         const iconOpacity = React.useRef(new Animated.Value(1)).current;
         const textTranslateY = React.useRef(new Animated.Value(0)).current;
-        const textmove = height*0.22;
+        const textmove = width*0.095;
 
         const handleHoverIn = () => {
             setIsHovered(true);
@@ -61,7 +61,7 @@
 
   const ContainerStyles = [
     styles.container,
-    { width: width * 0.18, height: height * 0.34 },
+    { width: width * 0.18, height: width * 0.18 },
     isHovered && {
         shadowColor: '#0096c7',
         shadowOffset: { width: 4, height: 4 },
@@ -79,16 +79,16 @@
             <Pressable
                 onMouseEnter={handleHoverIn}
                 onMouseLeave={handleHoverOut}
-                style={ContainerStyles}
+                style={[ContainerStyles, {borderRadius: width*0.04}]}
             >
                 <Animated.View style={[styles.content, { opacity: iconOpacity }]}>
-                    <Image source={icon} style={styles.icon} resizeMode='contain' />
+                    <Image source={icon} style={{height: width*0.085,marginBottom:width*0.05}} resizeMode='contain' />
                 </Animated.View>
                 <Animated.View style={[styles.content, { opacity: 1 - iconOpacity, transform: [{ translateY: textTranslateY }] }]}>
-                    <FONT type={'Title4'} style={{ marginTop: '60%', width:'50%', textAlign:'center'}}>{text}</FONT>
+                    <FONT type={'Title4'} style={{ marginTop: width*0.1, width:width*0.11, textAlign:'center', fontSize:24}}>{text}</FONT>
                 </Animated.View>
-                <Animated.View style={[styles.description, {opacity:descrOpacity,}]}>
-                    <FONT style={[styles.descrtext, {width: width * 0.18, height:height * 0.19}]} type={'Subtitle3'}>{descr}</FONT>
+                <Animated.View style={[styles.description,{opacity:descrOpacity, paddingTop:width*0.005, marginTop:width*0.083, borderBottomLeftRadius:width*0.04, borderBottomRightRadius:width*0.04}]}>
+                    <FONT style={{width: width * 0.18, height:width*0.09, fontSize:18,textAlign:'center',alignItems:'center',justifyContent:'center',paddingRight:width*0.005,paddingLeft:width*0.005,}}>{descr}</FONT>
                 </Animated.View>
 
         
@@ -99,7 +99,7 @@
     const styles = StyleSheet.create({
 
         container: {
-            borderRadius: 35,
+            
             backgroundColor: '#EDF0FF',
             paddingLeft: 24,
             paddingRight: 24,
@@ -124,10 +124,7 @@
             position: 'absolute',
             alignItems: 'center',
             textAlign: 'center',
-            borderBottomLeftRadius:35,
-            borderBottomRightRadius:35,
-            marginTop:'35%',
-            paddingTop:10,
+
             backgroundColor:'white',
             flex: 1,
             alignItems: 'center',
@@ -137,13 +134,8 @@
             textAlign:'center',
             alignItems:'center',
             justifyContent:'center',
-            paddingRight:10,
-            paddingLeft:10,
         },
-        icon: {
-            height: '55%',
-            marginBottom:'20%'
-        }
+
     });
 
     export default HoverButton2;

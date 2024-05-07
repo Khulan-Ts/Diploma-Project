@@ -6,6 +6,7 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
 import HoverButton2 from "../../src/components/aboutusHover";
+import Footer from "../../src/components/footer";
 
 
 
@@ -17,15 +18,18 @@ const AboutUs=({navigation})=>{
     <ScrollView style={styles.container}>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start',  marginTop:width*0.05, marginLeft:width*0.05}}>
         <View style={{flexDirection:'column', justifyContent: 'space-between', alignItems:'center', width: width*0.81}}>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start'}}>
-          {/* <Image
-            source={require("../../assets/images/aboutusCal1.png")}
-            style={{height: height*0.6, width:width*0.1}}resizeMode="contain"
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start', height:width*0.265}}>
+          <Image
+            source={require("../../assets/images/calligraphy/aboutusCal1.png")}
+            style={{height: width*0.3, width:width*0.1}}resizeMode="contain"
           />
           <View style={{width: width * 0.13}}>
+              <View style={{ borderBottomWidth: 1, width: width*0.15,  paddingBottom: width*0.007, paddingLeft:width*0.007}}>
+                  <FONT type="Regular" style={{color: '#000000', fontSize:28}}>About us</FONT>
+              </View>
               <View style={{marginTop: width*0.01}}>
                   <View style={{borderBottomWidth: 1}}>
-                      <Button type="Secondary" text={"About us"} onPress={() => navigation.navigate('About us')} isPressedState={true}></Button>
+                      <Button type="Secondary" text={"Greetings"} onPress={() => navigation.navigate('About us')} isPressedState={true}></Button>
                   </View>
                   <View style={{borderBottomWidth: 1}}>
                       <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
@@ -48,7 +52,7 @@ const AboutUs=({navigation})=>{
             </View>
             <View style={{marginLeft:0.05, width:width*0.38}}>
                 <FONT style={{fontSize:25, fontWeight:'bold'}}>Message from the President</FONT>
-                <FONT style={{fontSize:18, marginTop:'5%',  flexWrap:'wrap'}}>“It is my privilege to introduce you to Mongolia International University (MIU). 
+                <FONT style={{fontSize:18, marginTop:'5%'}}>“It is my privilege to introduce you to Mongolia International University (MIU). 
                     The mission of our school is to equip our students with a quality education and character development,
                     preparing them to be leaders of integrity in the 21st century. MIU is a vibrant community where students 
                     have the opportunity to complete studies in a variety of academic fields. Through the investment of our 
@@ -67,22 +71,23 @@ const AboutUs=({navigation})=>{
            the world. MIU will accompany you and take you one step closer to the portal of your future. ”</FONT>
         <View style={{alignItems:'center', marginTop:width*0.02, justifyContent:'center', marginLeft:width*0.09}}>
           <FONT style={{textAlign:'center', marginTop:width*0.03,marginBottom:width*0.02, fontWeight:'bold', fontSize:36}} >Vision Statement</FONT> 
-          <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', width:width, marginTop:width*0.03, marginBottom:width*0.2}}>
+          <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', width:width*0.8, marginTop:width*0.03, marginBottom:width*0.075}}>
 
             <View style={{flexDirection: 'row'}}>
               <HoverButton2 icon={require("../../assets/images/vision1.png")} text={"Fostering Excellence"} descr={'Our vision is to be an icon of academic excellence, inspring students to react new heights in their learning journey'}></HoverButton2>
-              <HoverButton2 icon={require("../../assets/images/vision2.png")} text={"Sustainable Future"} descr={'championing sustainability practices, ensuring a gree-ner, more environmentally responsible future for gene-rations to come.'} style={{marginLeft: 50}}></HoverButton2>
-              <HoverButton2 icon={require("../../assets/images/vision3.png")} text={"Innovative Research"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: 50}}></HoverButton2>
-              <HoverButton2 icon={require("../../assets/images/vision4.png")} text={"Global Impact"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: 50}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision2.png")} text={"Sustainable Future"} descr={'championing sustainability practices, ensuring a gree-ner, more environmentally responsible future for gene-rations to come.'} style={{marginLeft: width*0.05}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision3.png")} text={"Innovative Research"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: width*0.05}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision4.png")} text={"Global Impact"} descr={' We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries'} style={{marginLeft: width*0.05}}></HoverButton2>
             </View> 
           </View>
         </View>
         </View>
         <Image
-            source={require("../../assets/images/aboutusCal2.png")}
-            style={{height: height*1.1, width:width*0.1, marginTop:-width*0.01}}resizeMode="contain"
+            source={require("../../assets/images/calligraphy/miucal.png")}
+            style={{height: width*0.5, width:width*0.1, marginTop:-width*0.01}}resizeMode="contain"
           />
       </View>
+      <Footer/>
 
 
         
@@ -106,10 +111,5 @@ const styles = StyleSheet.create({
     elevation: 3, // Required for Android
     // Other header styles such as height, padding, etc.
   },
-  visimg:{
-    resizeMode: 'contain',
-  }
-
-
 
 });

@@ -5,6 +5,7 @@ import CardButton from "../../src/components/cardButtons";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
+import Footer from "../../src/components/footer"
 
 const OurPeople=({navigation})=>{
   const { width, height } = useWindowDimensions();
@@ -13,7 +14,7 @@ const OurPeople=({navigation})=>{
     <ScrollView style={styles.container}>
         <View style={{flexDirection:'row', marginTop:width*0.05}}>
             <Image
-                source={require("../../assets/images/OurPeopleCal1.png")}
+                source={require("../../assets/images/calligraphy/OurPeopleCal1.png")}
                 style={{width:width*0.08, height:width*0.25, marginLeft:width*0.005}}resizeMode="contain"
             />
             <View style={{flexDirection:'column', width:width*0.8035}}>
@@ -35,7 +36,7 @@ const OurPeople=({navigation})=>{
 
                 <View style={{marginLeft:width*0.1,flexDirection:'column', alignItems:'flex-start'}}>
                     <View style={{flexDirection:'row',width:width, textAlign:'center',alignItems:'center'}}>
-                        <FONT style={{marginTop:'1%', fontWeight:'bold', justifyContent:'left'}}>LEADERSHIP</FONT>
+                        <FONT style={{marginTop:'1%', fontWeight:'bold', justifyContent:'left', fontSize:25}}>LEADERSHIP</FONT>
                         <Image source={require("../../assets/images/horline.png")}
                         style={{marginTop:'1%', marginLeft:width*0.01, width:width*0.397}}
                         /> 
@@ -63,7 +64,7 @@ const OurPeople=({navigation})=>{
                 </View>
                 <View style={{flexDirection:'column',marginLeft:width*0.02, marginTop:width*0.02, marginBottom:width*0.05}}>
                     <View style={{flexDirection:'row',width:width, textAlign:'center',alignItems:'center'}}>
-                        <FONT style={{marginTop:'1%', fontWeight:'bold', justifyContent:'left'}}>PRESIDENT OFFICE</FONT>
+                        <FONT style={{marginTop:'1%', fontWeight:'bold', justifyContent:'left', fontSize:25}}>PRESIDENT OFFICE</FONT>
                         <Image source={require("../../assets/images/horline.png")}
                         style={{marginTop:'1%', marginLeft:width*0.01, width:width*0.56}}
                         /> 
@@ -97,7 +98,7 @@ const OurPeople=({navigation})=>{
                 </View>
                 <View style={{flexDirection:'column',marginLeft:width*0.02, marginTop:width*0.02}}>
                     <View style={{flexDirection:'row',width:width, textAlign:'center',alignItems:'center'}}>
-                            <FONT style={{marginTop:'1%', fontWeight:'bold', justifyContent:'left'}}>PRESIDENT OFFICE</FONT>
+                            <FONT style={{marginTop:'1%', fontWeight:'bold', justifyContent:'left', fontSize:25}}>PRESIDENT OFFICE</FONT>
                             <Image source={require("../../assets/images/horline.png")}
                             style={{marginTop:'1%', marginLeft:width*0.01, width:width*0.56}}
                             /> 
@@ -179,7 +180,7 @@ const OurPeople=({navigation})=>{
                 </View>
                 <View style={{flexDirection:'column',marginLeft:width*0.02, marginTop:width*0.02, marginBottom:width*0.05}}>
                     <View style={{flexDirection:'row',width:width, textAlign:'center',alignItems:'center'}}>
-                        <FONT style={{marginTop:width*0.01, fontWeight:'bold', justifyContent:'left'}}>ACADEMIC & STUDENT AFFAIRS</FONT>
+                        <FONT style={{marginTop:width*0.01, fontWeight:'bold', justifyContent:'left', fontSize:25}}>ACADEMIC & STUDENT AFFAIRS</FONT>
                         <Image source={require("../../assets/images/horline.png")}
                         style={{marginTop:width*0.0145, marginLeft:width*0.01, width:width*0.43}}
                         /> 
@@ -271,9 +272,9 @@ const OurPeople=({navigation})=>{
                         </View>
                         </View>
                 </View>
-                <View style={{flexDirection:'column',marginLeft:width*0.02, marginTop:width*0.02, marginBottom:width*0.2}}>
+                <View style={{flexDirection:'column',marginLeft:width*0.02, marginTop:width*0.02, marginBottom:width*0.1}}>
                     <View style={{flexDirection:'row',width:width, textAlign:'center',alignItems:'center'}}>
-                        <FONT style={{marginTop:width*0.01, fontWeight:'bold', justifyContent:'left'}}>EXTERNAL & ADMISSION AFFAIRS</FONT>
+                        <FONT style={{marginTop:width*0.01, fontWeight:'bold', justifyContent:'left', fontSize:25}}>EXTERNAL & ADMISSION AFFAIRS</FONT>
                         <Image source={require("../../assets/images/horline.png")}
                         style={{marginTop:width*0.01, marginLeft:width*0.01, width:width*0.415}}
                         /> 
@@ -324,10 +325,11 @@ const OurPeople=({navigation})=>{
             </View>
             
             <Image
-                source={require("../../assets/images/OurPeopleCal2.png")}
+                source={require("../../assets/images/calligraphy/miucal.png")}
                 style={{width:width*0.1, height:width*0.5, marginTop:-width*0.01}}resizeMode="contain"
             />
         </View>
+        <Footer/>
         
     </ScrollView>
    );

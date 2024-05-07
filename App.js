@@ -19,12 +19,8 @@ import Lei_4 from './screens/LEI/Lei_4';
 import Lei_5 from './screens/LEI/Lei_5';
 import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
-<<<<<<< HEAD
-import MBA from './screens/Academic/MBA';
-=======
 import Scholarship from './screens/Admissions/Scholarship';
 import PlanReport from './screens/About us/PlanReport';
->>>>>>> 95e649004f733becbb2f296226c73c3a115fe5d7
 
 const Stack = createStackNavigator();
 
@@ -41,13 +37,8 @@ const App = () => {
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               Button1Press={() => navigation.navigate('About us')}
               Button2Press={() => navigation.navigate('Undergraduate')} 
-<<<<<<< HEAD
-              Button1Press={() => navigation.navigate('About us')} 
-              Button3Press={() => navigation.navigate('MBA')} 
-=======
               Button3Press={() => navigation.navigate('Over View')}
               Button4Press={() => navigation.navigate("English Foundation Course")}
->>>>>>> 95e649004f733becbb2f296226c73c3a115fe5d7
               {...props} 
             />
           ),
@@ -68,17 +59,10 @@ const App = () => {
         <Stack.Screen name="Additional Language Course" component={Lei_5} />
         <Stack.Screen name="About us" component={AboutUs} />
         <Stack.Screen name="Our people" component={OurPeople} />
-<<<<<<< HEAD
-        <Stack.Screen name="MBA" component={MBA} />
-
-
-
-=======
         <Stack.Screen name="Plan and Report" component={PlanReport} />
         <Stack.Screen name="Over View" component={Overview} /> 
         <Stack.Screen name="Scholarship" component={Scholarship} />
         <Stack.Screen name="Another" component={AnotherScreen} />
->>>>>>> 95e649004f733becbb2f296226c73c3a115fe5d7
       </Stack.Navigator>
     </NavigationContainer>
   );

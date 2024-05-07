@@ -13,12 +13,12 @@ const Twoplus2=({navigation})=>{
     <ScrollView style={styles.container}>
        <View style={{flexDirection: "row", marginTop: width*0.05}}>
         <Image
-          source={require("../../assets/images/2p2cal1.png")}
-          style={{height: height*0.6, width:width*0.1, marginLeft:-width*0.01}}resizeMode="contain"
+          source={require("../../assets/images/calligraphy/2p2cal1.png")}
+          style={{height: width*0.3, width:width*0.1, marginLeft:-width*0.01}}resizeMode="contain"
         />
         <View style={{width: width*0.15}}>
             <View style={{ borderBottomWidth: 1, width: width*0.17,  paddingBottom: width*0.007, paddingLeft:width*0.007}}>
-                <FONT type="Regular" style={{color: '#000000'}}>Academics</FONT>
+                <FONT type="Regular" style={{color: '#000000', fontSize:28}}>Academics</FONT>
             </View>
             <View style={{marginTop: width*0.01}}>
                 <View style={{borderBottomWidth: 1, width: width*0.137}}>
@@ -45,15 +45,15 @@ const Twoplus2=({navigation})=>{
               <FONT style={{backgroundColor:'#EDF0FF',marginTop:width*0.05, marginLeft:width*0.07, width:width*0.3,color: '#000000', textAlign:'left', fontSize: 23,}}>INTRODUCTION</FONT>
               <Image
                 source={require("../../assets/images/2p2introduction.png")}
-                style={{ marginLeft:-width*0.17,marginTop:width*0.02,height: width*0.2}}resizeMode="contain"
+                style={{marginTop:width*0.02,height: width*0.2, width:width*0.4, marginLeft:width*0.075}}resizeMode="contain"
               />
           </View>
           <Image
-            source={require("../../assets/images/2p2cal2.png")}
-            style={{height: height*1.2, width:width*0.1, marginTop:-width*0.01}}resizeMode="contain"
+            source={require("../../assets/images/calligraphy/miucal.png")}
+            style={{height: width*0.5, width:width*0.1, marginTop:-width*0.01}}resizeMode="contain"
           />
         </View>
-        <View style={[styles.infoContainer, {marginLeft:width*0.17, flexDirection: 'row', marginTop: width*0.07, marginBottom:width*0.2, alignItems: 'left',}]}>
+        <View style={[styles.infoContainer, {marginLeft:width*0.17, flexDirection: 'row', marginTop: width*0.07, marginBottom:width*0.07, alignItems: 'left',}]}>
             <View style={{flexDirection: 'column',marginRight:width*0.1}}>
               <FONT style={{marginBottom:width*0.01,backgroundColor:'#EDF0FF',color: '#000000',  fontSize: 23, textAlign:'center',  width:width*0.2}}>QUALIFICATIONS</FONT>
               <FONT style={styles.text}>• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU</FONT>
@@ -64,7 +64,7 @@ const Twoplus2=({navigation})=>{
               <FONT style={{marginBottom:width*0.01, backgroundColor: '#EDF0FF',color: '#000000', fontSize: 23, textAlign:'center', width:width*0.25}}>EXPENSES</FONT>
               <FONT style={styles.text}>• 1 year Tuition: USD 28,350</FONT>
               <FONT style={styles.text}>• 1 year Dormitory: USD 13,882</FONT>
-              <FONT style={[styles.text, {fontWeight:'bold'}]}>• Total: USD 42,132</FONT>
+              <FONT style={styles.text1}>• Total: USD 42,132</FONT>
             </View>
           </View> 
           <Footer/>
@@ -104,6 +104,11 @@ const styles = StyleSheet.create({
       fontSize: 18,
       marginTop: 5,
   },
+  text1: {
+    fontSize: 18,
+    marginTop: 5,
+    fontWeight:'bold',
+},
 
 
 
