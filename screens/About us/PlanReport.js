@@ -42,7 +42,7 @@ const PlanReport = ({ navigation }) => {
                 <FONT type="Title2" style={{fontSize: 25, marginRight: width * 0.01, marginLeft: width * 0.01}}>ACCREDITATION</FONT>
                 <View style={{borderTopWidth: 0.7, borderColor: '#3d2562', width: width * 0.445}}/>
               </View>
-              <View style={{flexDirection: 'row', marginTop: width * 0.03}}>
+              <View style={{flexDirection: 'row', marginTop: width * 0.03, backgroundColor: "#EDF0FF", paddingTop: width * 0.02, paddingBottom: width * 0.02, paddingLeft: width * 0.01, paddingRight: width * 0.01}}>
                 <Image source={require("../../assets/images/plan_pamphlet/acc1.png")}
                   style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
                 <Image source={require("../../assets/images/plan_pamphlet/acc2.png")}
@@ -50,7 +50,7 @@ const PlanReport = ({ navigation }) => {
                 <Image source={require("../../assets/images/plan_pamphlet/acc3.png")}
                   style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
                 <Image source={require("../../assets/images/plan_pamphlet/acc4.png")}
-                  style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
+                  style={{height: width * 0.1283, width: width * 0.18}}/> 
               </View>
             </View>
           </View>
