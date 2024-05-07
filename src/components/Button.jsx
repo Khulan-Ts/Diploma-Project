@@ -1,13 +1,5 @@
 import * as React from "react";
-
-import {
-  View,
-  StyleSheet,
-  Text,
-  Pressable,
-  useWindowDimensions
-} from "react-native";
-
+import { View, StyleSheet, Text, Pressable, useWindowDimensions } from "react-native";
 import { useFonts } from 'expo-font'
 import ArrowIcon from "../../assets/icons/arrow";
 
@@ -16,8 +8,6 @@ const Button = ({
   text,
   numberOfLines = 1,
   onPress,
-  onHoverIn,
-  onHoverOut,
   isPressedState,
   style,
 }) => {
@@ -104,11 +94,9 @@ const Button = ({
         <Pressable
         onPress={onPress}
         onHoverIn={() => {
-          onHoverIn?.();
           setIsHovered(true);
         }}
         onHoverOut={() => {
-          onHoverOut?.();
           setIsHovered(false);
         }}
         onFocus={()=> setIsPressed(true)}

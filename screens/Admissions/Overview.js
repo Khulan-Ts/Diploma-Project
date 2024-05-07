@@ -9,7 +9,7 @@ const Overview= ({ navigation }) => {
     <ScrollView style={styles.container}>
         <View style={{flexDirection: "row", marginTop: '5%'}}>
             <View style={{width: width * 0.1, marginTop: '-1.5%', marginRight: 'auto'}}>
-                <Image source={require('../../assets/images/a_overview.png')} style={{width: 'auto', height: width * 0.12}} resizeMode="contain"/>
+                <Image source={require('../../assets/images/calligraphy/a_overview.png')} style={{width: 'auto', height: width * 0.12}} resizeMode="contain"/>
             </View>
             <View style={{ width: '18%', marginLeft: '-30%'}}>
                 <View style={{ borderBottomWidth: 1, width: '90%', paddingBottom: 14, paddingLeft:14}}>
@@ -65,7 +65,7 @@ const Overview= ({ navigation }) => {
             </View>
             
         <View style={{width: width * 0.1, marginTop: '-2%', marginLeft: 'auto'}}>
-            <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+            <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
         </View>
     </ScrollView>

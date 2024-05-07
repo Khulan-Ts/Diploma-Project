@@ -11,7 +11,7 @@ const Dorm=({navigation})=>{
         <ScrollView style={styles.container}>
             <View style={{ flexDirection: 'row', marginTop: '5%'}}>
                 <View style={{width: width * 0.1, marginTop: '-1%', marginRight: 'auto'}}>
-                    <Image source={require('../../assets/images/dorm_cal.png')} style={{width: 'auto', height: width * 0.23}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/dorm_cal.png')} style={{width: 'auto', height: width * 0.23}} resizeMode="contain"/>
                 </View>
                 
                 <View style={{flexDirection: 'column'}}>
@@ -89,7 +89,7 @@ const Dorm=({navigation})=>{
                     </View>
                 </View>
                 <View style={{width: width * 0.1, marginTop: '-2%', marginLeft: 'auto'}}>
-                    <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>
             </View>
         </ScrollView>

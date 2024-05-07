@@ -44,18 +44,18 @@ const PlanReport = ({ navigation }) => {
               </View>
               <View style={{flexDirection: 'row', marginTop: width * 0.03}}>
                 <Image source={require("../../assets/images/plan_pamphlet/acc1.png")}
-                  resizeMode="contain" style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
+                  style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
                 <Image source={require("../../assets/images/plan_pamphlet/acc2.png")}
-                  resizeMode="contain" style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
+                  style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
                 <Image source={require("../../assets/images/plan_pamphlet/acc3.png")}
-                  resizeMode="contain" style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
+                  style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
                 <Image source={require("../../assets/images/plan_pamphlet/acc4.png")}
-                  resizeMode="contain" style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
+                  style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
               </View>
             </View>
           </View>
         <View style={{width: width * 0.1, marginLeft: 'auto', marginTop: '-2%', marginBottom: width * 0.3}}>
-          <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
       <Footer/>

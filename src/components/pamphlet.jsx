@@ -24,7 +24,7 @@ const Pamphlet = () => {
   const handlePressRight = () => {
     Animated.timing(position, {
       toValue: -1,
-      duration: 300,
+      duration: 500,
       useNativeDriver: false,
     }).start(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -35,7 +35,7 @@ const Pamphlet = () => {
   const handlePressLeft = () => {
     Animated.timing(position, {
       toValue: 1,
-      duration: 300,
+      duration: 500,
       useNativeDriver: false,
     }).start(() => {
       setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
