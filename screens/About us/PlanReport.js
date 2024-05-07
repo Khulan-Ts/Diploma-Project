@@ -14,18 +14,21 @@ const PlanReport = ({ navigation }) => {
         <View style={{width: width * 0.1, marginTop: '-0.5%'}}>
           <Image source={require('../../assets/images/calligraphy/plancal.png')} style={{width: 'auto', height: width * 0.2}} resizeMode="contain"/>
         </View>
-          <View style={{width: width * 0.13, marginLeft:'1%',}}>
+          <View style={{width: width * 0.15, marginLeft:'1%',}}>
+              <View style={{ borderBottomWidth: width * 0.0008, paddingBottom: width * 0.01, paddingLeft: width * 0.007}}>
+                <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>About us</FONT>
+              </View>
               <View style={{marginTop: '5%'}}>
-                  <View style={{borderBottomWidth: 1}}>
-                      <Button type="Secondary" text={"About us"} onPress={() => navigation.navigate('About us')}></Button>
+                  <View style={{borderBottomWidth: width * 0.0008, width: '85%'}}>
+                      <Button type="Secondary" text={"Greetings"} onPress={() => navigation.navigate('About us')}></Button>
                   </View>
-                  <View style={{borderBottomWidth: 1}}>
+                  <View style={{borderBottomWidth: width * 0.0008, width: '85%'}}>
                       <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
                   </View>
-                      <View style={{borderBottomWidth: 1}}>
+                      <View style={{borderBottomWidth: width * 0.0008, width: '85%'}}>
                   <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')} isPressedState={true}></Button> 
                   </View>
-                  <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+                  <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Giving Information')}></Button>
               </View>
           </View>
           <View style={{marginLeft: width * 0.02 }}>
