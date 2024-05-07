@@ -8,44 +8,45 @@ import { useNavigation } from "@react-navigation/native";
 import HoverButton2 from "../../src/components/aboutusHover";
 
 
+
 const AboutUs=({navigation})=>{
   const { width, height } = useWindowDimensions();
   const imageSize = width * 0.15;
 
   return (
     <ScrollView style={styles.container}>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start',  marginTop:'5%'}}>
-        <View style={{flexDirection:'column', justifyContent: 'space-between', alignItems:'center', width: width*0.80}}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start',  marginTop:width*0.05, marginLeft:width*0.05}}>
+        <View style={{flexDirection:'column', justifyContent: 'space-between', alignItems:'center', width: width*0.81}}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start'}}>
           <Image
             source={require("../../assets/images/aboutusCal1.png")}
             style={{height: height*0.6, width:width*0.1}}resizeMode="contain"
           />
-          <View style={{width: '18%', marginLeft:'1%'}}>
-              <View style={{marginTop: '5%'}}>
-                  <View style={{borderBottomWidth: 1, width: '95%'}}>
-                      <Button type="Secondary" text={"About us"} isPressedState={true} ></Button>
+          <View style={{width: width * 0.13}}>
+              <View style={{marginTop: width*0.01}}>
+                  <View style={{borderBottomWidth: 1}}>
+                      <Button type="Secondary" text={"About us"} onPress={() => navigation.navigate('About us')} isPressedState={true}></Button>
                   </View>
-                  <View style={{borderBottomWidth: 1, width: '95%'}}>
+                  <View style={{borderBottomWidth: 1}}>
                       <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
                   </View>
-                      <View style={{borderBottomWidth: 1, width: '95%'}}>
-                  <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
+                      <View style={{borderBottomWidth: 1}}>
+                  <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')} ></Button> 
                   </View>
                   <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
               </View>
           </View>
 
-          <View style={{ flexDirection: 'row', alignItems: 'flex-start', flex:1}}>
-            <View style={{flexDirection:'column', width:'40%', alignItems:'center', justifyContent:'center'}}>
+          <View style={{ flexDirection: 'row', alignItems: 'flex-start', flex:1, width:width*0.67}}>
+            <View style={{flexDirection:'column', width:width*0.27, alignItems:'center', justifyContent:'center', paddingbottom:width*0.1}}>
                 <Image
                 source={require("../../assets/images/president.png")}
-                style={{width: width*0.4, height: height*0.4, borderRadius:50}}resizeMode="contain"
+                style={{width: width*0.4, height: width*0.2, borderRadius:50}}resizeMode="contain"
                 /> 
-                <FONT style={{fontSize:20, fontWeight:'bold', textAlign:'center', paddingTop:15, borderBottomWidth:1}}>Oh Moon KWON, President</FONT>
+                <FONT style={{fontSize:20, fontWeight:'bold', textAlign:'center', paddingTop:width*0.007, borderBottomWidth:width*0.0009}}>Oh Moon KWON, President</FONT>
                 <FONT style={{fontSize:20, fontWeight:'bold', textAlign:'center'}}>Mongolia International University</FONT>
             </View>
-            <View style={{marginLeft:'5%', width:'65%'}}>
+            <View style={{marginLeft:0.05, width:width*0.38}}>
                 <FONT style={{fontSize:25, fontWeight:'bold'}}>Message from the President</FONT>
                 <FONT style={{fontSize:18, marginTop:'5%',  flexWrap:'wrap'}}>“It is my privilege to introduce you to Mongolia
                     International University (MIU). 
@@ -60,14 +61,14 @@ const AboutUs=({navigation})=>{
           </View>
 
         </View>
-        <FONT style={{fontSize:18, width:'75%', marginLeft:'45%'}}>MIU challenges students to explore innovative intellectual interests 
+        <FONT style={{fontSize:18, width: width*0.6, marginLeft:width*0.25}}>MIU challenges students to explore innovative intellectual interests 
         through scholarly and personal competency programs. Emphasizing professionalism, MIU students learn to make new connections
          in a synergistic environment that multiplies the use of resources such as time, energy, and creativity. Most importantly, MIU is
           preparing a generation of distinctive leaders with the qualities of heart and character to serve their own people, nation, and
            the world. MIU will accompany you and take you one step closer to the portal of your future. ”</FONT>
-        <View style={{alignItems:'center', marginLeft:'20%', marginTop:'2%'}}>
-          <FONT style={{textAlign:'center', marginTop:'3%',marginBottom:'2%', fontWeight:'bold', fontSize:36}} >Vision Statement</FONT> 
-          <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', width:'100%', marginTop:'3%', marginBottom:'5%', marginLeft:'5%'}}>
+        <View style={{alignItems:'center', marginTop:width*0.02, justifyContent:'center', marginLeft:width*0.09}}>
+          <FONT style={{textAlign:'center', marginTop:width*0.03,marginBottom:width*0.02, fontWeight:'bold', fontSize:36}} >Vision Statement</FONT> 
+          <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', width:width, marginTop:width*0.03, marginBottom:width*0.2}}>
 
             <View style={{flexDirection: 'row'}}>
               <HoverButton2 icon={require("../../assets/images/vision1.png")} text={"Fostering Excellence"} descr={'Our vision is to be an icon of academic excellence, inspring students to react new heights in their learning journey'}></HoverButton2>
@@ -81,7 +82,7 @@ const AboutUs=({navigation})=>{
         </View>
         <Image
             source={require("../../assets/images/aboutusCal2.png")}
-            style={{height: height*1.1, width:width*0.1, marginTop:'-1%'}}resizeMode="contain"
+            style={{height: height*1.1, width:width*0.1, marginTop:-width*0.01}}resizeMode="contain"
           />
       </View>
 

@@ -5,7 +5,7 @@ import FONT from '../../src/components/Titles';
 
 const { height: screenHeight } = Dimensions.get('window');
 
-export const ExpandableList = ({ title, content, maxHeightPercentage }) => {
+export const ExpandableList = ({ title, content, maxHeightPercentage, style }) => {
   const [expanded, setExpanded] = useState(false);
   const [animation] = useState(new Animated.Value(0));
   const [arrowRotation] = useState(new Animated.Value(0));
@@ -41,7 +41,7 @@ export const ExpandableList = ({ title, content, maxHeightPercentage }) => {
   };
 
   return (
-    <View style={styles.itemContainer}>
+    <View style={[styles.itemContainer, style]}>
       <TouchableOpacity onPress={toggleExpansion} style={styles.titleContainer}>
         <FONT type='Subtitle2' style={{ fontWeight: 'bold', flex: 1 }}>{title}</FONT>
         <Animated.View style={{ transform: [{ rotate: arrowRotate }] }}>
