@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, Image, ScrollView, View, useWindowDimensions } from "react-native";
-import Header from "../../src/components/Header";
-import CardButton from "../../src/components/cardButtons";
+import React from "react";
+import { StyleSheet, Image, ScrollView, View, useWindowDimensions } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
@@ -54,9 +52,6 @@ const Twoplus2=({navigation})=>{
             source={require("../../assets/images/2p2cal2.png")}
             style={{height: height*1.2, width:width*0.1, marginTop:-width*0.01}}resizeMode="contain"
           />
-
-
-
         </View>
         <View style={[styles.infoContainer, {marginLeft:width*0.17, flexDirection: 'row', marginTop: width*0.07, marginBottom:width*0.2, alignItems: 'left',}]}>
             <View style={{flexDirection: 'column',marginRight:width*0.1}}>

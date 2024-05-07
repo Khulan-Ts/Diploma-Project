@@ -18,7 +18,7 @@ const AboutUs=({navigation})=>{
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start',  marginTop:width*0.05, marginLeft:width*0.05}}>
         <View style={{flexDirection:'column', justifyContent: 'space-between', alignItems:'center', width: width*0.81}}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'flex-start'}}>
-          <Image
+          {/* <Image
             source={require("../../assets/images/aboutusCal1.png")}
             style={{height: height*0.6, width:width*0.1}}resizeMode="contain"
           />
@@ -48,8 +48,7 @@ const AboutUs=({navigation})=>{
             </View>
             <View style={{marginLeft:0.05, width:width*0.38}}>
                 <FONT style={{fontSize:25, fontWeight:'bold'}}>Message from the President</FONT>
-                <FONT style={{fontSize:18, marginTop:'5%',  flexWrap:'wrap'}}>“It is my privilege to introduce you to Mongolia
-                    International University (MIU). 
+                <FONT style={{fontSize:18, marginTop:'5%',  flexWrap:'wrap'}}>“It is my privilege to introduce you to Mongolia International University (MIU). 
                     The mission of our school is to equip our students with a quality education and character development,
                     preparing them to be leaders of integrity in the 21st century. MIU is a vibrant community where students 
                     have the opportunity to complete studies in a variety of academic fields. Through the investment of our 
@@ -78,7 +77,6 @@ const AboutUs=({navigation})=>{
             </View> 
           </View>
         </View>
-        
         </View>
         <Image
             source={require("../../assets/images/aboutusCal2.png")}

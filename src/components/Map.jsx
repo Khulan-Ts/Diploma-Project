@@ -22,7 +22,6 @@ const MapComponent = ({
         <Image
           source={require("../../assets/images/map.png")}
           style={[styles.image, {height: windowWidth * 0.56}]}
-          resizeMode="contain"
         />
 
         <Pressable
@@ -36,18 +35,20 @@ const MapComponent = ({
                 image={require("../../assets/images/sports.png")}
                 type={"Sport"}
                 title={"Sport Complex"}
-                button={"For More Information"}
-                onPress1={navigate[0]}
+                bottomText={'Schedule: Monday 4:00 - 6:00 pm \n            Wednesday 4:00 - 6:00 pm\n            Friday 4:00 - 6:00 pm'}
               >
-                The sports complex is a three-floor building currently featuring
-                a large indoor sports hall and cross-fit style gym.
-                {"\n \n \n \n"}
-                Schedule: Monday 4:00 - 6:00 pm
-                {"\n                     "}
-                Wednesday 4:00 - 6:00 pm
-                {"\n                     "}
-                Friday 4:00 - 6:00 pm
-                {"\n                     "}
+                The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.
+                {"\n"}
+                {"\n"}
+                The cross-fit style gym has full equipment and tools for people who want to spend their time useful.
+                {"\n"}
+                {"\n"}
+                To make a reservation at sport hall:
+                {"\n"}+976 99223366
+                {"\n"}
+                To get price information on cross gym:
+                {"\n"}
+                +976 99223366
               </HoverCard>
             </View>
           )}
@@ -61,14 +62,11 @@ const MapComponent = ({
           {activeCard === 2 && (
             <View style={styles.dorm}>
               <HoverCard
-                navigation={navigation}
                 image={require("../../assets/images/dorm.png")}
                 type={"Primary"}
                 title={"Dorm"}
                 button={"For More Information"}
-                button2={"Dormitory Fee"}
-                onPress1={navigate[1]}
-                onPress2={navigate[2]}
+                onPress1={navigate}
               >
                 The MIU Global Residence is a seven-floor building that houses
                 both male and female students from all over the world. The first
@@ -92,12 +90,15 @@ const MapComponent = ({
                 image={require("../../assets/images/M-bld.png")}
                 type={"Secondary"}
                 title={"M Building"}
-                button={"For More Information"}
-                onPress1={navigate[3]}
               >
                 Student affairs - Academic - Admission - Finance - President`s office
-                {"\n\n\n\n\n"}
-                M building texts, LEI, offices
+                {"\n\n\n"}
+                This building is office building where students and applicants can get information 
+                about school or their studies.
+                {"\n\n\n"}
+                One fact: MIU has Counseling Center 
+                {"\n"}
+                which is mental health service. 
               </HoverCard>
             </View>
           )}
@@ -114,15 +115,15 @@ const MapComponent = ({
               image={require("../../assets/images/D-bld.png")}
               type={'Secondary'}
               title={"D building"}
-              button={"For More Information"}
-              onPress1={navigate[4]}
               >
-              The MIU Global Residence is a seven-floor building that houses both 
-              male and female students from all over the world. The first four 
-              floors are dedicated to students and the 5th to 7th floors are 
-              occupied by faculty and staff members. MIU Global Residence a unique 
-              residence hall that offers affordable, newly furnished, safe, and convenient 
-              living quarters for students.
+              Main Hall - Cafeteria - Library - Coffee Shop - GilGal
+              {"\n\n\n"}
+              This is where students spend most of their time and make their 
+              university life with memories and friends
+              {"\n\n\n"}
+              One fact: MIU Cafeteria has international dishes 
+              {"\n"}
+              that you can have for your lunch time. 
             </HoverCard>
             </View>
           )}
@@ -185,6 +186,6 @@ const styles = StyleSheet.create({
   dbld:{
     right: "100%",
     top: '50%',
-    transform: [{ translateX: '-300%' }],
+    transform: [{ translateX: '-280%' }],
   }
 });
