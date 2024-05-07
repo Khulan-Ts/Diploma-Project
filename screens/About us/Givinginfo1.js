@@ -17,7 +17,7 @@ const Givinginfo1 = ({ navigation }) => {
         <View style={{ width: '18%', marginLeft: '1%' }}>
           <View style={{ marginTop: '5%' }}>
             <View style={{ borderBottomWidth: 1, width: '70%' }}>
-              <Button type="Secondary" text={"About us"} isPressedState={true} ></Button>
+              <Button type="Secondary" text={"About us"}></Button>
             </View>
             <View style={{ borderBottomWidth: 1, width: '70%' }}>
               <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
@@ -25,7 +25,7 @@ const Givinginfo1 = ({ navigation }) => {
             <View style={{ borderBottomWidth: 1, width: '70%' }}>
               <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')}></Button>
             </View>
-            <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+            <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Givinginfo1')}isPressedState={true}></Button>
           </View>
         </View>
         <View style={{ flexDirection: 'column' }}>

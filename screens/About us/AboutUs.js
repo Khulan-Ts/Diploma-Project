@@ -30,7 +30,7 @@ const AboutUs=({navigation})=>{
                       <View style={{borderBottomWidth: 1, width: '70%'}}>
                   <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')}></Button> 
                   </View>
-                  <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+                  <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Givinginfo1')}></Button>
               </View>
           </View>
 
