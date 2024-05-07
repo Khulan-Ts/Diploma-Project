@@ -5,7 +5,7 @@ import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
 import ExpandableList from "../../src/components/drop";
 
-const Scholarship1= ({ navigation }) => {
+const Scholarship= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
     return (
     <ScrollView style={styles.container}>
@@ -84,7 +84,7 @@ const Scholarship1= ({ navigation }) => {
   );
 }
 
-export default Scholarship1
+export default Scholarship
 
 const styles = StyleSheet.create({
   container: {
