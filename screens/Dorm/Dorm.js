@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking } from "react-native";
 import FONT from "../../src/components/Titles";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Button from "../../src/components/Button";
+import Footer from "../../src/components/footer";
+import data from "../../static.json"
 
 const Dorm=({navigation})=>{
     const { width, height } = useWindowDimensions();
+    const { apply } = data.links;
     return(
         <ScrollView style={styles.container}>
             <View style={{ flexDirection: 'row', marginTop: '5%'}}>
@@ -15,7 +18,7 @@ const Dorm=({navigation})=>{
                 </View>
                 
                 <View style={{flexDirection: 'column'}}>
-                    <View style={{ width: width * 0.7, marginLeft: width * 0.01, backgroundColor: 'white', height: width * 0.165, padding: width * 0.01 }}>                        
+                    <View style={{ width: width * 0.72, marginLeft: width * 0.01, backgroundColor: 'white', height: width * 0.165, padding: width * 0.01 }}>                        
                         <FONT type={"Regular"} style={{ color: '#3D2562',fontSize: 22}}>GLOBAL RESIDENCE (DORMITORY): LOCATED ON MIU'S CAMPUS</FONT>
                         <FONT type={"Body"} style={{marginTop: height * 0.03, color: '#3D2562', fontSize: 16}}>MIU believes that the first year of university is crucial in building a successful university life and that the MIU Global Residence will support all freshmen to swiftly adjust to campus life, develop their four-year academic plan, and offer all MIU freshmen to live in a close-knit environment for academic, cultural, and social interactions and development. 
                             All freshmen are required to live in the dormitory on campus for their first year. Established in 2017, the dormitory is equipped with a kitchen, laundry facilities, internet access, and more. This building can house more than 200 students. While upperclassmen students are allowed to live in the Global Residence, freshmen students are given first priority. The Global Residence is led by the Dormitory Manager and upperclassmen students to ensure that freshmen are safe and healthy. </FONT>                      
@@ -82,14 +85,15 @@ const Dorm=({navigation})=>{
                                     </View>
                                 </View>
                                 </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.013, marginLeft: width * 0.001}} ></Button>
+                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.013, marginLeft: width * 0.019}} onPress={()=> Linking.openURL(apply)}></Button>
                         </View>
                     </View>
                 </View>
                 <View style={{width: width * 0.1, marginTop: '-2%', marginLeft: 'auto'}}>
-                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5, marginBottom: width * 0.1}} resizeMode="contain"/>
                 </View>
             </View>
+            <Footer/>
         </ScrollView>
     )
 }
