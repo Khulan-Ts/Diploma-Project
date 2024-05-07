@@ -48,99 +48,99 @@ const Givinginfo1 = ({ navigation }) => {
           <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}> At a time of great crisis, dislocation, and financial strain, we must redouble our longstanding investment in support and resources to ensure that every student can thrive. Our strength as an institution is inextricably linked to the strength of our students—and your gift to support the following programs is the single most direct way you can invest in. </FONT>
           <View style={{ width: width * 0.26, marginLeft: '0%' }}>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: "9%", padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
-                <FONT type={"Title3"} style={{ fontSize: 18 }}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: "9%", padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
+                <FONT type={"Title3"} style={{ fontSize: 15 }}>
                   South Korea – Bank Account Information:
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: "9%", padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
-                <FONT type={"Title3"} style={{ fontSize: 18 }}> </FONT>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: "9%", padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
+                <FONT type={"Title3"} style={{ fontSize: 15 }}> </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: -2, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: -2, padding: width * 0.01 }}>
+                <FONT type={"Body"} style={{ fontSize: 13}}>
                   BANK ACCOUNT INFORMATION : (REPUBLIC OF KOREA)
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: -2, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: -2, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13}}>
                   계좌명:  사단법인 실크로드희망교육개발연대
                 </FONT>
-                <FONT type={"Body"}>
+                <FONT type={"Body"}style={{ fontSize: 13}}>
                   계좌은행 및 번호:                                    하나은행 / 588-910018-82804
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
-                <FONT type={"Title3"} style={{ fontSize: 18 }}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
+                <FONT type={"Title3"} style={{ fontSize: 15 }}>
                   Mongolia – Bank Account Information:
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
-                <FONT type={"Title3"} style={{ fontSize: 18 }}> </FONT>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
+                <FONT type={"Title3"} style={{ fontSize: 15 }}> </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Beneficiary’s Name:
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Эм Ай Ю дээд сургууль
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Beneficiary’s Bank:
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Khan Bank
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Beneficiary’s Account /MNT/
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   5720485207
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Bank SWIFT Code:
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   AGMOMNUB
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Bank Address:
                 </FONT>
               </View>
-              <View style={{ width: width * 0.39, borderWidth: 1, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Khan Bank Tower, Chinggis Avenue-6, Stadium Orgil-1, Khan-Uul District,
                 </FONT>
-                <FONT type={"Body"}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
                   Ulaanbaatar 17010, Mongolia
                 </FONT>
               </View>
@@ -148,7 +148,7 @@ const Givinginfo1 = ({ navigation }) => {
           </View>
         </View>
         <View style={{ width: width * 0.1, marginTop: '-2%', marginLeft: 'auto' }}>
-          <Image source={require('../../assets/images/miucal.png')} style={{ width: 'auto', height: width * 0.5, marginBottom: width * 0.15 }} resizeMode="contain" />
+          <Image source={require('../../assets/images/miucal.png')} style={{ width: 'auto', height: width * 0.5, marginBottom: width * 0.19 }} resizeMode="contain" />
         </View>
       </View>
       <Footer/>
