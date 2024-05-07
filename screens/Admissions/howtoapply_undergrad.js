@@ -18,7 +18,7 @@ const Howtoapply_Under= ({ navigation }) => {
         </View>
           <View style={{ marginLeft:'0.5%', width: '18%', marginTop: '-1%'}}>
               <View style={{ borderBottomWidth: 1, width: '80%', paddingBottom: 14, paddingLeft:14}}>
-                  <FONT type="Regular">Admissions</FONT>
+                  <FONT style={{fontSize: 28}} type="Regular">Admissions</FONT>
               </View>
               <View style={{marginTop: '5%'}}>
                   <View style={{borderBottomWidth: 1, width: '50%'}}>
