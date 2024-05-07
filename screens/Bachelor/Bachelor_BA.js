@@ -69,7 +69,7 @@ const Bachelor_BA= ({ navigation }) => {
                     ))}
                 </ScrollView>
                 <View style={{marginLeft: width*0.55, marginTop: width*-0.16, backgroundColor: '#EDF0FF',}}>
-                            <View style={[styles.infoContainer, {width: width * 0.17, height: width* 0.115}]}>
+                            <View style={[styles.infoContainer, {width: width * 0.17, height: width* 0.115, padding: width * 0.0075, borderRadius: width * 0.022}]}>
                                 <View style={{flexDirection: 'row',marginTop: width*0.001}}>
                                     <Clock width={24} height={28}/>
                                     <View style={{marginLeft: width*0.01}}>
@@ -145,4 +145,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#F6FAFF"
     },
+    infoContainer:{
+        backgroundColor: "#EDF0FF",
+    }
 });
