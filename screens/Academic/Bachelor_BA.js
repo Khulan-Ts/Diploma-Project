@@ -30,14 +30,14 @@ const Bachelor_BA= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, marginBottom: height * 0.1, backgroundColor: 'white', height: height*0.2, padding: width*0.01, marginTop: width*-.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, marginBottom: width * 0.1, backgroundColor: 'white', height: width*0.2, padding: width*0.01, marginTop: width*-.016}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF BUSINESS ADMINISTRATION</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={3}>Business Administration Department (BA) trains in managerial
                    discipline and educates students on how to effectively compete in the international business environment. 
                    Students are instructed to handle dynamic decision-making process problems in an era of globalization 
                    and information revolution in the world.</FONT>
                 </View>
-                <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
+                <View style={{width: width * 0.1, marginBottom: width * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/bachelorba2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
@@ -60,7 +60,7 @@ const Bachelor_BA= ({ navigation }) => {
                                     source={source}
                                     style={{
                                         width: width*0.108,
-                                        height:height*0.25,
+                                        height:width*0.25,
                                     }}
                                 />
                                 <FONT style={{fontSize:13, textAlign: 'center'}}>{text}</FONT>

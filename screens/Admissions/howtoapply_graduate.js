@@ -49,7 +49,7 @@ const Howtoapply_Graduate= ({ navigation }) => {
               <ToolTip text={'Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn'} lines={3} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>1</FONT>
+                  <FONT style={{fontSize: 30}}>1</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Application {"\n"}Form</FONT>
               </View>
@@ -58,7 +58,7 @@ const Howtoapply_Graduate= ({ navigation }) => {
               <ToolTip text={'The application documents will be evaluated by the Admission Committee.'} lines={2} style={{width: width*0.25}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>2</FONT>
+                  <FONT style={{fontSize: 30}}>2</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Document {"\n"}Screening</FONT>
               </View>
@@ -67,7 +67,7 @@ const Howtoapply_Graduate= ({ navigation }) => {
               <ToolTip text={'Applicants will be notified individually with their interview schedule.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>3</FONT>
+                  <FONT style={{fontSize: 30}}>3</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Application {"\n"}Interview</FONT>
               </View>
@@ -76,7 +76,7 @@ const Howtoapply_Graduate= ({ navigation }) => {
               <ToolTip text={' Applicants will receive individual admission result email from the Admission Affairs Office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>4</FONT>
+                  <FONT style={{fontSize: 30}}>4</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color: '#3D2562'}}>Admission {"\n"}Result {"\n"} Announcement</FONT>
               </View>
@@ -85,7 +85,7 @@ const Howtoapply_Graduate= ({ navigation }) => {
               <ToolTip text={' Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>5</FONT>
+                  <FONT style={{fontSize: 30}}>5</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color:'#3D2562'}}>Official {"\n"}Acceptance {"\n"} Letter</FONT>
               </View>
@@ -94,19 +94,19 @@ const Howtoapply_Graduate= ({ navigation }) => {
               <ToolTip text={' Applicants need to send the receipts of their payments to the Admission Affairs office.'} lines={2} style={{width: width*0.3}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
-                  <FONT>6</FONT>
+                  <FONT style={{fontSize: 30}}>6</FONT>
                 </View>
                 <FONT type="Body" style={{textAlign: 'center', fontSize: 15, color:'#3D2562'}}>Payment {"\n"}of {"\n"}Fees</FONT>
               </View>
               </ToolTip>
             </View>
           </View>
-          <View style={{width: width * 0.1, marginLeft:'auto', marginTop: '-1%' }}>
+          <View style={{width: width * 0.1, marginLeft:'auto', marginTop: '-1%', zIndex:-999}}>
             <Image source={require('../../assets/images/howtoapply2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
-    <View style={{marginLeft: '11%', marginTop: '-28%', flexDirection: 'row'}}>
-      <FONT type="Title3" style={{color:'#3D2562'}}>Required Documents:</FONT>
+    <View style={{marginLeft: '11%', marginTop: '-28%', flexDirection: 'row', marginBottom: width*0.1}}>
+      <FONT type="Title3" style={{color:'#3D2562', fontSize: 22}}>Required Documents:</FONT>
     <View style={{marginLeft: '1%'}}>
       <FONT type="Regular" style={{fontSize: 22, color: '#3D2562'}}>•  Completed Admission Application Form 
       {'\n'}•  Statement of Purpose (SOP) in English 
