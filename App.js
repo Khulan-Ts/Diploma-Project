@@ -11,6 +11,7 @@ import Twoplus2 from './screens/Academic/Twoplus2';
 import Exchange from './screens/Academic/Exchange';
 import AcademicCal from './screens/Academic/AcademicCalendar';
 import Howtoapply_Under from './screens/Admissions/howtoapply_undergrad';
+import Howtoapply_Graduate from './screens/Admissions/howtoapply_graduate';
 import Dorm from './screens/Dorm/Dorm';
 //Admission
 import Overview from './screens/Admissions/Overview';
@@ -25,7 +26,7 @@ import Lei_5 from './screens/LEI/Lei_5';
 import AboutUs from './screens/About us/AboutUs';
 import OurPeople from './screens/About us/OurPeople';
 import PlanReport from './screens/About us/PlanReport';
-import Howtoapply_Graduate from './screens/Admissions/howtoapply_graduate';
+
 import Bachelor_BA from './screens/Academic/Bachelor_BA';
 import GivingInfo from './screens/About us/Givinginfo1';
 
@@ -40,18 +41,18 @@ const App = () => {
             <Header
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
-              // logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              // Button1Press={() => navigation.navigate('About us')}
-              // Button2Press={() => navigation.navigate('Undergraduate')} 
-              // Button3Press={() => navigation.navigate('Over View')}
-              Button4Press={() => navigation.navigate("Bachelor BA")}
+              logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
+              Button1Press={() => navigation.navigate('About us')}
+              Button2Press={() => navigation.navigate('Undergraduate')} 
+              Button3Press={() => navigation.navigate('Over View')}
+              Button4Press={() => navigation.navigate("English Foundation Course")}
               {...props} 
             />
           ),
           cardStyle: {flex: 1}
         })}
       > 
-        <Stack.Screen name="Bachelor BA" component={Bachelor_BA} />
+        
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
@@ -71,6 +72,9 @@ const App = () => {
         <Stack.Screen name="Scholarship" component={Scholarship} />
         <Stack.Screen name="Another" component={AnotherScreen} />
         <Stack.Screen name="Giving Information" component={GivingInfo} />
+        <Stack.Screen name="Bachelor BA" component={Bachelor_BA} />
+        <Stack.Screen name="How To Apply Graduate" component={Howtoapply_Graduate} />
+        <Stack.Screen name="How To Apply UnderGraduate" component={Howtoapply_Under} />
       </Stack.Navigator>
     </NavigationContainer>
   );
