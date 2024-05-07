@@ -1,0 +1,21 @@
+{
+    "links": {
+        "apply": "https://forms.gle/QFAb3FhxzehY6kdVA",
+        "lei_apply": "https://forms.gle/QFAb3FhxzehY6kdVA",
+        "dorm_apply": "https://forms.gle/QFAb3FhxzehY6kdVA",
+        "facebook": "https://www.facebook.com/miunews2016",
+        "youtube": "https://www.youtube.com/channel/UC3XR-4Gnc4hMxbdwPn1mqKA",
+        "linkedin": "https://www.linkedin.com/company/mongolia-international-university-miu/",
+        "instagram": "https://www.instagram.com/miu_mongolia/"
+    },
+    "lei_teachers": [
+      { "id": 1, "image": "./assets/images/lei_teachers/1.png", "name": "teacher #1" },
+      { "id": 2, "image": "./assets/images/lei_teachers/2.png", "name": "teacher #2" },
+      { "id": 3, "image": "./assets/images/lei_teachers/3.png", "name": "teacher #3" },
+      { "id": 4, "image": "./assets/images/lei_teachers/4.png", "name": "teacher #4" },
+      { "id": 5, "image": "./assets/images/lei_teachers/5.png", "name": "teacher #5" },
+      { "id": 6, "image": "./assets/images/lei_teachers/6.png", "name": "teacher #6" },
+      { "id": 7, "image": "./assets/images/lei_teachers/7.png", "name": "teacher #7" },
+      { "id": 8, "image": "./assets/images/lei_teachers/8.png", "name": "teacher #8" }
+    ]
+}

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, StyleSheet, Image, useWindowDimensions } from "react-native";
+import { View, StyleSheet, Image, useWindowDimensions, Linking } from "react-native";
 import Location from "../../assets/icons/location";
 import Email from "../../assets/icons/email";
 import Phone from "../../assets/icons/phone";
@@ -8,10 +8,12 @@ import Facebook from "../../assets/icons/facebook";
 import Linkedin from "../../assets/icons/linkedin";
 import Instagram from "../../assets/icons/instagram";
 import FONT from "./Titles";
+import data from "../../static.json"
 
 
 const Footer = ({}) => {
     const { width, height } = useWindowDimensions();
+    const { facebook, linkedin, youtube, instagram } = data.links
     const rgbaColor = 'rgba(225, 225, 225, 0.6)'
     return (
         <View style={[styles.footer, {height: width * 0.3}]}>
@@ -21,10 +23,10 @@ const Footer = ({}) => {
               <FONT type="Body" style={{color: 'rgba(225, 225, 225, 0.6)', fontSize: 18}}>Copyright © 2024 Mongolia International University</FONT>
             </View>
             <View style={{flexDirection: 'row', marginLeft: width * 0.12 }}>
-              <Facebook width={width * 0.02} height={width * 0.021} color={rgbaColor}></Facebook>
-              <Youtube width={width * 0.031} height={width * 0.025} color={rgbaColor}></Youtube>
-              <Linkedin width={width * 0.03} height={width * 0.022} color={rgbaColor}></Linkedin>
-              <Instagram width={width * 0.03} height={width * 0.025} color={rgbaColor}></Instagram> 
+              <Facebook width={width * 0.02} height={width * 0.021} color={rgbaColor} onPress={()=> Linking.openURL(facebook)}></Facebook>
+              <Youtube width={width * 0.031} height={width * 0.025} color={rgbaColor} onPress={()=> Linking.openURL(youtube)}></Youtube>
+              <Linkedin width={width * 0.03} height={width * 0.022} color={rgbaColor} onPress={()=> Linking.openURL(linkedin)}></Linkedin>
+              <Instagram width={width * 0.03} height={width * 0.025} color={rgbaColor} onPress={()=> Linking.openURL(instagram)}></Instagram> 
             </View>
           </View>
           <View style={{borderBottomWidth: 0.8, borderBottomColor: rgbaColor, width: width * 0.8, marginBottom: width * 0.02}}/>
@@ -49,7 +51,7 @@ const Footer = ({}) => {
                 <FONT type="Body" style={{color: rgbaColor, fontSize: 16, width: width * 0.25, marginLeft: width * 0.009}}>7000 7447</FONT>
                 </View>
             </View>
-            <Image source={require('../../assets/images/location.png')} resizeMode="contain" style={{height: width * 0.11, width: width * 0.21, borderRadius: width * 0.008}}/>
+            <Image source={require('../../assets/images/location.png')} style={{height: width * 0.11, width: width * 0.21, borderRadius: width * 0.008}}/>
           </View>
         </View>
     );

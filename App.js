@@ -36,9 +36,11 @@ const App = () => {
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
+              Button1Press={() => navigation.navigate('About us')}
               Button2Press={() => navigation.navigate('Undergraduate')} 
               Button1Press={() => navigation.navigate('About us')}
               Button3Press={() => navigation.navigate('Over View')}
+              Button4Press={() => navigation.navigate("English Foundation Course")}
               {...props} 
             />
           ),
@@ -49,10 +51,9 @@ const App = () => {
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
         <Stack.Screen name="2 + 2 program" component={Twoplus2} />
-        <Stack.Screen name="Exchange student Program" component={Exchange} />
+        <Stack.Screen name="Exchange student Program" component={Exchange} /> 
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />
-        <Stack.Screen name="Another" component={Overview} />
-        <Stack.Screen name="Dorm" component={Dorm} />
+        <Stack.Screen name="Dorm" component={Dorm} /> 
         <Stack.Screen name="English Foundation Course" component={Lei_1} />
         <Stack.Screen name="English Evening Course" component={Lei_2} />
         <Stack.Screen name="Business English Course" component={Lei_3} />
