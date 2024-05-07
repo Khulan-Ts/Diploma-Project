@@ -24,6 +24,7 @@ import Scholarship from './screens/Admissions/Scholarship';
 import PlanReport from './screens/About us/PlanReport';
 import Howtoapply_Graduate from './screens/Admissions/howtoapply_graduate';
 import Bachelor_BA from './screens/Academic/Bachelor_BA';
+import Bachelor_CS from './screens/Academic/Bachelor_CS';
 
 const Stack = createStackNavigator();
 
@@ -47,6 +48,7 @@ const App = () => {
           cardStyle: {flex: 1}
         })}
       > 
+        <Stack.Screen name="Bachelor CS" component={Bachelor_CS} />
         <Stack.Screen name="Bachelor BA" component={Bachelor_BA} />
         <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
