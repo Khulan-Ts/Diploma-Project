@@ -8,17 +8,17 @@ import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
 
-const Bachelor_HTM= ({ navigation }) => {
+const Bachelor_EE= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
     useEffect( () => {
         
     })
     const imagesWithText = [
-        { source: require('../../assets/images/htm_teachers/teacher1.png'), text: "CHOI HUI PARK\nProfessor,\n Department chair" },
-        { source: require('../../assets/images/htm_teachers/teacher2.png'), text: "VICTOR NGU\n Professor" },
-        { source: require('../../assets/images/htm_teachers/teacher3.png'), text: "JUNG KUK KIM\nAssociate Professor" },
-        { source: require('../../assets/images/htm_teachers/teacher4.png'), text: "SEUNG HUN BAEK\n Senior Lecturer" },
-        { source: require('../../assets/images/htm_teachers/secretary.png'), text: "UNDRAKH \nMUNKHBAATAR\nSecretary" },
+        { source: require('../../assets/images/ee_teachers/dulguunsaran.png'), text: "DULGUUNSARAN\nAMARTUVSHIN\n Lecturer, Department chair" },
+        { source: require('../../assets/images/ee_teachers/yang.png'), text: "YANG LIU (SUNNY)\n Senior Lecturer" },
+        { source: require('../../assets/images/ee_teachers/eva.png'), text: "EVA LIU\n Senior Lecturer" },
+        { source: require('../../assets/images/ee_teachers/purevtsagaan.png'), text: "PUREVTSAGAAN\nENKHJARGAL\nLecturer" },
+        { source: require('../../assets/images/ee_teachers/jonathan.png'), text: "JONATHAN SANDE\nLecturer" },
     ];
 
     return (
@@ -27,14 +27,13 @@ const Bachelor_HTM= ({ navigation }) => {
         >
             <View style={{flexDirection: "row", marginTop: width * 0.05, height: width * 0.58}}>
                 <View style={{width: width * 0.1, marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/bachelor_ee.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016}}>
-                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF HOTEL AND TOURISM MANAGEMENT</FONT>
-                    <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>The Bachelor of Hotel and Tourism Management is designed to prepare 
-                    you for professional and managerial roles in the global tourism and hotel industries. Emphasis is placed in major areas within 
-                    tourism and hotel businesses.</FONT>
+                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF ENGLISH EDUCATION</FONT>
+                    <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>English Education Department seeks to train up effective and innovative English teachers across 
+                    Mongolia and Central Asia with a high-quality education that guides students to service with honesty, integrity, humility and professionalism.</FONT>
                 </View>
                 <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
@@ -86,7 +85,7 @@ const Bachelor_HTM= ({ navigation }) => {
                             </View>
                             <Button type="Apply2" text={"APPLY"} style={{ marginTop: width*0.008, marginLeft: width*.002}} ></Button>
                 </View>
-                <View style={{width: width*0.99, marginTop: width*0.02}}>
+                <View style={{width: width*0.99, marginTop: width*0.02, marginBottom: width * 0.13}}>
                     <ExpandableList 
                     title="Admission Requirements" 
                     content={"All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter "}
@@ -94,42 +93,10 @@ const Bachelor_HTM= ({ navigation }) => {
                 />
                 <ExpandableList
                     title="Curriculum"
-                    content="Download checklist"
-                    maxHeightPercentage={180}
+                    content={"• Linguistics\n• Teaching Methodology\n• Principle of Education\n• Educational Psychology\n• English Translation Practice"}
+                    maxHeightPercentage={125}
                 />
                 </View>
-            </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.45,marginTop: width*0.020, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
-            <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Skill Development</FONT>
-            </View>
-            <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
-                <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• Being equipped to be competent in a global business environment.
-                {'\n'}• Being grounded in a wider range of knowledge and theories of a 
-                {'\n'}  global business.
-                {'\n'}• Training in the strategic decision-making process.
-                {'\n'}• Being able to lead and work on a team.
-                {'\n'}• Being aware of ethical and socially responsible issues.
-                {'\n'}• Being equipped with strong communication and networking skills.
-                </FONT>
-            </View>  
-            </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.29, marginLeft: width*0.577, marginTop: width*-0.173, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
-            <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunity</FONT>
-            </View>
-            <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
-                <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• Advertising and Marketing
-                {'\n'}• Accountancy
-                {'\n'}• Human Resources
-                {'\n'}• Banking including Investment Banking
-                {'\n'}• Sales and Retail
-                {'\n'}• Management Consultancy
-                {'\n'}• Business Journalism
-                </FONT>
-            </View>  
             </View>
             <Footer/>
         </ScrollView>
@@ -137,7 +104,7 @@ const Bachelor_HTM= ({ navigation }) => {
     );
 }
 
-export default Bachelor_HTM;
+export default Bachelor_EE;
 
 const styles = StyleSheet.create({
     container: {
