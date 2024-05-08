@@ -82,10 +82,10 @@ const Button = ({
     type === "Eight" && {color: '#3D2562'},
     type === "Apply2" && {color: '#3D2562', fontSize: calculateFontSize(25)},
     type === "Nine" && {color: '#3D2562', fontSize: calculateFontSize(20)},
-    type === 'Ten' && {color: '#fff', fontSize: calculateFontSize(17), letterSpacing: 2},
+    type === 'Ten' && {color: '#fff', fontSize: calculateFontSize(17), letterSpacing: width * 0.0015},
   ]; 
   const TextWidth= [
-    style?.width && {width: style.width, paddingLeft: 5, paddingRight: 5},
+    style?.width && {width: style.width, paddingLeft: width * 0.003, paddingRight: width * 0.003},
   ];
   return (
     <View>
