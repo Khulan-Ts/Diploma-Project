@@ -8,17 +8,17 @@ import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
 
-const Bachelor_IR= ({ navigation }) => {
+const Bachelor_ME= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
     useEffect( () => {
         
     })
     const imagesWithText = [
-        { source: require('../../assets/images/ir_teachers/jericho.png'), text: "JERICHO BURG\nDean of School of International\n Studies and Relations" },
-        { source: require('../../assets/images/ir_teachers/mostafa.png'), text: "MOSTAFA AHMED\n Lecturer" },
-        { source: require('../../assets/images/ir_teachers/suyong.png'), text: "SUYONG GIM\nProfessor" },
-        { source: require('../../assets/images/ir_teachers/dong.png'), text: "DONG-RYUL KANG\nLecturer" },
-        { source: require('../../assets/images/ir_teachers/jiyung.png'), text: "JIYOUNG CHANG\nLecturer" },
+        { source: require('../../assets/images/mc_teachers/image1.png'), text: "JERICHO BURG\nDean of School of International\n Studies and Relations" },
+        { source: require('../../assets/images/mc_teachers/image2.png'), text: "MOSTAFA AHMED\n Lecturer" },
+        { source: require('../../assets/images/mc_teachers/image3.png'), text: "SUYONG GIM\nProfessor" },
+        { source: require('../../assets/images/mc_teachers/image4.png'), text: "DONG-RYUL KANG\nLecturer" },
+        { source: require('../../assets/images/mc_teachers/image5.png'), text: "JIYOUNG CHANG\nLecturer" },
     ];
 
     return (
@@ -32,7 +32,7 @@ const Bachelor_IR= ({ navigation }) => {
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width * 0.15, padding: width*0.01, marginTop: width*-0.016}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF BUSINESS ADMINISTRATION</FONT>
-                    <FONT type="Regular" style={{fontSize: 18}} lines={6}>International Relations (IR) program aims to prepare experts and professionals in the fields of Diplomacy, Political Science, and International Development to work in international organizations, NGOs, and government institutions. The program provides foundational knowledge of international relation, history, economics, international trade, development, diplomacy, foreign policy analysis and many others. The program empowers students to address global challenges and policy issues with ethical and critical reasoning as diplomats, field research experts, program officers, consultants, and journalists. Importantly, the students of the IR program at MIU can choose their area of expertise in their third year of studies.</FONT>
+                    <FONT type="Regular" style={{fontSize: 18}} lines={6}>“The ME Department of New Media Music teaches techniques for producing music of various genres, including classical music, pop, jazz, and ballads. We are reorganizing the music education environment by providing a digital audio workstation (DAW) program. Computer music and practical training Through ensemble classes using musical instruments, you can create more human and emotional music in the AI era. Within this cutting-edge curriculum, participants utilize the capabilities of sophisticated digital audio systems to multi-track recording, overdubbing, and editing music of various genres. and explores the process of mastering.</FONT>
                 </View>
                 <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
@@ -92,40 +92,31 @@ const Bachelor_IR= ({ navigation }) => {
                 />
                 <ExpandableList
                     title="Curriculum"
-                    content={"Year 1&2 / Students are introduced to \n - Basic knowledge each of the SISC majors: International Relations, Media & Communication, and International Development, Diplomacy, and International Law; \n - Fundemental academic writing and reading skills; \n Year 3 / Students can chose their concentration \n - Diplomacy and Political Science: Students learn practical skills of diplomatic communication and deepen their knowledge of politics and international cooperation. \n – International Development: Students study various fields of development studies such economic, sustainable, environmental, rural & urban development as well gain practical skills of development project evaluation and implementation. \n Year 4 / Students move to \n – Practical usage of the skills learned in both concentrations through internships \n – Thesis and Research writing"}
+                    content={"Year 1&2 / Students are introduced to \n – Basic knowledge each of the SISC majors: International Relations, Media & Communication, and International Development, Diplomacy, and International Law; \n - Fundemental academic writing and reading skills; \n Year 3 / Students can chose their concentration \n – Media Writing, PR, Advertising, and Communication \n – Practical media tools and photoshooting \n Year 4 / Students move to \n – Practical usage of the skills learned in classes through internships \n – MC graduation project development and research work"}
                     maxHeightPercentage={110}
                 />
                 </View>
             </View>
             <View style={{borderRadius: 30, borderWidth: 1, width: width*0.45,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Skill Development</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunities</FONT>
             </View>
             <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
                 <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• Being equipped to be competent in a global business environment.
-                {'\n'}• Being grounded in a wider range of knowledge and theories of a 
-                {'\n'}  global business.
-                {'\n'}• Training in the strategic decision-making process.
-                {'\n'}• Being able to lead and work on a team.
-                {'\n'}• Being aware of ethical and socially responsible issues.
-                {'\n'}• Being equipped with strong communication and networking skills.
+                {'\n'}• Journalists
+                {'\n'}• Radio/TV Producers
+                {'\n'}• Writers 
+                {'\n'}• Media Marketing/Advertising/PR Persons
                 </FONT>
             </View>  
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.27, marginLeft: width*0.576, marginTop: width*-0.173, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.27, marginLeft: width*0.576, marginTop: width*-0.123, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
             <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunity</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Opportunity</FONT>
             </View>
             <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
                 <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• Advertising and Marketing
-                {'\n'}• Accountancy
-                {'\n'}• Human Resources
-                {'\n'}• Banking including Investment Banking
-                {'\n'}• Sales and Retail
-                {'\n'}• Management Consultancy
-                {'\n'}• Business Journalism
+                {'\n'}• Mongolian NTV, MN25, NTV, EDU TV, TV2, Bloomberg Mongolia TVs and Global Internship for foreign students in their countries
                 </FONT>
             </View>  
             </View>
@@ -135,7 +126,7 @@ const Bachelor_IR= ({ navigation }) => {
     );
 }
 
-export default Bachelor_IR;
+export default Bachelor_ME;
 
 const styles = StyleSheet.create({
     container: {
