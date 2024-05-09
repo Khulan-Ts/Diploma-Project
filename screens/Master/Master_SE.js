@@ -106,7 +106,7 @@ const Master_SE= ({ navigation }) => {
                 />
                 </View>
             </View>
-            <View style={{marginBottom:width*0.1, borderRadius: 30, borderWidth: 1, width: width*0.75,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+            <View style={{marginBottom:width*0.1, borderColor: "#CDD4FB", borderRadius: 30, borderWidth: 1, width: width*0.75,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunity</FONT>
             </View>

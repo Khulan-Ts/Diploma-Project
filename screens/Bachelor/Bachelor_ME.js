@@ -97,7 +97,7 @@ const Bachelor_ME= ({ navigation }) => {
                 />
                 </View>
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.45,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.45,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunities</FONT>
             </View>
@@ -110,7 +110,7 @@ const Bachelor_ME= ({ navigation }) => {
                 </FONT>
             </View>  
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.27, marginLeft: width*0.576, marginTop: width*-0.123, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.27, marginLeft: width*0.576, marginTop: width*-0.123, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Opportunity</FONT>
             </View>
