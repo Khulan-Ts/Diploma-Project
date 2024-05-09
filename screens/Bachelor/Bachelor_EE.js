@@ -69,14 +69,14 @@ const Bachelor_EE= ({ navigation }) => {
                 <View style={{marginLeft: width*0.58, marginTop: width*-0.18}}>
                             <View style={[styles.infoContainer, {width: width * 0.16, height: width* 0.112, padding: width * 0.0075, borderRadius: width * 0.022}]}>
                                 <View style={{flexDirection: 'row',marginTop: width*0.02}}>
-                                    <Clock width={24} height={28}/>
+                                    <Clock width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.007}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                                         <FONT style={{fontSize: 18}}>4 years/ Onsite</FONT>
                                     </View>
                                 </View>
                                 <View style={{flexDirection: 'row', marginTop: width*0.002, }}>
-                                    <Calendar width={25} height={25}/>
+                                    <Calendar width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.007}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                                         <FONT style={{fontSize: 18}}>August-September</FONT>

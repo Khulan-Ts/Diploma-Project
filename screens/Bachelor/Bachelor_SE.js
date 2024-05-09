@@ -8,17 +8,16 @@ import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
 
-const Bachelor_HTM= ({ navigation }) => {
+const Bachelor_SE= ({ navigation }) => {
     const { width, height } = useWindowDimensions();
     useEffect( () => {
         
     })
     const imagesWithText = [
-        { source: require('../../assets/images/htm_teachers/teacher1.png'), text: "CHOI HUI PARK\nProfessor,\n Department chair" },
-        { source: require('../../assets/images/htm_teachers/teacher2.png'), text: "VICTOR NGU\n Professor" },
-        { source: require('../../assets/images/htm_teachers/teacher3.png'), text: "JUNG KUK KIM\nAssociate Professor" },
-        { source: require('../../assets/images/htm_teachers/teacher4.png'), text: "SEUNG HUN BAEK\n Senior Lecturer" },
-        { source: require('../../assets/images/htm_teachers/secretary.png'), text: "UNDRAKH \nMUNKHBAATAR\nSecretary" },
+        { source: require('../../assets/images/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
+        { source: require('../../assets/images/steveneisenbarth.png'), text: "STEVEN\n EISENBARTH \nProfessor" },
+        { source: require('../../assets/images/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
+        { source: require('../../assets/images/dulamsuren.png'), text: "DULAMSUREN\n SHARKHUU \nAssistant Professor" },
     ];
 
     return (
@@ -30,11 +29,10 @@ const Bachelor_HTM= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016}}>
-                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF HOTEL AND TOURISM MANAGEMENT</FONT>
-                    <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>The Bachelor of Hotel and Tourism Management is designed to prepare 
-                    you for professional and managerial roles in the global tourism and hotel industries. Emphasis is placed in major areas within 
-                    tourism and hotel businesses.</FONT>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-.016}}>
+                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF SOTWARE ENGINEERING</FONT>
+                    <FONT type="Regular" style={{fontSize: 18}} lines={3}>Software Engineering (SE) major at MIU offers opportunities to explore the science of information processing. Particular interest is 
+                    placed on making computation fast and efficient. SE focuses on the core theories of computing as well as hands-on learning and practical work experiences.</FONT>
                 </View>
                 <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
@@ -94,40 +92,59 @@ const Bachelor_HTM= ({ navigation }) => {
                 />
                 <ExpandableList
                     title="Curriculum"
-                    content="Download checklist"
-                    maxHeightPercentage={180}
+                    content={<FONT>
+                        <FONT style={{ fontWeight: 'bold' }}>{"Year 1 / Students are introduced to:\n"}</FONT>
+                        {"Foundation of basic coding                                                                                Foundation in mathematics and physics\n"}
+                        {"Teamwork skills\n"}
+                        <FONT style={{ fontWeight: 'bold' }}>{"Year 2 / Students develop skills in:\n"}</FONT>
+                        {"Computer science theories, methods and practices                              Understanding of computer software, tools and design\n"}
+                        {"Understanding a range of programming languages                             Problem-solving and analytical skills\n"}
+                        {"such as Java, C, C++, Javascript and SQL\n"}
+                        <FONT style={{ fontWeight: 'bold' }}>{"Year 3 / Students gain knowledge in:\n"}</FONT>
+                        {"Mobile application programming                                                                   Multimedia Programming\n"}
+                        {"Computer Security                                                                                                 Web development and web design\n"}
+                        <FONT style={{ fontWeight: 'bold' }}>{"Year 4 / Students move into:\n"}</FONT>
+                        {"Advanced programming skills                                                                          Cloud Computing\n"}
+                        {"Robotics                                                                                                                      Artificial Intelligence"}
+                      </FONT>}
+                    maxHeightPercentage={110}
                 />
                 </View>
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.45,marginTop: width*0.020, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.17,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Skill Development</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Skills</FONT>
             </View>
-            <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
-                <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• Being equipped to be competent in a global business environment.
-                {'\n'}• Being grounded in a wider range of knowledge and theories of a 
-                {'\n'}  global business.
-                {'\n'}• Training in the strategic decision-making process.
-                {'\n'}• Being able to lead and work on a team.
-                {'\n'}• Being aware of ethical and socially responsible issues.
-                {'\n'}• Being equipped with strong communication and networking skills.
+            <View style={{marginLeft:width*0.01, marginBottom: width*0.01}}> 
+                <FONT lines={6} type="Regular" style={{fontSize: 18}}>
+                    Skills you will develop in CS department are problem-solving, 
+                    critical thinking, creativity, coding, task management, efficiency, etc
                 </FONT>
             </View>  
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.29, marginLeft: width*0.577, marginTop: width*-0.173, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.33   , marginLeft: width*0.307, marginTop: width*-0.140, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
             <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunity</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>We Connect</FONT>
             </View>
-            <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
+            <View style={{marginLeft:width*0.01, marginBottom: width*0.028}}> 
                 <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• Advertising and Marketing
-                {'\n'}• Accountancy
-                {'\n'}• Human Resources
-                {'\n'}• Banking including Investment Banking
-                {'\n'}• Sales and Retail
-                {'\n'}• Management Consultancy
-                {'\n'}• Business Journalism
+                Full stack developer                          System administrator
+                {'\n'}Database administrator                Data scientist
+                {'\n'}Computer hardware                        Systems analyst
+                {'\n'}engineer                                                 Multimedia animator
+                {'\n'}Systems software developer
+                </FONT>
+            </View>  
+            </View>
+            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.215  , marginLeft: width*0.655, marginTop: width*-0.24, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{marginLeft: width*0.01}}>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Alumni</FONT>
+            </View>
+            <View style={{marginLeft:width*0.01, marginBottom: width*0.01}}> 
+                <FONT type="Regular" lines={6}style={{fontSize: 18}}>
+                    CS graduates are employed at many well known companies such as 
+                    Khan Bank, Unitel Group, Oyu Tolgoi LLC, Hurd Group, Nomin Holding, 
+                    Khas Bank, Khangai LLC, IT Zone, CAA Mongolia, etc.
                 </FONT>
             </View>  
             </View>
@@ -137,7 +154,7 @@ const Bachelor_HTM= ({ navigation }) => {
     );
 }
 
-export default Bachelor_HTM;
+export default Bachelor_SE;
 
 const styles = StyleSheet.create({
     container: {
@@ -145,6 +162,6 @@ const styles = StyleSheet.create({
         backgroundColor: "#F6FAFF"
     },
     infoContainer:{
-        backgroundColor: "#EDF0FF"
+        backgroundColor: "#EDF0FF",
     }
 });
