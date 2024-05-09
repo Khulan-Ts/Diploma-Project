@@ -7,10 +7,7 @@ const Header = ({
   type, 
   buttontext,
   logoOnPress,
-  Button1Press,
-  Button2Press,
-  Button3Press,
-  Button4Press,
+  ButtonPress,
   style,
 }) => {
   const { width, height } = useWindowDimensions();
@@ -40,25 +37,25 @@ const Header = ({
           type={type}
           text={buttontext[0]}
           style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
-          onPress={Button1Press}
+          onPress={ButtonPress[0]}
         />
         <Button
           type={type}
           text={buttontext[1]}
           style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
-          onPress={Button2Press}
+          onPress={ButtonPress[1]}
         />
         <Button
           type={type}
           text={buttontext[2]}
           style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
-          onPress={Button3Press}
+          onPress={ButtonPress[2]}
         />
         <Button
           type={type}
           text={buttontext[3]}
           style={{ height: width * 0.036, borderRadius: 0 }}
-          onPress={Button4Press}
+          onPress={ButtonPress[3]}
         />
        
       </View>

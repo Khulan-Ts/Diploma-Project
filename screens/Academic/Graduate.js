@@ -41,30 +41,28 @@ const Graduate= ({ navigation }) => {
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>School of Management (SoM)</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master in Business Administration (MBA)'}>
-            </Button>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562', marginLeft: height * 0.02}} type="Seven" text={'Master’s Start-Up Business Administration'}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master in Business Administration (MBA)'} onPress={()=>navigation.navigate("Master MBA")}>
             </Button>
           </View>
           <View style={{marginTop: width * 0.01, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>School of Computing Science (SoCS)</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master of Sofware Engineering (MSE)'}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master of Sofware Engineering (MSE)'} onPress={()=>navigation.navigate("Master SE")}>
             </Button>
           </View>
           <View style={{marginTop: width * 0.01, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>School of International Studies and Communication (SoISC)</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'School of International Studies and Communication (SoISC)'}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master in Public Administration (MPA)'} onPress={()=> navigation.navigate("Master Public")}>
             </Button>
           </View>
           <View style={{marginTop: width * 0.01, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>Programs</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master In Foreign Language Education (FLE)'}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master In Foreign Language Education (FLE)'} onPress={()=>navigation.navigate("Master FLE")}>
             </Button>
           </View>
         </View>
