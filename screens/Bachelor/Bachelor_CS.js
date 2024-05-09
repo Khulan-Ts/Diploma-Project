@@ -34,7 +34,7 @@ const Bachelor_CS= ({ navigation }) => {
                     <FONT type="Regular" style={{fontSize: 18}} lines={3}>Computer Science (CS) major at MIU offers opportunities to explore the science of information processing. Particular interest is 
                     placed on making computation fast and efficient. CS focuses on the core theories of computing as well as hands-on learning and practical work experiences.</FONT>
                 </View>
-                <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
+                <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/bachelorba2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
@@ -68,14 +68,14 @@ const Bachelor_CS= ({ navigation }) => {
                 <View style={{marginLeft: width*0.58, marginTop: width*-0.16}}>
                             <View style={[styles.infoContainer, {width: width * 0.17, height: width* 0.115, padding: width * 0.0075, borderRadius: width * 0.022}]}>
                                 <View style={{flexDirection: 'row',marginTop: width*0.01}}>
-                                    <Clock width={24} height={28}/>
+                                    <Clock width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.01}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                                         <FONT style={{fontSize: 18}}>4 years/ Onsite</FONT>
                                     </View>
                                 </View>
                                 <View style={{flexDirection: 'row', marginTop: width*0.001, }}>
-                                    <Calendar width={25} height={25}/>
+                                    <Calendar width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.005}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                                         <FONT style={{fontSize: 18}}>August-September</FONT>
