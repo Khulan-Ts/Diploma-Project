@@ -66,24 +66,24 @@ const Master_FLE= ({ navigation }) => {
                         </View>
                     ))}
                 </ScrollView>
-                <View style={{marginLeft: width*0.60, marginTop: width*-0.17}}>
-                            <View style={{width: width * 0.17, height: width* 0.115}}>
-                                <View style={{flexDirection: 'row',marginTop: width*0.001, alignItems:'center'}}>
-                                    <Clock width={24} height={28}/>
+                <View style={{marginLeft: width*0.57, marginTop: width*-0.17}}>
+                            <View style={{width: width * 0.17, height: width* 0.115, backgroundColor:'#EFF0FF', justifyContent:'center', borderRadius:width*0.03, paddingBottom:width*0.0075, paddingTop:width*0.0075}}>
+                                <View style={{flexDirection: 'row',marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
+                                    <Clock width={width*0.02} height={width*0.02}/>
                                     <View style={{marginLeft: width*0.015}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                                         <FONT style={{fontSize: 18}}>2 years / Onsite</FONT>
                                     </View>
                                 </View>
-                                <View style={{flexDirection: 'row', marginTop: width*0.001, alignItems:'center' }}>
-                                    <Calendar width={25} height={25}/>
+                                <View style={{flexDirection: 'row', marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
+                                    <Calendar width={width*0.02} height={width*0.02}/>
                                     <View style={{marginLeft: width*0.015}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                                         <FONT style={{fontSize: 18}}>August-September</FONT>
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginLeft: -width*.01}} ></Button>
+                            <Button type="Apply2" text={"APPLY"} style={{ marginLeft: width*0.005, marginTop:width*0.03}} ></Button>
                 </View>
                 <View style={{width: width*0.95, marginTop: width*0.05}}>
                     <ExpandableList 
@@ -107,7 +107,7 @@ const Master_FLE= ({ navigation }) => {
                 </View>
             </View>
             <View style={{flexDirection:'row', width:width, marginTop:width*0.02, marginBottom:width*0.05}}>
-                <View style={{backgroundColor:'white',borderRadius: width*0.03, borderWidth: 1,height:width*0.145, width: width*0.725,marginRight:width*0.025, marginLeft: width*0.11,borderColor:'#EDF0FF',shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+                <View style={{backgroundColor:'white',borderRadius: width*0.03, borderWidth: 1,height:width*0.145, width: width*0.725,marginRight:width*0.04, marginLeft: width*0.11,borderColor:'#EDF0FF',shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
                     <View style={{marginLeft: width*0.01}}>
                         <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>Career Opportunity</FONT>
                     </View>

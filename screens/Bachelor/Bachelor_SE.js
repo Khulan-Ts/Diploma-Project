@@ -14,28 +14,27 @@ const Bachelor_SE= ({ navigation }) => {
         
     })
     const imagesWithText = [
-        { source: require('../../assets/images/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
-        { source: require('../../assets/images/steveneisenbarth.png'), text: "STEVEN\n EISENBARTH \nProfessor" },
-        { source: require('../../assets/images/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
-        { source: require('../../assets/images/dulamsuren.png'), text: "DULAMSUREN\n SHARKHUU \nAssistant Professor" },
+        { source: require('../../assets/images/CS_teachers/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
+        { source: require('../../assets/images/CS_teachers/steveneisenbarth.png'), text: "STEVEN EISENBARTHE\nProfessor" },
+        { source: require('../../assets/images/CS_teachers/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
+        { source: require('../../assets/images/CS_teachers/dulamsuren.png'), text: "DULAMSUREN SHARKHUU\nAssistant Professor" },
     ];
 
     return (
         <ScrollView
             style={styles.container}
         >
-            <View style={{flexDirection: "row", marginTop: width * 0.05, height: width * 0.58}}>
+            <View style={{flexDirection: "row", marginTop: width * 0.05}}>
                 <View style={{width: width * 0.1, marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/FDcal.png')} style={{width: 'auto', height: width * 0.27}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-.016}}>
-                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF SOTWARE ENGINEERING</FONT>
-                    <FONT type="Regular" style={{fontSize: 18}} lines={3}>Software Engineering (SE) major at MIU offers opportunities to explore the science of information processing. Particular interest is 
-                    placed on making computation fast and efficient. SE focuses on the core theories of computing as well as hands-on learning and practical work experiences.</FONT>
+                <View style={{width: width * 0.75, marginLeft: width * 0.006, marginBottom: width* 0.02, backgroundColor: 'white', height: width*0.09, padding: width*0.01, marginTop: width*-.016, borderRadius:width*0.005}}>
+                    <FONT type="Title" style={{fontSize: 25}}>Welcome to the Department of SOFTWARE ENGINEERING</FONT>
+                    <FONT type="Regular" style={{fontSize: 18}} >Software Engineering major at MIU offers opportunities to explore the science of information processing. Particular interest is placed on making computation fast and efficient. SE focuses on the core theories of computing as well as hands-on learning and practical work experiences.</FONT>
                 </View>
-                <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: -width*0.02}}>
+                    <Image source={require('../../assets/images/bachelorba2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
             <View style={{
@@ -44,7 +43,7 @@ const Bachelor_SE= ({ navigation }) => {
                 borderBottomStartRadius:15,
                 width: width*0.5,
                 marginTop: width*-0.5,
-                marginLeft: width*0.12
+                marginLeft: width*0.11
             }}>
                 <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>Meet our Faculties</FONT>
 
@@ -57,7 +56,7 @@ const Bachelor_SE= ({ navigation }) => {
                                     source={source}
                                     style={{
                                         width: width*0.108,
-                                        height:height*0.25,
+                                        height:width*0.15,
                                     }}
                                 />
                                 <FONT style={{fontSize:13, textAlign: 'center'}}>{text}</FONT>
@@ -65,30 +64,30 @@ const Bachelor_SE= ({ navigation }) => {
                         </View>
                     ))}
                 </ScrollView>
-                <View style={{marginLeft: width*0.58, marginTop: width*-0.18}}>
-                            <View style={[styles.infoContainer, {width: width * 0.16, height: width* 0.112, padding: width * 0.0075, borderRadius: width * 0.022}]}>
-                                <View style={{flexDirection: 'row',marginTop: width*0.02}}>
-                                    <Clock width={width * 0.02} height={width * 0.02}/>
-                                    <View style={{marginLeft: width*0.007}}>
+                <View style={{marginLeft: width*0.57, marginTop: width*-0.17}}>
+                            <View style={{width: width * 0.17, height: width* 0.115, backgroundColor:'#EFF0FF', justifyContent:'center', borderRadius:width*0.03, paddingBottom:width*0.0075, paddingTop:width*0.0075}}>
+                                <View style={{flexDirection: 'row',marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
+                                    <Clock width={width*0.02} height={width*0.02}/>
+                                    <View style={{marginLeft: width*0.015}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
-                                        <FONT style={{fontSize: 18}}>4 years/ Onsite</FONT>
+                                        <FONT style={{fontSize: 18}}>4 years / Onsite</FONT>
                                     </View>
                                 </View>
-                                <View style={{flexDirection: 'row', marginTop: width*0.002, }}>
-                                    <Calendar width={width * 0.02} height={width * 0.02}/>
-                                    <View style={{marginLeft: width*0.007}}>
+                                <View style={{flexDirection: 'row', marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
+                                    <Calendar width={width*0.02} height={width*0.02}/>
+                                    <View style={{marginLeft: width*0.015}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                                         <FONT style={{fontSize: 18}}>August-September</FONT>
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width*0.008, marginLeft: width*.002}} ></Button>
+                            <Button type="Apply2" text={"APPLY"} style={{ marginLeft: width*0.005, marginTop:width*0.03}} ></Button>
                 </View>
-                <View style={{width: width*0.99, marginTop: width*0.02}}>
+                <View style={{width: width*0.95, marginTop: width*0.05}}>
                     <ExpandableList 
                     title="Admission Requirements" 
-                    content={"All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter "}
-                    maxHeightPercentage={130}
+                    content={"All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%)\n \n 30% Statement of Purpose & Recommendation Letter "}
+                    maxHeightPercentage={115}
                 />
                 <ExpandableList
                     title="Curriculum"
@@ -111,43 +110,45 @@ const Bachelor_SE= ({ navigation }) => {
                 />
                 </View>
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.17,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
-            <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Skills</FONT>
+            <View style={{flexDirection:'row', width:width, marginTop:width*0.04}}>
+                <View style={{backgroundColor:'white',borderRadius: 30, borderWidth: 1,height:width*0.18, width: width*0.19,marginRight:width*0.01, marginLeft: width*0.11,borderColor:'#EDF0FF',shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius:2}}>
+                    <View style={{marginLeft: width*0.01}}>
+                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01, marginBottom:width*0.01}}>Skills</FONT>
+                    </View>
+                    <View style={{marginBottom: width*0.01, marginLeft: width*0.01}}> 
+                        <FONT lines={6} type="Regular" style={{fontSize: 18}}>
+                            Skills you will develop in CS department are problem-solving, 
+                            critical thinking, creativity, coding, task management, efficiency, etc
+                        </FONT>
+                    </View>  
+                </View>
+                <View style={{backgroundColor:'white',borderRadius: 30, borderWidth: 1,height:width*0.18, width: width*0.33,marginRight:width*0.01,borderColor:'#EDF0FF', shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+                    <View style={{marginLeft: width*0.01}}>
+                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01, marginBottom:width*0.01}}>We connect</FONT>
+                    </View>
+                    <View style={{marginBottom: width*0.01, marginLeft: width*0.01}}> 
+                        <FONT type="Regular" style={{fontSize: 18}}>
+                            Full stack developer                          System administrator
+                            {'\n'}Database administrator                Data scientist
+                            {'\n'}Computer hardware                        Systems analyst
+                            {'\n'}engineer                                                 Multimedia animator
+                            {'\n'}Systems software developer
+                        </FONT>
+                    </View>  
+                </View>
+                <View style={{backgroundColor:'white',borderRadius: 30, borderWidth: 1,height:width*0.18, width: width*0.2,borderColor:'#EDF0FF', shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+                    <View style={{marginLeft: width*0.01}}>
+                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01, marginBottom:width*0.01}}>Alumni</FONT>
+                    </View>
+                    <View style={{marginBottom: width*0.01,marginLeft: width*0.01}}> 
+                        <FONT type="Regular" style={{fontSize: 18}}>
+                            CS graduates are employed at many well known companies such as Khan Bank, Unitel Group,
+                            Oyu Tolgoi LLC, Hurd Group, Nomin Holding, Khas Bank, Khangai LLC, IT Zone, CAA Mongolia, etc.
+                        </FONT>
+                    </View>  
+                </View>
             </View>
-            <View style={{marginLeft:width*0.01, marginBottom: width*0.01}}> 
-                <FONT lines={6} type="Regular" style={{fontSize: 18}}>
-                    Skills you will develop in CS department are problem-solving, 
-                    critical thinking, creativity, coding, task management, efficiency, etc
-                </FONT>
-            </View>  
-            </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.33   , marginLeft: width*0.307, marginTop: width*-0.140, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
-            <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>We Connect</FONT>
-            </View>
-            <View style={{marginLeft:width*0.01, marginBottom: width*0.028}}> 
-                <FONT type="Regular" style={{fontSize: 18}}>
-                Full stack developer                          System administrator
-                {'\n'}Database administrator                Data scientist
-                {'\n'}Computer hardware                        Systems analyst
-                {'\n'}engineer                                                 Multimedia animator
-                {'\n'}Systems software developer
-                </FONT>
-            </View>  
-            </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.215  , marginLeft: width*0.655, marginTop: width*-0.24, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
-            <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Alumni</FONT>
-            </View>
-            <View style={{marginLeft:width*0.01, marginBottom: width*0.01}}> 
-                <FONT type="Regular" lines={6}style={{fontSize: 18}}>
-                    CS graduates are employed at many well known companies such as 
-                    Khan Bank, Unitel Group, Oyu Tolgoi LLC, Hurd Group, Nomin Holding, 
-                    Khas Bank, Khangai LLC, IT Zone, CAA Mongolia, etc.
-                </FONT>
-            </View>  
-            </View>
+            
             <Footer/>
         </ScrollView>
         
@@ -161,7 +162,4 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#F6FAFF"
     },
-    infoContainer:{
-        backgroundColor: "#EDF0FF",
-    }
 });
