@@ -41,7 +41,7 @@ const Graduate= ({ navigation }) => {
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>School of Management (SoM)</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master in Business Administration (MBA)'}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master in Business Administration (MBA)'} onPress={() => navigation.navigate('MBA')}>
             </Button>
             <Button style={{marginTop: width * 0.01, color: '#3D2562', marginLeft: height * 0.02}} type="Seven" text={'Master’s Start-Up Business Administration'}>
             </Button>
@@ -64,7 +64,7 @@ const Graduate= ({ navigation }) => {
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>Programs</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master In Foreign Language Education (FLE)'}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={'Master In Foreign Language Education (FLE)'} onPress={() => navigation.navigate('FLE')}>
             </Button>
           </View>
         </View>
