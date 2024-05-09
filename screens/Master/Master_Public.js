@@ -29,7 +29,7 @@ const Master_Public= ({ navigation }) => {
                     <Image source={require('../../assets/images/masterpublic.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO MASTER IN PUBLIC ADMINISTRATION</FONT>
                     <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>Mater of Public Administration (MPA) program is designed to prepare professionally-trained and 
                     ethical government officials and public service officers. MPA Students are to gain fundamental knowledge of public policy, its analysis and implementation 

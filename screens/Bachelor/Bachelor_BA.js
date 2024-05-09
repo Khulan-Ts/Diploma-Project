@@ -30,7 +30,7 @@ const Bachelor_BA= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, marginBottom: height * 0.1, backgroundColor: 'white', height: height*0.2, padding: width*0.01, marginTop: width*-.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, marginBottom: height * 0.1, backgroundColor: 'white', height: height*0.2, padding: width*0.01, marginTop: width*-.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF BUSINESS ADMINISTRATION</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={3}>Business Administration Department (BA) trains in managerial
                    discipline and educates students on how to effectively compete in the international business environment. 

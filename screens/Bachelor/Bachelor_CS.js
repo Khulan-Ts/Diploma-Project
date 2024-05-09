@@ -29,7 +29,7 @@ const Bachelor_CS= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.1, padding: width*0.01, marginTop: width*-.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.1, padding: width*0.01, marginTop: width*-.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF COMPUTER SCIENCE</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={3}>Computer Science (CS) major at MIU offers opportunities to explore the science of information processing. Particular interest is 
                     placed on making computation fast and efficient. CS focuses on the core theories of computing as well as hands-on learning and practical work experiences.</FONT>

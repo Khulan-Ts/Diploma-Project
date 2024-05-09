@@ -30,7 +30,7 @@ const Bachelor_HTM= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF HOTEL AND TOURISM MANAGEMENT</FONT>
                     <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>The Bachelor of Hotel and Tourism Management is designed to prepare 
                     you for professional and managerial roles in the global tourism and hotel industries. Emphasis is placed in major areas within 
