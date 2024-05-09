@@ -69,7 +69,7 @@ const Master_Public= ({ navigation }) => {
                 <View style={{marginLeft: width*0.58, marginTop: width*-0.18}}>
                             <View style={[styles.infoContainer, {width: width * 0.16, height: width* 0.112, padding: width * 0.0075, borderRadius: width * 0.022}]}>
                                 <View style={{flexDirection: 'row',marginTop: width*0.02}}>
-                                    <Clock width={width * 0.02} height={width * 0.02}/>
+                                    <Clock width={width * 0.02} height={width * 0.04}/>
                                     <View style={{marginLeft: width*0.007}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                                         <FONT style={{fontSize: 18}}>2 years/ Onsite</FONT>
