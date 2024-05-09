@@ -30,7 +30,7 @@ const Bachelor_EE= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelor_ee.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF ENGLISH EDUCATION</FONT>
                     <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>English Education Department seeks to train up effective and innovative English teachers across 
                     Mongolia and Central Asia with a high-quality education that guides students to service with honesty, integrity, humility and professionalism.</FONT>

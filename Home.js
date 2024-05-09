@@ -12,6 +12,7 @@ import data from "./static.json"
 const HomeScreen= ({ navigation }) =>{
   const { width } = useWindowDimensions();
   const { apply } = data.links;
+  const { image }= data.hompage
   
   return(
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
@@ -20,7 +21,7 @@ const HomeScreen= ({ navigation }) =>{
           style={[styles.image, { height: width * 0.6, position: 'absolute', marginTop: '-0.1%', zIndex: 2 }]}
         />
       <Image
-        source={require("./assets/images/homepage-3.png")}
+        source={{uri: image}}
         style={[styles.image, { height: width * 0.6}]}
       />
 

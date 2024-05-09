@@ -17,5 +17,8 @@
       { "id": 6, "image": "./assets/images/lei_teachers/6.png", "name": "teacher #6" },
       { "id": 7, "image": "./assets/images/lei_teachers/7.png", "name": "teacher #7" },
       { "id": 8, "image": "./assets/images/lei_teachers/8.png", "name": "teacher #8" }
-    ]
+    ],
+    "hompage": {
+      "image": "./assets/images/homepage-3.png"
+    }
 }
