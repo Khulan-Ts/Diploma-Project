@@ -14,10 +14,10 @@ const Bachelor_CS= ({ navigation }) => {
         
     })
     const imagesWithText = [
-        { source: require('../../assets/images/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
-        { source: require('../../assets/images/steveneisenbarth.png'), text: "STEVEN\n EISENBARTH \nProfessor" },
-        { source: require('../../assets/images/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
-        { source: require('../../assets/images/dulamsuren.png'), text: "DULAMSUREN\n SHARKHUU \nAssistant Professor" },
+        { source: require('../../assets/images/CS_teachers/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
+        { source: require('../../assets/images/CS_teachers/steveneisenbarth.png'), text: "STEVEN\n EISENBARTH \nProfessor" },
+        { source: require('../../assets/images/CS_teachers/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
+        { source: require('../../assets/images/CS_teachesr/dulamsuren.png'), text: "DULAMSUREN\n SHARKHUU \nAssistant Professor" },
     ];
 
     return (
