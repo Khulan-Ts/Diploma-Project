@@ -16,17 +16,14 @@ const Scholarship= ({ navigation }) => {
             </View>
             <View style={{ width: width * 0.18, marginLeft: '1%'}}>
                 <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>
-                    <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>Admissions</FONT>
+                    <FONT type="Regular" style={{fontSize: 28}}>Admissions</FONT>
                 </View>
                 <View style={{}}>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
                         <Button type="Secondary" text={"Overview"} onPress={() => navigation.navigate('Over View')}></Button>
                     </View>
                     <View style={{borderBottomWidth: 1, width: '70%'}}>
-                        <Button type="Secondary" text={"How to Apply"}></Button>
-                    </View>
-                        <View style={{borderBottomWidth: 1, width: '70%'}}>
-                            <Button type="Secondary" text={"Tuition & Aids"} onPress={() => navigation.navigate('Tuition & Aids')} ></Button> 
+                        <Button type="Secondary" text={"How to Apply"}onPress={()=> navigation.navigate('How to Apply UnderGraduate')}></Button>
                     </View>
                     <View>
                         <Button type="Secondary" text={"Scholarship"} onPress={() => navigation.navigate('Scholarship')} isPressedState={true}></Button>
