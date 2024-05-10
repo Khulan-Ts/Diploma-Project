@@ -19,18 +19,21 @@ const OurPeople=({navigation})=>{
             />
             <View style={{flexDirection:'column', width:width*0.8035}}>
                 <View style={{ flexDirection: 'row'}}>
-                    <View style={{marginLeft: width*0.02, width: width*0.13}}>
+                    <View style={{width: width * 0.13, marginLeft: '2%'}}>
+                        <View style={{ borderBottomWidth: 1, width: width*0.15,  paddingBottom: width*0.007, paddingLeft:width*0.007}}>
+                            <FONT type="Regular" style={{color: '#000000', fontSize:28}}>About us</FONT>
+                        </View>
                         <View style={{marginTop: width*0.01}}>
                             <View style={{borderBottomWidth: 1}}>
-                                <Button type="Secondary" text={"About us"}  onPress={() => navigation.navigate('About us')} ></Button>
+                                <Button type="Secondary" text={"Greetings"} onPress={() => navigation.navigate('About us')} ></Button>
                             </View>
                             <View style={{borderBottomWidth: 1}}>
-                                <Button type="Secondary" text={"Our people"} isPressedState={true}></Button>
+                                <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}isPressedState={true}></Button>
                             </View>
                                 <View style={{borderBottomWidth: 1}}>
-                            <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
+                            <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')} ></Button> 
                             </View>
-                            <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+                            <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Giving Information')}></Button>
                         </View>
                     </View>
 

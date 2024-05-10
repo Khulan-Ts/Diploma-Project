@@ -14,7 +14,7 @@ const PlanReport = ({ navigation }) => {
         <View style={{width: width * 0.1, marginTop: '-0.5%'}}>
           <Image source={require('../../assets/images/calligraphy/plancal.png')} style={{width: 'auto', height: width * 0.2}} resizeMode="contain"/>
         </View>
-          <View style={{width: width * 0.15, marginLeft:'1%',}}>
+          <View style={{width: width * 0.15}}>
               <View style={{ borderBottomWidth: width * 0.0008, paddingBottom: width * 0.01, paddingLeft: width * 0.007}}>
                 <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>About us</FONT>
               </View>
