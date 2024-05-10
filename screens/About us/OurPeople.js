@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, Text, Image, ScrollView, View, useWindowDimensions } from "react-native";
-import Header from "../../src/components/Header";
-import CardButton from "../../src/components/cardButtons";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useNavigation } from "@react-navigation/native";
 import Footer from "../../src/components/footer"
 
 const OurPeople=({navigation})=>{

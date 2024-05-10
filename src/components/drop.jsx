@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Text, TouchableOpacity, Animated, StyleSheet, Dimensions } from 'react-native';
+import { View, TouchableOpacity, Animated, StyleSheet, Dimensions } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import FONT from '../../src/components/Titles';
 

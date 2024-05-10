@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Image, View, ScrollView, useWindowDimensions, Linking } from "react-native";
-import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
 import FONT from "./src/components/Titles";
 import MapComponent from "./src/components/Map";

@@ -1,5 +1,5 @@
     import React from 'react';
-    import { View, StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
+    import { StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
     import FONT from './Titles';
 
     export const HoverButton2 = ({

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Dimensions } from "react-native";
+import React, { useEffect } from "react";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useRef, useEffect } from "react";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";

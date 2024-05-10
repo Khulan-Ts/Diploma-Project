@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Image, ScrollView, View, useWindowDimensions } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useNavigation } from "@react-navigation/native";
 import Footer from "../../src/components/footer";
 
 

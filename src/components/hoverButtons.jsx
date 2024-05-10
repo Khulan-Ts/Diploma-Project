@@ -1,15 +1,14 @@
 import React from 'react';
-import { View, StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
+import { StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
 import FONT from './Titles';
 
 export const HoverButton = ({
-    type,
     text,
     icon,
     nummber,
     style
 }) => {
-    const { width, height } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     const [isHovered, setIsHovered] = React.useState(false);
     const iconOpacity = React.useRef(new Animated.Value(1)).current;

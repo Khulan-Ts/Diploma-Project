@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, StyleSheet, Text, useWindowDimensions } from "react-native";
+import { StyleSheet, Text, useWindowDimensions } from "react-native";
 import { useFonts } from 'expo-font';
 
 export const FONT = ({

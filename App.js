@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import Header from './src/components/Header'; 
-import AnotherScreen from './AnotherScreen';
 //Academics
 import Undergraduate from './screens/Academic/Undergraduate';
 import Graduate from './screens/Academic/Graduate';
@@ -82,7 +81,6 @@ const App = () => {
         <Stack.Screen name="Plan and Report" component={PlanReport} />
         <Stack.Screen name="Over View" component={Overview} /> 
         <Stack.Screen name="Scholarship" component={Scholarship} />
-        <Stack.Screen name="Another" component={AnotherScreen} />
         <Stack.Screen name="Giving Information" component={GivingInfo} />
         <Stack.Screen name="How To Apply Graduate" component={Howtoapply_Graduate} />
         <Stack.Screen name="How To Apply UnderGraduate" component={Howtoapply_Under} />

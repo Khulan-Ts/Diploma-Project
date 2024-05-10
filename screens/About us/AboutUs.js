@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, Image, ScrollView, View, useWindowDimensions } from "react-native";
-import Header from "../../src/components/Header";
-import CardButton from "../../src/components/cardButtons";
+import React from "react";
+import { StyleSheet, Image, ScrollView, View, useWindowDimensions } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useNavigation } from "@react-navigation/native";
 import HoverButton2 from "../../src/components/aboutusHover";
 import Footer from "../../src/components/footer";
 

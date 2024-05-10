@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useNavigation } from "@react-navigation/native";
 import ExpandableList from "../../src/components/drop";
 import Footer from "../../src/components/footer";
 
