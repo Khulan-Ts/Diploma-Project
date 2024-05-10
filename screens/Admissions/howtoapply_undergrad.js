@@ -35,7 +35,7 @@ const Howtoapply_Under= ({ navigation }) => {
           <View style={{flexDirection: 'column'}}>
             <View style={{flexDirection: "row", width: width*0.55,}}>
                 <View style={{ width: '50%', alignItems: 'center', marginTop: '-1%', marginLeft: '6%', marginRight:'-6%'}}>
-                    <Button type="Fourth" text={"Undergraduate Programs"}  onPress={() => navigation.navigate('How To Apply UnderGraduate')}></Button>
+                    <Button type="Fourth" text={"Undergraduate Programs"}  onPress={() => navigation.navigate('How To Apply UnderGraduate')} isPressedState={true}></Button>
                 </View>
                 <View style={{borderRightWidth: 1, height: height*0.06}}></View>
                 <View style={{ width: '50%', alignItems: 'center', marginTop: '-1%', marginLeft: '1%'}}>
@@ -98,7 +98,7 @@ const Howtoapply_Under= ({ navigation }) => {
               <ToolTip 
                 text={' The Admission Affairs will announce the MIU Scholarship Application beside Admission Scholarships.'} 
                 lines={2} 
-                style={{width: width*0.3}} 
+                style={{width: width*0.35}} 
                 type={'Undergraduate'}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: width*0.04, alignItems: 'center', justifyContent: 'center'}}>
@@ -111,7 +111,7 @@ const Howtoapply_Under= ({ navigation }) => {
               <ToolTip 
                 text={' Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.'} 
                 lines={2} 
-                style={{width: width*0.3}} 
+                style={{width: width*0.35}} 
                 type={'Undergraduate'}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#EDF0FF', borderRadius: "50%", width: width*0.04, height: width*0.04, alignItems: 'center', justifyContent: 'center'}}>

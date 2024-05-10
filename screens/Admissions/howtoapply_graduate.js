@@ -79,7 +79,7 @@ const Howtoapply_Graduate= ({ navigation }) => {
               </View>
               </ToolTip>
               <View style={{ borderTopWidth: 1, width: "3%", marginTop: '3%', marginLeft: '-0.5%', marginRight: '0.5%'}}></View>
-              <ToolTip text={' Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.'} lines={2} style={{width: width*0.3}}>
+              <ToolTip text={' Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.'} lines={2} style={{width: width*0.35}}>
               <View style={{ alignItems:'center'}}>
                 <View style={{ backgroundColor: '#FFD971', borderRadius: "50%", width: width*0.04, height: height*0.08, alignItems: 'center', justifyContent: 'center'}}>
                   <FONT style={{fontSize: 30}}>5</FONT>
