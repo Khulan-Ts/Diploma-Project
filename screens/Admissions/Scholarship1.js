@@ -3,7 +3,7 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import { useNavigation } from "@react-navigation/native";
-import ExpandableList from "../../src/components/dptExpandable";
+import ExpandableList from "../../src/components/drop";
 import Footer from "../../src/components/footer";
 
 const Scholarship= ({ navigation }) => {
