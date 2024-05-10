@@ -33,9 +33,9 @@ const HomeScreen= ({ navigation }) =>{
       
       <View style={{alignItems: 'center', marginTop: '-10%', zIndex: 3}}>
         <View style={{flexDirection: 'row'}}>
-          <HoverButton icon={require("./assets/icons/teachers.png")} text={"International Faculty"} nummber={'77%'}></HoverButton>
-          <HoverButton icon={require("./assets/icons/research.png")} text={"International Students"} nummber={'34%'} style={{marginLeft: width * 0.03}}></HoverButton>
-          <HoverButton icon={require("./assets/icons/department.png")} text={"Taught in English"} nummber={'100%'} style={{marginLeft: width * 0.03}}></HoverButton>
+          <HoverButton icon={require("./assets/icons/teachers.png")} text={"International Faculty"} number={'77%'}></HoverButton>
+          <HoverButton icon={require("./assets/icons/research.png")} text={"International Students"} number={'34%'} style={{marginLeft: width * 0.03}}></HoverButton>
+          <HoverButton icon={require("./assets/icons/department.png")} text={"Taught in English"} number={'100%'} style={{marginLeft: width * 0.03}}></HoverButton>
         </View> 
       </View>
       <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: width * 0.05}}>
