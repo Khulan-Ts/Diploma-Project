@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, StyleSheet, Image, useWindowDimensions, Linking } from "react-native";
+import { View, StyleSheet, Image, useWindowDimensions, Linking, Pressable } from "react-native";
 import Location from "../../assets/icons/location";
 import Email from "../../assets/icons/email";
 import Phone from "../../assets/icons/phone";
@@ -13,7 +13,7 @@ import data from "../../static.json"
 
 const Footer = ({}) => {
     const { width, height } = useWindowDimensions();
-    const { facebook, linkedin, youtube, instagram } = data.links
+    const { facebook, linkedin, youtube, instagram, google_map } = data.links
     const rgbaColor = 'rgba(225, 225, 225, 0.6)'
     return (
         <View style={[styles.footer, {height: width * 0.3}]}>
@@ -51,7 +51,9 @@ const Footer = ({}) => {
                 <FONT type="Body" style={{color: rgbaColor, fontSize: 16, width: width * 0.25, marginLeft: width * 0.009}}>7000 7447</FONT>
                 </View>
             </View>
-            <Image source={require('../../assets/images/location.png')} style={{height: width * 0.11, width: width * 0.21, borderRadius: width * 0.008}}/>
+            <Pressable onPress={()=> Linking.openURL(google_map)}>
+              <Image source={require('../../assets/images/location.png')} style={{height: width * 0.11, width: width * 0.21, borderRadius: width * 0.008}}/>
+            </Pressable>
           </View>
         </View>
     );

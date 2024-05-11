@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Image, View, ScrollView, useWindowDimensions, Linking } from "react-native";
-import CardButton from "./src/components/cardButtons";
 import Button from "./src/components/Button";
 import FONT from "./src/components/Titles";
 import MapComponent from "./src/components/Map";
@@ -12,6 +11,7 @@ import data from "./static.json"
 const HomeScreen= ({ navigation }) =>{
   const { width } = useWindowDimensions();
   const { apply } = data.links;
+  const { image }= data.hompage
   
   return(
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
@@ -20,7 +20,7 @@ const HomeScreen= ({ navigation }) =>{
           style={[styles.image, { height: width * 0.6, position: 'absolute', marginTop: '-0.1%', zIndex: 2 }]}
         />
       <Image
-        source={require("./assets/images/homepage-3.png")}
+        source={{uri: image}}
         style={[styles.image, { height: width * 0.6}]}
       />
 
@@ -33,9 +33,9 @@ const HomeScreen= ({ navigation }) =>{
       
       <View style={{alignItems: 'center', marginTop: '-10%', zIndex: 3}}>
         <View style={{flexDirection: 'row'}}>
-          <HoverButton icon={require("./assets/icons/teachers.png")} text={"International Faculty"} nummber={'77%'}></HoverButton>
-          <HoverButton icon={require("./assets/icons/research.png")} text={"International Students"} nummber={'34%'} style={{marginLeft: width * 0.03}}></HoverButton>
-          <HoverButton icon={require("./assets/icons/department.png")} text={"Taught in English"} nummber={'100%'} style={{marginLeft: width * 0.03}}></HoverButton>
+          <HoverButton icon={require("./assets/icons/teachers.png")} text={"International Faculty"} number={'77%'}></HoverButton>
+          <HoverButton icon={require("./assets/icons/research.png")} text={"International Students"} number={'34%'} style={{marginLeft: width * 0.03}}></HoverButton>
+          <HoverButton icon={require("./assets/icons/department.png")} text={"Taught in English"} number={'100%'} style={{marginLeft: width * 0.03}}></HoverButton>
         </View> 
       </View>
       <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: width * 0.05}}>

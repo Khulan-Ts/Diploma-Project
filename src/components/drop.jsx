@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Text, TouchableOpacity, Animated, StyleSheet, Dimensions } from 'react-native';
+import { View, TouchableOpacity, Animated, StyleSheet, Dimensions } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import FONT from '../../src/components/Titles';
 
@@ -50,7 +50,7 @@ export const ExpandableList = ({ title, content, maxHeightPercentage }) => {
       </TouchableOpacity>
       <Animated.View style={{ height: animation, overflow: 'hidden' }}>
         <View style={styles.contentContainer} onLayout={handleOnLayout}>
-          <FONT type='Body'>{content}</FONT>
+          <FONT type='Body' style={{fontSize: 18}}>{content}</FONT>
         </View>
       </Animated.View>
     </View>

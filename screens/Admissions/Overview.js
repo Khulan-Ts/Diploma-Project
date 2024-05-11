@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
@@ -22,9 +22,6 @@ const Overview= ({ navigation }) => {
                         </View>
                         <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
                             <Button type="Secondary" text={"How to Apply"} onPress={() => navigation.navigate('How To Apply UnderGraduate')} ></Button>
-                        </View>
-                        <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                            <Button type="Secondary" text={"Tuition & Aids"} onPress={() => navigation.navigate('Tuition & Aids')}></Button> 
                         </View>
                             <Button type="Secondary" text={"Scholarship"} onPress={() => navigation.navigate('Scholarship')}></Button>
                         <View style={{flexDirection: 'row'}}>

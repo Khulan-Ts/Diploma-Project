@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Dimensions } from "react-native";
+import React, { useEffect } from "react";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useRef, useEffect } from "react";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
@@ -14,10 +13,10 @@ const Bachelor_CS= ({ navigation }) => {
         
     })
     const imagesWithText = [
-        { source: require('../../assets/images/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
-        { source: require('../../assets/images/steveneisenbarth.png'), text: "STEVEN\n EISENBARTH \nProfessor" },
-        { source: require('../../assets/images/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
-        { source: require('../../assets/images/dulamsuren.png'), text: "DULAMSUREN\n SHARKHUU \nAssistant Professor" },
+        { source: require('../../assets/images/CS_teachers/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
+        { source: require('../../assets/images/CS_teachers/steveneisenbarth.png'), text: "STEVEN\n EISENBARTH \nProfessor" },
+        { source: require('../../assets/images/CS_teachers/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
+        { source: require('../../assets/images/CS_teachers/dulamsuren.png'), text: "DULAMSUREN\n SHARKHUU \nAssistant Professor" },
     ];
 
     return (
@@ -29,12 +28,12 @@ const Bachelor_CS= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.1, padding: width*0.01, marginTop: width*-.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.1, padding: width*0.01, marginTop: width*-.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF COMPUTER SCIENCE</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={3}>Computer Science (CS) major at MIU offers opportunities to explore the science of information processing. Particular interest is 
                     placed on making computation fast and efficient. CS focuses on the core theories of computing as well as hands-on learning and practical work experiences.</FONT>
                 </View>
-                <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
+                <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/bachelorba2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
@@ -68,14 +67,14 @@ const Bachelor_CS= ({ navigation }) => {
                 <View style={{marginLeft: width*0.58, marginTop: width*-0.16}}>
                             <View style={[styles.infoContainer, {width: width * 0.17, height: width* 0.115, padding: width * 0.0075, borderRadius: width * 0.022}]}>
                                 <View style={{flexDirection: 'row',marginTop: width*0.01}}>
-                                    <Clock width={24} height={28}/>
+                                    <Clock width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.01}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
                                         <FONT style={{fontSize: 18}}>4 years/ Onsite</FONT>
                                     </View>
                                 </View>
                                 <View style={{flexDirection: 'row', marginTop: width*0.001, }}>
-                                    <Calendar width={25} height={25}/>
+                                    <Calendar width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.005}}>
                                         <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
                                         <FONT style={{fontSize: 18}}>August-September</FONT>
@@ -111,7 +110,7 @@ const Bachelor_CS= ({ navigation }) => {
                 />
                 </View>
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.17,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.17,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Skills</FONT>
             </View>
@@ -122,7 +121,7 @@ const Bachelor_CS= ({ navigation }) => {
                 </FONT>
             </View>  
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.33   , marginLeft: width*0.307, marginTop: width*-0.140, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.33   , marginLeft: width*0.307, marginTop: width*-0.140, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>We Connect</FONT>
             </View>
@@ -136,7 +135,7 @@ const Bachelor_CS= ({ navigation }) => {
                 </FONT>
             </View>  
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.215  , marginLeft: width*0.655, marginTop: width*-0.24, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.215  , marginLeft: width*0.655, marginTop: width*-0.24, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Alumni</FONT>
             </View>

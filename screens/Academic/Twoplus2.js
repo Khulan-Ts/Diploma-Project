@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Image, ScrollView, View, useWindowDimensions } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useNavigation } from "@react-navigation/native";
 import Footer from "../../src/components/footer";
 
 
@@ -12,30 +11,29 @@ const Twoplus2=({navigation})=>{
   return (
     <ScrollView style={styles.container}>
        <View style={{flexDirection: "row", marginTop: width*0.05}}>
-        <Image
-          source={require("../../assets/images/calligraphy/2p2cal1.png")}
-          style={{height: width*0.3, width:width*0.1, marginLeft:-width*0.01}}resizeMode="contain"
-        />
-        <View style={{width: width*0.15}}>
-            <View style={{ borderBottomWidth: 1, width: width*0.17,  paddingBottom: width*0.007, paddingLeft:width*0.007}}>
-                <FONT type="Regular" style={{color: '#000000', fontSize:28}}>Academics</FONT>
-            </View>
-            <View style={{marginTop: width*0.01}}>
-                <View style={{borderBottomWidth: 1, width: width*0.137}}>
-                    <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')} ></Button>
-                </View>
-                <View style={{borderBottomWidth: 1, width: width*0.137}}>
-                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
-                </View>
-                    <View style={{borderBottomWidth: 1, width: width*0.137}}>
-                <Button type="Secondary" text={"2+2 program"} isPressedState={true}></Button> 
-                </View>
-                <View style={{borderBottomWidth: 1, width: width*0.137}}>
+       <View style={{width: width * 0.1, marginTop: '-2%'}}>
+          <Image source={require('../../assets/images/calligraphy/2p2cal1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+      </View>
+        <View style={{ width: width * 0.18, marginLeft: '1%'}}>
+              <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>
+                  <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>Academics</FONT>
+              </View>
+              <View style={{marginTop: '5%'}}>
+                  <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                      <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')}></Button>
+                  </View>
+                  <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                      <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
+                  </View>
+                      <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
+                  <Button type="Secondary" text={"2+2 program"} onPress={() => navigation.navigate('2 + 2 program')}  isPressedState={true}></Button> 
+                  </View>
+                  <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
                     <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
-                </View>
-                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
-            </View>
-        </View>
+                  </View>
+                  <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+              </View>
+          </View>
 
           <View style={{flexDirection:'column', alignItems:'flex-start',justifyContent:'left',flex:1, width:width*0.65, marginTop:width*0.01}}>
              <Image

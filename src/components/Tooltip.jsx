@@ -1,22 +1,18 @@
 import React from 'react';
-import { View, StyleSheet, Pressable, useWindowDimensions } from 'react-native';
+import { View, StyleSheet, Pressable } from 'react-native';
 import FONT from './Titles';
 
 export const ToolTip = ({
   text,
   type,
   children,
-  onPress,
-  onBlur,
-  onFocus,
   lines,
   style
 }) => {
-  const [showTooltip, setShowTooltip] = React.useState(false);
-  const { width, height } = useWindowDimensions();
-  
+  const [showTooltip, setShowTooltip] = React.useState(false);  
   const CommonTooltipStyle = [
     styles.commonTooltip,
+    styles.tooltipBottom,
     type === 'Undergraduate' && {backgroundColor: "rgba(237, 240, 255, 0.5)"} 
   ];
 
@@ -30,9 +26,6 @@ export const ToolTip = ({
 
   return (
     <Pressable
-      onPress={onPress}
-      onFocus={onFocus}
-      onBlur={onBlur}
       onHoverIn={handleHoverIn}
       onHoverOut={handleHoverOut}
     >
@@ -59,28 +52,10 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     alignSelf: 'flex-start',
   },
-  tooltipTop: {
-    position: 'absolute',
-    bottom: '100%',
-    marginBottom: 5,
-    alignSelf: 'center',
-  },
   tooltipBottom: {
     position: 'absolute',
     top: '100%',
     marginTop: 5,
-    alignSelf: 'center',
-  },
-  tooltipLeft: {
-    position: 'absolute',
-    right: '100%',
-    marginRight: 5,
-    alignSelf: 'center',
-  },
-  tooltipRight: {
-    position: 'absolute',
-    left: '100%',
-    marginLeft: 5,
     alignSelf: 'center',
   },
 });

@@ -35,7 +35,7 @@ const MapComponent = ({
                 image={require("../../assets/images/sports.png")}
                 type={"Sport"}
                 title={"Sport Complex"}
-                bottomText={'Schedule: Monday 4:00 - 6:00 pm \n            Wednesday 4:00 - 6:00 pm\n            Friday 4:00 - 6:00 pm'}
+                bottomText={'Schedule: \nMonday 4:00 - 6:00 pm \nWednesday 4:00 - 6:00 pm\nFriday 4:00 - 6:00 pm'}
               >
                 The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.
                 {"\n"}

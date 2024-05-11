@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import Header from './src/components/Header'; 
-import AnotherScreen from './AnotherScreen';
 //Academics
 import Undergraduate from './screens/Academic/Undergraduate';
 import Graduate from './screens/Academic/Graduate';
@@ -30,6 +29,18 @@ import PlanReport from './screens/About us/PlanReport';
 import GivingInfo from './screens/About us/Givinginfo1';
 //Bachelor
 import Bachelor_BA from './screens/Bachelor/Bachelor_BA';
+import Bachelor_CS from './screens/Bachelor/Bachelor_CS';
+import Bachelor_EE from './screens/Bachelor/Bachelor_EE';
+import Bachelor_HTM from './screens/Bachelor/Bachelor_HTM';
+import Bachelor_IR from './screens/Bachelor/Bachelor_IR';
+import Bachelor_MC from './screens/Bachelor/Bachelor_MC';
+import Bachelor_ME from './screens/Bachelor/Bachelor_ME';
+import Bachelor_FD from './screens/Bachelor/Bachelor_FD';
+//Master
+import Master_Public from './screens/Master/Master_Public';
+import Master_SE from './screens/Master/Master_SE';
+import Master_MBA from './screens/Master/Master_MBA';
+import Master_FLE from './screens/Master/Master_FLE';
 
 
 const Stack = createStackNavigator();
@@ -38,16 +49,14 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        screenOptions={({ navigation, route }) => ({
+        screenOptions={({ navigation }) => ({
           header: (props) => (
             <Header
               type={"Primary"}
               buttontext={["about us", "academics", "admissions", "LEI"]}
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
-              Button1Press={() => navigation.navigate('About us')}
-              Button2Press={() => navigation.navigate('Undergraduate')} 
-              Button3Press={() => navigation.navigate('Over View')}
-              Button4Press={() => navigation.navigate("English Foundation Course")}
+              ButtonPress={[() => navigation.navigate('About us'), () => navigation.navigate('Undergraduate'), 
+              () => navigation.navigate('Over View'), () => navigation.navigate("English Foundation Course")]}
               {...props} 
             />
           ),
@@ -72,11 +81,21 @@ const App = () => {
         <Stack.Screen name="Plan and Report" component={PlanReport} />
         <Stack.Screen name="Over View" component={Overview} /> 
         <Stack.Screen name="Scholarship" component={Scholarship} />
-        <Stack.Screen name="Another" component={AnotherScreen} />
         <Stack.Screen name="Giving Information" component={GivingInfo} />
-        <Stack.Screen name="Bachelor BA" component={Bachelor_BA} />
         <Stack.Screen name="How To Apply Graduate" component={Howtoapply_Graduate} />
         <Stack.Screen name="How To Apply UnderGraduate" component={Howtoapply_Under} />
+        <Stack.Screen name="Bachelor BA" component={Bachelor_BA} />
+        <Stack.Screen name="Bachelor EE" component={Bachelor_EE} />
+        <Stack.Screen name="Bachelor CS" component={Bachelor_CS} />
+        <Stack.Screen name="Bachelor HTM" component={Bachelor_HTM} />
+        <Stack.Screen name="Bachelor IR" component={Bachelor_IR} />
+        <Stack.Screen name="Bachelor MC" component={Bachelor_MC} />
+        <Stack.Screen name="Bachelor FD" component={Bachelor_FD} />
+        <Stack.Screen name="Bachelor ME" component={Bachelor_ME} />
+        <Stack.Screen name="Master Public" component={Master_Public} />
+        <Stack.Screen name="Master SE" component={Master_SE} />
+        <Stack.Screen name="Master MBA" component={Master_MBA} />
+        <Stack.Screen name="Master FLE" component={Master_FLE} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Dimensions } from "react-native";
+import React, { useEffect } from "react";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
-import { useRef, useEffect } from "react";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
@@ -30,7 +29,7 @@ const Bachelor_BA= ({ navigation }) => {
                     <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
-                <View style={{width: width * 0.75, marginLeft: width * 0.02, marginBottom: height * 0.1, backgroundColor: 'white', height: height*0.2, padding: width*0.01, marginTop: width*-.016}}>
+                <View style={{width: width * 0.75, marginLeft: width * 0.02, marginBottom: height * 0.1, backgroundColor: 'white', height: height*0.2, padding: width*0.01, marginTop: width*-.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF BUSINESS ADMINISTRATION</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={3}>Business Administration Department (BA) trains in managerial
                    discipline and educates students on how to effectively compete in the international business environment. 
@@ -103,7 +102,7 @@ const Bachelor_BA= ({ navigation }) => {
                 />
                 </View>
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.45,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.45,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Skill Development</FONT>
             </View>
@@ -119,7 +118,7 @@ const Bachelor_BA= ({ navigation }) => {
                 </FONT>
             </View>  
             </View>
-            <View style={{borderRadius: 30, borderWidth: 1, width: width*0.27, marginLeft: width*0.576, marginTop: width*-0.173, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.27, marginLeft: width*0.576, marginTop: width*-0.173, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
             <View style={{marginLeft: width*0.01}}>
                 <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunity</FONT>
             </View>

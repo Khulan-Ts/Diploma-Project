@@ -1,15 +1,14 @@
 import React from 'react';
-import { View, StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
+import { StyleSheet, Pressable, Image, useWindowDimensions, Animated } from 'react-native';
 import FONT from './Titles';
 
 export const HoverButton = ({
-    type,
     text,
     icon,
-    nummber,
+    number,
     style
 }) => {
-    const { width, height } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     const [isHovered, setIsHovered] = React.useState(false);
     const iconOpacity = React.useRef(new Animated.Value(1)).current;
@@ -75,7 +74,7 @@ export const HoverButton = ({
                 <FONT type={'Title2'} style={{ marginTop: width * 0.002, fontSize: 34, width: width * 0.15, textAlign: 'center'}}>{text}</FONT>
             </Animated.View>
             <Animated.View style={[styles.content, { transform: [{ scale: textScale }] }]}>
-                {isHovered && <FONT type='Title2' style={{fontSize: 100}}>{nummber}</FONT>}
+                {isHovered && <FONT type='Title2' style={{fontSize: 100}}>{number}</FONT>}
                 {isHovered && <FONT type={'Title2'} style={{fontSize: 34, textAlign: 'center', width: width * 0.15}} >{text}</FONT>}
             </Animated.View>
         </Pressable>
