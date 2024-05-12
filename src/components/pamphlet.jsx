@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Image, StyleSheet, TouchableOpacity, Animated, Dimensions, useWindowDimensions } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, Animated, useWindowDimensions } from 'react-native';
 
 
 

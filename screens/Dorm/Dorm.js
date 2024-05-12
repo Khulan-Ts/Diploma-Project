@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking } from "react-native";
 import FONT from "../../src/components/Titles";
 import Clock from "../../assets/icons/clock";

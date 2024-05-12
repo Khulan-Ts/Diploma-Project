@@ -45,7 +45,7 @@ export const ExpandableList = ({ title, content, maxHeightPercentage }) => {
   };
 
   return (
-    <View style={[styles.itemContainer, {width:width*0.725, marginBottom:width*0.02}]}>
+    <View style={[styles.itemContainer, {width:width*0.74, marginBottom:width*0.005}]}>
       <TouchableOpacity onPress={toggleExpansion} activeOpacity={1} style={[styles.titleContainer, {padding: width*0.015}]}>
         <FONT type='Subtitle2' style={{ fontWeight: 'bold', flex: 1, fontSize:25}}>{title}</FONT>
         <Animated.View style={{ transform: [{ rotate: arrowRotate }] }}>

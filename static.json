@@ -6,7 +6,8 @@
         "facebook": "https://www.facebook.com/miunews2016",
         "youtube": "https://www.youtube.com/channel/UC3XR-4Gnc4hMxbdwPn1mqKA",
         "linkedin": "https://www.linkedin.com/company/mongolia-international-university-miu/",
-        "instagram": "https://www.instagram.com/miu_mongolia/"
+        "instagram": "https://www.instagram.com/miu_mongolia/",
+        "google_map": "https://www.google.com/maps/place/Mongolia+International+University/@47.9144385,106.9711738,17.8z/data=!4m6!3m5!1s0x5d96919485d76a77:0xc3c65e3fb66fde11!8m2!3d47.9146756!4d106.9737741!16s%2Fm%2F02x0l38?entry=ttu"
     },
     "lei_teachers": [
       { "id": 1, "image": "./assets/images/lei_teachers/1.png", "name": "teacher #1" },
