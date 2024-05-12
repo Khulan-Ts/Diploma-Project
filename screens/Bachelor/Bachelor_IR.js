@@ -88,7 +88,7 @@ const Bachelor_IR= ({ navigation }) => {
                     <ExpandableList 
                     title="Admission Requirements" 
                     content={"All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter "}
-                    maxHeightPercentage={120}
+                    maxHeightPercentage={130}
                 />
                 <ExpandableList
                     title="Curriculum"
