@@ -14,18 +14,30 @@ const Dorm=({navigation})=>{
         <ScrollView style={styles.container}>
             <View style={{ flexDirection: 'row', marginTop: '5%'}}>
                 <View style={{width: width * 0.1, marginTop: '-1%', marginRight: 'auto'}}>
-                    <Image source={require('../../assets/images/calligraphy/dorm_cal.png')} style={{width: 'auto', height: width * 0.23}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/dorm_cal.png')} 
+                    style={{width: 'auto', height: width * 0.23}} resizeMode="contain"/>
                 </View>
                 
                 <View style={{flexDirection: 'column'}}>
-                    <View style={{ width: width * 0.72, marginLeft: width * 0.01, backgroundColor: 'white', height: width * 0.165, padding: width * 0.01 }}>                        
-                        <FONT type={"Regular"} style={{ color: '#3D2562',fontSize: 22}}>GLOBAL RESIDENCE (DORMITORY): LOCATED ON MIU'S CAMPUS</FONT>
-                        <FONT type={"Body"} style={{marginTop: height * 0.03, color: '#3D2562', fontSize: 16}}>MIU believes that the first year of university is crucial in building a successful university life and that the MIU Global Residence will support all freshmen to swiftly adjust to campus life, develop their four-year academic plan, and offer all MIU freshmen to live in a close-knit environment for academic, cultural, and social interactions and development. 
-                            All freshmen are required to live in the dormitory on campus for their first year. Established in 2017, the dormitory is equipped with a kitchen, laundry facilities, internet access, and more. This building can house more than 200 students. While upperclassmen students are allowed to live in the Global Residence, freshmen students are given first priority. The Global Residence is led by the Dormitory Manager and upperclassmen students to ensure that freshmen are safe and healthy. </FONT>                      
+                    <View style={{ width: width * 0.72, marginLeft: width * 0.01, 
+                        backgroundColor: 'white', height: width * 0.165, padding: width * 0.01 }}>                        
+                        <FONT type={"Regular"} style={{ color: '#3D2562',fontSize: 22}}>
+                            GLOBAL RESIDENCE (DORMITORY): LOCATED ON MIU'S CAMPUS</FONT>
+                        <FONT type={"Body"} style={{marginTop: height * 0.03, color: '#3D2562', fontSize: 16}}>
+                            MIU believes that the first year of university is crucial in building a successful university life and 
+                            that the MIU Global Residence will support all freshmen to swiftly adjust to campus life, develop their 
+                            four-year academic plan, and offer all MIU freshmen to live in a close-knit environment for academic, cultural, 
+                            and social interactions and development. 
+                            All freshmen are required to live in the dormitory on campus for their first year. Established in 2017, 
+                            the dormitory is equipped with a kitchen, laundry facilities, internet access, and more. This building can house 
+                            more than 200 students. While upperclassmen students are allowed to live in the Global Residence, freshmen students 
+                            are given first priority. The Global Residence is led by the Dormitory Manager and upperclassmen students to ensure 
+                            that freshmen are safe and healthy. </FONT>                      
                     </View>    
                     <View style={{flexDirection: 'row'}}>
                         <View style={{ width: width * 0.26, marginLeft: width * 0.01}}>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: width * 0.02, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: width * 0.02, padding: width * 0.01, 
+                            backgroundColor: '#EDF0FF' }}>
                                 <FONT type={"Title3"} style={{fontSize: 20}}>
                                     Room Type
                                 </FONT>
@@ -47,7 +59,8 @@ const Dorm=({navigation})=>{
                             </View>
                         </View>
                         <View style={{width: width * 0.26, marginLeft: width * -0.011, padding: width * 0.01}}>
-                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
+                            <View style={{ borderWidth: 2, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, 
+                            backgroundColor: '#EDF0FF' }}>
                                 <FONT type={"Title3"} style={{fontSize: 20}}>
                                     Housing Fee (₮)
                                 </FONT>
@@ -69,7 +82,8 @@ const Dorm=({navigation})=>{
                             </View>
                         </View> 
                         <View style={{marginLeft: width * 0.01, marginTop: width * 0.018}}>
-                            <View style={[styles.infoContainer, {width: width * 0.2, height: width * 0.08, padding: width * 0.0075, borderRadius: width * 0.022}]}>
+                            <View style={[styles.infoContainer, {width: width * 0.2, height: width * 0.08, padding: width * 0.0075, 
+                                borderRadius: width * 0.022}]}>
                                 <View style={{flexDirection: 'row'}}>
                                     <Clock width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: '5%', marginTop: '-1%'}}>
@@ -85,12 +99,14 @@ const Dorm=({navigation})=>{
                                     </View>
                                 </View>
                                 </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.013, marginLeft: width * 0.019}} onPress={()=> Linking.openURL(apply)}></Button>
+                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width * 0.013, marginLeft: width * 0.019}} 
+                            onPress={()=> Linking.openURL(apply)}></Button>
                         </View>
                     </View>
                 </View>
                 <View style={{width: width * 0.1, marginTop: '-2%', marginLeft: 'auto'}}>
-                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5, marginBottom: width * 0.1}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5, 
+                    marginBottom: width * 0.1}} resizeMode="contain"/>
                 </View>
             </View>
             <Footer/>
