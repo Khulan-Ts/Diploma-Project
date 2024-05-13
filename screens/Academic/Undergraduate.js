@@ -49,7 +49,7 @@ const Undergraduate= ({ navigation }) => {
                 <FONT type="Subtitle2" style={{fontSize: 23}} >School of Computing Science (SoCS)</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={"Department of Sofware Engineering (SE)"} style={{color: '#000000', marginTop:width *0.01,}}></Button>
+                <Button type="Seven" text={"Department of Sofware Engineering (SE)"} style={{color: '#000000', marginTop:width *0.01,}} onPress={()=>navigation.navigate('Bachelor SE')}></Button>
                 <Button type="Seven" text={"Department of Computer Science (CS)"} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=>navigation.navigate('Bachelor CS')}></Button>
             </View> 
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: width * 0.02}}>

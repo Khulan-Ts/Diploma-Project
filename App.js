@@ -36,6 +36,7 @@ import Bachelor_IR from './screens/Bachelor/Bachelor_IR';
 import Bachelor_MC from './screens/Bachelor/Bachelor_MC';
 import Bachelor_ME from './screens/Bachelor/Bachelor_ME';
 import Bachelor_FD from './screens/Bachelor/Bachelor_FD';
+import Bachelor_SE from './screens/Bachelor/Bachelor_SE';
 //Master
 import Master_Public from './screens/Master/Master_Public';
 import Master_SE from './screens/Master/Master_SE';
@@ -92,6 +93,7 @@ const App = () => {
         <Stack.Screen name="Bachelor MC" component={Bachelor_MC} />
         <Stack.Screen name="Bachelor FD" component={Bachelor_FD} />
         <Stack.Screen name="Bachelor ME" component={Bachelor_ME} />
+        <Stack.Screen name="Bachelor SE" component={Bachelor_SE} />
         <Stack.Screen name="Master Public" component={Master_Public} />
         <Stack.Screen name="Master SE" component={Master_SE} />
         <Stack.Screen name="Master MBA" component={Master_MBA} />
