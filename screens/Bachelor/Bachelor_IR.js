@@ -30,7 +30,7 @@ const Bachelor_IR= ({ navigation }) => {
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width * 0.15, padding: width*0.01, marginTop: width*-0.016, borderRadius: width * 0.008}}>
-                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF BUSINESS ADMINISTRATION</FONT>
+                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF International Relations</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={6}>International Relations (IR) program aims to prepare experts and professionals in the fields of Diplomacy, Political Science, and International Development to work in international organizations, NGOs, and government institutions. The program provides foundational knowledge of international relation, history, economics, international trade, development, diplomacy, foreign policy analysis and many others. The program empowers students to address global challenges and policy issues with ethical and critical reasoning as diplomats, field research experts, program officers, consultants, and journalists. Importantly, the students of the IR program at MIU can choose their area of expertise in their third year of studies.</FONT>
                 </View>
                 <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
