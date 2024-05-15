@@ -19,7 +19,69 @@
       { "id": 7, "image": "./assets/images/lei_teachers/7.png", "name": "teacher #7" },
       { "id": 8, "image": "./assets/images/lei_teachers/8.png", "name": "teacher #8" }
     ],
-    "hompage": {
-      "image": "./assets/images/homepage-3.png"
+    "homepageEN": {
+      "welcomeImage": "./assets/images/homepage-3.png",
+      "title1": "welcome to MIU",
+      "title2": "Educating Global Servant Leaders of Tomorrow",
+      
+      "hoverText1": "International Faculty",
+      "hoverText2": "International Students",
+      "hoverText3": "Taught in English",
+      "hoverNum1": "77%",
+      "hoverNum2": "34%",
+      "hoverNum3": "100%",
+      
+      "historyTitle": "The Most Global and Dynamic University in Mongolia",
+      "historyBodyText": "MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia. With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received freeland of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university providing English-Speaking higher education in Central Asia. MIU currently offers 14 recognized bachelor’s programs and is committed to providing a world-class education to tomorrow’s global servant leaders from Mongolia, Russia, China, Republic of Korea, and other nations.",
+      "historyImage": "./assets/images/flags.png",
+      
+      "undergradImage": "./assets/images/homepage/h1.png",
+      "undergradDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+      
+      "graduateImage": "./assets/images/homepage/h2.png",
+      "graduateDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+      
+      "FourReasonsTitle1": "4 REASONS",
+      "FourReasonsTitle2": "to study at MIU",
+      "FourReasonsReason1": "1. All courses are taught in 100% English",
+      "FourReasonsReason2": "2. Opportunity to learn international cultures",
+      "FourReasonsReason3": "3. A globally recognized expert",
+      "FourReasonsReason4": "4. Accessible education",
+
+      "ApplyText": "Are you ready to take the next step toward your future career?",
+      "ApplyButton": "Application Form"
+    },
+
+    "homepageMN": {
+      "welcomeImage": "./assets/images/homepage-3.png",
+      "title1": "MIU-д тавтай морил",
+      "title2": "Маргаашийн дэлхийн үйлчлэгч удирдагчдыг сургах",
+      
+      "hoverText1": "International Faculty",
+      "hoverText2": "International Students",
+      "hoverText3": "Taught in English",
+      "hoverNum1": "77%",
+      "hoverNum2": "34%",
+      "hoverNum3": "100%",
+      
+      "historyTitle": "The Most Global and Dynamic University in Mongolia",
+      "historyBodyText": "MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia. With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received freeland of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university providing English-Speaking higher education in Central Asia. MIU currently offers 14 recognized bachelor’s programs and is committed to providing a world-class education to tomorrow’s global servant leaders from Mongolia, Russia, China, Republic of Korea, and other nations.",
+      "historyImage": "./assets/images/flags.png",
+      
+      "undergradImage": "./assets/images/homepage/h1.png",
+      "undergradDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+      
+      "graduateImage": "./assets/images/homepage/h2.png",
+      "graduateDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+      
+      "FourReasonsTitle1": "MIU-д суралцах",
+      "FourReasonsTitle2": "4 шалтгаан",
+      "FourReasonsReason1": "1. All courses are taught in 100% English",
+      "FourReasonsReason2": "2. Opportunity to learn international cultures",
+      "FourReasonsReason3": "3. A globally recognized expert",
+      "FourReasonsReason4": "4. Accessible education",
+
+      "ApplyText": "Are you ready to take the next step toward your future career?",
+      "ApplyButton": "Application Form"
     }
 }

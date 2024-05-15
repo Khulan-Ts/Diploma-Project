@@ -47,6 +47,11 @@ import Master_FLE from './screens/Master/Master_FLE';
 const Stack = createStackNavigator();
 
 const App = () => {
+  const [isTranslated, setIstranslated] = React.useState(false);
+
+  const handleTranslatePress = () =>{
+    setIstranslated(!isTranslated)
+  }
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -58,6 +63,8 @@ const App = () => {
               logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               ButtonPress={[() => navigation.navigate('About us'), () => navigation.navigate('Undergraduate'), 
               () => navigation.navigate('Over View'), () => navigation.navigate("English Foundation Course")]}
+              onTranslatePress={handleTranslatePress}
+              isTranslated={isTranslated}
               {...props} 
             />
           ),
@@ -65,7 +72,9 @@ const App = () => {
         })}
       > 
         
-        <Stack.Screen name="MIU - Mongolia International University" component={HomeScreen} /> 
+        <Stack.Screen name="MIU - Mongolia International University">
+          {props => <HomeScreen {...props} isTranslated={isTranslated} />}
+        </Stack.Screen> 
         <Stack.Screen name="Undergraduate" component={Undergraduate} />
         <Stack.Screen name="Graduate" component={Graduate} />
         <Stack.Screen name="2 + 2 program" component={Twoplus2} />

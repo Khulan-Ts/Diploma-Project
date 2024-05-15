@@ -8,6 +8,8 @@ const Header = ({
   buttontext,
   logoOnPress,
   ButtonPress,
+  onTranslatePress,
+  isTranslated,
   style,
 }) => {
   const { width, height } = useWindowDimensions();
@@ -54,9 +56,16 @@ const Header = ({
         <Button
           type={type}
           text={buttontext[3]}
-          style={{ height: width * 0.036, borderRadius: 0 }}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={ButtonPress[3]}
         />
+        <Button
+          type={type}
+          img={isTranslated ? require("../../assets/icons/EN_flag.png"): require("../../assets/icons/MN_flag.png")}
+          style={{ height: width * 0.036, borderRadius: 0 }}
+          onPress={onTranslatePress}
+        />
+        
        
       </View>
     </View>

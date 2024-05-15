@@ -1,11 +1,12 @@
 import * as React from "react";
-import { View, StyleSheet, Text, Pressable, useWindowDimensions } from "react-native";
+import { View, StyleSheet, Text, Pressable, useWindowDimensions, Image } from "react-native";
 import { useFonts } from 'expo-font'
 import ArrowIcon from "../../assets/icons/arrow";
 
 const Button = ({
   type = "Primary",
   text,
+  img,
   numberOfLines = 1,
   onPress,
   isPressedState,
@@ -107,6 +108,7 @@ const Button = ({
               {text}
             </Text>
           </View>
+          {img && <Image source={img} resizeMode="contain" style={{width: width * 0.025, height: width * 0.025}}/>}
         </Pressable>
         </View>
       }
