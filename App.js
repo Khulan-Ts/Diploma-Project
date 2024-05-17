@@ -47,10 +47,10 @@ import Master_FLE from './screens/Master/Master_FLE';
 const Stack = createStackNavigator();
 
 const App = () => {
-  const [isTranslated, setIstranslated] = React.useState(false);
+  const [language, setLanguage] = React.useState('en');
 
-  const handleTranslatePress = () =>{
-    setIstranslated(!isTranslated)
+  const handleTranslatePress = (lang) =>{
+    setLanguage(lang)
   }
   return (
     <NavigationContainer>
@@ -64,7 +64,7 @@ const App = () => {
               ButtonPress={[() => navigation.navigate('About us'), () => navigation.navigate('Undergraduate'), 
               () => navigation.navigate('Over View'), () => navigation.navigate("English Foundation Course")]}
               onTranslatePress={handleTranslatePress}
-              isTranslated={isTranslated}
+              language={language}
               {...props} 
             />
           ),
@@ -73,10 +73,14 @@ const App = () => {
       > 
         
         <Stack.Screen name="MIU - Mongolia International University">
-          {props => <HomeScreen {...props} isTranslated={isTranslated} />}
+          {props => <HomeScreen {...props} language={language} />}
         </Stack.Screen> 
-        <Stack.Screen name="Undergraduate" component={Undergraduate} />
-        <Stack.Screen name="Graduate" component={Graduate} />
+        <Stack.Screen name="Undergraduate">
+          {props => <Undergraduate {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Graduate">
+          {props => <Graduate {...props} language={language} />}
+        </Stack.Screen> 
         <Stack.Screen name="2 + 2 program" component={Twoplus2} />
         <Stack.Screen name="Exchange student Program" component={Exchange} /> 
         <Stack.Screen name="Academic Calendar" component={AcademicCal} />

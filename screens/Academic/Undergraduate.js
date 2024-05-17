@@ -3,10 +3,29 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
+import en from "../../staticEN.json";
+import mn from "../../staticMN.json";
+import ru from "../../staticRU.json";
 
-const Undergraduate= ({ navigation }) => {
+const Undergraduate= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
+    const undergraduateEN = en.undergraduateEN;
+    const undergraduateMN = mn.undergraduateMN;
+    const undergraduateRU = ru.undergraduateRU;
 
+    
+    let content;
+    switch (language){
+    case 'mn':
+        content = undergraduateMN;
+        break;
+    case 'ru':
+        content = undergraduateRU;
+        break;
+    case 'en':
+        content = undergraduateEN;
+        break;
+  }
     return (
     <ScrollView
       style={styles.container}
@@ -17,57 +36,57 @@ const Undergraduate= ({ navigation }) => {
         </View>
         <View style={{marginLeft: '1%', width: width * 0.18}}>
             <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft:width * 0.01}}>
-                <FONT type="Regular" style={{color: "#000", fontSize: 28}} >Academics</FONT>
+                <FONT type="Regular" style={{color: "#000", fontSize: 28}} >{content.AcademicTitle}</FONT>
             </View>
             <View style={{marginTop: '5%'}}>
                 <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                    <Button type="Secondary" text={"Undergraduate"} onPress={() => navigation.navigate('Undergraduate')} isPressedState={true} ></Button>
+                    <Button type="Secondary" text={content.AcademicButton1} onPress={() => navigation.navigate('Undergraduate')} isPressedState={true} ></Button>
                 </View>
                 <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                    <Button type="Secondary" text={"Graduate"} onPress={() => navigation.navigate('Graduate')}></Button>
+                    <Button type="Secondary" text={content.AcademicButton2} onPress={() => navigation.navigate('Graduate')}></Button>
                 </View>
                     <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                <Button type="Secondary" text={"2+2 program"} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
+                <Button type="Secondary" text={content.AcademicButton3} onPress={() => navigation.navigate('2 + 2 program')}></Button> 
                 </View>
                 <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                    <Button type="Secondary" text={"Exchange student Program"} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
+                    <Button type="Secondary" text={content.AcademicButton4} numberOfLines={2} style={{width: width * 0.13}} onPress={() => navigation.navigate('Exchange student Program')}></Button>
                 </View>
-                <Button type="Secondary" text={"Academic Calendar"} onPress={() => navigation.navigate('Academic Calendar')}></Button>
+                <Button type="Secondary" text={content.AcademicButton5} onPress={() => navigation.navigate('Academic Calendar')}></Button>
             </View>
         </View>
         <View style={{width: width * 0.52, marginLeft: width * 0.02, marginBottom: height * 0.1}}>
-            <FONT type="Subtitle2" style={{fontSize: 23}}>Degree Programs</FONT>
-            <FONT type="Body" style={{ marginTop: width * 0.016, fontSize: 18}}>MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity. </FONT>
+            <FONT type="Subtitle2" style={{fontSize: 23}}>{content.DegreeProgram}</FONT>
+            <FONT type="Body" style={{ marginTop: width * 0.016, fontSize: 18}}>{content.DegreeDescription}</FONT>
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: '2%'}}>
-                <FONT type="Subtitle2" style={{fontSize: 23}} >School of Management (SoM)</FONT>    
+                <FONT type="Subtitle2" style={{fontSize: 23}} >{content.SomTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={"Department of Business Administration"} style={{color: '#000000', marginTop: width * 0.01}} onPress={()=>navigation.navigate('Bachelor BA')}></Button>
-                <Button type="Seven" text={"Department of Hotel & Tourism Management"} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015,}} onPress={()=>navigation.navigate('Bachelor HTM')}></Button>
+                <Button type="Seven" text={content.BAButton} style={{color: '#000000', marginTop: width * 0.01}} onPress={()=>navigation.navigate('Bachelor BA')}></Button>
+                <Button type="Seven" text={content.HTMButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015,}} onPress={()=>navigation.navigate('Bachelor HTM')}></Button>
             </View> 
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: width * 0.02}}>
-                <FONT type="Subtitle2" style={{fontSize: 23}} >School of Computing Science (SoCS)</FONT>    
+                <FONT type="Subtitle2" style={{fontSize: 23}} >{content.SoCSTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={"Department of Sofware Engineering (SE)"} style={{color: '#000000', marginTop:width *0.01,}} onPress={()=>navigation.navigate('Bachelor SE')}></Button>
-                <Button type="Seven" text={"Department of Computer Science (CS)"} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=>navigation.navigate('Bachelor CS')}></Button>
+                <Button type="Seven" text={content.SEButton} style={{color: '#000000', marginTop:width *0.01,}} onPress={()=>navigation.navigate('Bachelor SE')}></Button>
+                <Button type="Seven" text={content.CSButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=>navigation.navigate('Bachelor CS')}></Button>
             </View> 
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: width * 0.02}}>
-                <FONT type="Subtitle2" style={{fontSize: 23}}>School of International Studies and Communication (SoISC)</FONT>    
+                <FONT type="Subtitle2" style={{fontSize: 23}}>{content.SoISCTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={"Department of International Relations (IR)"} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('Bachelor IR')}></Button>
-                <Button type="Seven" text={"Department of Media & Communication (MC)"} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}}  onPress={()=>navigation.navigate('Bachelor MC')}></Button>
+                <Button type="Seven" text={content.IRButton} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('Bachelor IR')}></Button>
+                <Button type="Seven" text={content.MCButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}}  onPress={()=>navigation.navigate('Bachelor MC')}></Button>
             </View>
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: width * 0.02}}>
-                <FONT type="Subtitle2" style={{fontSize: 23}} >Programs</FONT>    
+                <FONT type="Subtitle2" style={{fontSize: 23}} >{content.ProgramTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={"Department of English Education (EE)"} style={{color: '#000000', marginTop:width *0.01}} onPress={()=>navigation.navigate('Bachelor EE')}></Button>
-                <Button type="Seven" text={"Department of Fashion Design (FD)"} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=> navigation.navigate('Bachelor FD')}></Button>
+                <Button type="Seven" text={content.EEButton} style={{color: '#000000', marginTop:width *0.01}} onPress={()=>navigation.navigate('Bachelor EE')}></Button>
+                <Button type="Seven" text={content.FDButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=> navigation.navigate('Bachelor FD')}></Button>
             </View>
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={"Department of Music Education (ME)"} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('Bachelor ME')}></Button>
+                <Button type="Seven" text={content.MEButton} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('Bachelor ME')}></Button>
             </View>
             
         </View>

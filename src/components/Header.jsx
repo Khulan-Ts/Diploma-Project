@@ -2,31 +2,57 @@ import React from "react";
 import { View, StyleSheet, Image, Pressable, useWindowDimensions } from "react-native";
 import Button from "./Button";
 
-
 const Header = ({ 
   type, 
   buttontext,
   logoOnPress,
   ButtonPress,
   onTranslatePress,
-  isTranslated,
+  language,
   style,
 }) => {
   const { width, height } = useWindowDimensions();
 
   const containerStyle = [
     styles.container,
-    {paddingLeft: width * 0.1,
-    paddingRight: width * 0.1,
-    paddingTop: width * 0.02,
-    paddingBottom: width * 0.02,
-    height: width * 0.08
+    {
+      paddingLeft: width * 0.1,
+      paddingRight: width * 0.1,
+      paddingTop: width * 0.02,
+      paddingBottom: width * 0.02,
+      height: width * 0.08
     },
     style
-  ]
+  ];
+
+  const getLanguageButtonImage = (lang) => {
+    switch (lang) {
+      case 'mn':
+        return require("../../assets/icons/MN_flag.png");
+      case 'ru':
+        return require("../../assets/icons/RU_flag.png");
+      case 'en':
+      default:
+        return require("../../assets/icons/EN_flag.png");
+    }
+  };
+
+  const getAvailableLanguages = () => {
+    switch (language) {
+      case 'mn':
+        return ['en', 'ru'];
+      case 'ru':
+        return ['en', 'mn'];
+      case 'en':
+      default:
+        return ['mn', 'ru'];
+    }
+  };
+
+  const [lang1, lang2] = getAvailableLanguages();
 
   return (
-      <View style={containerStyle}>
+    <View style={containerStyle}>
       <Pressable onPress={logoOnPress}>
         <Image
           source={require("../../assets/images/logo-1.png")}
@@ -35,7 +61,7 @@ const Header = ({
         />
       </Pressable>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
-        <Button
+      <Button
           type={type}
           text={buttontext[0]}
           style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
@@ -59,14 +85,19 @@ const Header = ({
           style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
           onPress={ButtonPress[3]}
         />
+        
         <Button
           type={type}
-          img={isTranslated ? require("../../assets/icons/EN_flag.png"): require("../../assets/icons/MN_flag.png")}
-          style={{ height: width * 0.036, borderRadius: 0 }}
-          onPress={onTranslatePress}
+          img={getLanguageButtonImage(lang1)}
+          style={{ marginRight: width * 0.01, height: width * 0.036, borderRadius: 0 }}
+          onPress={() => onTranslatePress(lang1)}
         />
-        
-       
+        <Button
+          type={type}
+          img={getLanguageButtonImage(lang2)}
+          style={{ height: width * 0.036, borderRadius: 0 }}
+          onPress={() => onTranslatePress(lang2)}
+        />
       </View>
     </View>
   );
@@ -82,8 +113,5 @@ const styles = StyleSheet.create({
     top: 0,
     width: "100%",
     justifyContent: "space-between",
-    zIndex: 99
   },
-  
-  
 });
