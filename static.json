@@ -16,7 +16,157 @@
       "undergradImage": "./assets/images/homepage/h1.png",
       "graduateImage": "./assets/images/homepage/h2.png"
     },
+
+    "twoplus2Img":{
+      "albanyImg": "./assets/images/albany.png",
+      "introduction": "./assets/images/2p2introduction.png"
+    },
+
+    "exchangeImg":{
+      "Universities": "./assets/images/exchangeuni.png"
+    },
+
+    "academicImg":{
+      "cal1": "./assets/images/calendar-1.png",
+      "cal2": "./assets/images/calendar-2.png",
+      "cal3": "./assets/images/calendar-3.png",
+      "cal4": "./assets/images/calendar-4.png"
+
+    },
     
+    "homepageEN": {
+      "title1": "welcome to MIU",
+      "title2": "Educating Global Servant Leaders of Tomorrow",
+      
+      "hoverText1": "International Faculty",
+      "hoverText2": "International Students",
+      "hoverText3": "Taught in English",
+      "hoverNum1": "77%",
+      "hoverNum2": "34%",
+      "hoverNum3": "100%",
+      
+      "historyTitle": "The Most Global and Dynamic University in Mongolia",
+      "historyBodyText": "MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia. With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received freeland of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university providing English-Speaking higher education in Central Asia. MIU currently offers 14 recognized bachelor’s programs and is committed to providing a world-class education to tomorrow’s global servant leaders from Mongolia, Russia, China, Republic of Korea, and other nations.",
+      
+      "undergradTitle": "UNDERGRADUATE MAJORS",
+      "undergradDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+      "undergradFact": "85% employed within months of graduation",
+      "undergradButton": "Explore Undergraduate Programs",
+
+      "graduateTitle": "GADUATE MAJORS",
+      "graduateDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+      "graduateFact": "345+ MIU student studies abroad",
+      "graduateButton": "Exlpore Graduate Programs",
+
+      "FourReasonsTitle1": "4 REASONS",
+      "FourReasonsTitle2": "to study at MIU",
+      "FourReasonsReason1": "1. All courses are taught in 100% English",
+      "FourReasonsReason2": "2. Opportunity to learn international cultures",
+      "FourReasonsReason3": "3. A globally recognized expert",
+      "FourReasonsReason4": "4. Accessible education",
+
+      "ApplyNow": "APPLY NOW",
+      "ApplyText": "Are you ready to take the next step toward your future career?",
+      "ApplyButton": "Application Form"
+  },
+
+  "undergraduateEN": {
+      "AcademicTitle": "Academics",
+      "AcademicButton1": "Undergraduate",
+      "AcademicButton2": "Graduate",
+      "AcademicButton3": "2+2 program",
+      "AcademicButton4": "Exchange student Program",
+      "AcademicButton5": "Academic Calendar",
+
+      "DegreeProgram": "Degree Programs",
+      "DegreeDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+
+      "SomTitle": "School of Management (SOM)",
+      "BAButton":  "Department of Business Administration",
+      "HTMButton": "Department of Hotel & Tourism Management",
+
+      "SoCSTitle": "School of Computing Science (SoCS)",
+      "SEButton": "Department of Sofware Engineering (SE)",
+      "CSButton": "Department of Computer Science (CS)",
+
+      "SoISCTitle": "School of International Studies and Communication (SoISC)",
+      "IRButton": "Department of International Relations (IR)",
+      "MCButton": "Department of Media & Communication (MC)",
+
+      "ProgramTitle": "Programs",
+      "EEButton": "Department of English Education (EE)",
+      "FDButton": "Department of Fashion Design (FD)",
+      "MEButton": "Department of Music Education (ME)"
+  },
+
+  "graduateEN": {
+    "AcademicTitle": "Academics",
+    "AcademicButton1": "Undergraduate",
+    "AcademicButton2": "Graduate",
+    "AcademicButton3": "2+2 program",
+    "AcademicButton4": "Exchange student Program",
+    "AcademicButton5": "Academic Calendar",
+
+    "DegreeProgram": "Master Programs",
+    "DegreeDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
+
+    "SomTitle": "School of Management (SOM)",
+    "MBAButton":  "Master in Business Administration (MBA)",
+
+    "SoCSTitle": "School of Computing Science (SoCS)",
+    "MSEButton": "Master of Sofware Engineering (MSE)",
+
+    "SoISCTitle": "School of International Studies and Communication (SoISC)",
+    "MPAButton": "Master in Public Administration (MPA)",
+
+    "ProgramTitle": "Programs",
+    "FLEButton": "Master In Foreign Language Education (FLE)"
+  },
+
+  "twoplus2EN": {
+    "AcademicTitle": "Academics",
+    "AcademicButton1": "Undergraduate",
+    "AcademicButton2": "Graduate",
+    "AcademicButton3": "2+2 program",
+    "AcademicButton4": "Exchange student Program",
+    "AcademicButton5": "Academic Calendar",
+
+    "Introduction": "INTRODUCTION",
+
+    "QualificationTitle": "QULAIFICATIONS",
+    "Qualification1": "• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU",
+    "Qualification2": "• GPA: 3.4/4.0 or higher",
+    "Qualification3": "• English Test: TOEFL IBT 70 or IELTS 6.0 or above",
+
+    "ExpensesTitle": "EXPENSES",
+    "Expenses1": "• 1 year Tuition: USD 28,350",
+    "Expenses2": "• 1 year Dormitory: USD 13,882",
+    "Expenses3": "• Total: USD 42,132"
+  },
+
+  "exchangeEN":{
+    "AcademicTitle": "Academics",
+    "AcademicButton1": "Undergraduate",
+    "AcademicButton2": "Graduate",
+    "AcademicButton3": "2+2 program",
+    "AcademicButton4": "Exchange student Program",
+    "AcademicButton5": "Academic Calendar",
+
+    "ProgramTitle": "Degree Program",
+    "ProgramDescription": "“Undergraduate students have the chance to study abroad as an exchange student at several prestigious universities in the Republic of Korea. Our partnering universities range from public and private universities and depending on the partnering universities, students enjoy various scholarships and additional benefits. Students are eligible to study abroad during the Spring and Fall semesters of their Sophomore and Junior year, or the Fall semester of their Senior year.”",
+
+    "ContactTitle": "Exchange Program Contact Emails:",
+    "ContactEmail": "student2@miu.edu.mn{'\n'}dir_student@miu.edu.mn"
+  },
+
+  "academicEN":{
+    "AcademicTitle": "Academics",
+    "AcademicButton1": "Undergraduate",
+    "AcademicButton2": "Graduate",
+    "AcademicButton3": "2+2 program",
+    "AcademicButton4": "Exchange student Program",
+    "AcademicButton5": "Academic Calendar"
+  },
 
     "lei_teachers": [
       { "id": 1, "image": "./assets/images/lei_teachers/1.png", "name": "teacher #1" },

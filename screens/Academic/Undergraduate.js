@@ -3,7 +3,7 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
-import en from "../../staticEN.json";
+import en from "../../static.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 

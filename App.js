@@ -81,9 +81,15 @@ const App = () => {
         <Stack.Screen name="Graduate">
           {props => <Graduate {...props} language={language} />}
         </Stack.Screen> 
-        <Stack.Screen name="2 + 2 program" component={Twoplus2} />
-        <Stack.Screen name="Exchange student Program" component={Exchange} /> 
-        <Stack.Screen name="Academic Calendar" component={AcademicCal} />
+        <Stack.Screen name="2 + 2 program">
+          {props => <Twoplus2 {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Exchange student Program">
+          {props => <Exchange {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Academic Calendar" >
+          {props => <AcademicCal {...props} language={language} />}
+        </Stack.Screen> 
         <Stack.Screen name="Dorm" component={Dorm} /> 
         <Stack.Screen name="English Foundation Course" component={Lei_1} />
         <Stack.Screen name="English Evening Course" component={Lei_2} />

@@ -66,7 +66,7 @@
     },
 
     "graduateMN": {
-        "AcademicTitle": "Academics",
+        "AcademicTitle": "Академик",
         "AcademicButton1": "Undergraduate",
         "AcademicButton2": "Graduate",
         "AcademicButton3": "2+2 program",
@@ -87,5 +87,49 @@
   
         "ProgramTitle": "Programs",
         "FLEButton": "Master In Foreign Language Education (FLE)"
-    }
+    },
+
+    "twoplus2MN": {
+        "AcademicTitle": "Академик",
+        "AcademicButton1": "Undergraduate",
+        "AcademicButton2": "Graduate",
+        "AcademicButton3": "2+2 program",
+        "AcademicButton4": "Exchange student Program",
+        "AcademicButton5": "Academic Calendar",
+    
+        "Introduction": "INTRODUCTION",
+    
+        "QualificationTitle": "QULAIFICATIONS",
+        "Qualification1": "• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU",
+        "Qualification2": "• GPA: 3.4/4.0 or higher",
+        "Qualification3": "• English Test: TOEFL IBT 70 or IELTS 6.0 or above",
+    
+        "ExpensesTitle": "EXPENSES",
+        "Expenses1": "• 1 year Tuition: USD 28,350",
+        "Expenses2": "• 1 year Dormitory: USD 13,882",
+        "Expenses3": "• Total: USD 42,132"
+    },
+
+    "exchangeMN":{
+        "AcademicTitle": "Академик",
+        "AcademicButton1": "Undergraduate",
+        "AcademicButton2": "Graduate",
+        "AcademicButton3": "2+2 program",
+        "AcademicButton4": "Exchange student Program",
+        "AcademicButton5": "Academic Calendar",
+    
+        "ProgramTitle": "Degree Program",
+        "ProgramDescription": "“Undergraduate students have the chance to study abroad as an exchange student at several prestigious universities in the Republic of Korea. Our partnering universities range from public and private universities and depending on the partnering universities, students enjoy various scholarships and additional benefits. Students are eligible to study abroad during the Spring and Fall semesters of their Sophomore and Junior year, or the Fall semester of their Senior year.”",
+    
+        "ContactTitle": "Exchange Program Contact Emails:",
+        "ContactEmail": "student2@miu.edu.mn{'\n'}dir_student@miu.edu.mn"
+    },
+    "academicMN":{
+        "AcademicTitle": "Академик",
+        "AcademicButton1": "Undergraduate",
+        "AcademicButton2": "Graduate",
+        "AcademicButton3": "2+2 program",
+        "AcademicButton4": "Exchange student Program",
+        "AcademicButton5": "Academic Calendar"
+      }
 }

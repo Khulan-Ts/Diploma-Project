@@ -7,7 +7,6 @@ import OverlayImage from "./src/components/OverlayImage";
 import HoverButton from "./src/components/hoverButtons";
 import Footer from "./src/components/footer";
 import data from "./static.json";
-import en from "./staticEN.json";
 import mn from "./staticMN.json";
 import ru from "./staticRU.json";
 
@@ -15,7 +14,7 @@ const HomeScreen = ({ navigation, language }) => {
   const { width } = useWindowDimensions();
   const { apply } = data.links;
   const homepageImg = data.hompageImg;
-  const homepageEN = en.homepageEN;
+  const homepageEN = data.homepageEN;
   const homepageMN = mn.homepageMN;
   const homepageRU = ru.homepageRU;
 
