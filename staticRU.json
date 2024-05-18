@@ -129,6 +129,206 @@
         "AcademicButton3": "2+2 program",
         "AcademicButton4": "Exchange student Program",
         "AcademicButton5": "Academic Calendar"
+    },
+    "dormRU":{
+        "dormTitle": "GLOBAL RESIDENCE (DORMITORY): LOCATED ON MIU'S CAMPUS",
+        "dormDescription": "MIU believes that the first year of university is crucial in building a successful university life and that the MIU Global Residence will support all freshmen to swiftly adjust to campus life, develop their four-year academic plan, and offer all MIU freshmen to live in a close-knit environment for academic, cultural, and social interactions and development. All freshmen are required to live in the dormitory on campus for their first year. Established in 2017, the dormitory is equipped with a kitchen, laundry facilities, internet access, and more. This building can house more than 200 students. While upperclassmen students are allowed to live in the Global Residence, freshmen students are given first priority. The Global Residence is led by the Dormitory Manager and upperclassmen students to ensure that freshmen are safe and healthy. ",
+        
+        "roomtypeTitle": "Тип номера",
+        "roomtype1": "Room Type A: Big Room with 4 students",
+        "roomtype2": "Room Type B: Medium Room with 4 students",
+        "roomtype3": "Room Type C: Small Room with 2 students",
+        
+        "housingfeeTitle": "Housing Fee (₮)",
+        "housingfee1": "₮750,000",
+        "housingfee2": "₮750,000",
+        "housingfee3": "₮750,000",
+    
+        "durationTitle": "Duration",
+        "duration": "A full semester (3 months)",
+    
+        "contactTitle": "Contact us",
+        "contact": "dir_student@miu.edu.mn.",
+    
+        "ApplyButton": "APPLY"
+    },
+
+    "leiRU":{
+        "leiTitle": "LANGUAGE EDUCATION INSTITUTE",
+        "leiDescription": "LEI is a language school that focuses on English for daily life, education, and business communication. Students of all ages and nationalities can participate in our communicative program and learn all language skills – speaking, reading,writing, and listening. Our teachers are highly skilled and trained to use activities and speaking structures to help students engage with the language and practice with their classmates. We believe in active classrooms where students have the opportunity to engage in the language they are learning, and in combining all language skills together to increase learning and retention. We always seek to use the new methods and research in teaching foreign languages, and we keep our teachers up to date with regular training and observations.",
+    
+        "leiButton1": "English Foundation Course",
+        "leiButton2": "English Evening Course",
+        "leiButton3": "Business English Course",
+        "leiButton4": "Mongolian Course",
+        "leiButton5": "Additional Language Course",
+    
+        "durationTitle": "Продолжительность",
+        "duration": "1 year / Full-time",
+    
+        "lei2duration": "12 weeks / Onsite",
+    
+        "intakeTitle": "Intakes",
+        "intake": "August -  September",
+    
+        "lei2DaysTitle": "Days",
+        "days": "Monday - Thursday",
+    
+        "ApplyButton": "APPLY",
+        "meetourTeachers": "meet our teachers",
+    
+        "lei1description": "Our English Foundation Course is the heart of LEI. It is a immersive English program that brings together students from multiple countries and works through activities, speaking structures, and other interactive coursework to help students improve their English. This course is made for recent high school graduates who wish to improve their English level in order to study at MIU. However, this program is available to anyone who wants to improve their English level and is recommended for all beginners and intermediate level students who plan to use English to study or work.",
+        
+        "lei2description1": "Our evening English courses are targeted at working adults who wish to continue learning or improve their English for business purposes. It is a part-time, immersive English program that takes students of all levels and works through activities, speaking structures, and other interactive coursework to help students improve their English conversation, listening, reading, and writing. This course is also recommended for high school juniors and seniors who are preparing for IELTS, TOEFL, and YESH tests.",
+        "lei2description2": "Evening 6:30 – 8:15.",
+        
+        "lei3description": "This course is perfect for businesses that want to improve their employee’s English level for international business and customer service. The program is customizable to the individual company’s needs with options for days, times, and levels. Companies can pay a testing fee to have their employee’s leveled, and then work with LEI office staff to organize a program with 1-2 qualified teachers who will come to the office during business hours or at a convenient time throughout the week to teach a 10 week business English course.",
+    
+        "lei4description": "This program is a very flexible tutoring program to help students learn or improve their Mongolian language. For true beginners, we recommend a survival course program of 12 weeks, that covers basic elements of Mongolian such as alphabet (reading and pronunciation) and daily phrases. For students who wish to study more, we have level 1 (beginner) and level 2 (intermediate) programs to improve communication and help with day-to-day tasks. All classes are taught by native Mongolian speakers and use interactive classroom methods to get the student involved and help with memory. Most classes have between 1-5 students.",
+    
+        "lei5description": "LEI also offers classes in Russian and Korean languages upon request. Because of smaller classes and limited need, these classes must be requested and scheduled in advance. Classes require a minimum of 5 students to open, and the time must be arranged with the teacher."
+      },
+      "aboutusRU": {
+        "AboutUsTitle": "О нас",
+        "AboutUsButton1": "Greetings",
+        "AboutUsButton2": "Our people",
+        "AboutUsButton3": "Plan and report",
+        "AboutUsButton4": "Giving information",
+    
+        "PresidentMessageTitle": "Message from the President",
+        "PresidentMessage1": "“It is my privilege to introduce you to Mongolia International University (MIU). The mission of our school is to equip our students with a quality education and character development, preparing them to be leaders of integrity in the 21st century. MIU is a vibrant community where students have the opportunity to complete studies in a variety of academic fields. Through the investment of our international faculty and staff and our close-knit environment of instructors, mentors, and advisors, students will feel they are part of a family. They will be equipped with the skills and knowledge necessary to achieve great scholarly work.",
+        "PresidentMessage2": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity. Most importantly, MIU is preparing a generation of distinctive leaders with the qualities of heart and character to serve their own people, nation, and the world. MIU will accompany you and take you one step closer to the portal of your future. ”",
+    
+        "VisionTitle": "Vision Statement",
+        "hoverText1": "Fostering Excellence",
+        "hoverText2": "Sustainable Future",
+        "hoverText3": "Innovative Research",
+        "hoverText4": "Global Impact",
+    
+        "hoverDescr1": "Our vision is to be an icon of academic excellence, inspring students to react new heights in their learning journey",
+        "hoverDescr2": "championing sustainability practices, ensuring a gree-ner, more environmentally responsible future for gene-rations to come.",
+        "hoverDescr3": "We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries",
+        "hoverDescr4": "We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries"
+      },
+      "ourPeopleRU":{
+        "AboutUsTitle": "About Us",
+        "AboutUsButton1": "Greetings",
+        "AboutUsButton2": "Our people",
+        "AboutUsButton3": "Plan and report",
+        "AboutUsButton4": "Giving information",
+    
+        "LeadershipTitle": "LEADERSHIP",
+        "PresidentName": "OH MOON KWON",
+        "PresidentOccu": "President",
+        "VicePresName": "HUH KWON",
+        "VicePresOccu": "Vice President",
+    
+        "PresidentOfficeTitle": "PRESIDENT OFFICE",
+        "PresidentOfficeName1": "BILGUUN ENKHAMGALAN",
+        "PresidentOfficeOccu1": "Director of Finance Office",
+        "PresidentOfficeName2": "SUMIYA ENKHCHIMEG",
+        "PresidentOfficeOccu2": "Secretary",
+        "PresidentOfficeName3": "ENKHSUREN ERDENBAT",
+        "PresidentOfficeOccu3": "Project Manager",
+        "PresOfficeName1": "DEAN",
+        "PresOfficeOccu1": "Dean of Planning Affairs",
+        "PresOfficeName2": "SELENGE JAMIYANDORJ",
+        "PresOfficeOccu2": "Human Recource Manager",
+        "PresOfficeName3": "ICHINKHORLOO LOSOL",
+        "PresOfficeOccu3": "Lawyer",
+        "PresOfficeName4": "ABIGAIL JACOBOVSKY",
+        "PresOfficeOccu41": "International Recruiting",
+        "PresOfficeOccu42": "Staff & Dorm Manager",
+        "PresOfficeName5": "UYANGA. D",
+        "PresOfficeOccu5": "Cashier",
+        "PresOfficeName6": "RUVIM ANDRYECHENKO",
+        "PresOfficeOccu61": "Director of Information",
+        "PresOfficeOccu62": "Communication Center",
+        "PresOfficeName7": "PURVEE DASHBALJIR",
+        "PresOfficeOccu71": "Software Engineer of",
+        "PresOfficeOccu72": "Information Communication Center",
+        "PresOfficeName8": "DANIEL ANDREYCHENKO",
+        "PresOfficeOccu81": "Software Engineer of",
+        "PresOfficeOccu82": "Information Communication Center",
+    
+        "AcademicStudentAffairsTitle": "ACADEMIC & STUDENT AFFAIRS",
+        "AcademicStudentAffairsName1": "Name",
+        "AcademicStudentAffairsOccu1": "Occupation",
+        "AcademicStudentAffairsName2": "Name",
+        "AcademicStudentAffairsOccu2": "Occupation",
+        "AcademicStudentAffairsName3": "Name",
+        "AcademicStudentAffairsOccu3": "Occupation",
+        "AcademicStudentAffairsName4": "Name",
+        "AcademicStudentAffairsOccu4": "Occupation",
+        "AcademicStudentAffairsName5": "Name",
+        "AcademicStudentAffairsOccu5": "Occupation",
+        "AcademicStudentAffairsName6": "Name",
+        "AcademicStudentAffairsOccu6": "Occupation",
+        "AcademicStudentAffairsName7": "Name",
+        "AcademicStudentAffairsOccu7": "Occupation",
+        "AcademicStudentAffairsName8": "Name",
+        "AcademicStudentAffairsOccu8": "Occupation",
+        "AcademicStudentAffairsName9": "Name",
+        "AcademicStudentAffairsOccu9": "Occupation",
+        "AcademicStudentAffairsName10": "Name",
+        "AcademicStudentAffairsOccu10": "Occupation",
+    
+        "ExternalAdmissionAffairsTitle": "EXTERNAL & ADMISSION AFFAIRS",
+        "ExternalAdmisssionAffairsName1": "Name",
+        "ExternalAdmisssionAffairsOccu1": "Occupation",
+        "ExternalAdmisssionAffairsName2": "Name",
+        "ExternalAdmisssionAffairsOccu2": "Occupation",
+        "ExternalAdmisssionAffairsName3": "Name",
+        "ExternalAdmisssionAffairsOccu3": "Occupation",
+        "ExternalAdmisssionAffairsName4": "Name",
+        "ExternalAdmisssionAffairsOccu4": "Occupation",
+        "ExternalAdmisssionAffairsName5": "Name",
+        "ExternalAdmisssionAffairsOccu5": "Occupation"
+      },
+      "planReportRU":{
+        "AboutUsTitle": "О нас",
+        "AboutUsButton1": "Greetings",
+        "AboutUsButton2": "Our people",
+        "AboutUsButton3": "Plan and report",
+        "AboutUsButton4": "Giving information",
+    
+        "StategicPlanTitle": "STATEGIC PLAN",
+        "AccredationTitle": "ACCREDITATION"
+      },
+      "givingInfoRU":{
+        "AboutUsTitle": "About Us",
+        "AboutUsButton1": "Greetings",
+        "AboutUsButton2": "Our people",
+        "AboutUsButton3": "Plan and report",
+        "AboutUsButton4": "Giving information",
+    
+        "FundTitle": "Please Consider Making a Gift to the Annual Fund",
+        "FundDescription": "Your support now, with a donation of any amount, is vital to ensure we have the resources to continue to honor our vision to be the preeminent intellectual and creative center for effective engagement in a world that increasingly demands better-designed objects, communication, systems, and organizations to meet social needs.",
+    
+        "SupportTitle": "Support Our School",
+        "Support1": "• Improving Learning and Teaching environment",
+        "Support2": "• Encouraging Student and Faculty research programs",
+    
+        "SupportStudentTitle": " Supporting Students' Well-being",
+        "SupportStudent": "At a time of great crisis, dislocation, and financial strain, we must redouble our longstanding investment in support and resources to ensure that every student can thrive. Our strength as an institution is inextricably linked to the strength of our students—and your gift to support the following programs is the single most direct way you can invest in.",
+        
+        "SKBankTitle": "South Korea – Bank Account Information:",
+        "SKBankInfo1": "BANK ACCOUNT INFORMATION : (REPUBLIC OF KOREA)",
+        "SKBankInfo2": "계좌명:  사단법인 실크로드희망교육개발연대",
+        "SKBankInfo3": "계좌은행 및 번호:                                    하나은행 / 588-910018-82804",
+    
+        "MNBankTitle": "Mongolia – Bank Account Information:",
+        "MNBeneNameTitle": "Beneficiary’s Name:",
+        "MNBeneName": "Эм Ай Ю дээд сургууль",
+        "MNBeneBankTitle": "Beneficiary’s Bank:",
+        "MNBeneBank": "Khan Bank",
+        "MNBeneAccountTitle": "Beneficiary’s Account /MNT/",
+        "MNBeneAccount": "5720485207",
+        "MNSwiftCodeTitle": "Bank SWIFT Code:",
+        "MNSwiftCode": "AGMOMNUB",
+        "MNBankAddressTitle": "Bank Address:",
+        "MNBankAddress1": " Khan Bank Tower, Chinggis Avenue-6, Stadium Orgil-1, Khan-Uul District,",
+        "MNBankAddress2": "Ulaanbaatar 17010, Mongolia"
       }
 
 }

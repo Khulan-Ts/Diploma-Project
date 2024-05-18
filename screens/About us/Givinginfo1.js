@@ -3,9 +3,28 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
+import data from "../../static.json";
+import mn from "../../staticMN.json";
+import ru from "../../staticRU.json";
 
-const GivingInfo = ({ navigation }) => {
+const GivingInfo = ({ navigation, language }) => {
   const { width, height } = useWindowDimensions();
+  const givingInfoEN = data.givingInfoEN;
+  const givingInfoMN = mn.givingInfoMN;
+  const givingInfoRU = ru.givingInfoRU;
+
+  let content;
+    switch (language){
+    case 'mn':
+      content = givingInfoMN;
+      break;
+    case 'ru':
+      content = givingInfoRU;
+      break;
+    case 'en':
+      content = givingInfoEN;
+      break;
+  }
   return (
     <ScrollView
       style={styles.container}
@@ -16,44 +35,44 @@ const GivingInfo = ({ navigation }) => {
         </View>
         <View style={{ width: '18%' }}>
               <View style={{ borderBottomWidth: width * 0.0008, width: '80%', paddingBottom: width * 0.01, paddingLeft: width * 0.007}}>
-                <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>About us</FONT>
+                <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>{content.AboutUsTitle}</FONT>
               </View>
               <View style={{marginTop: '5%'}}>
                   <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                      <Button type="Secondary" text={"Greetings"} onPress={() => navigation.navigate('About us')}></Button>
+                      <Button type="Secondary" text={content.AboutUsButton1} onPress={() => navigation.navigate('About us')}></Button>
                   </View>
                   <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                      <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
+                      <Button type="Secondary" text={content.AboutUsButton2} onPress={() => navigation.navigate('Our people')}></Button>
                   </View>
                       <View style={{borderBottomWidth: width * 0.0008, width: '70%'}}>
-                  <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')}></Button> 
+                  <Button type="Secondary" text={content.AboutUsButton3} onPress={() => navigation.navigate('Plan and Report')}></Button> 
                   </View>
-                  <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Giving Information')} isPressedState={true}></Button>
+                  <Button type="Secondary" text={content.AboutUsButton4} onPress={() => navigation.navigate('Giving Information')} isPressedState={true}></Button>
               </View>
         </View>
         <View style={{ flexDirection: 'column' }}>
           <View style={{ width: width * 0.6, height: width * 0.12, marginTop: 20, backgroundColor: '#EDF0FF', padding: width * 0.01 }}>
             <FONT type='Title2' style={{ color: '#3D2562', fontSize: 23 }}>
-              Please Consider Making a Gift to the Annual Fund
+              {content.FundTitle}
             </FONT>
-            <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}>Your support now, with a donation of any amount, is vital to ensure we have the resources to continue to honor our vision to be the preeminent intellectual and creative center for effective engagement in a world that increasingly demands better-designed objects, communication, systems, and organizations to meet social needs.</FONT>
+            <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}>{content.FundDescription}</FONT>
           </View>
         </View>
         <View style={{ width: width * 0.78, height: width * 0.16, marginTop: width * 0.17, marginLeft: width * 0.11, position: 'absolute' }}>
           <FONT type='Title2' style={{ color: '#3D2562', fontSize: 20 }}>
-            Support Our School
+            {content.SupportTitle}
           </FONT>
-          <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}> • Improving Learning and Teaching environment</FONT>
-          <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}> • Encouraging Student and Faculty research programs</FONT>
+          <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}> {content.Support1}</FONT>
+          <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}> {content.Support2}</FONT>
           <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}> </FONT>
 
-          <FONT type='Title2' style={{ color: '#3D2562', fontSize: 20 }}> Supporting Students' Well-being </FONT>
-          <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}> At a time of great crisis, dislocation, and financial strain, we must redouble our longstanding investment in support and resources to ensure that every student can thrive. Our strength as an institution is inextricably linked to the strength of our students—and your gift to support the following programs is the single most direct way you can invest in. </FONT>
+          <FONT type='Title2' style={{ color: '#3D2562', fontSize: 20 }}> {content.SupportStudentTitle} </FONT>
+          <FONT style={{ marginTop: width * 0.005, color: '#3D2562', fontSize: 18 }}>{content.SupportStudent}</FONT>
           <View style={{ width: width * 0.26, marginLeft: '0%' }}>
             <View style={{ flexDirection: 'row', }}>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: "9%", padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
                 <FONT type={"Title3"} style={{ fontSize: 15 }}>
-                  South Korea – Bank Account Information:
+                  {content.SKBankTitle}
                 </FONT>
               </View>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: "9%", padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
@@ -63,22 +82,22 @@ const GivingInfo = ({ navigation }) => {
             <View style={{ flexDirection: 'row', }}>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: -2, padding: width * 0.01 }}>
                 <FONT type={"Body"} style={{ fontSize: 13}}>
-                  BANK ACCOUNT INFORMATION : (REPUBLIC OF KOREA)
+                  {content.SKBankInfo1}
                 </FONT>
               </View>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: -2, padding: width * 0.01 }}>
                 <FONT type={"Body"}style={{ fontSize: 13}}>
-                  계좌명:  사단법인 실크로드희망교육개발연대
+                {content.SKBankInfo2}
                 </FONT>
                 <FONT type={"Body"}style={{ fontSize: 13}}>
-                  계좌은행 및 번호:                                    하나은행 / 588-910018-82804
+                {content.SKBankInfo3}
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
                 <FONT type={"Title3"} style={{ fontSize: 15 }}>
-                  Mongolia – Bank Account Information:
+                {content.MNBankTitle}
                 </FONT>
               </View>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.01, padding: width * 0.01, backgroundColor: '#EDF0FF' }}>
@@ -88,63 +107,63 @@ const GivingInfo = ({ navigation }) => {
             <View style={{ flexDirection: 'row', }}>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
                 <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Beneficiary’s Name:
+                {content.MNBeneNameTitle}
                 </FONT>
               </View>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
                 <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Эм Ай Ю дээд сургууль
-                </FONT>
-              </View>
-            </View>
-            <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Beneficiary’s Bank:
-                </FONT>
-              </View>
-              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Khan Bank
+                {content.MNBeneName}
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
                 <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Beneficiary’s Account /MNT/
+                {content.MNBeneBankTitle}
                 </FONT>
               </View>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
                 <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  5720485207
-                </FONT>
-              </View>
-            </View>
-            <View style={{ flexDirection: 'row', }}>
-              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Bank SWIFT Code:
-                </FONT>
-              </View>
-              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
-                <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  AGMOMNUB
+                {content.MNBeneBank}
                 </FONT>
               </View>
             </View>
             <View style={{ flexDirection: 'row', }}>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
                 <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Bank Address:
+                {content.MNBeneAccountTitle}
                 </FONT>
               </View>
               <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
                 <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Khan Bank Tower, Chinggis Avenue-6, Stadium Orgil-1, Khan-Uul District,
+                {content.MNBeneAccount}
+                </FONT>
+              </View>
+            </View>
+            <View style={{ flexDirection: 'row', }}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
+                {content.MNSwiftCodeTitle}
+                </FONT>
+              </View>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
+                {content.MNSwiftCode}
+                </FONT>
+              </View>
+            </View>
+            <View style={{ flexDirection: 'row', }}>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
+                {content.MNBankAddressTitle}
+                </FONT>
+              </View>
+              <View style={{ width: width * 0.39, borderWidth: width * 0.0008, borderColor: '#CDD4FB', marginTop: width * 0.00001, padding: width * 0.01 }}>
+                <FONT type={"Body"}style={{ fontSize: 13 }}>
+                {content.MNBankAddress1}
                 </FONT>
                 <FONT type={"Body"}style={{ fontSize: 13 }}>
-                  Ulaanbaatar 17010, Mongolia
+                {content.MNBankAddress2}
                 </FONT>
               </View>
             </View>

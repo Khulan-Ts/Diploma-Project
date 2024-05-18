@@ -4,10 +4,29 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
 import Pamphlet from "../../src/components/pamphlet";
+import data from "../../static.json";
+import mn from "../../staticMN.json";
+import ru from "../../staticRU.json";
 
-const PlanReport = ({ navigation }) => {
+const PlanReport = ({ navigation, language }) => {
   const { width, height } = useWindowDimensions();
+  const planReportImg = data.planReportImg;
+  const planReportEN = data.planReportEN;
+  const planReportMN = mn.planReportMN;
+  const planReportRU = ru.planReportRU;
 
+  let content;
+    switch (language){
+    case 'mn':
+      content = planReportMN;
+      break;
+    case 'ru':
+      content = planReportRU;
+      break;
+    case 'en':
+      content = planReportEN;
+      break;
+  }
   return (
     <ScrollView style={styles.container}>
       <View style={{ flexDirection: 'row', marginTop:'5%'}}>
@@ -16,24 +35,24 @@ const PlanReport = ({ navigation }) => {
         </View>
           <View style={{width: width * 0.15}}>
               <View style={{ borderBottomWidth: width * 0.0008, paddingBottom: width * 0.01, paddingLeft: width * 0.007}}>
-                <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>About us</FONT>
+                <FONT type="Regular" style={{color: '#000000', fontSize: 28}}>{content.AboutUsTitle}</FONT>
               </View>
               <View style={{marginTop: '5%'}}>
                   <View style={{borderBottomWidth: width * 0.0008, width: '85%'}}>
-                      <Button type="Secondary" text={"Greetings"} onPress={() => navigation.navigate('About us')}></Button>
+                      <Button type="Secondary" text={content.AboutUsButton1} onPress={() => navigation.navigate('About us')}></Button>
                   </View>
                   <View style={{borderBottomWidth: width * 0.0008, width: '85%'}}>
-                      <Button type="Secondary" text={"Our people"} onPress={() => navigation.navigate('Our people')}></Button>
+                      <Button type="Secondary" text={content.AboutUsButton2} onPress={() => navigation.navigate('Our people')}></Button>
                   </View>
                       <View style={{borderBottomWidth: width * 0.0008, width: '85%'}}>
-                  <Button type="Secondary" text={"Plan and report"} onPress={() => navigation.navigate('Plan and Report')} isPressedState={true}></Button> 
+                  <Button type="Secondary" text={content.AboutUsButton3} onPress={() => navigation.navigate('Plan and Report')} isPressedState={true}></Button> 
                   </View>
-                  <Button type="Secondary" text={"Giving information"} onPress={() => navigation.navigate('Giving Information')}></Button>
+                  <Button type="Secondary" text={content.AboutUsButton4} onPress={() => navigation.navigate('Giving Information')}></Button>
               </View>
           </View>
           <View style={{marginLeft: width * 0.02 }}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <FONT type="Title2" style={{fontSize: 25, marginRight: width * 0.01}}>STRATEGIC PLAN</FONT>
+              <FONT type="Title2" style={{fontSize: 25, marginRight: width * 0.01}}>{content.StategicPlanTitle}</FONT>
               <View style={{borderTopWidth: 0.7, borderColor: '#3d2562', width: width * 0.45}}/>
             </View>
             <View style={{marginTop: width* 0.02}}>
@@ -42,17 +61,17 @@ const PlanReport = ({ navigation }) => {
             <View style={{marginLeft: -width * 0.15, marginTop: width * 0.45}}>
               <View style={{flexDirection: 'row', alignItems: 'center'}}>
                 <View style={{borderTopWidth: 0.7, borderColor: '#3d2562', width: width * 0.15}}/>
-                <FONT type="Title2" style={{fontSize: 25, marginRight: width * 0.01, marginLeft: width * 0.01}}>ACCREDITATION</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginRight: width * 0.01, marginLeft: width * 0.01}}>{content.AccredationTitle}</FONT>
                 <View style={{borderTopWidth: 0.7, borderColor: '#3d2562', width: width * 0.445}}/>
               </View>
               <View style={{flexDirection: 'row', marginTop: width * 0.03, backgroundColor: "#EDF0FF", paddingTop: width * 0.02, paddingBottom: width * 0.02, paddingLeft: width * 0.01, paddingRight: width * 0.01}}>
-                <Image source={require("../../assets/images/plan_pamphlet/acc1.png")}
+                <Image source={{uri: planReportImg.accredationImg1}}
                   style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
-                <Image source={require("../../assets/images/plan_pamphlet/acc2.png")}
+                <Image source={{uri: planReportImg.accredationImg2}}
                   style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
-                <Image source={require("../../assets/images/plan_pamphlet/acc3.png")}
+                <Image source={{uri: planReportImg.accredationImg3}}
                   style={{height: width * 0.1283, width: width * 0.18, marginRight: width * 0.01}}/> 
-                <Image source={require("../../assets/images/plan_pamphlet/acc4.png")}
+                <Image source={{uri: planReportImg.accredationImg4}}
                   style={{height: width * 0.1283, width: width * 0.18}}/> 
               </View>
             </View>

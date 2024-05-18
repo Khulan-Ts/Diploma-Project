@@ -90,18 +90,38 @@ const App = () => {
         <Stack.Screen name="Academic Calendar" >
           {props => <AcademicCal {...props} language={language} />}
         </Stack.Screen> 
-        <Stack.Screen name="Dorm" component={Dorm} /> 
-        <Stack.Screen name="English Foundation Course" component={Lei_1} />
-        <Stack.Screen name="English Evening Course" component={Lei_2} />
-        <Stack.Screen name="Business English Course" component={Lei_3} />
-        <Stack.Screen name="Mongolian Course" component={Lei_4} />
-        <Stack.Screen name="Additional Language Course" component={Lei_5} />
-        <Stack.Screen name="About us" component={AboutUs} />
-        <Stack.Screen name="Our people" component={OurPeople} />
-        <Stack.Screen name="Plan and Report" component={PlanReport} />
+        <Stack.Screen name="Dorm">
+          {props => <Dorm {...props} language={language} />}
+        </Stack.Screen>  
+        <Stack.Screen name="English Foundation Course">
+          {props => <Lei_1 {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="English Evening Course">
+          {props => <Lei_2 {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Business English Course">
+          {props => <Lei_3 {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Mongolian Course">
+          {props => <Lei_4 {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Additional Language Course">
+          {props => <Lei_5 {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="About us">
+          {props => <AboutUs {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Our people">
+          {props => <OurPeople {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Plan and Report">
+          {props => <PlanReport {...props} language={language} />}
+        </Stack.Screen> 
+        <Stack.Screen name="Giving Information">
+          {props => <GivingInfo {...props} language={language} />}
+        </Stack.Screen> 
         <Stack.Screen name="Over View" component={Overview} /> 
         <Stack.Screen name="Scholarship" component={Scholarship} />
-        <Stack.Screen name="Giving Information" component={GivingInfo} />
         <Stack.Screen name="How To Apply Graduate" component={Howtoapply_Graduate} />
         <Stack.Screen name="How To Apply UnderGraduate" component={Howtoapply_Under} />
         <Stack.Screen name="Bachelor BA" component={Bachelor_BA} />

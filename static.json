@@ -36,6 +36,45 @@
     "aboutusImg":{
       "presidentImg": "./assets/images/president.png"
     },
+
+    "ourPeopleImg":{
+      "Leadership1": "./assets/images/president2.png",
+      "Leadership2": "./assets/images/huh.png",
+      "PresidentOffice1": "./assets/images/bilguun.png",
+      "PresidentOffice2": "./assets/images/sumiya.png",
+      "PresidentOffice3": "./assets/images/blank.png",
+      "PresOffice1": "./assets/images/blank.png",
+      "PresOffice2": "./assets/images/blank.png",
+      "PresOffice3": "./assets/images/lawyer.png",
+      "PresOffice4": "./assets/images/abigail.png",
+      "PresOffice5": "./assets/images/blank.png",
+      "PresOffice6": "./assets/images/purvee.png",
+      "PresOffice7": "./assets/images/ruvim.png",
+      "PresOffice8": "./assets/images/daniel.png",
+      "AcademicStudentAffairs1": "./assets/images/blank.png",
+      "AcademicStudentAffairs2": "./assets/images/blank.png",
+      "AcademicStudentAffairs3": "./assets/images/blank.png",
+      "AcademicStudentAffairs4": "./assets/images/blank.png",
+      "AcademicStudentAffairs5": "./assets/images/blank.png",
+      "AcademicStudentAffairs6": "./assets/images/blank.png",
+      "AcademicStudentAffairs7": "./assets/images/blank.png",
+      "AcademicStudentAffairs8": "./assets/images/blank.png",
+      "AcademicStudentAffairs9": "./assets/images/blank.png",
+      "AcademicStudentAffairs10": "./assets/images/blank.png",
+      "ExternalAdmissionAffairs1": "./assets/images/blank.png",
+      "ExternalAdmissionAffairs2": "./assets/images/blank.png",
+      "ExternalAdmissionAffairs3": "./assets/images/blank.png",
+      "ExternalAdmissionAffairs4": "./assets/images/blank.png",
+      "ExternalAdmissionAffairs5": "./assets/images/blank.png"
+
+    },
+
+    "planReportImg":{
+      "accredationImg1": "./assets/images/plan_pamphlet/acc1.png",
+      "accredationImg2": "./assets/images/plan_pamphlet/acc2.png",
+      "accredationImg3": "./assets/images/plan_pamphlet/acc3.png",
+      "accredationImg4": "./assets/images/plan_pamphlet/acc4.png"
+    },
     
     "homepageEN": {
       "title1": "welcome to MIU",
@@ -251,6 +290,81 @@
     "hoverDescr3": "We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries",
     "hoverDescr4": "We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries"
   },
+  "ourPeopleEN":{
+    "AboutUsTitle": "About Us",
+    "AboutUsButton1": "Greetings",
+    "AboutUsButton2": "Our people",
+    "AboutUsButton3": "Plan and report",
+    "AboutUsButton4": "Giving information",
+
+    "LeadershipTitle": "LEADERSHIP",
+    "PresidentName": "OH MOON KWON",
+    "PresidentOccu": "President",
+    "VicePresName": "HUH KWON",
+    "VicePresOccu": "Vice President",
+
+    "PresidentOfficeTitle": "PRESIDENT OFFICE",
+    "PresidentOfficeName1": "BILGUUN ENKHAMGALAN",
+    "PresidentOfficeOccu1": "Director of Finance Office",
+    "PresidentOfficeName2": "SUMIYA ENKHCHIMEG",
+    "PresidentOfficeOccu2": "Secretary",
+    "PresidentOfficeName3": "ENKHSUREN ERDENBAT",
+    "PresidentOfficeOccu3": "Project Manager",
+    "PresOfficeName1": "DEAN",
+    "PresOfficeOccu1": "Dean of Planning Affairs",
+    "PresOfficeName2": "SELENGE JAMIYANDORJ",
+    "PresOfficeOccu2": "Human Recource Manager",
+    "PresOfficeName3": "ICHINKHORLOO LOSOL",
+    "PresOfficeOccu3": "Lawyer",
+    "PresOfficeName4": "ABIGAIL JACOBOVSKY",
+    "PresOfficeOccu41": "International Recruiting",
+    "PresOfficeOccu42": "Staff & Dorm Manager",
+    "PresOfficeName5": "UYANGA. D",
+    "PresOfficeOccu5": "Cashier",
+    "PresOfficeName6": "RUVIM ANDRYECHENKO",
+    "PresOfficeOccu61": "Director of Information",
+    "PresOfficeOccu62": "Communication Center",
+    "PresOfficeName7": "PURVEE DASHBALJIR",
+    "PresOfficeOccu71": "Software Engineer of",
+    "PresOfficeOccu72": "Information Communication Center",
+    "PresOfficeName8": "DANIEL ANDREYCHENKO",
+    "PresOfficeOccu81": "Software Engineer of",
+    "PresOfficeOccu82": "Information Communication Center",
+
+    "AcademicStudentAffairsTitle": "ACADEMIC & STUDENT AFFAIRS",
+    "AcademicStudentAffairsName1": "Name",
+    "AcademicStudentAffairsOccu1": "Occupation",
+    "AcademicStudentAffairsName2": "Name",
+    "AcademicStudentAffairsOccu2": "Occupation",
+    "AcademicStudentAffairsName3": "Name",
+    "AcademicStudentAffairsOccu3": "Occupation",
+    "AcademicStudentAffairsName4": "Name",
+    "AcademicStudentAffairsOccu4": "Occupation",
+    "AcademicStudentAffairsName5": "Name",
+    "AcademicStudentAffairsOccu5": "Occupation",
+    "AcademicStudentAffairsName6": "Name",
+    "AcademicStudentAffairsOccu6": "Occupation",
+    "AcademicStudentAffairsName7": "Name",
+    "AcademicStudentAffairsOccu7": "Occupation",
+    "AcademicStudentAffairsName8": "Name",
+    "AcademicStudentAffairsOccu8": "Occupation",
+    "AcademicStudentAffairsName9": "Name",
+    "AcademicStudentAffairsOccu9": "Occupation",
+    "AcademicStudentAffairsName10": "Name",
+    "AcademicStudentAffairsOccu10": "Occupation",
+
+    "ExternalAdmissionAffairsTitle": "EXTERNAL & ADMISSION AFFAIRS",
+    "ExternalAdmisssionAffairsName1": "Name",
+    "ExternalAdmisssionAffairsOccu1": "Occupation",
+    "ExternalAdmisssionAffairsName2": "Name",
+    "ExternalAdmisssionAffairsOccu2": "Occupation",
+    "ExternalAdmisssionAffairsName3": "Name",
+    "ExternalAdmisssionAffairsOccu3": "Occupation",
+    "ExternalAdmisssionAffairsName4": "Name",
+    "ExternalAdmisssionAffairsOccu4": "Occupation",
+    "ExternalAdmisssionAffairsName5": "Name",
+    "ExternalAdmisssionAffairsOccu5": "Occupation"
+  },
 
   "planReportEN":{
     "AboutUsTitle": "About Us",
@@ -261,6 +375,42 @@
 
     "StategicPlanTitle": "STATEGIC PLAN",
     "AccredationTitle": "ACCREDITATION"
+  },
+
+  "givingInfoEN":{
+    "AboutUsTitle": "About Us",
+    "AboutUsButton1": "Greetings",
+    "AboutUsButton2": "Our people",
+    "AboutUsButton3": "Plan and report",
+    "AboutUsButton4": "Giving information",
+
+    "FundTitle": "Please Consider Making a Gift to the Annual Fund",
+    "FundDescription": "Your support now, with a donation of any amount, is vital to ensure we have the resources to continue to honor our vision to be the preeminent intellectual and creative center for effective engagement in a world that increasingly demands better-designed objects, communication, systems, and organizations to meet social needs.",
+
+    "SupportTitle": "Support Our School",
+    "Support1": "• Improving Learning and Teaching environment",
+    "Support2": "• Encouraging Student and Faculty research programs",
+
+    "SupportStudentTitle": " Supporting Students' Well-being",
+    "SupportStudent": "At a time of great crisis, dislocation, and financial strain, we must redouble our longstanding investment in support and resources to ensure that every student can thrive. Our strength as an institution is inextricably linked to the strength of our students—and your gift to support the following programs is the single most direct way you can invest in.",
+    
+    "SKBankTitle": "South Korea – Bank Account Information:",
+    "SKBankInfo1": "BANK ACCOUNT INFORMATION : (REPUBLIC OF KOREA)",
+    "SKBankInfo2": "계좌명:  사단법인 실크로드희망교육개발연대",
+    "SKBankInfo3": "계좌은행 및 번호:                                    하나은행 / 588-910018-82804",
+
+    "MNBankTitle": "Mongolia – Bank Account Information:",
+    "MNBeneNameTitle": "Beneficiary’s Name:",
+    "MNBeneName": "Эм Ай Ю дээд сургууль",
+    "MNBeneBankTitle": "Beneficiary’s Bank:",
+    "MNBeneBank": "Khan Bank",
+    "MNBeneAccountTitle": "Beneficiary’s Account /MNT/",
+    "MNBeneAccount": "5720485207",
+    "MNSwiftCodeTitle": "Bank SWIFT Code:",
+    "MNSwiftCode": "AGMOMNUB",
+    "MNBankAddressTitle": "Bank Address:",
+    "MNBankAddress1": " Khan Bank Tower, Chinggis Avenue-6, Stadium Orgil-1, Khan-Uul District,",
+    "MNBankAddress2": "Ulaanbaatar 17010, Mongolia"
   },
 
     "lei_teachers": [
