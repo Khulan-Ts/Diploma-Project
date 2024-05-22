@@ -6,19 +6,28 @@ import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
+import data from "../../static.json";
+import mn from "../../staticMN.json";
+import ru from "../../staticRU.json";
 
-const Bachelor_FD= ({ navigation }) => {
+const Bachelor_FD= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
+    const imagesWithText = data.fdImagesWithText;
+    let content;
+    switch (language){
+    case 'mn':
+      content = mn.bachelorFdMN;
+      break;
+    case 'ru':
+      content = ru.bachelorFdRU;
+      break;
+    case 'en':
+      content = data.bachelorFdEN;
+      break;
+  }
     useEffect( () => {
         
     })
-    const imagesWithText = [
-        { source: require('../../assets/images/MBA_teachers/choihui.png'), text: "ASHLEY KIM\nProfessor,\n Department chair" },
-        { source: require('../../assets/images/FD_teachers/joeun.png'), text: "JOEUN LEE\nSenior Lecturer" },
-        { source: require('../../assets/images/FD_teachers/hyun.png'), text: "JUNG KUK KIM\nAssociate Professor" },
-        { source: require('../../assets/images/FD_teachers/lida.png'), text: "SEUNG HUN BAEK\n Senior Lecturer" },
-        { source: require('../../assets/images/FD_teachers/battuul.png'), text: "ZHI HONG WANG /Jossy/\nSenior Lecturer" },
-    ];
 
     return (
         <ScrollView
@@ -30,22 +39,22 @@ const Bachelor_FD= ({ navigation }) => {
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.006, marginBottom: width* 0.02, backgroundColor: 'white', height: width*0.075, padding: width*0.01, marginTop: width*-.016, borderRadius:width*0.005}}>
-                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO THE DEPARTMENT OF FASHION DESIGN</FONT>
-                    <FONT type="Regular" style={{fontSize: 18}} >The Fashion Design (FD) department of MIU equips students with skills needed in the global fashion industry: fashion design, fashion business, social responsibility, communication, and leadership.</FONT>
+                    <FONT type="Title" style={{fontSize: 25}}>{content.welcomeTitle}</FONT>
+                    <FONT type="Regular" style={{fontSize: 18}} >{content.welcomeDescription}</FONT>
                 </View>
                 <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: -width*0.02}}>
-                    <Image source={require('../../assets/images/bachelorba2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
             <View style={{
                 backgroundColor: '#F6FAFF',
-                borderBottomEndRadius: 15,
-                borderBottomStartRadius:15,
+                borderBottomEndRadius: width * 0.011,
+                borderBottomStartRadius:width * 0.011,
                 width: width*0.5,
                 marginTop: width*-0.5,
                 marginLeft: width*0.11
             }}>
-                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>Meet our Faculties</FONT>
+                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>{content.meetOurFaculties}</FONT>
 
                 <ScrollView alwaysBounceHorizontal={true} horizontal showsHorizontalScrollIndicator={false}>
                     {imagesWithText.map(({ source, text }) => (
@@ -69,44 +78,44 @@ const Bachelor_FD= ({ navigation }) => {
                                 <View style={{flexDirection: 'row',marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
                                     <Clock width={width*0.02} height={width*0.02}/>
                                     <View style={{marginLeft: width*0.015}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
-                                        <FONT style={{fontSize: 18}}>4 years / Onsite</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.durationTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.durationContent}</FONT>
                                     </View>
                                 </View>
                                 <View style={{flexDirection: 'row', marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
                                     <Calendar width={width*0.02} height={width*0.02}/>
                                     <View style={{marginLeft: width*0.015}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
-                                        <FONT style={{fontSize: 18}}>August-September</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.intakesTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.intakesContent}</FONT>
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginLeft: width*0.005, marginTop:width*0.03}} ></Button>
+                            <Button type="Apply2" text={content.ApplyButton} style={{ marginLeft: width*0.005, marginTop:width*0.03}} ></Button>
                 </View>
                 <View style={{width: width*0.95, marginTop: width*0.05}}>
                     <ExpandableList 
-                    title="Admission Requirements" 
-                    content={"All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter "}
+                    title={content.admissionRequirementsTitle}
+                    content={content.admissionRequirementsContent}
                     maxHeightPercentage={115}
                 />
                 <ExpandableList
-                    title="Curriculum"
+                    title={content.curriculumTitle}
                     content={
                         <>
                             <span>
-                                <strong>FD curriculum is structured based on four main fields of study: apparel design, project presentation, collection development, and fashion business. The curriculum of the FD Department includes holistic but essential areas of fashion studies to equip FD students with the vision and innovation to be a global leader in the apparel industry. </strong>
+                                <strong>{content.curriculumContent1}</strong>
                             </span>{'\n'}
                             <span>
-                                <strong>&nbsp;&nbsp;1. Apparel Design: </strong>Fashion Design, Surface Design for Fabric, Mongolian Cashmere Products, Sustainability, Applied  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Textile, Mongolian Costume, Credits Exchange, Design Competition, Internship, Senior Fashion Show.
+                                <strong>&nbsp;&nbsp;{content.curriculumContentTitle2} </strong>{content.curriculumContent2}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{content.curriculumContent3}
                              </span>{'\n'}
                              <span>
-                                <strong>&nbsp;&nbsp;2. Project Presentation: </strong>Draping, Pattern-drafting, Fit Analysis, Construction Techniques.
+                                <strong>&nbsp;&nbsp;{content.curriculumContentTitle3} </strong>{content.curriculumContent4}
                              </span>{'\n'}
                              <span>
-                                <strong>&nbsp;&nbsp;3. Collection Development: </strong>Free Drawing, Digital Design, Adobe, Clo3d, Fashion Portfolio.
+                                <strong>&nbsp;&nbsp;{content.curriculumContentTitle4} </strong>{content.curriculumContent5}
                              </span>{'\n'}
                              <span>
-                                <strong>&nbsp;&nbsp;4. Fashion Business: </strong>Fashion Marketing, Merchandising, Brand Management.
+                                <strong>&nbsp;&nbsp;{content.curriculumContentTitle5} </strong>{content.curriculumContent6}
                              </span>
 
                         </>
@@ -116,38 +125,29 @@ const Bachelor_FD= ({ navigation }) => {
                 </View>
             </View>
             <View style={{flexDirection:'row', width:width, marginTop:width*0.04}}>
-                <View style={{backgroundColor:'white',borderRadius: 30, borderWidth: 1,height:width*0.165, width: width*0.43,marginRight:width*0.04, marginLeft: width*0.11,borderColor:'#EDF0FF',shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+                <View style={{backgroundColor:'white',borderRadius: width*0.022, borderWidth: 1,height:width*0.18, width: width*0.43,marginRight:width*0.04, marginLeft: width*0.11,borderColor:'#EDF0FF',shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
                     <View style={{marginLeft: width*0.01}}>
-                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>Skill Development</FONT>
+                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>{content.skillDevelopmentTitle}</FONT>
                     </View>
                     <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
                         <FONT type="Regular" style={{fontSize: 18}}>
-                        {'\n'}• Students will have different opportunities to participate in different &nbsp;&nbsp;fashion events to gain exposure to the fashion industries such as 
-                        {'\n'}• Being grounded in a wider range of knowledge and theories of a 
-                        {'\n'}  global business.
-                        {'\n'}• Training in the strategic decision-making process.
-                        {'\n'}• Being able to lead and work on a team.
+                        {content.skillDevelopmentContent1}&nbsp;&nbsp;{content.skillDevelopmentContent2}
                         </FONT>
                     </View>  
                 </View>
-                <View style={{backgroundColor:'white',borderRadius: 30, borderWidth: 1,height:width*0.165, width: width*0.27,borderColor:'#EDF0FF', shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+                <View style={{backgroundColor:'white',borderRadius: width * 0.022, borderWidth: 1,height:width*0.165, width: width*0.27,borderColor:'#EDF0FF', shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
                     <View style={{marginLeft: width*0.01}}>
-                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>Career Opportunity</FONT>
+                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>{content.careerOpportunityTitle}</FONT>
                     </View>
                     <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
                         <FONT type="Regular" style={{fontSize: 18}}>
-                        {'\n'}• Fashion Designer
-                        {'\n'}• Fashion Brand Manager
-                        {'\n'}• Merchandisder
-                        {'\n'}• Marketer
-                        {'\n'}• Fashion journalist
-                        {'\n'}• Fashion illustrator
+                        {content.careerOpportunityContent}
                         </FONT>
                     </View>  
                 </View>
             </View>
             
-            <Footer/>
+            <Footer language={language}/>
         </ScrollView>
         
     );

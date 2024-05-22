@@ -1,11 +1,28 @@
 import React from "react";
 import { StyleSheet, View, Image, Pressable, Dimensions } from "react-native";
 import HoverCard from "./hoverCard";
+import data from "../../static.json";
+import mn from "../../staticMN.json";
+import ru from "../../staticRU.json";
 
 const MapComponent = ({
-    navigate
+    navigate,
+    language
 }) => {
   const [activeCard, setActiveCard] = React.useState(null);
+  const mapImg = data.mapImg
+  let content;
+  switch (language){
+    case 'mn':
+      content = mn.mapMN;
+      break;
+    case 'ru':
+      content = ru.mapRU;
+      break;
+    case 'en':
+      content = data.mapEN;
+      break;
+  }
 
   const showCardHandler = (cardId) => {
     setActiveCard(cardId);
@@ -32,23 +49,12 @@ const MapComponent = ({
           {activeCard === 1 && (
             <View style={styles.sport}>
               <HoverCard
-                image={require("../../assets/images/sports.png")}
+                image={{uri: mapImg.sportImg}}
                 type={"Sport"}
-                title={"Sport Complex"}
-                bottomText={'Schedule: \nMonday 4:00 - 6:00 pm \nWednesday 4:00 - 6:00 pm\nFriday 4:00 - 6:00 pm'}
+                title={content.hoverCardTitle1}
+                bottomText={content.hoverCardbottomText}
               >
-                The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.
-                {"\n"}
-                {"\n"}
-                The cross-fit style gym has full equipment and tools for people who want to spend their time useful.
-                {"\n"}
-                {"\n"}
-                To make a reservation at sport hall:
-                {"\n"}+976 99223366
-                {"\n"}
-                To get price information on cross gym:
-                {"\n"}
-                +976 99223366
+                {content.hoverCardContent1}
               </HoverCard>
             </View>
           )}
@@ -62,18 +68,13 @@ const MapComponent = ({
           {activeCard === 2 && (
             <View style={styles.dorm}>
               <HoverCard
-                image={require("../../assets/images/dorm.png")}
+                image={{uri: mapImg.dormImg}}
                 type={"Primary"}
-                title={"Dorm"}
-                button={"For More Information"}
+                title={content.hoverCardTitle2}
+                button={content.hoverCardButton}
                 onPress1={navigate}
               >
-                The MIU Global Residence is a seven-floor building that houses
-                both male and female students from all over the world. The first
-                four floors are dedicated to students and the 5th to 7th floors
-                are occupied by faculty and staff members. MIU Global Residence
-                a unique residence hall that offers affordable, newly furnished,
-                safe, and convenient living quarters for students. 
+                {content.hoverCardContent2}
               </HoverCard>
             </View>
           )}
@@ -87,18 +88,11 @@ const MapComponent = ({
           {activeCard === 3 && (
             <View style={styles.mbld}>
               <HoverCard
-                image={require("../../assets/images/M-bld.png")}
+                image={{uri: mapImg.MbldImg}}
                 type={"Secondary"}
-                title={"M Building"}
+                title={content.hoverCardTitle3}
               >
-                Student affairs - Academic - Admission - Finance - President`s office
-                {"\n\n\n"}
-                This building is office building where students and applicants can get information 
-                about school or their studies.
-                {"\n\n\n"}
-                One fact: MIU has Counseling Center 
-                {"\n"}
-                which is mental health service. 
+                {content.hoverCardContent3}
               </HoverCard>
             </View>
           )}
@@ -112,18 +106,11 @@ const MapComponent = ({
           {activeCard === 4 && (
             <View style={styles.dbld}>
               <HoverCard
-              image={require("../../assets/images/D-bld.png")}
+              image={{uri: mapImg.DbldImg}}
               type={'Secondary'}
-              title={"D building"}
+              title={content.hoverCardTitle4}
               >
-              Main Hall - Cafeteria - Library - Coffee Shop - GilGal
-              {"\n\n\n"}
-              This is where students spend most of their time and make their 
-              university life with memories and friends
-              {"\n\n\n"}
-              One fact: MIU Cafeteria has international dishes 
-              {"\n"}
-              that you can have for your lunch time. 
+              {content.hoverCardContent4}
             </HoverCard>
             </View>
           )}

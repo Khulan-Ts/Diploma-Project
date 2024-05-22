@@ -25,7 +25,7 @@ const Master_SE= ({ navigation }) => {
         >
             <View style={{flexDirection: "row", marginTop: width * 0.05}}>
                 <View style={{width: width * 0.1, marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-.016, borderRadius: width * 0.008}}>

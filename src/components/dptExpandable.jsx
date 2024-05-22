@@ -49,11 +49,11 @@ export const ExpandableList = ({ title, content, maxHeightPercentage }) => {
       <TouchableOpacity onPress={toggleExpansion} activeOpacity={1} style={[styles.titleContainer, {padding: width*0.015}]}>
         <FONT type='Subtitle2' style={{ fontWeight: 'bold', flex: 1, fontSize:25}}>{title}</FONT>
         <Animated.View style={{ transform: [{ rotate: arrowRotate }] }}>
-          <FontAwesome name="angle-down" size={35} color="#3d2562" />
+          <FontAwesome name="angle-down" size={width * 0.025} color="#3d2562" />
         </Animated.View>
       </TouchableOpacity>
       <Animated.View style={{ height: animation, overflow: 'hidden' }}>
-        <View style={{paddingLeft: width*0.014, paddingRight: width*0.014, paddingBottom:0.007,position: 'relative'}} onLayout={handleOnLayout}>
+        <View style={{paddingLeft: width*0.014, paddingRight: width*0.014, paddingBottom:width*0.007,position: 'relative'}} onLayout={handleOnLayout}>
           <FONT type='Body' style={{fontSize:18}}>{content}</FONT>
         </View>
       </Animated.View>

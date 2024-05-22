@@ -92,7 +92,7 @@ const AboutUs=({navigation, language})=>{
             style={{height: width*0.5, width:width*0.1, marginTop:-width*0.01}}resizeMode="contain"
           />
       </View>
-      <Footer/>
+      <Footer language={language}/>
 
 
         

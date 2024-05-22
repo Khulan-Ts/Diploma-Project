@@ -86,7 +86,7 @@ const Twoplus2=({navigation, language})=>{
               <FONT style={styles.text1}>{content.Expenses3}</FONT>
             </View>
           </View> 
-          <Footer/>
+          <Footer language={language}/>
     </ScrollView>
   );
 }

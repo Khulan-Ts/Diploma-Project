@@ -1,4 +1,29 @@
 {
+    "headerRU":[
+      "о нас",
+      "академический",
+      "допуск",
+      "LEI"
+    ],
+    "footerRU": {
+      "copyright": "Copyright © 2024 Mongolia International University",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna.",
+      "address": "13th Khoroo, Bayanzurkh District Ulan Bator, Mongolia 13330 Ulaanbaatar, Mongolia",
+      "email": "admisson.miu.edu",
+      "phone": "7000 7447"
+    },
+    "mapRU":{
+      "hoverCardTitle1": "Sport Complex",
+      "hoverCardContent1": "The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.\n\nThe cross-fit style gym has full equipment and tools for people who want to spend their time useful.\n\nTo make a reservation at sport hall:\n+976 99223366\nTo get price information on cross gym: \n+976 99223366",
+      "hoverCardbottomText": "Schedule: \nMonday 4:00 - 6:00 pm \nWednesday 4:00 - 6:00 pm\nFriday 4:00 - 6:00 pm",
+      "hoverCardTitle2": "Dorm",
+      "hoverCardContent2": "The MIU Global Residence is a seven-floor building that houses both male and female students from all over the world. The first four floors are dedicated to students and the 5th to 7th floors are occupied by faculty and staff members. MIU Global Residence a unique residence hall that offers affordable, newly furnished, safe, and convenient living quarters for students.",
+      "hoverCardButton": "For More Information",
+      "hoverCardTitle3": "M Building",
+      "hoverCardContent3": "Student affairs - Academic - Admission - Finance - President`s office\n\n\nThis building is office building where students and applicants can get information about school or their studies.\n\n\nOne fact: MIU has Counseling Center \nwhich is mental health service. ",
+      "hoverCardTitle4": "D Building",
+      "hoverCardContent4": "Main Hall - Cafeteria - Library - Coffee Shop - GilGal\n\n\nThis is where students spend most of their time and make their university life with memories and friends\n\n\nOne fact: MIU Cafeteria has international dishes \nthat you can have for your lunch time. "
+    },
     "homepageRU": {
         "title1": "Добро пожаловать в MIU",
         "title2": "Обучение глобальных служащих лидеров завтрашнего дня",
@@ -99,7 +124,7 @@
         "Introduction": "INTRODUCTION",
     
         "QualificationTitle": "QULAIFICATIONS",
-        "Qualification1": "• Requirements: Undergraduate students,{'\n'}   who completed 2 years at MIU",
+        "Qualification1": "• Requirements: Undergraduate students,\n   who completed 2 years at MIU",
         "Qualification2": "• GPA: 3.4/4.0 or higher",
         "Qualification3": "• English Test: TOEFL IBT 70 or IELTS 6.0 or above",
     
@@ -120,7 +145,7 @@
         "ProgramDescription": "“Undergraduate students have the chance to study abroad as an exchange student at several prestigious universities in the Republic of Korea. Our partnering universities range from public and private universities and depending on the partnering universities, students enjoy various scholarships and additional benefits. Students are eligible to study abroad during the Spring and Fall semesters of their Sophomore and Junior year, or the Fall semester of their Senior year.”",
     
         "ContactTitle": "Exchange Program Contact Emails:",
-        "ContactEmail": "student2@miu.edu.mn{'\n'}dir_student@miu.edu.mn"
+        "ContactEmail": "student2@miu.edu.mn\ndir_student@miu.edu.mn"
     },
     "academicRU":{
         "AcademicTitle": "Академический",
@@ -329,6 +354,345 @@
         "MNBankAddressTitle": "Bank Address:",
         "MNBankAddress1": " Khan Bank Tower, Chinggis Avenue-6, Stadium Orgil-1, Khan-Uul District,",
         "MNBankAddress2": "Ulaanbaatar 17010, Mongolia"
+      },
+      "overviewRU":{
+        "AdmissionsTitle": "Прием",
+        "AdmissionsButton1": "Overview",
+        "AdmissionsButton2": "How to Apply",
+        "AdmissionsButton3": "Scholarship",
+    
+        "text1": "When you decide to apply to Mongolia International University you will have the opportunity to explore courses across the programs and colleges that make up our university, crossing disciplines and charting your own unique academic path.",
+        "text2": "When you decide to apply to Mongolia International University you will have the opportunity to explore courses across the programs and colleges that make up our university, crossing disciplines and charting your own unique academic path.",
+        "text3": "We want to get to know you through your application process, to hear your voice and explore your potential. We will be happy to assist you along the way! Are you ready to take the next step?"
+      },
+      "Howtoapply_UnderRU":{
+        "AdmissionsTitle": "Прием",
+        "AdmissionsButton1": "Overview",
+        "AdmissionsButton2": "How to Apply",
+        "AdmissionsButton3": "Scholarship",
+    
+        "undergradButton": "Undergraduate Programs",
+        "graduateButton":"Graduate Programs",
+        "tooltipText1": "Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn",
+        "tooltipText2": "70%:  (Grammar, Vocabulary, Reading, Essay & Speaking) – Applicants will be notified with MIU Entrance Exam schedule, and join MIU Entrance Exam ( and Skill Test for EE, MC, ME Departments) through Zoom (For the students who are residing outside Mongolia).",
+        "tooltipText3": "30%: The application documents will be evaluated by the Admission Committee.",
+        "tooltipText4": "Applicants will receive individual admission result email from the Admission Affairs Office.",
+        "tooltipText5": " The Admission Affairs will announce the MIU Scholarship Application beside Admission Scholarships.",
+        "tooltipText6": "Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.",
+        "tooltipText7": " Applicants need to send the receipts of their payments to the Admission Affairs office.",
+        
+        "acceptanceLetterText": "Official \nAcceptance \nLetter",
+        "paymentText": "Payment of\nFees",
+        "RequiredDocumentsTitle": "Required Documents",
+        "RequiredDocuments": "•  Completed Admission Application Form \n•  Statement of Purpose (SOP) in English \n•  One Recommendation Letter in English \n•  English Certificate of High School Graduation /copy/ \n•  Official High School Records in English /copy/ \n•  Notarized English translation of National Exam score \n•  Completed Resume Form \n•  Copy of Valid Passport /copy/ \n•  Two Passport-size Photos (3x4) \n•  HIV/AIDS Test Results /copy/ \n•  Chest X-Ray Test Result in English \n•  Application Fee /25 USD/ \n•  Document Translation Fee 20,000₮ or 40,000₮ "
+      },
+      "Howtoapply_GradRU":{
+        "AdmissionsTitle": "Admissions",
+        "AdmissionsButton1": "Overview",
+        "AdmissionsButton2": "How to Apply",
+        "AdmissionsButton3": "Scholarship",
+    
+        "undergradButton": "Undergraduate Programs",
+        "graduateButton":"Graduate Programs",
+        "tooltipText1": "Submitting all Required Application Forms through MIU Official Website, or through email: admission@miu.edu.mn",
+        "tooltipText2": "The application documents will be evaluated by the Admission Committee.",
+        "tooltipText3": "Applicants will be notified individually with their interview schedule.",
+        "tooltipText4": "Applicants will receive individual admission result email from the Admission Affairs Office.",
+        "tooltipText5": "Applicants will receive the official acceptance letters and invoices from the Admission Affairs office.",
+        "tooltipText6": "Applicants need to send the receipts of their payments to the Admission Affairs office.",
+    
+        "acceptanceLetterText": "Official \nAcceptance \n Letter",
+        "paymentText": "Payment of\nFees",
+        "RequiredDocumentsTitle": "Required Documents",
+        "RequiredDocuments": "•  Completed Admission Application Form \n•  Statement of Purpose (SOP) in English \n•  Two Recommendation Letter in English \n•  Notarized English Certificate of Bachelor’s Degree \n•  Notarized Official Bachelor’s Degree Transcript in English \n•  English Resume with Photo Attached【Optional】\n•  English Proficiency Test Score【Optional】\n•  Valid Passport (Copy) \n•  HIV/ AIDS Test Result \n•  Passport Photos\n•  Application Fee /25 USD/ "
+      },
+
+      "scholarshipRU":{
+        "AdmissionsTitle": "Admissions",
+        "AdmissionsButton1": "Overview",
+        "AdmissionsButton2": "How to Apply",
+        "AdmissionsButton3": "Scholarship",
+    
+        "ScholarshipTitle": "Amount of scholarship granted in the past 5 years:",
+    
+        "DropdownTitle1": "Admission Scholarship",
+        "DropdownContent1": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process.",
+        "DropdownTitle2": "MIU Academic Scholarship",
+        "DropdownContent2": "Content for item 2",
+        "DropdownTitle3": "Student Union Scholarship",
+        "DropdownContent3": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process.",
+        "DropdownTitle4": "Financial Aid Scholarship",
+        "DropdownContent4": "Content for item 2",
+        "DropdownTitle5": "Korean Diaspora Scholarship",
+        "DropdownContent5": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process.",
+        "DropdownTitle6": "Disability Support Scholarship",
+        "DropdownContent6": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process."
+    
+      },
+      "bachelorBaRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF BUSINESS ADMINISTRATION",
+        "welcomeDescription": "Business Administration Department (BA) trains in managerial discipline and educates students on how to effectively compete in the international business environment. Students are instructed to handle dynamic decision-making process problems in an era of globalization and information revolution in the world.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+        
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter ",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Download checklist",
+        
+        "skillDevelopmentTitle": "Skill Development",
+        "skillDevelopmentContent": "\n• Being equipped to be competent in a global business environment.\n• Being grounded in a wider range of knowledge and theories of a global business.\n• Training in the strategic decision-making process.\n• Being able to lead and work on a team.\n• Being aware of ethical and socially responsible issues.\n• Being equipped with strong communication and networking skills.",
+        
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent": "\n• Advertising and Marketing\n• Accountancy\n• Human Resources\n• Banking including Investment Banking\n• Sales and Retail\n• Management Consultancy\n• Business Journalism"
+      },
+
+      "bachelorHtmRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF TOURISM MANAGEMENT",
+        "welcomeDescription": "The Bachelor of Hotel and Tourism Management is designed to prepare you for professional and managerial roles in the global tourism and hotel industries. Emphasis is placed in major areas within tourism and hotel businesses.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Download checklist",
+        
+        "skillDevelopmentTitle": "Skill Development",
+        "skillDevelopmentContent": "\n• Being equipped to be competent in a global business environment.\n• Being grounded in a wider range of knowledge and theories of a global business.\n• Training in the strategic decision-making process.\n• Being able to lead and work on a team.\n• Being aware of ethical and socially responsible issues.\n• Being equipped with strong communication and networking skills.",
+        
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent": "\n• Advertising and Marketing\n• Accountancy\n• Human Resources\n• Banking including Investment Banking\n• Sales and Retail\n• Management Consultancy\n• Business Journalism"
+        
+      },
+
+      "bachelorFdRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF FASHION DESIGN<",
+        "welcomeDescription": "The Fashion Design (FD) department of MIU equips students with skills needed in the global fashion industry: fashion design, fashion business, social responsibility, communication, and leadership.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter ",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent1": "FD curriculum is structured based on four main fields of study: apparel design, project presentation, collection development, and fashion business. The curriculum of the FD Department includes holistic but essential areas of fashion studies to equip FD students with the vision and innovation to be a global leader in the apparel industry.",
+        "curriculumContentTitle2": "1. Apparel Design: ",
+        "curriculumContent2": "Fashion Design, Surface Design for Fabric, Mongolian Cashmere Products, Sustainability, Applied",
+        "curriculumContent3": "Textile, Mongolian Costume, Credits Exchange, Design Competition, Internship, Senior Fashion Show.",
+        "curriculumContentTitle3": "2. Project Presentation: ",
+        "curriculumContent4": "Draping, Pattern-drafting, Fit Analysis, Construction Techniques.",
+        "curriculumContentTitle4": "3. Collection Development: ",
+        "curriculumContent5": "Free Drawing, Digital Design, Adobe, Clo3d, Fashion Portfolio.",
+        "curriculumContentTitle5": "4. Fashion Business: ",
+        "curriculumContent6": "Fashion Marketing, Merchandising, Brand Management.",
+    
+    
+        "skillDevelopmentTitle": "Skill Development",
+        "skillDevelopmentContent1": "\n• Students will have different opportunities to participate in different",
+        "skillDevelopmentContent2": "fashion events to gain exposure to the fashion industries such as \n• Being grounded in a wider range of knowledge and theories of a \n  global business.\n• Training in the strategic decision-making process.\n• Being able to lead and work on a team.",
+        
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent": "\n• Fashion Designer\n• Fashion Brand Manager\n• Merchandisder\n• Marketer\n• Fashion journalist\n• Fashion illustrator"
+        
+      },
+
+      "bachelorCsRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF COMPUTER SCIENCE",
+        "welcomeDescription": "Computer Science (CS) major at MIU offers opportunities to explore the science of information processing. Particular interest is placed on making computation fast and efficient. CS focuses on the core theories of computing as well as hands-on learning and practical work experiences.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter ",
+        
+        "curriculumTitle": "Curriculum", 
+        "curriculumContentTitle2": "Year 1 / Students are introduced to:\n",
+        "curriculumContent1": "Foundation of basic coding                                                                                Foundation in mathematics and physics\n",
+        "curriculumContent2": "Teamwork skills\n",
+        "curriculumContentTitle3": "Year 2 / Students develop skills in:\n",
+        "curriculumContent4": "Computer science theories, methods and practices                              Understanding of computer software, tools and design\n",
+        "curriculumContent5": "Understanding a range of programming languages                             Problem-solving and analytical skills\n",
+        "curriculumContent6": "such as Java, C, C++, Javascript and SQL\n",
+        "curriculumContentTitle4": "Year 3 / Students gain knowledge in:\n",
+        "curriculumContent7": "Mobile application programming                                                                   Multimedia Programming\n",
+        "curriculumContent8": "Computer Security                                                                                                 Web development and web design\n",
+        "curriculumContentTitle5": "Year 4 / Students move into:\n",
+        "curriculumContent9": "Advanced programming skills                                                                          Cloud Computing\n",
+        "curriculumContent10": "Robotics                                                                                                                      Artificial Intelligence",
+    
+    
+        "skillDevelopmentTitle": "Skills",
+        "skillDevelopmentContent": "Skills you will develop in CS department are problem-solving, critical thinking, creativity, coding, task management, efficiency, etc",
+        
+        "weConnectTitle": "We Connect",
+        "weConnectContent": "Full stack developer                          System administrator\nDatabase administrator                Data scientist\nComputer hardware                        Systems analyst\nengineer                                                 Multimedia animator\nSystems software developer",
+        
+        "alumniTitle": "Alumni",
+        "alumniContent": "CS graduates are employed at many well known companies such as Khan Bank, Unitel Group, Oyu Tolgoi LLC, Hurd Group, Nomin Holding, Khas Bank, Khangai LLC, IT Zone, CAA Mongolia, etc."
+        
+      },
+
+      "bachelorEeRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF ENGLISH EDUCATION",
+        "welcomeDescription": "English Education Department seeks to train up effective and innovative English teachers across Mongolia and Central Asia with a high-quality education that guides students to service with honesty, integrity, humility and professionalism.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "• Linguistics\n• Teaching Methodology\n• Principle of Education\n• Educational Psychology\n• English Translation Practice"
+        
+      },
+
+      "bachelorMcRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF THE MEDIA AND COMMUNICATION",
+        "welcomeDescription": "The Media and Communication (MC) Department of MIU prepares skilled and innovative professionals in the fields of journalism, public relations, marketing, and media production. Our students develop a strong foundation in media and communication theory and practice, journalism, and media policy, with a sequence of courses that equip them to produce creative media content for national and international audiences. Public relations, advertising, and strategic communication round out the curriculum, enabling students to specialize in their area of professional interest.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Year 1&2 / Students are introduced to \n – Basic knowledge each of the SISC majors: International Relations, Media & Communication, and International Development, Diplomacy, and International Law; \n - Fundemental academic writing and reading skills; \n Year 3 / Students can chose their concentration \n – Media Writing, PR, Advertising, and Communication \n – Practical media tools and photoshooting \n Year 4 / Students move to \n – Practical usage of the skills learned in classes through internships \n – MC graduation project development and research work",
+    
+        "careerOpportunityTitle":"Career Opportunity",
+        "careerOpportunityContent": "\n• Journalists\n• Radio/TV Producers\n• Writers \n• Media Marketing/Advertising/PR Persons",
+    
+        "opportunityTitle": "Opportunity",
+        "opportunityContent": "\n• Mongolian NTV, MN25, NTV, EDU TV, TV2, Bloomberg Mongolia TVs and Global Internship for foreign students in their countries"
+      },
+
+      "bachelorIrRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF INTERNATIONAL RELATIONS",
+        "welcomeDescription": "International Relations (IR) program aims to prepare experts and professionals in the fields of Diplomacy, Political Science, and International Development to work in international organizations, NGOs, and government institutions. The program provides foundational knowledge of international relation, history, economics, international trade, development, diplomacy, foreign policy analysis and many others. The program empowers students to address global challenges and policy issues with ethical and critical reasoning as diplomats, field research experts, program officers, consultants, and journalists. Importantly, the students of the IR program at MIU can choose their area of expertise in their third year of studies.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Year 1&2 / Students are introduced to \n - Basic knowledge each of the SISC majors: International Relations, Media & Communication, and International Development, Diplomacy, and International Law; \n - Fundemental academic writing and reading skills; \n Year 3 / Students can chose their concentration \n - Diplomacy and Political Science: Students learn practical skills of diplomatic communication and deepen their knowledge of politics and international cooperation. \n – International Development: Students study various fields of development studies such economic, sustainable, environmental, rural & urban development as well gain practical skills of development project evaluation and implementation. \n Year 4 / Students move to \n – Practical usage of the skills learned in both concentrations through internships \n – Thesis and Research writing",
+    
+        "skilldevelopmentTitle": "Skill Development",
+        "skilldevelopmentContent": "\n• Being equipped to be competent in a global business environment.\n• Being grounded in a wider range of knowledge and theories of a \n  global business.\n• Training in the strategic decision-making process.\n• Being able to lead and work on a team.\n• Being aware of ethical and socially responsible issues.\n• Being equipped with strong communication and networking skills.",
+    
+        "opportunityTitle": "Career Opportunity",
+        "opportunityContent": "\n• Advertising and Marketing\n• Accountancy\n• Human Resources\n• Banking including Investment Banking\n• Sales and Retail\n• Management Consultancy\n• Business Journalism"
+      },
+      "bachelorSeRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF SOFTWARE ENGINEERING",
+        "welcomeDescription": "Software Engineering major at MIU offers opportunities to explore the science of information processing. Particular interest is placed on making computation fast and efficient. SE focuses on the core theories of computing as well as hands-on learning and practical work experiences.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter ",
+        
+        "curriculumTitle": "Curriculum", 
+        "curriculumContentTitle2": "Year 1 / Students are introduced to:\n",
+        "curriculumContent1": "Foundation of basic coding                                                                                Foundation in mathematics and physics\n",
+        "curriculumContent2": "Teamwork skills\n",
+        "curriculumContentTitle3": "Year 2 / Students develop skills in:\n",
+        "curriculumContent3": "Computer science theories, methods and practices                              Understanding of computer software, tools and design\n",
+        "curriculumContent4": "Understanding a range of programming languages                             Problem-solving and analytical skills\n",
+        "curriculumContent5": "such as Java, C, C++, Javascript and SQL\n",
+        "curriculumContentTitle4": "Year 3 / Students gain knowledge in:\n",
+        "curriculumContent6": "Mobile application programming                                                                   Multimedia Programming\n",
+        "curriculumContent7": "Computer Security                                                                                                 Web development and web design\n",
+        "curriculumContentTitle5": "Year 4 / Students move into:\n",
+        "curriculumContent8": "Advanced programming skills                                                                          Cloud Computing\n",
+        "curriculumContent9": "Robotics                                                                                                                      Artificial Intelligence",
+    
+    
+        "skillDevelopmentTitle": "Skills",
+        "skillDevelopmentContent": "Skills you will develop in CS department are problem-solving, critical thinking, creativity, coding, task management, efficiency, etc",
+        
+        "weConnectTitle": "We Connect",
+        "weConnectContent": "Full stack developer                          System administrator\nDatabase administrator                Data scientist\nComputer hardware                        Systems analyst\nengineer                                                 Multimedia animator\nSystems software developer",
+        
+        "alumniTitle": "Alumni",
+        "alumniContent": "CS graduates are employed at many well known companies such as Khan Bank, Unitel Group, Oyu Tolgoi LLC, Hurd Group, Nomin Holding, Khas Bank, Khangai LLC, IT Zone, CAA Mongolia, etc."
+        
+      },
+
+      "bachelorMeRU": {
+        "welcomeTitle": "WELCOME TO THE DEPARTMENT OF MUSIC EDUCATON",
+        "welcomeDescription": "“The ME Department of New Media Music teaches techniques for producing music of various genres, including classical music, pop, jazz, and ballads. We are reorganizing the music education environment by providing a digital audio workstation (DAW) program. Computer music and practical training Through ensemble classes using musical instruments, you can create more human and emotional music in the AI era. Within this cutting-edge curriculum, participants utilize the capabilities of sophisticated digital audio systems to multi-track recording, overdubbing, and editing music of various genres. and explores the process of mastering.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "4 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Year 1&2 / Students are introduced to \n – Basic knowledge each of the SISC majors: International Relations, Media & Communication, and International Development, Diplomacy, and International Law; \n - Fundemental academic writing and reading skills; \n Year 3 / Students can chose their concentration \n – Media Writing, PR, Advertising, and Communication \n – Practical media tools and photoshooting \n Year 4 / Students move to \n – Practical usage of the skills learned in classes through internships \n – MC graduation project development and research work",
+        
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent": "\n• Journalists\n• Radio/TV Producers\n• Writers \n• Media Marketing/Advertising/PR Persons",
+        
+        "opportunityTitle": "Opportunity",
+        "opportunityContent": "\n• Mongolian NTV, MN25, NTV, EDU TV, TV2, Bloomberg Mongolia TVs and Global Internship for foreign students in their countries"
       }
 
 }

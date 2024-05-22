@@ -97,7 +97,7 @@ const Lei_4= ({ navigation,language }) => {
           <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
       </View>
-      <Footer/>
+      <Footer language={language}/>
     </ScrollView>
   );
 }

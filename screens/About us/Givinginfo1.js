@@ -9,20 +9,16 @@ import ru from "../../staticRU.json";
 
 const GivingInfo = ({ navigation, language }) => {
   const { width, height } = useWindowDimensions();
-  const givingInfoEN = data.givingInfoEN;
-  const givingInfoMN = mn.givingInfoMN;
-  const givingInfoRU = ru.givingInfoRU;
-
   let content;
     switch (language){
     case 'mn':
-      content = givingInfoMN;
+      content = mn.givingInfoMN;
       break;
     case 'ru':
-      content = givingInfoRU;
+      content = ru.givingInfoRU;
       break;
     case 'en':
-      content = givingInfoEN;
+      content = data.givingInfoEN;
       break;
   }
   return (
@@ -173,7 +169,7 @@ const GivingInfo = ({ navigation, language }) => {
           <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{ width: 'auto', height: width * 0.5, marginBottom: width * 0.2 }} resizeMode="contain" />
         </View>
       </View>
-      <Footer/>
+      <Footer language={language}/>
     </ScrollView>
 
   );

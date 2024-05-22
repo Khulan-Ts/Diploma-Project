@@ -14,20 +14,17 @@ const HomeScreen = ({ navigation, language }) => {
   const { width } = useWindowDimensions();
   const { apply } = data.links;
   const homepageImg = data.hompageImg;
-  const homepageEN = data.homepageEN;
-  const homepageMN = mn.homepageMN;
-  const homepageRU = ru.homepageRU;
 
   let content;
   switch (language){
     case 'mn':
-      content = homepageMN;
+      content = mn.homepageMN;
       break;
     case 'ru':
-      content = homepageRU;
+      content = ru.homepageRU;
       break;
     case 'en':
-      content = homepageEN;
+      content = data.homepageEN;
       break;
   }
 
@@ -120,7 +117,7 @@ const HomeScreen = ({ navigation, language }) => {
         </View>
       </View>
 
-      <MapComponent navigate={() => navigation.navigate('Dorm')} />
+      <MapComponent navigate={() => navigation.navigate('Dorm')} language={language}/>
 
       <View style={[styles.apply, { height: width * 0.4, marginTop: '2%' }]}>
         <FONT type="Title" style={{ color: "#fff", fontSize: 86 }}>{content.ApplyNow}</FONT>
@@ -131,7 +128,7 @@ const HomeScreen = ({ navigation, language }) => {
         </View>
         <Button type="Apply" text={content.ApplyButton} onPress={() => Linking.openURL(apply)}></Button>
       </View>
-      <Footer />
+      <Footer language={language}/>
     </ScrollView>
   );
 };

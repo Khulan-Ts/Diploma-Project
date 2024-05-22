@@ -349,7 +349,7 @@ const OurPeople=({navigation, language})=>{
                 style={{width:width*0.1, height:width*0.5, marginTop:-width*0.01}}resizeMode="contain"
             />
         </View>
-        <Footer/>
+        <Footer language={language}/>
         
     </ScrollView>
    );
