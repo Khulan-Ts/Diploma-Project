@@ -18,8 +18,8 @@
     },
 
     "twoplus2Img":{
-      "albanyImg": "./assets/images/albany.png",
-      "introduction": "./assets/images/2p2introduction.png"
+      "albanyImg": "./assets/images/twoPlustwo/albany.png",
+      "introduction": "./assets/images/twoPlustwo/2p2introduction.png"
     },
 
     "exchangeImg":{
@@ -27,10 +27,10 @@
     },
 
     "academicImg":{
-      "cal1": "./assets/images/calendar-1.png",
-      "cal2": "./assets/images/calendar-2.png",
-      "cal3": "./assets/images/calendar-3.png",
-      "cal4": "./assets/images/calendar-4.png"
+      "cal1": "./assets/images/academicCalendar/calendar-1.png",
+      "cal2": "./assets/images/academicCalendar/calendar-2.png",
+      "cal3": "./assets/images/academicCalendar/calendar-3.png",
+      "cal4": "./assets/images/academicCalendar/calendar-4.png"
     },
 
     "aboutusImg":{
@@ -38,34 +38,34 @@
     },
 
     "ourPeopleImg":{
-      "Leadership1": "./assets/images/president2.png",
-      "Leadership2": "./assets/images/huh.png",
-      "PresidentOffice1": "./assets/images/bilguun.png",
-      "PresidentOffice2": "./assets/images/sumiya.png",
-      "PresidentOffice3": "./assets/images/blank.png",
-      "PresOffice1": "./assets/images/blank.png",
-      "PresOffice2": "./assets/images/blank.png",
-      "PresOffice3": "./assets/images/lawyer.png",
-      "PresOffice4": "./assets/images/abigail.png",
-      "PresOffice5": "./assets/images/blank.png",
-      "PresOffice6": "./assets/images/purvee.png",
-      "PresOffice7": "./assets/images/ruvim.png",
-      "PresOffice8": "./assets/images/daniel.png",
-      "AcademicStudentAffairs1": "./assets/images/blank.png",
-      "AcademicStudentAffairs2": "./assets/images/blank.png",
-      "AcademicStudentAffairs3": "./assets/images/blank.png",
-      "AcademicStudentAffairs4": "./assets/images/blank.png",
-      "AcademicStudentAffairs5": "./assets/images/blank.png",
-      "AcademicStudentAffairs6": "./assets/images/blank.png",
-      "AcademicStudentAffairs7": "./assets/images/blank.png",
-      "AcademicStudentAffairs8": "./assets/images/blank.png",
-      "AcademicStudentAffairs9": "./assets/images/blank.png",
-      "AcademicStudentAffairs10": "./assets/images/blank.png",
-      "ExternalAdmissionAffairs1": "./assets/images/blank.png",
-      "ExternalAdmissionAffairs2": "./assets/images/blank.png",
-      "ExternalAdmissionAffairs3": "./assets/images/blank.png",
-      "ExternalAdmissionAffairs4": "./assets/images/blank.png",
-      "ExternalAdmissionAffairs5": "./assets/images/blank.png"
+      "Leadership1": "./assets/images/ourPeople/president2.png",
+      "Leadership2": "./assets/images/ourPeople/huh.png",
+      "PresidentOffice1": "./assets/images/ourPeople/bilguun.png",
+      "PresidentOffice2": "./assets/images/ourPeople/sumiya.png",
+      "PresidentOffice3": "./assets/images/ourPeople/blank.png",
+      "PresOffice1": "./assets/images/ourPeople/blank.png",
+      "PresOffice2": "./assets/images/ourPeople/blank.png",
+      "PresOffice3": "./assets/images/ourPeople/lawyer.png",
+      "PresOffice4": "./assets/images/ourPeople/abigail.png",
+      "PresOffice5": "./assets/images/ourPeople/blank.png",
+      "PresOffice6": "./assets/images/ourPeople/purvee.png",
+      "PresOffice7": "./assets/images/ourPeople/ruvim.png",
+      "PresOffice8": "./assets/images/ourPeople/daniel.png",
+      "AcademicStudentAffairs1": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs2": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs3": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs4": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs5": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs6": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs7": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs8": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs9": "./assets/images/ourPeople/blank.png",
+      "AcademicStudentAffairs10": "./assets/images/ourPeople/blank.png",
+      "ExternalAdmissionAffairs1": "./assets/images/ourPeople/blank.png",
+      "ExternalAdmissionAffairs2": "./assets/images/ourPeople/blank.png",
+      "ExternalAdmissionAffairs3": "./assets/images/ourPeople/blank.png",
+      "ExternalAdmissionAffairs4": "./assets/images/ourPeople/blank.png",
+      "ExternalAdmissionAffairs5": "./assets/images/ourPeople/blank.png"
 
     },
 
@@ -81,20 +81,20 @@
     },
 
     "overviewImg":{
-      "overview1": "./assets/images/overview-2.png",
-      "overview2": "./assets/images/overview-3.png",
-      "overview3": "./assets/images/overview-1.png",
-      "overview4": "./assets/images/overview-4.png",
-      "overview5": "./assets/images/overview-5.png",
-      "overview6": "./assets/images/overview-6.png",
-      "overview7": "./assets/images/overview-7.png"
+      "overview1": "./assets/images/overview/overview-2.png",
+      "overview2": "./assets/images/overview/overview-3.png",
+      "overview3": "./assets/images/overview/overview-1.png",
+      "overview4": "./assets/images/overview/overview-4.png",
+      "overview5": "./assets/images/overview/overview-5.png",
+      "overview6": "./assets/images/overview/overview-6.png",
+      "overview7": "./assets/images/overview/overview-7.png"
     },
 
     "mapImg":{
-      "sportImg": "./assets/images/sports.png",
-      "dormImg": "./assets/images/dorm.png",
-      "MbldImg": "./assets/images/M-bld.png",
-      "DbldImg": "./assets/images/D-bld.png"
+      "sportImg": "./assets/images/map/sports.png",
+      "dormImg": "./assets/images/map/dorm.png",
+      "MbldImg": "./assets/images/map/M-bld.png",
+      "DbldImg": "./assets/images/map/D-bld.png"
     },
 
     "lei_teachers": [
@@ -131,11 +131,11 @@
     ],
 
     "baImagesWithText": [
-      { "source": "./assets/images/choihuipark.png", "text": "CHOI HUI PARK\nProfessor,\n Department chair" },
-      { "source": "./assets/images/victorngu.png", "text": "VICTOR NGU\n Professor" },
-      { "source": "./assets/images/jungkukkim.png", "text": "JUNG KUK KIM\nAssociate Professor" },
-      { "source": "./assets/images/seunghunbaek.png", "text": "SEUNG HUN BAEK\n SeniorLecturer" },
-      { "source": "./assets/images/zhihong.png", "text": "ZHI HONG WANG /Jossy/\nSenior Lecturer" }
+      { "source": "./assets/images/Ba_teachers/choihuipark.png", "text": "CHOI HUI PARK\nProfessor,\n Department chair" },
+      { "source": "./assets/images/Ba_teachers/victorngu.png", "text": "VICTOR NGU\n Professor" },
+      { "source": "./assets/images/Ba_teachers/jungkukkim.png", "text": "JUNG KUK KIM\nAssociate Professor" },
+      { "source": "./assets/images/Ba_teachers/seunghunbaek.png", "text": "SEUNG HUN BAEK\n SeniorLecturer" },
+      { "source": "./assets/images/Ba_teachers/zhihong.png", "text": "ZHI HONG WANG /Jossy/\nSenior Lecturer" }
     ],
 
     "htmImagesWithText": [
@@ -154,7 +154,7 @@
       { "source": "./assets/images/ee_teachers/jonathan.png", "text": "JONATHAN SANDE\nLecturer" }
     ],
 
-    "mcImageWithText":[
+    "mcImagesWithText":[
       { "source": "./assets/images/mc_teachers/image1.png", "text": "JERICHO BURG\nDean of School of International\n Studies and Relations" },
       { "source": "./assets/images/mc_teachers/image2.png", "text": "MOSTAFA AHMED\n Lecturer" },
       { "source": "./assets/images/mc_teachers/image3.png", "text": "SUYONG GIM\nProfessor" },
@@ -168,6 +168,42 @@
       { "source": "./assets/images/mc_teachers/image3.png", "text": "SUYONG GIM\nProfessor" },
       { "source": "./assets/images/mc_teachers/image4.png", "text": "DONG-RYUL KANG\nLecturer" },
       { "source": "./assets/images/mc_teachers/image5.png", "text": "JIYOUNG CHANG\nLecturer" }
+    ],
+    
+    "irImagesWithText": [
+      { "source": "./assets/images/ir_teachers/jericho.png", "text": "JERICHO BURG\nDean of School of International\n Studies and Relations" },
+      { "source": "./assets/images/ir_teachers/mostafa.png", "text": "MOSTAFA AHMED\n Lecturer" },
+      { "source": "./assets/images/ir_teachers/suyong.png", "text": "SUYONG GIM\nProfessor" },
+      { "source": "./assets/images/ir_teachers/dong.png", "text": "DONG-RYUL KANG\nLecturer" },
+      { "source": "./assets/images/ir_teachers/jiyung.png", "text": "JIYOUNG CHANG\nLecturer" }
+    ],
+
+    "fleImagesWithText": [
+      { "source": "./assets/images/ir_teachers/jericho.png", "text": "JERICHO BURG\nDean of School of International\n Studies and Relations" },
+      { "source": "./assets/images/ir_teachers/mostafa.png", "text": "MOSTAFA AHMED\n Lecturer" },
+      { "source": "./assets/images/ir_teachers/suyong.png", "text": "SUYONG GIM\nProfessor" },
+      { "source": "./assets/images/ir_teachers/dong.png", "text": "DONG-RYUL KANG\nLecturer" },
+      { "source": "./assets/images/ir_teachers/jiyung.png", "text": "JIYOUNG CHANG\nLecturer" }
+    ],
+    "mbaImagesWithText": [
+      { "source": "./assets/images/MBA_teachers/choihui.png", "text": "CHOI HUI PARK\nProfessor,\n Department chair" },
+      { "source": "./assets/images/MBA_teachers/victorngu.png", "text": "VICTOR NGU\n Professor" },
+      { "source": "./assets/images/MBA_teachers/junguk.png", "text": "JUNG KUK KIM\nAssociate Professor" },
+      { "source": "./assets/images/MBA_teachers/seung.png", "text": "SEUNG HUN BAEK\nSenior Lecturer" },
+      { "source": "./assets/images/MBA_teachers/zhihong.png", "text": "ZHI HONG WANG /Jossy/\n Senior Lecturer" },
+      { "source": "./assets/images/MBA_teachers/undrakh.png", "text": "UNDRAKH MUNKHBAATAR\nSecretary" }
+    ],
+    "mpubImagesWithText":[
+      { "source": "./assets/images/mpublic/jericho.png", "text": "JERICHO BURG\n Dean of School of International\n Studies and Communication" },
+      { "source": "./assets/images/mpublic/mohammad.png", "text": "MOHAMMAD\n ISHFAQ \n Lecturer" },
+      { "source": "./assets/images/mpublic/hriday.png", "text": "HRIDAY CHANDRA \n SARMA\n Lecturer" },
+      { "source": "./assets/images/mpublic/awele.png", "text": "AWELE OGUEJIOFOR \nLecturer" }
+    ],
+    "mseImagesWithText": [
+      { "source": "./assets/images/CS_teachers/junghopark.png", "text": "JUNG HO PARK\nAssociate Professor,\n Department chair" },
+      { "source": "./assets/images/CS_teachers/steveneisenbarth.png", "text": "STEVEN EISENBARTHE\nProfessor" },
+      { "source": "./assets/images/CS_teachers/dulguundusal.png", "text": "DULGUUNDUSAL T.\nLecturer" },
+      { "source": "./assets/images/CS_teachers/dulamsuren.png", "text": "DULAMSUREN SHARKHUU\nAssistant Professor" }
     ],
 
     "headerEN":[
@@ -878,8 +914,106 @@
     
     "opportunityTitle": "Opportunity",
     "opportunityContent": "\n• Mongolian NTV, MN25, NTV, EDU TV, TV2, Bloomberg Mongolia TVs and Global Internship for foreign students in their countries"
-  }
-  
+  },
 
+  "masterFleEN": {
+    "welcomeTitle": "WELCOME TO MASTER IN FOREIGN LANGUAGE EDUCATION",
+    "welcomeDescription": "FLE at MIU is founded for training international English education specialists who have a thorough understanding of Language Acquisition and various training and teaching methods. FLE teaches the basic principles and fundamentals of languages, which are crucial for effective foreign language education. \nFLE looks to enhance students’ understanding of both English and non-English speaking cultures and languages. The program also gives students the opportunity to examine their own language and culture through interaction with students from different cultures.",
     
+    "meetOurFaculties": "Meet our Faculties",
+    
+    "durationTitle": "Duration",
+    "durationContent": "2 years/ Onsite",
+    "intakesTitle": "Intakes",
+    "intakesContent": "August-September",
+    "ApplyButton": "APPLY",
+
+    "admissionRequirementsTitle": "Admission Requirements",
+    "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+    
+    "curriculumTitle": "Curriculum",
+    "curriculumContent": "Theory & Method in Second Language Learning\nEnglish Language Teaching Method\nMaterial Use & Development for English Education\nTeacher Education & Development\nPrinciples of Language Testing\nTeaching Language & Culture\nResearch Methodology for English Language\nTeaching Seminar: Current Issues in Language Teaching\nProfessional Practice",
+    
+    "careerOpportunityTitle": "Career Opportunity",
+    "careerOpportunityContent": "\n• FLE faculty members are from different foreign countries and are holding master and doctor degrees of prestigious universities \n• Providing classes and seminars that will be taught from various perspectives\n• Helping students to complete an in-depth dissertation through one-on-one thesis guidance\n• Providing an academic and systematic course about English education"
+    
+  },
+
+  "masterMbaEN": {
+    "welcomeTitle": "WELCOME TO MASTER IN BUSINESS ADMINISTRATION",
+    "welcomeDescription": "MBA (International Marketing) at MIU is founded to train students to become international professionals who can lead the global era. MBA (International Marketing) teaches students how to make practical strategies to activate companies by combining theories and practices which students will learn through direct visits to the business fields between Korea and Mongolia or other countries. Also, training leaders who are able to take significant responsibilities in domestic and international corporations.",
+    
+    "meetOurFaculties": "Meet our Faculties",
+    
+    "durationTitle": "Duration",
+    "durationContent": "2 years/ Onsite",
+    "intakesTitle": "Intakes",
+    "intakesContent": "August-September",
+    "ApplyButton": "APPLY",
+
+    "departmentObjectivesTitle": "Department Objectives",
+    "departmentObjectivesContent1": "• To educate students into professionals who can understand the flow of the international economy and management, ",
+    "departmentObjectivesContent2": "and contribute to companies in the country and area as international management professionals. ",
+    "departmentObjectivesContent3": "• To equip students to become professionals who have the ability to apply expertise that is learned through direct visits to",
+    "departmentObjectivesContent4": "Korean (or international) companies in Mongolia and seminars of entrepreneurs in real business situations.",
+    
+    "curriculumTitle": "Curriculum",
+    "curriculumContent": "Marketing for Entrepreneurs\nMarketing Planning & Strategy\nBrand Management\nSales Management\nRetailing\nAdvertising\nConsumer Behavior\nGlobal Marketing\nField Study (Domestic, International)\nInternational Trade Practice (Korean, Mongolian)",
+    
+    "futureJobsTitle": "Future Job",
+    "futureJobsContent1": "\n• Professional Manager of All (Domestic, International & Global)",
+    "futureJobsContent2": "Organizations\n• Marketing Manager\n• Financial Analyst & Banker\n• HR Manager\n• Business Consultant\n• Financial Securities\n• Investment Analyst\n• Business Administrator",
+
+    "careerOpportunityTitle": "Career Opportunity",
+    "careerOpportunityContent1": "\n• Professional Manager of All (Domestic,",
+    "careerOpportunityContent2": "International & Global) Organizations\n• Marketing Manager\n• Financial Analyst & Banker\n• HR Manager\n• Business Consultant\n• Financial Securities\n• Investment Analyst\n• Business Administrator"
+    
+  },
+  "masterPubEN": {
+    "welcomeTitle": "WELCOME TO MASTER IN PUBLIC ADMINISTRATION",
+    "welcomeDescription": "Master of Public Administration (MPA) program is designed to prepare professionally-trained and ethical government officials and public service officers. MPA Students are to gain fundamental knowledge of public policy, its analysis and implementation that will impower them to make a positive change in their communities as well as internationally.",
+    
+    "meetOurFaculties": "Meet our Faculties",
+    
+    "durationTitle": "Duration",
+    "durationContent": "2 years/ Onsite",
+    "intakesTitle": "Intakes",
+    "intakesContent": "August-September",
+    "ApplyButton": "APPLY",
+
+    "admissionRequirementsTitle": "Admission Requirements",
+    "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+    
+    "curriculumTitle": "Curriculum",
+    "curriculumContent": "Year 1 / Students are introduced to \n Theoretical knowledge in Public Affairs\n Research Methodology and Design\n Economic Theories and Public Policy \n \n Year 2 / Students move to\n In depth studies of the Public Affairs and practices\n Practical application of the theoretical knowledge through supervised independent research and thesis; ",
+    
+    "majorCurriculumTitle": "Major Curriculum",
+    "majorCurriculumContent": "\n• MPA Major Curriculum:\n• Communication for Public Affairs,\n• Research Methods,\n• Public Policy and Strategy,\n• Economic Theory in Public Affairs,\n• Local Autonomy and Public Management,\n• Organizational Dynamics and Leadership,\n• Thesis",
+
+    "careerOpportunityTitle": "Career Opportunity",
+    "careerOpportunityContent": "\n• Public Officer in Central & Local Government\n• Manager in NPO\n• Policy Analyst & Consultant\n• International Development Organizations UNDP,\n  World Bank, Asia Development Bank,\n• Private Sector Multinational Companies, \n  Development Companies"
+    
+  },
+  "masterSeEN": {
+    "welcomeTitle": "WELCOME TO MASTER IN SOFTWARE ENGINEERING",
+    "welcomeDescription": "Master in Software Engineering department at MIU provides the students who are able to fit in the technology era, with basic science and software engineering knowledge as well as field experiences",
+    
+    "meetOurFaculties": "Meet our Faculties",
+    
+    "durationTitle": "Duration",
+    "durationContent": "2 years/ Onsite",
+    "intakesTitle": "Intakes",
+    "intakesContent": "August-September",
+    "ApplyButton": "APPLY",
+
+    "admissionRequirementsTitle": "Admission Requirements",
+    "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+    
+    "curriculumTitle": "Curriculum",
+    "curriculumContent": "•Analysis of Software Artifacts\n•Security-sensitive software\n•Real-time software system\n•Agile Software Development Frameworks\n•Research in future system software (OS and programming language)\n•System Architectures for Managers",
+  
+    "careerOpportunityTitle": "Career Opportunity",
+    "careerOpportunityContent": "Our graduates work and intern in a range of jobs in a broad range of fields — public relations, marketing, advertising, social media, television, radio, magazines, human resources, event planning, education, nonprofits, and technology. We’ve also had graduates start their own businesses and others go on to graduate school in communication, law, public health, strategic communications, and education."
+    
+  }
 }

@@ -29,7 +29,7 @@ const Howtoapply_Under= ({ navigation, language }) => {
     >
       <View style={{flexDirection: "row", marginTop: '5%'}}>
         <View style={{width: width * 0.1, marginTop: '-1%' }}>
-          <Image source={require('../../assets/images/howtoapply1.png')} style={{width: 'auto', height: width * 0.25}} resizeMode="contain"/>
+          <Image source={require('../../assets/images/calligraphy/howtoapply1.png')} style={{width: 'auto', height: width * 0.25}} resizeMode="contain"/>
         </View>
           <View style={{ width: width * 0.18, marginLeft: '1%'}}>
                 <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>
@@ -57,7 +57,7 @@ const Howtoapply_Under= ({ navigation, language }) => {
                     <Button type="Fourth" text={content.graduateButton} style={{width: width * 0.124}} onPress={() => navigation.navigate('How To Apply Graduate')}></Button>
                 </View>
             </View>
-            <View style={{flexDirection: "row", width: width*0.6, marginLeft:'-8.8%', marginTop: '3%', justifyContent:'center'}}>
+            <View style={{flexDirection: "row", width: width*0.6, marginLeft:'-3%', marginTop: '3%', justifyContent:'center'}}>
               <ToolTip 
                 text={content.tooltipText1} 
                 lines={3} 

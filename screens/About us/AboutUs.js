@@ -79,10 +79,10 @@ const AboutUs=({navigation, language})=>{
           <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', width:width*0.8, marginTop:width*0.03, marginBottom:width*0.075}}>
 
             <View style={{flexDirection: 'row'}}>
-              <HoverButton2 icon={require("../../assets/images/vision1.png")} text={content.hoverText1} descr={content.hoverDescr1}></HoverButton2>
-              <HoverButton2 icon={require("../../assets/images/vision2.png")} text={content.hoverText2} descr={content.hoverDescr2} style={{marginLeft: width*0.05}}></HoverButton2>
-              <HoverButton2 icon={require("../../assets/images/vision3.png")} text={content.hoverText3} descr={content.hoverDescr3} style={{marginLeft: width*0.05}}></HoverButton2>
-              <HoverButton2 icon={require("../../assets/images/vision4.png")} text={content.hoverText4} descr={content.hoverDescr4} style={{marginLeft: width*0.05}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision/vision1.png")} text={content.hoverText1} descr={content.hoverDescr1}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision/vision2.png")} text={content.hoverText2} descr={content.hoverDescr2} style={{marginLeft: width*0.05}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision/vision3.png")} text={content.hoverText3} descr={content.hoverDescr3} style={{marginLeft: width*0.05}}></HoverButton2>
+              <HoverButton2 icon={require("../../assets/images/vision/vision4.png")} text={content.hoverText4} descr={content.hoverDescr4} style={{marginLeft: width*0.05}}></HoverButton2>
             </View> 
           </View>
         </View>

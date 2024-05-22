@@ -26,7 +26,7 @@ const Overview= ({ navigation, language }) => {
     <ScrollView style={styles.container}>
         <View style={{flexDirection: "row", marginTop: width * 0.05}}>
             <View style={{width: width * 0.1, marginTop: '-1.5%'}}>
-                <Image source={require('../../assets/images/overviewcal.png')} style={{width: 'auto', height: width * 0.11}} resizeMode="contain"/>
+                <Image source={require('../../assets/images/calligraphy/overviewcal.png')} style={{width: 'auto', height: width * 0.11}} resizeMode="contain"/>
             </View>
             <View style={{ width: width * 0.18, marginLeft:'1%'}}>
                 <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>

@@ -26,7 +26,7 @@ const Scholarship= ({ navigation, language }) => {
     <ScrollView style={styles.container}>
         <View style={{flexDirection: "row", marginTop: width * 0.05}}>
             <View style={{width: width * 0.1, marginTop: '-1.5%', marginRight: 'auto'}}>
-                <Image source={require('../../assets/images/scholarcal.png')} style={{width: 'auto', height: width * 0.13}} resizeMode="contain"/>
+                <Image source={require('../../assets/images/calligraphy/scholarcal.png')} style={{width: 'auto', height: width * 0.13}} resizeMode="contain"/>
             </View>
             <View style={{ width: width * 0.18, marginLeft: '1%'}}>
                 <View style={{ borderBottomWidth: width * 0.0008, width: '90%', paddingBottom: width * 0.01, paddingLeft: width * 0.01}}>
@@ -88,7 +88,7 @@ const Scholarship= ({ navigation, language }) => {
             />
         </View>      
         <View style={{width: width * 0.1, marginTop: '-2%', marginLeft: 'auto', marginBottom: width * 0.1}}>
-            <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+            <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
         </View>
         </View>
         <Footer language={language}/>

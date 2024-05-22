@@ -37,7 +37,7 @@ const MapComponent = ({
   return (
       <View style={[styles.imageContainer, {width: windowWidth, height: windowWidth* 0.56}]}>
         <Image
-          source={require("../../assets/images/map.png")}
+          source={require("../../assets/images/map/map.png")}
           style={[styles.image, {height: windowWidth * 0.56}]}
         />
 

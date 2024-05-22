@@ -1,23 +1,35 @@
 import React, { useEffect } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
+import data from '../../static.json';
+import mn from '../../staticMN.json';
+import ru from '../../staticRU.json';
 
-const Master_Public= ({ navigation }) => {
+const Master_Public= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
+    const { apply } = data.links;
+    const imagesWithText = data.mbaImagesWithText;
+    let content;
+    switch (language) {
+        case 'mn':
+            content = mn.masterPubMN;
+            break;
+        case 'ru':
+            content = ru.masterPubRU;
+            break;
+        case 'en':
+        default:
+            content = data.masterPubEN;
+            break;
+    }
     useEffect( () => {
         
     })
-    const imagesWithText = [
-        { source: require('../../assets/images/mpublic/jericho.png'), text: "JERICHO BURG\n Dean of School of International\n Studies and Communication" },
-        { source: require('../../assets/images/mpublic/mohammad.png'), text: "MOHAMMAD\n ISHFAQ \n Lecturer" },
-        { source: require('../../assets/images/mpublic/hriday.png'), text: "HRIDAY CHANDRA \n SARMA\n Lecturer" },
-        { source: require('../../assets/images/mpublic/awele.png'), text: "AWELE OGUEJIOFOR \nLecturer" },
-    ];
 
     return (
         <ScrollView
@@ -25,28 +37,26 @@ const Master_Public= ({ navigation }) => {
         >
             <View style={{flexDirection: "row", marginTop: width * 0.05, height: width * 0.58}}>
                 <View style={{width: width * 0.1, marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/masterpublic.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/masterpublic.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-0.016, borderRadius: width * 0.008}}>
-                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO MASTER IN PUBLIC ADMINISTRATION</FONT>
-                    <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>Mater of Public Administration (MPA) program is designed to prepare professionally-trained and 
-                    ethical government officials and public service officers. MPA Students are to gain fundamental knowledge of public policy, its analysis and implementation 
-                    that will impower them to make a positive change in their communities as well as internationally.</FONT>
+                    <FONT type="Title" style={{fontSize: 25}}>{content.welcomeTitle}</FONT>
+                    <FONT type="Regular" style={{fontSize: 18, padding: width*0.005}} lines={3}>{content.welcomeDescription}</FONT>
                 </View>
-                <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: '-2%'}}>
+                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
             <View style={{
                 backgroundColor: '#F6FAFF',
-                borderBottomEndRadius: 15,
-                borderBottomStartRadius:15,
+                borderBottomEndRadius: width * 0.011,
+                borderBottomStartRadius:width * 0.011,
                 width: width*0.5,
                 marginTop: width*-0.5,
                 marginLeft: width*0.12
             }}>
-                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>Meet our Faculties</FONT>
+                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>{content.meetOurFaculties}</FONT>
 
                 <ScrollView alwaysBounceHorizontal={true} horizontal showsHorizontalScrollIndicator={false}>
                     {imagesWithText.map(({ source, text }) => (
@@ -57,7 +67,7 @@ const Master_Public= ({ navigation }) => {
                                     source={source}
                                     style={{
                                         width: width*0.108,
-                                        height:height*0.25,
+                                        height:width*0.15,
                                     }}
                                 />
                                 <FONT style={{fontSize:13, textAlign: 'center'}}>{text}</FONT>
@@ -70,67 +80,54 @@ const Master_Public= ({ navigation }) => {
                                 <View style={{flexDirection: 'row',marginTop: width*0.02}}>
                                     <Clock width={width * 0.02} height={width * 0.04}/>
                                     <View style={{marginLeft: width*0.007}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
-                                        <FONT style={{fontSize: 18}}>2 years/ Onsite</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.durationTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.durationContent}</FONT>
                                     </View>
                                 </View>
                                 <View style={{flexDirection: 'row', marginTop: width*0.002, }}>
                                     <Calendar width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.007}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
-                                        <FONT style={{fontSize: 18}}>August-September</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.intakesTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.intakesContent}</FONT>
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width*0.008, marginLeft: width*.002}} ></Button>
+                            <Button type="Apply2" text={content.ApplyButton} style={{ marginTop: width*0.008, marginLeft: width*.002}} onPress={()=> Linking.openURL(apply)}></Button>
                 </View>
                 <View style={{width: width*0.99, marginTop: width*0.03}}>
                     <ExpandableList 
-                    title="Admission Requirements" 
-                    content={"All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter "}
+                    title={content.admissionRequirementsTitle} 
+                    content={content.admissionRequirementsContent}
                     maxHeightPercentage={120}
                 />
                     <ExpandableList
-                        title="Curriculum"
-                        content={"Year 1 / Students are introduced to \n Theoretical knowledge in Public Affairs\n Research Methodology and Design\n Economic Theories and Public Policy \n \n Year 2 / Students move to\n In depth studies of the Public Affairs and practices\n Practical application of the theoretical knowledge through supervised independent research and thesis; "}
+                        title={content.curriculumTitle}
+                        content={content.curriculumContent}
                         maxHeightPercentage={115}
                     />
                 </View>
             </View>
-            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.38,marginTop: width*0.020, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+            <View style={{borderRadius: width * 0.022, borderColor: "#CDD4FB", borderWidth: 1, width: width*0.38,marginTop: width*0.020, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Major Curriculum</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>{content.majorCurriculumTitle}</FONT>
             </View>
             <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
                 <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• MPA Major Curriculum:
-                {'\n'}• Communication for Public Affairs,
-                {'\n'}• Research Methods,
-                {'\n'}• Public Policy and Strategy,
-                {'\n'}• Economic Theory in Public Affairs,
-                {'\n'}• Local Autonomy and Public Management,
-                {'\n'}• Organizational Dynamics and Leadership,
-                {'\n'}• Thesis
+                    {content.majorCurriculumContent}
                 </FONT>
             </View>  
             </View>
-            <View style={{borderRadius: 30, borderColor: "#CDD4FB", borderWidth: 1, height:width*0.188, width: width*0.35, marginLeft: width*0.510, marginTop: width*-0.188, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
+            <View style={{borderRadius: width * 0.022, borderColor: "#CDD4FB", borderWidth: 1, height:width*0.188, width: width*0.35, marginLeft: width*0.510, marginTop: width*-0.188, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
             <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunity</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>{content.careerOpportunityTitle}</FONT>
             </View>
             <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
                 <FONT type="Regular" style={{fontSize: 18}}>
-                {'\n'}• Public Officer in Central & Local Government
-                {'\n'}• Manager in NPO
-                {'\n'}• Policy Analyst & Consultant
-                {'\n'}• International Development Organizations UNDP,
-                {'\n'}  World Bank, Asia Development Bank,
-                {'\n'}• Private Sector Multinational Companies, 
-                {'\n'}  Development Companies
+                    {content.careerOpportunityContent}
                 </FONT>
             </View>  
             </View>
-            <Footer/>
+            <Footer language={language}/>
         </ScrollView>
         
     );

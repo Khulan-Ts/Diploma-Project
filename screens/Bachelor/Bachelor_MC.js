@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking  } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Clock from "../../assets/icons/clock";
@@ -12,6 +12,7 @@ import ru from "../../staticRU.json";
 
 const Bachelor_MC= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
+    const { apply } = data.links;
     const imagesWithText = data.mcImagesWithText;
     let content;
     switch (language) {
@@ -36,21 +37,21 @@ const Bachelor_MC= ({ navigation, language }) => {
         >
             <View style={{flexDirection: "row", marginTop: width * 0.05}}>
                 <View style={{width: width * 0.1, marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/calligraphy/bachelormc.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/bachelormc.png')} style={{width: 'auto', height: width * 0.2}} resizeMode="contain"/>
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width * 0.13, padding: width*0.01, marginTop: width*-0.016, borderRadius: width * 0.008}}>
                     <FONT type="Title" style={{fontSize: 25}}>{content.welcomeTitle}</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={6}>{content.welcomeDescription}</FONT>
                 </View>
-                <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
+                <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
             <View style={{
                 backgroundColor: '#F6FAFF',
-                borderBottomEndRadius: 15,
-                borderBottomStartRadius:15,
+                borderBottomEndRadius: width * 0.011,
+                borderBottomStartRadius:width * 0.011,
                 width: width*0.5,
                 marginTop: width*-0.47,
                 marginLeft: width*0.12
@@ -66,7 +67,7 @@ const Bachelor_MC= ({ navigation, language }) => {
                                     source={source}
                                     style={{
                                         width: width*0.108,
-                                        height:height*0.25,
+                                        height:width*0.15,
                                     }}
                                 />
                                 <FONT style={{fontSize:13, textAlign: 'center'}}>{text}</FONT>
@@ -91,7 +92,7 @@ const Bachelor_MC= ({ navigation, language }) => {
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width*0.01, marginLeft: width*.002}} ></Button>
+                            <Button type="Apply2" text={content.ApplyButton} style={{ marginTop: width*0.01, marginLeft: width*.002}} onPress={()=> Linking.openURL(apply)} ></Button>
                 </View>
                 <View style={{width: width*0.95, marginTop: width*0.05  }}>
                     <ExpandableList 

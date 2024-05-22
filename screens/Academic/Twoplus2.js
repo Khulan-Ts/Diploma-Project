@@ -10,7 +10,7 @@ import ru from "../../staticRU.json";
 
 const Twoplus2=({navigation, language})=>{
   const { width, height } = useWindowDimensions();
-  const twoplus2Img = data.Twoplus2Img;
+  const twoplus2Img = data.twoplus2Img;
   const twoplus2EN = data.twoplus2EN;
   const twoplus2MN = mn.twoplus2MN;
   const twoplus2RU = ru.twoplus2RU;
@@ -58,12 +58,12 @@ const Twoplus2=({navigation, language})=>{
 
           <View style={{flexDirection:'column', alignItems:'flex-start',justifyContent:'left',flex:1, width:width*0.65, marginTop:width*0.01}}>
              <Image
-                source={{uri: Twoplus2Img.albanyImg}}
+                source={{uri: twoplus2Img.albanyImg}}
                 style={{width: width*0.6, height:width*0.25}}resizeMode="contain"
               />
               <FONT style={{backgroundColor:'#EDF0FF',marginTop:width*0.05, marginLeft:width*0.07, width:width*0.3,color: '#000000', textAlign:'left', fontSize: 23,}}>{content.Introduction}</FONT>
               <Image
-                source={{uri: Twoplus2Img.introduction}}
+                source={{uri: twoplus2Img.introduction}}
                 style={{marginTop:width*0.02,height: width*0.2, width:width*0.4, marginLeft:width*0.075}}resizeMode="contain"
               />
           </View>

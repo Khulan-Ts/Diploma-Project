@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking  } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Clock from "../../assets/icons/clock";
@@ -12,6 +12,7 @@ import ru from "../../staticRU.json";
 
 const Bachelor_ME= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
+    const { apply } = data.links;
     const imagesWithText = data.meImagesWithText;
     let content;
     switch (language) {
@@ -43,7 +44,7 @@ const Bachelor_ME= ({ navigation, language }) => {
                     <FONT type="Title" style={{fontSize: 25}}>{content.welcomeTitle}</FONT>
                     <FONT type="Regular" style={{fontSize: 18}} lines={6}>{content.welcomeDescription}</FONT>
                 </View>
-                <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
+                <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: '-2%'}}>
                     <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
@@ -91,7 +92,7 @@ const Bachelor_ME= ({ navigation, language }) => {
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={content.ApplyButton} style={{ marginTop: width*0.01, marginLeft: width*.002}} ></Button>
+                            <Button type="Apply2" text={content.ApplyButton} style={{ marginTop: width*0.01, marginLeft: width*.002}} onPress={()=> Linking.openURL(apply)}></Button>
                 </View>
                 <View style={{width: width*0.95, marginTop: width*0.05  }}>
                     <ExpandableList 

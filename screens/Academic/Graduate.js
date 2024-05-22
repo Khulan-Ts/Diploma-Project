@@ -82,7 +82,7 @@ const Graduate= ({ navigation, language }) => {
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>{content.ProgramTitle}</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.MSEButton} onPress={()=>navigation.navigate("Master FLE")}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.FLEButton} onPress={()=>navigation.navigate("Master FLE")}>
             </Button>
           </View>
         </View>

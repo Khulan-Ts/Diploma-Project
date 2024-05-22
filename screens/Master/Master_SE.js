@@ -1,23 +1,35 @@
 import React, { useEffect } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
+import data from '../../static.json';
+import mn from '../../staticMN.json';
+import ru from '../../staticRU.json';
 
-const Master_SE= ({ navigation }) => {
+const Master_SE= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
+    const { apply } = data.links;
+    const imagesWithText = data.mseImagesWithText;
+    let content;
+    switch (language) {
+        case 'mn':
+            content = mn.masterSeMN;
+            break;
+        case 'ru':
+            content = ru.masterSeRU;
+            break;
+        case 'en':
+        default:
+            content = data.masterSeEN;
+            break;
+    }
     useEffect( () => {
         
     })
-    const imagesWithText = [
-        { source: require('../../assets/images/junghopark.png'), text: "JUNG HO PARK\nAssociate Professor,\n Department chair" },
-        { source: require('../../assets/images/steveneisenbarth.png'), text: "STEVEN\n EISENBARTH \nProfessor" },
-        { source: require('../../assets/images/dulguundusal.png'), text: "DULGUUNDUSAL T.\nLecturer" },
-        { source: require('../../assets/images/dulamsuren.png'), text: "DULAMSUREN\n SHARKHUU \nAssistant Professor" },
-    ];
 
     return (
         <ScrollView
@@ -25,27 +37,26 @@ const Master_SE= ({ navigation }) => {
         >
             <View style={{flexDirection: "row", marginTop: width * 0.05}}>
                 <View style={{width: width * 0.1, marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/calligraphy/bachelorba1.png')} style={{width: 'auto', height: width * 0.3}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/bachelorcs.png')} style={{width: 'auto', height: width * 0.4}} resizeMode="contain"/>
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.02, backgroundColor: 'white', height: width*0.08, padding: width*0.01, marginTop: width*-.016, borderRadius: width * 0.008}}>
-                    <FONT type="Title" style={{fontSize: 25}}>WELCOME TO MASTER IN SOFTWARE ENGINEERING</FONT>
-                    <FONT type="Regular" style={{fontSize: 18}} lines={2}>Master in Software Engineering department at MIU provides the students who are able to fit in the 
-                    technology era, with basic science and software engineering knowledge as well as field experiences</FONT>
+                    <FONT type="Title" style={{fontSize: 25}}>{content.welcomeTitle}</FONT>
+                    <FONT type="Regular" style={{fontSize: 18}} lines={2}>{content.welcomeDescription}</FONT>
                 </View>
                 <View style={{width: width * 0.1, marginBottom: height * 0.3, marginLeft: 'auto', marginTop: '-2%'}}>
-                    <Image source={require('../../assets/images/bachelorba2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
             <View style={{
                 backgroundColor: '#F6FAFF',
-                borderBottomEndRadius: 15,
-                borderBottomStartRadius:15,
+                borderBottomEndRadius: width * 0.011,
+                borderBottomStartRadius:width * 0.011,
                 width: width*0.5,
                 marginTop: width*-0.5,
                 marginLeft: width*0.12
             }}>
-                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>Meet our Faculties</FONT>
+                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>{content.meetOurFaculties}</FONT>
 
                 <ScrollView alwaysBounceHorizontal={true} horizontal showsHorizontalScrollIndicator={false}>
                     {imagesWithText.map(({ source, text }) => (
@@ -67,58 +78,50 @@ const Master_SE= ({ navigation }) => {
                 <View style={{marginLeft: width*0.58, marginTop: width*-0.16}}>
                             <View style={[styles.infoContainer, {width: width * 0.17, height: width* 0.115, padding: width * 0.0075, borderRadius: width * 0.022}]}>
                                 <View style={{flexDirection: 'row',marginTop: width*0.01}}>
-                                    <Clock width={24} height={28}/>
+                                    <Clock width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.01}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
-                                        <FONT style={{fontSize: 18}}>2 years/ Onsite</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.durationTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.durationContent}</FONT>
                                     </View>
                                 </View>
                                 <View style={{flexDirection: 'row', marginTop: width*0.001, }}>
-                                    <Calendar width={25} height={25}/>
+                                    <Calendar width={width * 0.02} height={width * 0.02}/>
                                     <View style={{marginLeft: width*0.005}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
-                                        <FONT style={{fontSize: 18}}>August-September</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.intakesTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.intakesContent}</FONT>
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginTop: width*0.001, marginLeft: width*.002}} ></Button>
+                            <Button type="Apply2" text={content.ApplyButton} style={{ marginTop: width*0.001, marginLeft: width*.002}} onPress={()=> Linking.openURL(apply)}></Button>
                 </View>
                 <View style={{width: width*1, marginTop: width*0.01}}>
                     <ExpandableList 
-                    title="Admission Requirements" 
-                    content={"All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter "}
+                    title={content.admissionRequirementsTitle}
+                    content={content.admissionRequirementsContent}
                     maxHeightPercentage={130}
                 />
                 <ExpandableList
-                    title="Curriculum"
+                    title={content.curriculumTitle}
                     content={<FONT>
                         <FONT style={{ fontWeight: 'bold' }}>
-                            {'•Analysis of Software Artifacts\n'}
-                            {'•Security-sensitive software\n'}
-                            {'•Real-time software system\n'}
-                            {'•Agile Software Development Frameworks\n'}
-                            {'•Research in future system software (OS and programming language)\n'}
-                            {'•System Architectures for Managers'}
+                            {content.curriculumContent}
                         </FONT>                                                                                                         
                       </FONT>}
                     maxHeightPercentage={110}
                 />
                 </View>
             </View>
-            <View style={{marginBottom:width*0.1, borderColor: "#CDD4FB", borderRadius: 30, borderWidth: 1, width: width*0.75,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
+            <View style={{marginBottom:width*0.1, borderColor: "#CDD4FB", borderRadius: width * 0.022, borderWidth: 1, width: width*0.75,marginTop: width*0.025, marginLeft: width*0.12, shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
             <View style={{marginLeft: width*0.01}}>
-                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>Career Opportunity</FONT>
+                <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.005}}>{content.careerOpportunityTitle}</FONT>
             </View>
             <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
                 <FONT lines={4} type="Regular" style={{fontSize: 18}}>
-                        Our graduates work and intern in a range of jobs in a broad range of fields — public relations, marketing, advertising, 
-                        social media, television, radio, magazines, human resources, event planning, education, nonprofits, and technology. We’ve also 
-                        had graduates start their own businesses and others go on to graduate school in communication, law, public health, strategic 
-                        communications, and education.
+                        {content.careerOpportunityContent}
                 </FONT>
             </View>  
             </View>
-            <Footer/>
+            <Footer language={language}/>
         </ScrollView>
         
     );

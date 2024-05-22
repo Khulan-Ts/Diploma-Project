@@ -693,6 +693,107 @@
         
         "opportunityTitle": "Opportunity",
         "opportunityContent": "\n• Mongolian NTV, MN25, NTV, EDU TV, TV2, Bloomberg Mongolia TVs and Global Internship for foreign students in their countries"
+      },
+
+      "masterFleMN": {
+        "welcomeTitle": "WELCOME TO MASTER IN FOREIGN LANGUAGE EDUCATION",
+        "welcomeDescription": "FLE at MIU is founded for training international English education specialists who have a thorough understanding of Language Acquisition and various training and teaching methods. FLE teaches the basic principles and fundamentals of languages, which are crucial for effective foreign language education. \nFLE looks to enhance students’ understanding of both English and non-English speaking cultures and languages. The program also gives students the opportunity to examine their own language and culture through interaction with students from different cultures.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "2 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Theory & Method in Second Language Learning\nEnglish Language Teaching Method\nMaterial Use & Development for English Education\nTeacher Education & Development\nPrinciples of Language Testing\nTeaching Language & Culture\nResearch Methodology for English Language\nTeaching Seminar: Current Issues in Language Teaching\nProfessional Practice",
+        
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent": "\n• FLE faculty members are from different foreign countries and are holding master and doctor degrees of prestigious universities \n• Providing classes and seminars that will be taught from various perspectives\n• Helping students to complete an in-depth dissertation through one-on-one thesis guidance\n• Providing an academic and systematic course about English education"
+        
+      },
+
+      "masterMbaMN": {
+        "welcomeTitle": "WELCOME TO MASTER IN BUSINESS ADMINISTRATION",
+        "welcomeDescription": "MBA (International Marketing) at MIU is founded to train students to become international professionals who can lead the global era. MBA (International Marketing) teaches students how to make practical strategies to activate companies by combining theories and practices which students will learn through direct visits to the business fields between Korea and Mongolia or other countries. Also, training leaders who are able to take significant responsibilities in domestic and international corporations.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "2 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "departmentObjectivesTitle": "Department Objectives",
+        "departmentObjectivesContent1": "• To educate students into professionals who can understand the flow of the international economy and management, ",
+        "departmentObjectivesContent2": "and contribute to companies in the country and area as international management professionals. ",
+        "departmentObjectivesContent3": "• To equip students to become professionals who have the ability to apply expertise that is learned through direct visits to",
+        "departmentObjectivesContent4": "Korean (or international) companies in Mongolia and seminars of entrepreneurs in real business situations.",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Marketing for Entrepreneurs\nMarketing Planning & Strategy\nBrand Management\nSales Management\nRetailing\nAdvertising\nConsumer Behavior\nGlobal Marketing\nField Study (Domestic, International)\nInternational Trade Practice (Korean, Mongolian)",
+        
+        "futureJobsTitle": "Future Job",
+        "futureJobsContent1": "\n• Professional Manager of All (Domestic, International & Global)",
+        "futureJobsContent2": "Organizations\n• Marketing Manager\n• Financial Analyst & Banker\n• HR Manager\n• Business Consultant\n• Financial Securities\n• Investment Analyst\n• Business Administrator",
+    
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent1": "\n• Professional Manager of All (Domestic,",
+        "careerOpportunityContent2": "International & Global) Organizations\n• Marketing Manager\n• Financial Analyst & Banker\n• HR Manager\n• Business Consultant\n• Financial Securities\n• Investment Analyst\n• Business Administrator"
+        
+      },
+      "masterPubMN": {
+        "welcomeTitle": "WELCOME TO MASTER IN PUBLIC ADMINISTRATION",
+        "welcomeDescription": "Master of Public Administration (MPA) program is designed to prepare professionally-trained and ethical government officials and public service officers. MPA Students are to gain fundamental knowledge of public policy, its analysis and implementation that will impower them to make a positive change in their communities as well as internationally.",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "2 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "Year 1 / Students are introduced to \n Theoretical knowledge in Public Affairs\n Research Methodology and Design\n Economic Theories and Public Policy \n \n Year 2 / Students move to\n In depth studies of the Public Affairs and practices\n Practical application of the theoretical knowledge through supervised independent research and thesis; ",
+        
+        "majorCurriculumTitle": "Major Curriculum",
+        "majorCurriculumContent": "\n• MPA Major Curriculum:\n• Communication for Public Affairs,\n• Research Methods,\n• Public Policy and Strategy,\n• Economic Theory in Public Affairs,\n• Local Autonomy and Public Management,\n• Organizational Dynamics and Leadership,\n• Thesis",
+    
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent": "\n• Public Officer in Central & Local Government\n• Manager in NPO\n• Policy Analyst & Consultant\n• International Development Organizations UNDP,\n  World Bank, Asia Development Bank,\n• Private Sector Multinational Companies, \n  Development Companies"
+        
+      },
+      "masterSeMN": {
+        "welcomeTitle": "WELCOME TO MASTER IN SOFTWARE ENGINEERING",
+        "welcomeDescription": "Master in Software Engineering department at MIU provides the students who are able to fit in the technology era, with basic science and software engineering knowledge as well as field experiences",
+        
+        "meetOurFaculties": "Meet our Faculties",
+        
+        "durationTitle": "Duration",
+        "durationContent": "2 years/ Onsite",
+        "intakesTitle": "Intakes",
+        "intakesContent": "August-September",
+        "ApplyButton": "APPLY",
+    
+        "admissionRequirementsTitle": "Admission Requirements",
+        "admissionRequirementsContent": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process. \n \n The Entrance Exam consists of three sections: Essay, Grammar & Vocabulary. \n 70% Entrance Exam (20% Grammar / Essay 40% / Speaking 40%) \n 30% Statement of Purpose & Recommendation Letter",
+        
+        "curriculumTitle": "Curriculum",
+        "curriculumContent": "•Analysis of Software Artifacts\n•Security-sensitive software\n•Real-time software system\n•Agile Software Development Frameworks\n•Research in future system software (OS and programming language)\n•System Architectures for Managers",
+      
+        "careerOpportunityTitle": "Career Opportunity",
+        "careerOpportunityContent": "Our graduates work and intern in a range of jobs in a broad range of fields — public relations, marketing, advertising, social media, television, radio, magazines, human resources, event planning, education, nonprofits, and technology. We’ve also had graduates start their own businesses and others go on to graduate school in communication, law, public health, strategic communications, and education."
+        
       }
 
       

@@ -1,52 +1,61 @@
 import React, { useEffect } from "react";
-import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-native";
+import { StyleSheet, useWindowDimensions, Image, ScrollView, View, Linking } from "react-native";
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Clock from "../../assets/icons/clock";
 import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
+import data from '../../static.json';
+import mn from '../../staticMN.json';
+import ru from '../../staticRU.json';
 
-const Master_MBA= ({ navigation }) => {
+const Master_MBA= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
+    const { apply } = data.links;
+    const imagesWithText = data.mbaImagesWithText;
+    let content;
+    switch (language) {
+        case 'mn':
+            content = mn.masterMbaMN;
+            break;
+        case 'ru':
+            content = ru.masterMbaRU;
+            break;
+        case 'en':
+        default:
+            content = data.masterMbaEN;
+            break;
+    }
     useEffect( () => {
         
     })
-    const imagesWithText = [
-        { source: require('../../assets/images/MBA_teachers/choihui.png'), text: "CHOI HUI PARK\nProfessor,\n Department chair" },
-        { source: require('../../assets/images/MBA_teachers/victorngu.png'), text: "VICTOR NGU\n Professor" },
-        { source: require('../../assets/images/MBA_teachers/junguk.png'), text: "JUNG KUK KIM\nAssociate Professor" },
-        { source: require('../../assets/images/MBA_teachers/seung.png'), text: "SEUNG HUN BAEK\nSenior Lecturer" },
-        { source: require('../../assets/images/MBA_teachers/zhihong.png'), text: "ZHI HONG WANG /Jossy/\n Senior Lecturer" },
-        { source: require('../../assets/images/MBA_teachers/undrakh.png'), text: "UNDRAKH MUNKHBAATAR\nSecretary" },
-    ];
-
     return (
         <ScrollView
             style={styles.container}
         >
             <View style={{flexDirection: "row", marginTop: width * 0.05}}>
                 <View style={{width: width * 0.1}}>
-                    <Image source={require('../../assets/images/calligraphy/MBAcal.png')} style={{width: 'auto', height: width * 0.27}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/MBAcal.png')} style={{width: 'auto', height: width * 0.32}} resizeMode="contain"/>
                 </View>
              
                 <View style={{width: width * 0.75, marginLeft: width * 0.006, marginBottom: width* 0.02, backgroundColor: 'white', height: width*0.132, padding: width*0.01, marginTop: width*-.016, borderRadius:width*0.005}}>
-                    <FONT type="Title" style={{fontSize: 25, marginBottom:width*0.008}}>WELCOME TO MASTER IN BUSINESS ADMINISTRATION</FONT>
-                    <FONT type="Regular" style={{fontSize: 18}} >MBA (International Marketing) at MIU is founded to train students to become international professionals who can lead the global era. MBA (International Marketing) teaches students how to make practical strategies to activate companies by combining theories and practices which students will learn through direct visits to the business fields between Korea and Mongolia or other countries. Also, training leaders who are able to take significant responsibilities in domestic and international corporations.</FONT>
+                    <FONT type="Title" style={{fontSize: 25, marginBottom:width*0.008}}>{content.welcomeTitle}</FONT>
+                    <FONT type="Regular" style={{fontSize: 18}} >{content.welcomeDescription}</FONT>
                 </View>
                 <View style={{width: width * 0.1, marginBottom: width * 0.115, marginLeft: 'auto', marginTop: -width*0.02}}>
-                    <Image source={require('../../assets/images/bachelorba2.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
+                    <Image source={require('../../assets/images/calligraphy/miucal.png')} style={{width: 'auto', height: width * 0.5}} resizeMode="contain"/>
                 </View>       
             </View>
             <View style={{
                 backgroundColor: '#F6FAFF',
-                borderBottomEndRadius: 15,
-                borderBottomStartRadius:15,
+                borderBottomEndRadius: width * 0.011,
+                borderBottomStartRadius:width * 0.011,
                 width: width*0.5,
                 marginTop: width*-0.43,
                 marginLeft: width*0.11
             }}>
-                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>Meet our Faculties</FONT>
+                <FONT type="Subtitle" style={{fontSize:25, marginBottom: width*0.01}}>{content.meetOurFaculties}</FONT>
 
                 <ScrollView alwaysBounceHorizontal={true} horizontal showsHorizontalScrollIndicator={false}>
                     {imagesWithText.map(({ source, text }) => (
@@ -70,43 +79,34 @@ const Master_MBA= ({ navigation }) => {
                                 <View style={{flexDirection: 'row',marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
                                     <Clock width={width*0.02} height={width*0.02}/>
                                     <View style={{marginLeft: width*0.015}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Duration</FONT>
-                                        <FONT style={{fontSize: 18}}>2 years / Onsite</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.durationTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.durationContent}</FONT>
                                     </View>
                                 </View>
                                 <View style={{flexDirection: 'row', marginTop: width*0.001, alignItems:'center', marginLeft:width*0.015}}>
                                     <Calendar width={width*0.02} height={width*0.02}/>
                                     <View style={{marginLeft: width*0.015}}>
-                                        <FONT type="Title2" style={{fontSize: 18}}>Intakes</FONT>
-                                        <FONT style={{fontSize: 18}}>August-September</FONT>
+                                        <FONT type="Title2" style={{fontSize: 18}}>{content.intakesTitle}</FONT>
+                                        <FONT style={{fontSize: 18}}>{content.intakesContent}</FONT>
                                     </View>
                                 </View>
                             </View>
-                            <Button type="Apply2" text={"APPLY"} style={{ marginLeft: width*0.005, marginTop:width*0.03}} ></Button>
+                            <Button type="Apply2" text={content.ApplyButton} style={{ marginLeft: width*0.005, marginTop:width*0.03}} onPress={()=> Linking.openURL(apply)}></Button>
                 </View>
                 <View style={{width: width*0.95, marginTop: width*0.05}}>
                     <ExpandableList 
-                        title="Department Objectives" 
+                        title={content.departmentObjectivesTitle} 
                         content={
                             <>
-                                <span>• To educate students into professionals who can understand the flow of the international economy and management, &nbsp;&nbsp;&nbsp;and contribute to companies in the country and area as international management professionals.</span>{'\n'}
-                                <span>• To equip students to become professionals who have the ability to apply expertise that is learned through direct visits to &nbsp;&nbsp;&nbsp;Korean (or international) companies in Mongolia and seminars of entrepreneurs in real business situations.</span>
+                                <span>{content.departmentObjectivesContent1}&nbsp;&nbsp;&nbsp;{content.departmentObjectivesContent2}</span>{'\n'}
+                                <span>{content.departmentObjectivesContent3} &nbsp;&nbsp;&nbsp;{content.departmentObjectivesContent4}</span>
                             </>
                         }
                         maxHeightPercentage={115}
                     />
                 <ExpandableList
-                    title="Curriculum"
-                    content={<strong>Marketing for Entrepreneurs{'\n'}
-                    Marketing Planning & Strategy{'\n'}
-                    Brand Management{'\n'}
-                    Sales Management{'\n'}
-                    Retailing{'\n'}
-                    Advertising{'\n'}
-                    Consumer Behavior{'\n'}
-                    Global Marketing{'\n'}
-                    Field Study (Domestic, International){'\n'}
-                    International Trade Practice (Korean, Mongolian)</strong>}
+                    title={content.curriculumTitle}
+                    content={<strong>{content.curriculumContent}</strong>}
                     maxHeightPercentage={110}
                 />
                 </View>
@@ -114,41 +114,25 @@ const Master_MBA= ({ navigation }) => {
             <View style={{flexDirection:'row', width:width, marginTop:width*0.04}}>
                 <View style={{backgroundColor:'white',borderRadius: width*0.03, borderWidth: 1,height:width*0.215, width: width*0.43,marginRight:width*0.04, marginLeft: width*0.11,borderColor:'#EDF0FF',shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2}}>
                     <View style={{marginLeft: width*0.01}}>
-                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>Future Job</FONT>
+                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>{content.futureJobsTitle}</FONT>
                     </View>
                     <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
-                        <FONT type="Regular" style={{fontSize: 18}}>
-                        {'\n'}• Professional Manager of All (Domestic, International & Global) &nbsp;&nbsp;Organizations
-                        {'\n'}• Marketing Manager
-                        {'\n'}• Financial Analyst & Banker
-                        {'\n'}• HR Manager
-                        {'\n'}• Business Consultant
-                        {'\n'}• Financial Securities
-                        {'\n'}• Investment Analyst
-                        {'\n'}• Business Administrator
+                        <FONT type="Regular" style={{fontSize: 18}}>{content.futureJobsContent1} &nbsp;&nbsp; {content.futureJobsContent2}
                         </FONT>
                     </View>  
                 </View>
                 <View style={{backgroundColor:'white',borderRadius: width*0.03, borderWidth: 1,height:width*0.215, width: width*0.27,borderColor:'#EDF0FF', shadowColor: '#CDD4FB',shadowOffset: { width: 1, height: 2 },shadowOpacity: 1,shadowRadius: 2, marginBottom: width*0.1}}>
                     <View style={{marginLeft: width*0.01}}>
-                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>Opportunities</FONT>
+                        <FONT type="Title2" style={{fontSize: 25, marginTop:width*0.01}}>{content.careerOpportunityTitle}</FONT>
                     </View>
                     <View style={{marginLeft:width*0.02, marginBottom: width*0.01}}> 
-                        <FONT type="Regular" style={{fontSize: 18}}>
-                        {'\n'}• Professional Manager of All (Domestic, &nbsp;&nbsp;&nbsp;International & Global) Organizations
-                        {'\n'}• Marketing Manager
-                        {'\n'}• Financial Analyst & Banker
-                        {'\n'}• HR Manager
-                        {'\n'}• Business Consultant
-                        {'\n'}• Financial Securities
-                        {'\n'}• Investment Analyst
-                        {'\n'}• Business Administrator
+                        <FONT type="Regular" style={{fontSize: 18}}>{content.careerOpportunityContent1} &nbsp;&nbsp;&nbsp; {content.careerOpportunityContent2}
                         </FONT>
                     </View>  
                 </View>
             </View>
             
-            <Footer/>
+            <Footer language={language}/>
         </ScrollView>
         
     );

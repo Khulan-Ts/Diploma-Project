@@ -75,7 +75,7 @@ const App = () => {
             <Header
               type={"Primary"}
               buttontext={getHeaderContent(language)}
-              logoOnPress={() => navigation.navigate('Home')}
+              logoOnPress={() => navigation.navigate('MIU - Mongolia International University')}
               ButtonPress={[
                 () => navigation.navigate('About us'),
                 () => navigation.navigate('Undergraduate'),
@@ -177,10 +177,18 @@ const App = () => {
         <Stack.Screen name="Bachelor SE">
           {props => <Bachelor_SE {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Master Public" component={Master_Public} />
-        <Stack.Screen name="Master SE" component={Master_SE} />
-        <Stack.Screen name="Master MBA" component={Master_MBA} />
-        <Stack.Screen name="Master FLE" component={Master_FLE} />
+        <Stack.Screen name="Master Public">
+          {props => <Master_Public {...props} language={language} />}
+        </Stack.Screen>
+        <Stack.Screen name="Master SE">
+        {props => <Master_SE {...props} language={language} />}
+        </Stack.Screen>
+        <Stack.Screen name="Master MBA">
+          {props => <Master_MBA {...props} language={language} />}
+        </Stack.Screen>
+        <Stack.Screen name="Master FLE">
+          {props => <Master_FLE {...props} language={language} />}
+        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
