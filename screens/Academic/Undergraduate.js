@@ -61,32 +61,32 @@ const Undergraduate= ({ navigation, language }) => {
                 <FONT type="Subtitle2" style={{fontSize: 23}} >{content.SomTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={content.BAButton} style={{color: '#000000', marginTop: width * 0.01}} onPress={()=>navigation.navigate('Bachelor BA')}></Button>
-                <Button type="Seven" text={content.HTMButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015,}} onPress={()=>navigation.navigate('Bachelor HTM')}></Button>
+                <Button type="Seven" text={content.BAButton} style={{color: '#000000', marginTop: width * 0.01}} onPress={()=>navigation.navigate('Business Administration')}></Button>
+                <Button type="Seven" text={content.HTMButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015,}} onPress={()=>navigation.navigate('Hotel Management')}></Button>
             </View> 
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: width * 0.02}}>
                 <FONT type="Subtitle2" style={{fontSize: 23}} >{content.SoCSTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={content.SEButton} style={{color: '#000000', marginTop:width *0.01,}} onPress={()=>navigation.navigate('Bachelor SE')}></Button>
-                <Button type="Seven" text={content.CSButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=>navigation.navigate('Bachelor CS')}></Button>
+                <Button type="Seven" text={content.SEButton} style={{color: '#000000', marginTop:width *0.01,}} onPress={()=>navigation.navigate('Software Engineering')}></Button>
+                <Button type="Seven" text={content.CSButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=>navigation.navigate('Computer Science')}></Button>
             </View> 
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: width * 0.02}}>
                 <FONT type="Subtitle2" style={{fontSize: 23}}>{content.SoISCTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={content.IRButton} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('Bachelor IR')}></Button>
-                <Button type="Seven" text={content.MCButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}}  onPress={()=>navigation.navigate('Bachelor MC')}></Button>
+                <Button type="Seven" text={content.IRButton} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('International Relations')}></Button>
+                <Button type="Seven" text={content.MCButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}}  onPress={()=>navigation.navigate('Media Communication')}></Button>
             </View>
             <View style={{backgroundColor: '#EDF0FF', height: width * 0.024, marginTop: width * 0.02}}>
                 <FONT type="Subtitle2" style={{fontSize: 23}} >{content.ProgramTitle}</FONT>    
             </View> 
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={content.EEButton} style={{color: '#000000', marginTop:width *0.01}} onPress={()=>navigation.navigate('Bachelor EE')}></Button>
-                <Button type="Seven" text={content.FDButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=> navigation.navigate('Bachelor FD')}></Button>
+                <Button type="Seven" text={content.EEButton} style={{color: '#000000', marginTop:width *0.01}} onPress={()=>navigation.navigate('English Education')}></Button>
+                <Button type="Seven" text={content.FDButton} style={{color: '#000000', marginTop:width *0.01, marginLeft: height * 0.015}} onPress={()=> navigation.navigate('Fashion Design')}></Button>
             </View>
             <View style={{flexDirection: "row"}}>  
-                <Button type="Seven" text={content.MEButton} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('Bachelor ME')}></Button>
+                <Button type="Seven" text={content.MEButton} style={{color: '#000000', marginTop:width *0.01}}  onPress={()=>navigation.navigate('Music Education')}></Button>
             </View>
             
         </View>

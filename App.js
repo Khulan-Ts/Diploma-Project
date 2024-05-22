@@ -150,43 +150,43 @@ const App = () => {
         <Stack.Screen name="How To Apply UnderGraduate">
           {props => <Howtoapply_Under {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor BA" >
+        <Stack.Screen name="Business Administration" >
           {props => <Bachelor_BA {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor EE">
+        <Stack.Screen name="English Education">
           {props => <Bachelor_EE {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor CS">
+        <Stack.Screen name="Computer Science">
           {props => <Bachelor_CS {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor HTM">
+        <Stack.Screen name="Hotel Management">
           {props => <Bachelor_HTM {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor IR">
+        <Stack.Screen name="International Relations">
           {props => <Bachelor_IR {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor MC">
+        <Stack.Screen name="Media Communication">
           {props => <Bachelor_MC {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor FD">
+        <Stack.Screen name="Fashion Design">
           {props => <Bachelor_FD {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor ME">
+        <Stack.Screen name="Music Education">
           {props => <Bachelor_ME {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Bachelor SE">
+        <Stack.Screen name="Software Engineering">
           {props => <Bachelor_SE {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Master Public">
+        <Stack.Screen name="Master Public Administration">
           {props => <Master_Public {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Master SE">
+        <Stack.Screen name="Master Software Engineering">
         {props => <Master_SE {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Master MBA">
+        <Stack.Screen name="Master Business Administration">
           {props => <Master_MBA {...props} language={language} />}
         </Stack.Screen>
-        <Stack.Screen name="Master FLE">
+        <Stack.Screen name="Master Foreign Language Education">
           {props => <Master_FLE {...props} language={language} />}
         </Stack.Screen>
       </Stack.Navigator>

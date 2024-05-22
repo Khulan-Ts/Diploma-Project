@@ -61,28 +61,28 @@ const Graduate= ({ navigation, language }) => {
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>{content.SomTitle}</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.MBAButton} onPress={()=>navigation.navigate("Master MBA")}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.MBAButton} onPress={()=>navigation.navigate("Master Business Administration")}>
             </Button>
           </View>
           <View style={{marginTop: width * 0.01, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>{content.SoCSTitle}</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.MSEButton} onPress={()=>navigation.navigate("Master SE")}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.MSEButton} onPress={()=>navigation.navigate("Master Software Engineering")}>
             </Button>
           </View>
           <View style={{marginTop: width * 0.01, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>{content.SoISCTitle}</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.MPAButton} onPress={()=> navigation.navigate("Master Public")}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.MPAButton} onPress={()=> navigation.navigate("Master Public Administration")}>
             </Button>
           </View>
           <View style={{marginTop: width * 0.01, backgroundColor: '#EDF0FF'}}>
             <FONT type={"Subtitle2"} style={{color: '#3D2562', fontSize: 23}}>{content.ProgramTitle}</FONT>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.FLEButton} onPress={()=>navigation.navigate("Master FLE")}>
+            <Button style={{marginTop: width * 0.01, color: '#3D2562'}} type="Seven" text={content.FLEButton} onPress={()=>navigation.navigate("Master Foreign Language Education")}>
             </Button>
           </View>
         </View>
