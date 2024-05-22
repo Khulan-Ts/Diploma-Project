@@ -169,13 +169,6 @@
       { "source": "./assets/images/mc_teachers/image4.png", "text": "DONG-RYUL KANG\nLecturer" },
       { "source": "./assets/images/mc_teachers/image5.png", "text": "JIYOUNG CHANG\nLecturer" }
     ],
-    "irImageWithText": [
-      { "source": "./assets/images/ir_teachers/jericho.png", "text": "JERICHO BURG\nDean of School of International\n Studies and Relations" },
-      { "source": "./assets/images/ir_teachers/mostafa.png", "text": "MOSTAFA AHMED\n Lecturer" },
-      { "source": "./assets/images/ir_teachers/suyong.png", "text": "SUYONG GIM\nProfessor" },
-      { "source": "./assets/images/ir_teachers/dong.png", "text": "DONG-RYUL KANG\nLecturer" },
-      { "source": "./assets/images/ir_teachers/jiyung.png", "text": "JIYOUNG CHANG\nLecturer" }
-    ],
 
     "headerEN":[
       "about us",
