@@ -13,51 +13,51 @@
         "phone": "7000 7447"
     },
     "mapMN":{
-        "hoverCardTitle1": "Sport Complex",
-        "hoverCardContent1": "The sports complex is a three-floor building currently featuring a large indoor sports hall and cross-fit style gym.\n\nThe cross-fit style gym has full equipment and tools for people who want to spend their time useful.\n\nTo make a reservation at sport hall:\n+976 99223366\nTo get price information on cross gym: \n+976 99223366",
-        "hoverCardbottomText": "Schedule: \nMonday 4:00 - 6:00 pm \nWednesday 4:00 - 6:00 pm\nFriday 4:00 - 6:00 pm",
-        "hoverCardTitle2": "Dorm",
-        "hoverCardContent2": "The MIU Global Residence is a seven-floor building that houses both male and female students from all over the world. The first four floors are dedicated to students and the 5th to 7th floors are occupied by faculty and staff members. MIU Global Residence a unique residence hall that offers affordable, newly furnished, safe, and convenient living quarters for students.",
-        "hoverCardButton": "For More Information",
-        "hoverCardTitle3": "M Building",
-        "hoverCardContent3": "Student affairs - Academic - Admission - Finance - President`s office\n\n\nThis building is office building where students and applicants can get information about school or their studies.\n\n\nOne fact: MIU has Counseling Center \nwhich is mental health service. ",
-        "hoverCardTitle4": "D Building",
-        "hoverCardContent4": "Main Hall - Cafeteria - Library - Coffee Shop - GilGal\n\n\nThis is where students spend most of their time and make their university life with memories and friends\n\n\nOne fact: MIU Cafeteria has international dishes \nthat you can have for your lunch time. "
+        "hoverCardTitle1": "Спорт Заал",
+        "hoverCardContent1": "Манай спорт заал нь дотор спортын заал болон кросс фит заалыг багтаасан 3 давхар барилга юм.\n\nКросс фит заал нь цаг заваа ашигтайгаар өнгөрүүлэх хүсэлтэй хүмүүст зориулсан ба иж бүрэн тоног төхөөрөмж, багаж хэрэгсэлтэй.\n\nЗааланд захиалга өгөхийг хүсвэл:\n+976 99223366\nҮнэ ханшийн талаарх мэдээлэл авахыг хүсвэл: \n+976 99223366",
+        "hoverCardbottomText": "Хуваарь: \nДаваа 4:00 - 6:00 pm \nЛхагва 4:00 - 6:00 pm\nБаасан 4:00 - 6:00 pm",
+        "hoverCardTitle2": "Дотуур Байр",
+        "hoverCardContent2": "MIU Global Residence нь дэлхийн өнцөг булан бүрээс ирсэн эрэгтэй, эмэгтэй оюутнуудад зориулсан долоон давхар барилга юм. Эхний дөрвөн давхар нь оюутнуудад зориулагдсан бөгөөд 5-7 давхарт багш, ажилчид байрладаг. MIU Global Residence нь оюутнуудад хямд, шинэ тавилгатай, аюулгүй, тав тухтай амьдрах байрыг санал болгодог өвөрмөц оршин суух танхим юм.",
+        "hoverCardButton": "Дэлгэрэнгүй мэдээлэл",
+        "hoverCardTitle3": "M Байр",
+        "hoverCardContent3": "Сургалтын Алба - Академик - Элсэлт - Санхүү - Захиралын оффис\n\n\nЭнэхүү барилга нь оффисын барилга бөгөөд оюутнууд болон өргөдөл гаргагчид сургууль, сургалтынхаа талаар мэдээлэл авах боломжтой.\n\n\nСонирхолтой баримт: MIU-д сэтгэл зүйн  \nзөвөлгөө өгөх төв байдаг. ",
+        "hoverCardTitle4": "D Байр",
+        "hoverCardContent4": "Урлаг Заал - Цайны Газар - Номын Сан - Coffee Shop - GilGal\n\n\nЭнэ бол оюутнуудын ихэнхи цагаа найз нөхөдтэйгөө дурсамж бүтээн өнгөрөөдөг газар.\n\n\nСонирхолтой баримт: MIU Цайны газар нь цайны цагаар \nолон үндэсний хоол гаргадаг. "
       },
     "homepageMN": {
         "title1": "MIU-д тавтай морил",
-        "title2": "Маргаашийн дэлхийн үйлчлэгч удирдагчдыг сургах",
+        "title2": "Маргаашийн дэлхийн удирдагчдыг бүтээнэ",
         
-        "hoverText1": "International Faculty",
-        "hoverText2": "International Students",
-        "hoverText3": "Taught in English",
+        "hoverText1": "Олон улсын багш нар",
+        "hoverText2": "Олон улсын оюутан",
+        "hoverText3": "Бүх хичээл Англи хэл дээр",
         "hoverNum1": "77%",
         "hoverNum2": "34%",
         "hoverNum3": "100%",
         
-        "historyTitle": "The Most Global and Dynamic University in Mongolia",
-        "historyBodyText": "MIU was established in 2002 as a private university located in Ulaanbaatar, Mongolia. With great contribution from the former president of Mongolia, Mr. Natsagiin Bagabandi, MIU received freeland of 17,100 ㎡ on which the first building was built. MIU distinguished itself as a prominent university providing English-Speaking higher education in Central Asia. MIU currently offers 14 recognized bachelor’s programs and is committed to providing a world-class education to tomorrow’s global servant leaders from Mongolia, Russia, China, Republic of Korea, and other nations.",
+        "historyTitle": "Монголын хамгийн глобал, динамик их сургууль",
+        "historyBodyText": "MIU нь 2002 онд Улаанбаатар хотод хувийн их сургууль хэлбэрээр байгуулагдсан. Монгол Улсын Ерөнхийлөгч асан, ноён Нацагийн Багабандигийн асар их хувь нэмэрээр MIU ийн анхны барилгыг барьсан 17,100 ㎡ газрыг үнэ төлбөргүй авсан. MIU нь Төв Азийн англи хэлээр ярьдаг дээд боловсрол олгодог нэр хүндтэй их сургууль гэдгээрээ онцлог юм. MIU нь одоогоор 14 бакалаврын хөтөлбөрийг санал болгож байгаа бөгөөд Монгол, Орос, Хятад, БНСУ болон бусад улс орны маргаашийн дэлхийн удирдагчдад дэлхийн жишигт нийцсэн боловсрол олгохыг зорьж байна.",
         
-        "undergradTitle": "UNDERGRADUATE MAJORS",
-        "undergradDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
-        "undergradFact": "85% employed within months of graduation",
-        "undergradButton": "Explore Undergraduate Programs",
+        "undergradTitle": "БАКАЛАВРЫН ТУХАЙД",
+        "undergradDescription": "MIU нь оюутнууддаа эрдэм шинжилгээний болон хувийн чадамжийн хөтөлбөрөөрөө дамжуулан шинэлэг мэдлэгийг олгохын зорьдог. Мэргэжлийн ур чадварыг онцлон тэмдэглэснээр MIU-ийн оюутнууд цаг хугацаа, эрч хүч, бүтээлч байдал дүүрэн орчинд шинэ холбоо тогтоож сурдаг.",
+        "undergradFact": "Нийт төгсөгчдийн 85% нь төгссөнөөсөө сар гаруй хугацааны дараа ажилд ордог.",
+        "undergradButton": "Бакалаврын хөтөлбөрүүдийг судлах",
   
-        "graduateTitle": "GADUATE MAJORS",
-        "graduateDescription": "MIU challenges students to explore innovative intellectual interests through scholarly and personal competency programs. Emphasizing on professionalism, MIU students learn to make new connections in a synergistic environment that multiplies the use of resources such as time, energy, and creativity.",
-        "graduateFact": "345+ MIU student studies abroad",
-        "graduateButton": "Exlpore Graduate Programs",
+        "graduateTitle": "МАГИСТРИЙН ТУХАЙД",
+        "graduateDescription": "MIU нь оюутнууддаа эрдэм шинжилгээний болон хувийн чадамжийн хөтөлбөрөөрөө дамжуулан шинэлэг мэдлэгийг олгохын зорьдог. Мэргэжлийн ур чадварыг онцлон тэмдэглэснээр MIU-ийн оюутнууд цаг хугацаа, эрч хүч, бүтээлч байдал дүүрэн орчинд шинэ холбоо тогтоож сурдаг.",
+        "graduateFact": "MIU ийн оюутнуудаас 345+ нь гадаадруу сурахаар явдаг.",
+        "graduateButton": "Магистрын хөтөлбөрүүдийг судлах",
   
         "FourReasonsTitle1": "MIU-д суралцах",
         "FourReasonsTitle2": "4 шалтгаан",
-        "FourReasonsReason1": "1. All courses are taught in 100% English",
-        "FourReasonsReason2": "2. Opportunity to learn international cultures",
-        "FourReasonsReason3": "3. A globally recognized expert",
-        "FourReasonsReason4": "4. Accessible education",
+        "FourReasonsReason1": "1. Бүх хичээл 100% Англи хэл дээр",
+        "FourReasonsReason2": "2. Олон улсын соёлоос суралцах боломжтой",
+        "FourReasonsReason3": "3. Дэлхийд танигдсан мэргэжилтэн",
+        "FourReasonsReason4": "4. Хүртээмжтэй боловсрол",
   
-        "ApplyNow": "APPLY NOW",
-        "ApplyText": "Are you ready to take the next step toward your future career?",
-        "ApplyButton": "Application Form"
+        "ApplyNow": "БҮРТГҮҮЛЭХ",
+        "ApplyText": "Та ирээдүйнхээ төлөө дараагийн алхамыг хийхэд бэлэн үү?",
+        "ApplyButton": "Өргөдлийн маягт"
     },
     
     "undergraduateMN":{
