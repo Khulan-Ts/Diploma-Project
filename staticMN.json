@@ -1,18 +1,18 @@
 {
-    "headerMN":[
+    "header":[
         "бидний тухай",
         "академик",
         "элсэлт",
         "LEI"
       ],
-    "footerMN": {
+    "footer": {
         "copyright": "Copyright © 2024 Mongolia International University",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna.",
         "address": "13-р хороо, Баянзүрх дүүрэг, Улаанбаатар, Монгол 13330",
         "email": "admisson.miu.edu",
         "phone": "7000 7447"
     },
-    "mapMN":{
+    "map":{
         "hoverCardTitle1": "Спорт Заал",
         "hoverCardContent1": "Манай спорт заал нь дотор спортын заал болон кросс фит заалыг багтаасан 3 давхар барилга юм.\n\nКросс фит заал нь цаг заваа ашигтайгаар өнгөрүүлэх хүсэлтэй хүмүүст зориулсан ба иж бүрэн тоног төхөөрөмж, багаж хэрэгсэлтэй.\n\nЗааланд захиалга өгөхийг хүсвэл:\n+976 99223366\nҮнэ ханшийн талаарх мэдээлэл авахыг хүсвэл: \n+976 99223366",
         "hoverCardbottomText": "Хуваарь: \nДаваа 4:00 - 6:00 pm \nЛхагва 4:00 - 6:00 pm\nБаасан 4:00 - 6:00 pm",
@@ -24,7 +24,7 @@
         "hoverCardTitle4": "D Байр",
         "hoverCardContent4": "Урлаг Заал - Цайны Газар - Номын Сан - Coffee Shop - GilGal\n\n\nЭнэ бол оюутнуудын ихэнхи цагаа найз нөхөдтэйгөө дурсамж бүтээн өнгөрөөдөг газар.\n\n\nСонирхолтой баримт: MIU Цайны газар нь цайны цагаар \nолон үндэсний хоол гаргадаг. "
       },
-    "homepageMN": {
+    "homepage": {
         "title1": "MIU-д тавтай морил",
         "title2": "Маргаашийн дэлхийн удирдагчдыг бүтээнэ",
         
@@ -60,7 +60,7 @@
         "ApplyButton": "Өргөдлийн маягт"
     },
     
-    "undergraduateMN":{
+    "undergraduate":{
         "AcademicTitle": "Академик",
         "AcademicButton1": "Undergraduate",
         "AcademicButton2": "Graduate",
@@ -90,7 +90,7 @@
   
     },
 
-    "graduateMN": {
+    "graduate": {
         "AcademicTitle": "Академик",
         "AcademicButton1": "Undergraduate",
         "AcademicButton2": "Graduate",
@@ -114,7 +114,7 @@
         "FLEButton": "Master In Foreign Language Education (FLE)"
     },
 
-    "twoplus2MN": {
+    "twoplus2": {
         "AcademicTitle": "Академик",
         "AcademicButton1": "Undergraduate",
         "AcademicButton2": "Graduate",
@@ -135,7 +135,7 @@
         "Expenses3": "• Total: USD 42,132"
     },
 
-    "exchangeMN":{
+    "exchange":{
         "AcademicTitle": "Академик",
         "AcademicButton1": "Undergraduate",
         "AcademicButton2": "Graduate",
@@ -149,7 +149,7 @@
         "ContactTitle": "Exchange Program Contact Emails:",
         "ContactEmail": "student2@miu.edu.mn\ndir_student@miu.edu.mn"
     },
-    "academicMN":{
+    "academic":{
         "AcademicTitle": "Академик",
         "AcademicButton1": "Undergraduate",
         "AcademicButton2": "Graduate",
@@ -157,7 +157,7 @@
         "AcademicButton4": "Exchange student Program",
         "AcademicButton5": "Academic Calendar"
     },
-    "dormMN":{
+    "dorm":{
         "dormTitle": "GLOBAL RESIDENCE (DORMITORY): LOCATED ON MIU'S CAMPUS",
         "dormDescription": "MIU believes that the first year of university is crucial in building a successful university life and that the MIU Global Residence will support all freshmen to swiftly adjust to campus life, develop their four-year academic plan, and offer all MIU freshmen to live in a close-knit environment for academic, cultural, and social interactions and development. All freshmen are required to live in the dormitory on campus for their first year. Established in 2017, the dormitory is equipped with a kitchen, laundry facilities, internet access, and more. This building can house more than 200 students. While upperclassmen students are allowed to live in the Global Residence, freshmen students are given first priority. The Global Residence is led by the Dormitory Manager and upperclassmen students to ensure that freshmen are safe and healthy. ",
         
@@ -179,7 +179,7 @@
     
         "ApplyButton": "APPLY"
     },
-    "leiMN":{
+    "lei":{
         "leiTitle": "LANGUAGE EDUCATION INSTITUTE",
         "leiDescription": "LEI is a language school that focuses on English for daily life, education, and business communication. Students of all ages and nationalities can participate in our communicative program and learn all language skills – speaking, reading,writing, and listening. Our teachers are highly skilled and trained to use activities and speaking structures to help students engage with the language and practice with their classmates. We believe in active classrooms where students have the opportunity to engage in the language they are learning, and in combining all language skills together to increase learning and retention. We always seek to use the new methods and research in teaching foreign languages, and we keep our teachers up to date with regular training and observations.",
     
@@ -214,7 +214,7 @@
     
         "lei5description": "LEI also offers classes in Russian and Korean languages upon request. Because of smaller classes and limited need, these classes must be requested and scheduled in advance. Classes require a minimum of 5 students to open, and the time must be arranged with the teacher."
     },
-    "aboutusMN": {
+    "aboutus": {
         "AboutUsTitle": "Бидний тухай",
         "AboutUsButton1": "Greetings",
         "AboutUsButton2": "Our people",
@@ -236,7 +236,7 @@
         "hoverDescr3": "We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries",
         "hoverDescr4": "We aspire to be a dynamic research hub, pioneering breakthroughs that address global challenges and transform industries"
       },
-      "ourPeopleMN":{
+      "ourPeople":{
         "AboutUsTitle": "About Us",
         "AboutUsButton1": "Greetings",
         "AboutUsButton2": "Our people",
@@ -312,7 +312,7 @@
         "ExternalAdmisssionAffairsOccu5": "Occupation"
       },
 
-      "planReportMN":{
+      "planReport":{
         "AboutUsTitle": "Бидний тухай",
         "AboutUsButton1": "Greetings",
         "AboutUsButton2": "Our people",
@@ -322,7 +322,7 @@
         "StategicPlanTitle": "STATEGIC PLAN",
         "AccredationTitle": "ACCREDITATION"
       },
-      "givingInfoMN":{
+      "givingInfo":{
         "AboutUsTitle": "About Us",
         "AboutUsButton1": "Greetings",
         "AboutUsButton2": "Our people",
@@ -357,7 +357,7 @@
         "MNBankAddress1": " Khan Bank Tower, Chinggis Avenue-6, Stadium Orgil-1, Khan-Uul District,",
         "MNBankAddress2": "Ulaanbaatar 17010, Mongolia"
       },
-      "overviewMN":{
+      "overview":{
         "AdmissionsTitle": "Элсэлт",
         "AdmissionsButton1": "Overview",
         "AdmissionsButton2": "How to Apply",
@@ -367,7 +367,7 @@
         "text2": "When you decide to apply to Mongolia International University you will have the opportunity to explore courses across the programs and colleges that make up our university, crossing disciplines and charting your own unique academic path.",
         "text3": "We want to get to know you through your application process, to hear your voice and explore your potential. We will be happy to assist you along the way! Are you ready to take the next step?"
       },
-      "Howtoapply_UnderMN":{
+      "Howtoapply_Under":{
         "AdmissionsTitle": "Элсэлт",
         "AdmissionsButton1": "Overview",
         "AdmissionsButton2": "How to Apply",
@@ -388,7 +388,7 @@
         "RequiredDocumentsTitle": "Required Documents",
         "RequiredDocuments": "•  Completed Admission Application Form \n•  Statement of Purpose (SOP) in English \n•  One Recommendation Letter in English \n•  English Certificate of High School Graduation /copy/ \n•  Official High School Records in English /copy/ \n•  Notarized English translation of National Exam score \n•  Completed Resume Form \n•  Copy of Valid Passport /copy/ \n•  Two Passport-size Photos (3x4) \n•  HIV/AIDS Test Results /copy/ \n•  Chest X-Ray Test Result in English \n•  Application Fee /25 USD/ \n•  Document Translation Fee 20,000₮ or 40,000₮ "
       },
-      "Howtoapply_GradMN":{
+      "Howtoapply_Grad":{
         "AdmissionsTitle": "Admissions",
         "AdmissionsButton1": "Overview",
         "AdmissionsButton2": "How to Apply",
@@ -409,7 +409,7 @@
         "RequiredDocuments": "•  Completed Admission Application Form \n•  Statement of Purpose (SOP) in English \n•  Two Recommendation Letter in English \n•  Notarized English Certificate of Bachelor’s Degree \n•  Notarized Official Bachelor’s Degree Transcript in English \n•  English Resume with Photo Attached【Optional】\n•  English Proficiency Test Score【Optional】\n•  Valid Passport (Copy) \n•  HIV/ AIDS Test Result \n•  Passport Photos\n•  Application Fee /25 USD/ "
       },
 
-      "scholarshipMN":{
+      "scholarship":{
         "AdmissionsTitle": "Admissions",
         "AdmissionsButton1": "Overview",
         "AdmissionsButton2": "How to Apply",
@@ -431,7 +431,7 @@
         "DropdownContent6": "All applicants must have completed or be expected to complete high school, secondary education, or an equivalent education prior to their enrollment. All applicants must take an entrance exam as part of the admission process."
     
       },
-      "bachelorBaMN": {
+      "bachelorBa": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF BUSINESS ADMINISTRATION",
         "welcomeDescription": "Business Administration Department (BA) trains in managerial discipline and educates students on how to effectively compete in the international business environment. Students are instructed to handle dynamic decision-making process problems in an era of globalization and information revolution in the world.",
         
@@ -456,7 +456,7 @@
         "careerOpportunityContent": "\n• Advertising and Marketing\n• Accountancy\n• Human Resources\n• Banking including Investment Banking\n• Sales and Retail\n• Management Consultancy\n• Business Journalism"
       },
 
-      "bachelorHtmMN": {
+      "bachelorHtm": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF TOURISM MANAGEMENT",
         "welcomeDescription": "The Bachelor of Hotel and Tourism Management is designed to prepare you for professional and managerial roles in the global tourism and hotel industries. Emphasis is placed in major areas within tourism and hotel businesses.",
         
@@ -481,7 +481,7 @@
         "careerOpportunityContent": "\n• Advertising and Marketing\n• Accountancy\n• Human Resources\n• Banking including Investment Banking\n• Sales and Retail\n• Management Consultancy\n• Business Journalism"
         
       },
-      "bachelorFdMN": {
+      "bachelorFd": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF FASHION DESIGN<",
         "welcomeDescription": "The Fashion Design (FD) department of MIU equips students with skills needed in the global fashion industry: fashion design, fashion business, social responsibility, communication, and leadership.",
         
@@ -517,7 +517,7 @@
         "careerOpportunityContent": "\n• Fashion Designer\n• Fashion Brand Manager\n• Merchandisder\n• Marketer\n• Fashion journalist\n• Fashion illustrator"
         
       },
-      "bachelorCsMN": {
+      "bachelorCs": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF COMPUTER SCIENCE",
         "welcomeDescription": "Computer Science (CS) major at MIU offers opportunities to explore the science of information processing. Particular interest is placed on making computation fast and efficient. CS focuses on the core theories of computing as well as hands-on learning and practical work experiences.",
         
@@ -559,7 +559,7 @@
         
       },
 
-      "bachelorEeMN": {
+      "bachelorEe": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF ENGLISH EDUCATION",
         "welcomeDescription": "English Education Department seeks to train up effective and innovative English teachers across Mongolia and Central Asia with a high-quality education that guides students to service with honesty, integrity, humility and professionalism.",
         
@@ -579,7 +579,7 @@
         
       },
 
-      "bachelorMcMN": {
+      "bachelorMc": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF THE MEDIA AND COMMUNICATION",
         "welcomeDescription": "The Media and Communication (MC) Department of MIU prepares skilled and innovative professionals in the fields of journalism, public relations, marketing, and media production. Our students develop a strong foundation in media and communication theory and practice, journalism, and media policy, with a sequence of courses that equip them to produce creative media content for national and international audiences. Public relations, advertising, and strategic communication round out the curriculum, enabling students to specialize in their area of professional interest.",
         
@@ -604,7 +604,7 @@
         "opportunityContent": "\n• Mongolian NTV, MN25, NTV, EDU TV, TV2, Bloomberg Mongolia TVs and Global Internship for foreign students in their countries"
       },
 
-      "bachelorIrMN": {
+      "bachelorIr": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF INTERNATIONAL RELATIONS",
         "welcomeDescription": "International Relations (IR) program aims to prepare experts and professionals in the fields of Diplomacy, Political Science, and International Development to work in international organizations, NGOs, and government institutions. The program provides foundational knowledge of international relation, history, economics, international trade, development, diplomacy, foreign policy analysis and many others. The program empowers students to address global challenges and policy issues with ethical and critical reasoning as diplomats, field research experts, program officers, consultants, and journalists. Importantly, the students of the IR program at MIU can choose their area of expertise in their third year of studies.",
         
@@ -628,7 +628,7 @@
         "opportunityTitle": "Career Opportunity",
         "opportunityContent": "\n• Advertising and Marketing\n• Accountancy\n• Human Resources\n• Banking including Investment Banking\n• Sales and Retail\n• Management Consultancy\n• Business Journalism"
       },
-      "bachelorSeMN": {
+      "bachelorSe": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF SOFTWARE ENGINEERING",
         "welcomeDescription": "Software Engineering major at MIU offers opportunities to explore the science of information processing. Particular interest is placed on making computation fast and efficient. SE focuses on the core theories of computing as well as hands-on learning and practical work experiences.",
         
@@ -670,7 +670,7 @@
         
       },
 
-      "bachelorMeMN": {
+      "bachelorMe": {
         "welcomeTitle": "WELCOME TO THE DEPARTMENT OF MUSIC EDUCATON",
         "welcomeDescription": "“The ME Department of New Media Music teaches techniques for producing music of various genres, including classical music, pop, jazz, and ballads. We are reorganizing the music education environment by providing a digital audio workstation (DAW) program. Computer music and practical training Through ensemble classes using musical instruments, you can create more human and emotional music in the AI era. Within this cutting-edge curriculum, participants utilize the capabilities of sophisticated digital audio systems to multi-track recording, overdubbing, and editing music of various genres. and explores the process of mastering.",
         
@@ -695,7 +695,7 @@
         "opportunityContent": "\n• Mongolian NTV, MN25, NTV, EDU TV, TV2, Bloomberg Mongolia TVs and Global Internship for foreign students in their countries"
       },
 
-      "masterFleMN": {
+      "masterFle": {
         "welcomeTitle": "WELCOME TO MASTER IN FOREIGN LANGUAGE EDUCATION",
         "welcomeDescription": "FLE at MIU is founded for training international English education specialists who have a thorough understanding of Language Acquisition and various training and teaching methods. FLE teaches the basic principles and fundamentals of languages, which are crucial for effective foreign language education. \nFLE looks to enhance students’ understanding of both English and non-English speaking cultures and languages. The program also gives students the opportunity to examine their own language and culture through interaction with students from different cultures.",
         
@@ -718,7 +718,7 @@
         
       },
 
-      "masterMbaMN": {
+      "masterMba": {
         "welcomeTitle": "WELCOME TO MASTER IN BUSINESS ADMINISTRATION",
         "welcomeDescription": "MBA (International Marketing) at MIU is founded to train students to become international professionals who can lead the global era. MBA (International Marketing) teaches students how to make practical strategies to activate companies by combining theories and practices which students will learn through direct visits to the business fields between Korea and Mongolia or other countries. Also, training leaders who are able to take significant responsibilities in domestic and international corporations.",
         
@@ -748,7 +748,7 @@
         "careerOpportunityContent2": "International & Global) Organizations\n• Marketing Manager\n• Financial Analyst & Banker\n• HR Manager\n• Business Consultant\n• Financial Securities\n• Investment Analyst\n• Business Administrator"
         
       },
-      "masterPubMN": {
+      "masterPub": {
         "welcomeTitle": "WELCOME TO MASTER IN PUBLIC ADMINISTRATION",
         "welcomeDescription": "Master of Public Administration (MPA) program is designed to prepare professionally-trained and ethical government officials and public service officers. MPA Students are to gain fundamental knowledge of public policy, its analysis and implementation that will impower them to make a positive change in their communities as well as internationally.",
         
@@ -773,7 +773,7 @@
         "careerOpportunityContent": "\n• Public Officer in Central & Local Government\n• Manager in NPO\n• Policy Analyst & Consultant\n• International Development Organizations UNDP,\n  World Bank, Asia Development Bank,\n• Private Sector Multinational Companies, \n  Development Companies"
         
       },
-      "masterSeMN": {
+      "masterSe": {
         "welcomeTitle": "WELCOME TO MASTER IN SOFTWARE ENGINEERING",
         "welcomeDescription": "Master in Software Engineering department at MIU provides the students who are able to fit in the technology era, with basic science and software engineering knowledge as well as field experiences",
         

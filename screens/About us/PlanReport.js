@@ -5,15 +5,16 @@ import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
 import Pamphlet from "../../src/components/pamphlet";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
 const PlanReport = ({ navigation, language }) => {
   const { width, height } = useWindowDimensions();
   const planReportImg = data.planReportImg;
-  const planReportEN = data.planReportEN;
-  const planReportMN = mn.planReportMN;
-  const planReportRU = ru.planReportRU;
+  const planReportEN = en.planReport;
+  const planReportMN = mn.planReport;
+  const planReportRU = ru.planReport;
 
   let content;
     switch (language){

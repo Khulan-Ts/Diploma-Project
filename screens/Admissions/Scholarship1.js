@@ -4,7 +4,7 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import ExpandableList from "../../src/components/drop";
 import Footer from "../../src/components/footer";
-import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -13,13 +13,13 @@ const Scholarship= ({ navigation, language }) => {
     let content;
     switch (language){
     case 'mn':
-      content = mn.scholarshipMN;
+      content = mn.scholarship;
       break;
     case 'ru':
-      content = ru.scholarshipRU;
+      content = ru.scholarship;
       break;
     case 'en':
-      content = data.scholarshipEN;
+      content = en.scholarship;
       break;
   }
     return (

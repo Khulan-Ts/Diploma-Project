@@ -4,15 +4,16 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
 const Exchange= ({ navigation, language }) => {
   const { width, height } = useWindowDimensions();
   const exchangeImg = data.exchangeImg;
-  const exchangeEN = data.exchangeEN;
-  const exchangeMN = mn.exchangeMN;
-  const exchangeRU = ru.exchangeRU;
+  const exchangeEN = en.exchange;
+  const exchangeMN = mn.exchange;
+  const exchangeRU = ru.exchange;
 
     
   let content;

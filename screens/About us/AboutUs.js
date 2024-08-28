@@ -5,6 +5,7 @@ import Button from "../../src/components/Button";
 import HoverButton2 from "../../src/components/aboutusHover";
 import Footer from "../../src/components/footer";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -13,9 +14,9 @@ const AboutUs=({navigation, language})=>{
   const { width, height } = useWindowDimensions();
   const imageSize = width * 0.15;
   const aboutusImg = data.aboutusImg;
-  const aboutusEN = data.aboutusEN;
-  const aboutusMN = mn.aboutusMN;
-  const aboutusRU = ru.aboutusRU;
+  const aboutusEN = en.aboutus;
+  const aboutusMN = mn.aboutus;
+  const aboutusRU = ru.aboutus;
 
   let content;
     switch (language){

@@ -7,6 +7,7 @@ import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
 import data from '../../static.json';
+import en from "../../staticEN.json";
 import mn from '../../staticMN.json';
 import ru from '../../staticRU.json';
 
@@ -17,14 +18,14 @@ const Master_Public= ({ navigation, language }) => {
     let content;
     switch (language) {
         case 'mn':
-            content = mn.masterPubMN;
+            content = mn.masterPub;
             break;
         case 'ru':
-            content = ru.masterPubRU;
+            content = ru.masterPub;
             break;
         case 'en':
         default:
-            content = data.masterPubEN;
+            content = en.masterPub;
             break;
     }
     useEffect( () => {

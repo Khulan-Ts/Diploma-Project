@@ -3,7 +3,7 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
-import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -13,13 +13,13 @@ const Overview= ({ navigation, language }) => {
     let content;
     switch (language){
     case 'mn':
-      content = mn.overviewMN;
+      content = mn.overview;
       break;
     case 'ru':
-      content = ru.overviewRU;
+      content = ru.overview;
       break;
     case 'en':
-      content = data.overviewEN;
+      content = en.overview;
       break;
   }
     return (

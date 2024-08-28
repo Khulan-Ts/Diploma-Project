@@ -5,6 +5,7 @@ import Button from "../../src/components/Button";
 import Calendar from "../../assets/icons/calendar";
 import Clock from "../../assets/icons/clock";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 import Footer from "../../src/components/footer";
@@ -15,9 +16,9 @@ const Lei_2= ({ navigation, language }) => {
   const { lei_apply } = data.links;
   const { lei_teachers }= data;
 
-  const leiEN = data.leiEN;
-  const leiMN = mn.leiMN;
-  const leiRU = ru.leiRU;
+  const leiEN = en.lei;
+  const leiMN = mn.lei;
+  const leiRU = ru.lei;
     
   let content;
   switch (language){

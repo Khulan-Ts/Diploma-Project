@@ -4,15 +4,16 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
 const AcademicCal= ({ navigation, language }) => {
   const { width, height } = useWindowDimensions();
   const academicImg = data.academicImg;
-  const academicEN = data.academicEN;
-  const academicMN = mn.academicMN;
-  const academicRU = ru.academicRU;
+  const academicEN = en.academic;
+  const academicMN = mn.academic;
+  const academicRU = ru.academic;
 
     
   let content;

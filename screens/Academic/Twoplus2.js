@@ -4,6 +4,7 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -11,9 +12,9 @@ import ru from "../../staticRU.json";
 const Twoplus2=({navigation, language})=>{
   const { width, height } = useWindowDimensions();
   const twoplus2Img = data.twoplus2Img;
-  const twoplus2EN = data.twoplus2EN;
-  const twoplus2MN = mn.twoplus2MN;
-  const twoplus2RU = ru.twoplus2RU;
+  const twoplus2EN = en.twoplus2;
+  const twoplus2MN = mn.twoplus2;
+  const twoplus2RU = ru.twoplus2;
 
     
   let content;

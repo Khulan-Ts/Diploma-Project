@@ -6,15 +6,16 @@ import Calendar from "../../assets/icons/calendar";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
 import data from "../../static.json"
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
 const Dorm=({navigation, language})=>{
     const { width, height } = useWindowDimensions();
     const { apply } = data.links;
-    const dormEN = data.dormEN;
-    const dormMN = mn.dormMN;
-    const dormRU = ru.dormRU;
+    const dormEN = en.dorm;
+    const dormMN = mn.dorm;
+    const dormRU = ru.dorm;
     
     let content;
     switch (language){

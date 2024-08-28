@@ -4,15 +4,16 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
 const OurPeople=({navigation, language})=>{
   const { width, height } = useWindowDimensions();
   const ourPeopleImg = data.ourPeopleImg;
-  const ourPeopleEN = data.ourPeopleEN;
-  const ourPeopleMN = mn.ourPeopleMN;
-  const ourPeopleRU = ru.ourPeopleRU;
+  const ourPeopleEN = en.ourPeople;
+  const ourPeopleMN = mn.ourPeople;
+  const ourPeopleRU = ru.ourPeople;
 
   let content;
     switch (language){

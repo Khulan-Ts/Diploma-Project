@@ -4,7 +4,7 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import ToolTip from "../../src/components/Tooltip";
 import Footer from "../../src/components/footer";
-import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -13,13 +13,13 @@ const Howtoapply_Under= ({ navigation, language }) => {
     let content;
     switch (language){
     case 'mn':
-      content = mn.Howtoapply_UnderMN;
+      content = mn.Howtoapply_Under;
       break;
     case 'ru':
-      content = ru.Howtoapply_UnderRU;
+      content = ru.Howtoapply_Under;
       break;
     case 'en':
-      content = data.Howtoapply_UnderEN;
+      content = en.Howtoapply_Under;
       break;
   }
 

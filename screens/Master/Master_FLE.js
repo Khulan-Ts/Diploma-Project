@@ -7,6 +7,7 @@ import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
 import data from '../../static.json';
+import en from "../../staticEN.json";
 import mn from '../../staticMN.json';
 import ru from '../../staticRU.json';
 
@@ -17,14 +18,14 @@ const Master_FLE= ({ navigation, language }) => {
     let content;
     switch (language) {
         case 'mn':
-            content = mn.masterFleMN;
+            content = mn.masterFle;
             break;
         case 'ru':
-            content = ru.masterFleRU;
+            content = ru.masterFle;
             break;
         case 'en':
         default:
-            content = data.masterFleEN;
+            content = en.masterFle;
             break;
     }
     useEffect( () => {

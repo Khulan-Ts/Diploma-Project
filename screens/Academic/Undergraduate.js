@@ -3,15 +3,15 @@ import { StyleSheet, useWindowDimensions, Image, ScrollView, View } from "react-
 import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import Footer from "../../src/components/footer";
-import en from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
 const Undergraduate= ({ navigation, language }) => {
     const { width, height } = useWindowDimensions();
-    const undergraduateEN = en.undergraduateEN;
-    const undergraduateMN = mn.undergraduateMN;
-    const undergraduateRU = ru.undergraduateRU;
+    const undergraduateEN = en.undergraduate;
+    const undergraduateMN = mn.undergraduate;
+    const undergraduateRU = ru.undergraduate;
 
     
     let content;

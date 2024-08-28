@@ -4,7 +4,7 @@ import FONT from "../../src/components/Titles";
 import Button from "../../src/components/Button";
 import ToolTip from "../../src/components/Tooltip";
 import Footer from "../../src/components/footer";
-import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -13,13 +13,13 @@ const Howtoapply_Graduate= ({ navigation, language }) => {
     let content;
     switch (language){
     case 'mn':
-      content = mn.Howtoapply_GradMN;
+      content = mn.Howtoapply_Grad;
       break;
     case 'ru':
-      content = ru.Howtoapply_GradRU;
+      content = ru.Howtoapply_Grad;
       break;
     case 'en':
-      content = data.Howtoapply_GradEN;
+      content = en.Howtoapply_Grad;
       break;
   }
     return (

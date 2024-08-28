@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, Image, Pressable, Dimensions } from "react-native";
 import HoverCard from "./hoverCard";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -14,13 +15,13 @@ const MapComponent = ({
   let content;
   switch (language){
     case 'mn':
-      content = mn.mapMN;
+      content = mn.map;
       break;
     case 'ru':
-      content = ru.mapRU;
+      content = ru.map;
       break;
     case 'en':
-      content = data.mapEN;
+      content = en.map;
       break;
   }
 

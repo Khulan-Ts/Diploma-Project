@@ -7,6 +7,7 @@ import Calendar from "../../assets/icons/calendar";
 import Footer from "../../src/components/footer";
 import ExpandableList from "../../src/components/dptExpandable";
 import data from "../../static.json";
+import en from "../../staticEN.json";
 import mn from "../../staticMN.json";
 import ru from "../../staticRU.json";
 
@@ -17,14 +18,14 @@ const Bachelor_SE= ({ navigation, language }) => {
     let content;
     switch (language) {
         case 'mn':
-            content = mn.bachelorSeMN;
+            content = mn.bachelorSe;
             break;
         case 'ru':
-            content = ru.bachelorSeRU;
+            content = ru.bachelorSe;
             break;
         case 'en':
         default:
-            content = data.bachelorSeEN;
+            content = en.bachelorSe;
             break;
     }
     useEffect( () => {

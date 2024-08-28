@@ -8,9 +8,10 @@ import Facebook from "../../assets/icons/facebook";
 import Linkedin from "../../assets/icons/linkedin";
 import Instagram from "../../assets/icons/instagram";
 import FONT from "./Titles";
-import data from "../../static.json"
-import mn from "../../staticMN.json"
-import ru from "../../staticRU.json"
+import data from "../../static.json";
+import mn from "../../staticMN.json";
+import en from "../../staticEN.json";
+import ru from "../../staticRU.json";
 
 
 const Footer = ({language}) => {
@@ -21,13 +22,13 @@ const Footer = ({language}) => {
     let content;
       switch (language){
       case 'mn':
-        content = mn.footerMN;
+        content = mn.footer;
         break;
       case 'ru':
-        content = ru.footerRU;
+        content = ru.footer;
         break;
       case 'en':
-        content = data.footerEN;
+        content = en.footer;
         break;
     }
     return (

@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Home';
 import Header from './src/components/Header'; 
 import data from './static.json';
+import en from './staticEN.json';
 import mn from './staticMN.json';
 import ru from './staticRU.json';
 // Academics
@@ -58,12 +59,12 @@ const App = () => {
   const getHeaderContent = (lang) => {
     switch (lang) {
       case 'mn':
-        return mn.headerMN;
+        return mn.header;
       case 'ru':
-        return ru.headerRU;
+        return ru.header;
       case 'en':
       default:
-        return data.headerEN;
+        return en.header;
     }
   };
 
